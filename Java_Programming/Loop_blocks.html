@@ -1,0 +1,1166 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Loop blocks - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Loop_blocks","wgTitle":"Java Programming/Loop blocks","wgCurRevisionId":3295229,"wgRevisionId":3295229,"wgArticleId":276548,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Loop_blocks","wgRelevantArticleId":276548,"wgRequestId":"We-LDApAAEYAAAiS5PUAAACT","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3295229,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q22340861","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Loop_blocks&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Loop_blocks&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Loop_blocks.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Loop_blocks rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Loop blocks</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span><div id="mw-fr-revisiontag" class="flaggedrevs_basic flaggedrevs_draft_notsynced plainlinks noprint nomobile"><img class="flaggedrevs-icon" src="/w/extensions/FlaggedRevs/frontend/modules/img/1.png" alt="Unreviewed changes are displayed on this page" title="Unreviewed changes are displayed on this page">The <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Loop_blocks&amp;stable=1">latest reviewed version</a> was <a class="external text" href="//en.wikibooks.org/w/index.php?title=Special:Log&amp;type=review&amp;page=Java_Programming/Loop_blocks">checked</a> on <i>17 September 2017</i>. There are <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Loop_blocks&amp;oldid=3295229&amp;diff=cur&amp;diffonly=0">template/file changes</a> awaiting review.</div>
+</div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Conditional_blocks.html" title="Conditional blocks"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Conditional_blocks.html" title="Java Programming/Conditional blocks">Conditional blocks</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Loop blocks</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Boolean_expressions.html" title="Java Programming/Boolean expressions">Boolean expressions</a> <a href="Boolean_expressions.html" title="Boolean expressions"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="Language_Fundamentals.html" title="Java Programming/Language Fundamentals">Language Fundamentals</a></b> topic: <span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/LanguageFundamentalsTopic" class="mw-redirect" title="Template:Java Programming/LanguageFundamentalsTopic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/LanguageFundamentalsTopic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/LanguageFundamentalsTopic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/LanguageFundamentalsTopic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Dec 31, 2012"><img alt="100% developed&#160; as of Dec 31, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Statements.html" title="Java Programming/Statements">Statements</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Conditional_blocks.html" title="Java Programming/Conditional blocks">Conditional blocks</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">Loop blocks</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Boolean_expressions.html" title="Java Programming/Boolean expressions">Boolean expressions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Feb 16, 2010"><img alt="100% developed&#160; as of Feb 16, 2010" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Variables.html" title="Java Programming/Variables">Variables</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Primitive_Types.html" title="Java Programming/Primitive Types">Primitive Types</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Arithmetic_expressions.html" title="Java Programming/Arithmetic expressions">Arithmetic expressions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Literals.html" title="Java Programming/Literals">Literals</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Methods.html" title="Java Programming/Methods">Methods</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="API\java.lang.html" title="Java Programming/API/java.lang.String">String</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Classes,_Objects_and_Types.html" title="Java Programming/Classes, Objects and Types">Objects</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Jul 5, 2012"><img alt="100% developed&#160; as of Jul 5, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Packages.html" title="Java Programming/Packages">Packages</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Arrays.html" title="Java Programming/Arrays">Arrays</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Mathematical_functions.html" title="Java Programming/Mathematical functions">Mathematical functions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Large_numbers.html" title="Java Programming/Large numbers">Large numbers</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Random_numbers.html" title="Java Programming/Random numbers">Random numbers</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Apr 8, 2013"><img alt="100% developed&#160; as of Apr 8, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Unicode.html" title="Java Programming/Unicode">Unicode</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Apr 8, 2013"><img alt="100% developed&#160; as of Apr 8, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Comments.html" title="Java Programming/Comments">Comments</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Sep 27, 2007"><img alt="100% developed&#160; as of Sep 27, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Keywords.html" title="Java Programming/Keywords">Keywords</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Aug 6, 2013"><img alt="100% developed&#160; as of Aug 6, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Coding_conventions.html" title="Java Programming/Coding conventions">Coding conventions</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p><br>
+Loops are a handy tool that enables programmers to do repetitive tasks with minimal effort. Say we want a program that can count from 1 to 10, we could write the <a href="#code-listing-4">following program</a>.</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-4"><b>Code listing 3.4: Count.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">class</span> <span class="nc">Count</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 3 </span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"1 "</span><span class="o">);</span>
+<span class="lineno"> 4 </span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"2 "</span><span class="o">);</span>
+<span class="lineno"> 5 </span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"3 "</span><span class="o">);</span>
+<span class="lineno"> 6 </span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"4 "</span><span class="o">);</span>
+<span class="lineno"> 7 </span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"5 "</span><span class="o">);</span>
+<span class="lineno"> 8 </span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"6 "</span><span class="o">);</span>
+<span class="lineno"> 9 </span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"7 "</span><span class="o">);</span>
+<span class="lineno">10 </span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"8 "</span><span class="o">);</span>
+<span class="lineno">11 </span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"9 "</span><span class="o">;</span>
+<span class="lineno">12 </span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"10 "</span><span class="o">);</span>
+<span class="lineno">13 </span>    <span class="o">}</span>
+<span class="lineno">14 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for code listing 3.4</b>
+<pre style="background-color:black; color:white;">
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p><br>
+The task will be completed just fine, the numbers 1 to 10 will be printed in the output, but there are a few problems with this solution:</p>
+<ul>
+<li><b>Flexibility</b>: what if we wanted to change the start number or end number? We would have to go through and change them, adding extra lines of code where they're needed.</li>
+<li><b>Scalability</b>: 10 repeats are trivial, but what if we wanted 100 or even 1000 repeats? The number of lines of code needed would be overwhelming for a large number of iterations.</li>
+<li><b>Maintenance</b>: where there is a large amount of code, one is more likely to make a mistake.</li>
+<li><b>Feature</b>: the number of tasks is fixed and doesn't change at each execution.</li>
+</ul>
+<p>Using loops we can solve all these problems. Once you get you head around them they will be invaluable to solving many problems in programming.</p>
+<p>Open up your editing program and create a new file saved as <code>Loop.java</code>. Now type or copy the <a href="#code-listing-5">following code</a>:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-5"><b>Code listing 3.5: Loop.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">class</span> <span class="nc">Loop</span> <span class="o">{</span>
+<span class="lineno">2 </span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">3 </span>        <span class="kt">int</span> <span class="n">i</span><span class="o">;</span>
+<span class="lineno">4 </span>        <span class="k">for</span> <span class="o">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+<span class="lineno">5 </span><span class="hll">            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span> <span class="o">+</span> <span class="s">" "</span><span class="o">);</span>
+</span><span class="lineno">6 </span>        <span class="o">}</span>
+<span class="lineno">7 </span>    <span class="o">}</span>
+<span class="lineno">8 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for code listing 3.5</b>
+<pre style="background-color:black; color:white;">
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>If we run the program, the same result is produced, but looking at the code, we immediately see the advantages of loops. Instead of executing 10 different lines of code, line 5 executes ten times. 10 lines of code have been reduced to just 4. Furthermore, we may change the number 10 to any number we like. Try it yourself, replace the 10 with your own number.</p>
+<h3><span class="mw-headline" id="While">While</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Loop_blocks&amp;action=edit&amp;section=1" title="Edit section: While">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><code><a href="Keywords\while.html" title="Java Programming/Keywords/while"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">while</font></a></code> loops are the simplest form of loop. The <code>while</code> loop repeats a block of code while the specified condition is true. Here is the structure of a <code>while</code> loop:</p>
+<table style="margin: auto;">
+<tr>
+<td>while (<i><b>boolean expression<sub>1</sub></b></i>) {
+<dl>
+<dd><i><b>statement<sub>1</sub></b></i></dd>
+<dd><i><b>statement<sub>2</sub></b></i></dd>
+<dd>...</dd>
+<dd><i><b>statement<sub>n</sub></b></i></dd>
+</dl>
+<p>}</p>
+</td>
+</tr>
+</table>
+<p>The loop's condition is checked before each iteration of the loop. If the condition is false at the start of the loop, the loop will not be executed at all. The <a href="#code-section-28">code section 3.28</a> sets in <code>squareHigherThan200</code> the smallest integer whose square exceeds 200.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-28"><b>Code section 3.28: The smallest integer whose square exceeds 200.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">int</span> <span class="n">squareHigherThan200</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno">2 </span>
+<span class="lineno">3 </span><span class="k">while</span> <span class="o">(</span><span class="n">squareHigherThan200</span> <span class="o">*</span> <span class="n">squareHigherThan200</span> <span class="o">&lt;</span> <span class="mi">200</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">4 </span>  <span class="n">squareHigherThan200</span> <span class="o">=</span> <span class="n">squareHigherThan200</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno">5 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Bombilla_amarilla_-_yellow_Edison_lamp.svg" class="image" title="Note"><img alt="Note" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/30px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" width="30" height="30" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/45px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/60px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" data-file-width="200" data-file-height="200"></a></td>
+<td style="background-color:#fffff0; border-left: 4px solid yellow; padding-left: 6px;">If a loop's condition will never become false, such as if the <code><a href="Literals\Boolean_Literals\true.html" title="Java Programming/Literals/Boolean Literals/true"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">true</font></a></code> constant is used for the condition, said loop is known as an <i>infinite loop</i>. Such a loop will repeat indefinitely unless it is <a href="Keywords\break.html" title="Java Programming/Keywords/break">broken</a> out of. Infinite loops can be used to perform tasks that need to be repeated over and over again without a definite stopping point, such as updating a graphics display.</td>
+</tr>
+</table>
+<h4><span class="mw-headline" id="Do..._while">Do... while</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Loop_blocks&amp;action=edit&amp;section=2" title="Edit section: Do... while">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The <code><a href="Keywords\do.html" title="Java Programming/Keywords/do"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">do</font></a></code>-<code><a href="Keywords\while.html" title="Java Programming/Keywords/while"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">while</font></a></code> loop is functionally similar to the <code>while</code> loop, except the condition is evaluated AFTER the statement executes It is useful when we try to find a data that does the job by randomly browsing an amount of data.</p>
+<table style="margin: auto;">
+<tr>
+<td>do {
+<dl>
+<dd><i><b>statement<sub>1</sub></b></i></dd>
+<dd><i><b>statement<sub>2</sub></b></i></dd>
+<dd>...</dd>
+<dd><i><b>statement<sub>n</sub></b></i></dd>
+</dl>
+<p>} while (<i><b>boolean expression<sub>1</sub></b></i>);</p>
+</td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="For">For</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Loop_blocks&amp;action=edit&amp;section=3" title="Edit section: For">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <code><a href="Keywords\for.html" title="Java Programming/Keywords/for"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">for</font></a></code> loop is a specialized <code>while</code> loop whose syntax is designed for easy iteration through a sequence of numbers. It consists of the keyword <code>for</code> followed by three extra statements enclosed in parentheses. The first statement is the variable declaration statement, which allows you to declare one or more integer variables. The second is the condition, which is checked the same way as the <code>while</code> loop. Last is the iteration statement, which is used to increment or decrement variables, though any statement is allowed.</p>
+<p>This is the structure of a <code>for</code> loop:</p>
+<table style="margin: auto;">
+<tr>
+<td>for (<i><b>variable declarations</b></i>; <i><b>condition</b></i>; <i><b>iteration statement</b></i>) {
+<dl>
+<dd><i><b>statement<sub>1</sub></b></i></dd>
+<dd><i><b>statement<sub>2</sub></b></i></dd>
+<dd>...</dd>
+<dd><i><b>statement<sub>n</sub></b></i></dd>
+</dl>
+<p>}</p>
+</td>
+</tr>
+</table>
+<p>To clarify how a for loop is used, here is an example:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 3.29: A <code>for</code> loop.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+<span class="lineno">2 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+<span class="lineno">3 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for code listing 3.29</b>
+<pre style="background-color:black; color:white;">
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>The <code>for</code> loop is like a template version of the <code>while</code> loop. The alternative code using a <code>while</code> loop would be as follows:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 3.30: An iteration using a <code>while</code> loop.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="k">while</span> <span class="o">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">3 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+<span class="lineno">4 </span>  <span class="n">i</span><span class="o">++;</span>
+<span class="lineno">5 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The <a href="#code-section-31">code section 3.31</a> shows how to iterate with the <code>for</code> loop using multiple variables and the <a href="#code-section-32">code section 3.32</a> shows how any of the parameters of a <code>for</code> loop can be skipped. Skip them all, and you have an infinitely repeating loop.</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-31"><b>Code section 3.31: The <code>for</code> loop using multiple variables.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">,</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++,</span> <span class="n">j</span><span class="o">--)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">i</span> <span class="o">+</span> <span class="s">" "</span><span class="o">);</span>
+<span class="lineno">3 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">j</span><span class="o">);</span>
+<span class="lineno">4 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-32"><b>Code section 3.32: The <code>for</code> loop without parameter.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="k">for</span> <span class="o">(;;)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="c1">// Some code</span>
+<span class="lineno">3 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<h4><span class="mw-headline" id="For-each">For-each</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Loop_blocks&amp;action=edit&amp;section=4" title="Edit section: For-each">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p><a href="Arrays.html" title="Java Programming/Arrays">Arrays</a> haven't been covered yet, but you'll want to know how to use the enhanced for loop, called the <code>for-each</code> loop. The <code>for-each</code> loop automatically iterates through a list or array and assigns the value of each index to a variable.</p>
+<p>To understand the structure of a <code>for-each</code> loop, look at the following example:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 3.33: A <code>for-each</code> loop.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">String</span><span class="o">[]</span> <span class="n">sentence</span> <span class="o">=</span> <span class="o">{</span><span class="s">"I"</span><span class="o">,</span> <span class="s">"am"</span><span class="o">,</span> <span class="s">"a"</span><span class="o">,</span> <span class="s">"Java"</span><span class="o">,</span> <span class="s">"program."</span><span class="o">};</span>
+<span class="lineno">2 </span><span class="k">for</span> <span class="o">(</span><span class="n">String</span> <span class="n">word</span> <span class="o">:</span> <span class="n">sentence</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">3 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">word</span> <span class="o">+</span> <span class="s">" "</span><span class="o">);</span>
+<span class="lineno">4 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for code section 3.33</b>
+<pre style="background-color:black; color:white;">
+I am a Java program.
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>The example iterates through an array of words and prints them out like a sentence. What the loop does is iterate through <code>sentence</code> and assign the value of each index to <code>word</code>, then execute the code block.</p>
+<p>Here is the general contract of the <code>for-each</code> loop:</p>
+<table style="margin: auto;">
+<tr>
+<td>for (<i><b>variable declaration</b></i>&#160;: <i><b>array or list</b></i>) {
+<dl>
+<dd><i><b>statement<sub>1</sub></b></i></dd>
+<dd><i><b>statement<sub>2</sub></b></i></dd>
+<dd>...</dd>
+<dd><i><b>statement<sub>n</sub></b></i></dd>
+</dl>
+<p>}</p>
+</td>
+</tr>
+</table>
+<p>Make sure that the type of the array or list is assignable to the declared variable, or you will get a compilation error. Notice that the loop automatically exits after the last item in the collection has been examined in the statement block.</p>
+<p>Although the enhanced for loop can make code much clearer, it can't be used in some common situations.</p>
+<ul>
+<li><b>Only access.</b> Elements can not be assigned to, eg, not to increment each element in a collection.</li>
+<li><b>Only single structure.</b> It's not possible to traverse two structures at once, eg, to compare two arrays.</li>
+<li><b>Only single element.</b> Use only for single element access, eg, not to compare successive elements.</li>
+<li><b>Only forward.</b> It's possible to iterate only forward by single steps.</li>
+<li><b>At least Java 5.</b> Don't use it if you need compatibility with versions before Java 5.</li>
+</ul>
+<h2><span class="mw-headline" id="Break_and_continue_keywords">Break and continue keywords</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Loop_blocks&amp;action=edit&amp;section=5" title="Edit section: Break and continue keywords">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <code><a href="Keywords\break.html" title="Java Programming/Keywords/break"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">break</font></a></code> keyword exits a flow control loop, such as a for loop. It basically <i>breaks</i> the loop.</p>
+<p>In the <a href="#code-section-34">code section 3.34</a>, the loop would print out all the numbers from 1 to 10, but we have a check for when <code>i</code> equals 5. When the loop reaches its fifth iteration, it will be cut short by the <code>break</code> statement, at which point it will exit the loop.</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-34"><b>Code section 3.34: An interrupted <code>for</code> loop.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+<span class="lineno">2 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+<span class="lineno">3 </span>    <span class="k">if</span> <span class="o">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">5</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">4 </span>       <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"STOP!"</span><span class="o">);</span>
+<span class="lineno">5 </span>       <span class="k">break</span><span class="o">;</span>
+<span class="lineno">6 </span>    <span class="o">}</span>
+<span class="lineno">7 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for code section 3.34</b>
+<pre style="background-color:black; color:white;">
+1
+2
+3
+4
+5
+STOP!
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>The <code><a href="Keywords\continue.html" title="Java Programming/Keywords/continue"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">continue</font></a></code> keyword jumps straight to the next iteration of a loop and evaluates the boolean expression controlling the loop. The <a href="#code-section-35">code section 3.35</a> is an example of the <code>continue</code> statement in action:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-35"><b>Code section 3.35: A <code>for</code> loop with a skipped iteration.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+<span class="lineno">2 </span>    <span class="k">if</span> <span class="o">(</span><span class="n">i</span> <span class="o">==</span> <span class="mi">5</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">3 </span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Caught i == 5"</span><span class="o">);</span>
+<span class="lineno">4 </span>        <span class="k">continue</span><span class="o">;</span>
+<span class="lineno">5 </span>    <span class="o">}</span>
+<span class="lineno">6 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+<span class="lineno">7 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for code section 3.35</b>
+<pre style="background-color:black; color:white;">
+1
+2
+3
+4
+Caught i == 5
+6
+7
+8
+9
+10
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>As the <code>break</code> and <code>continue</code> statements reduce the readability of the code, it is recommended to reduce their use or replace them with the use of <code>if</code> and <code>while</code> blocks. Some IDE refactoring operations will fail because of such statements.</p>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Test your knowledge</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<p><b>Question 3.2</b>: Consider the following code:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="question-2"><b>Question 3.2: Loops and conditions.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kt">int</span> <span class="n">numberOfItems</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="kt">int</span> <span class="n">currentItems</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno"> 3 </span><span class="kt">int</span> <span class="n">currentCandidate</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span><span class="k">while</span> <span class="o">(</span><span class="n">currentItems</span> <span class="o">&lt;</span> <span class="n">numberOfItems</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 6 </span>  <span class="n">currentCandidate</span> <span class="o">=</span> <span class="n">currentCandidate</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno"> 7 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Test with integer: "</span> <span class="o">+</span> <span class="n">currentCandidate</span><span class="o">);</span>
+<span class="lineno"> 8 </span> 
+<span class="lineno"> 9 </span>  <span class="kt">boolean</span> <span class="n">found</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+<span class="lineno">10 </span>  <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">currentCandidate</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span><span class="o">--)</span> <span class="o">{</span>
+<span class="lineno">11 </span>   
+<span class="lineno">12 </span>    <span class="c1">// Test if i is a divisor of currentCandidate</span>
+<span class="lineno">13 </span>    <span class="k">if</span> <span class="o">((</span><span class="n">currentCandidate</span> <span class="o">%</span> <span class="n">i</span><span class="o">)</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">14 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Not matching..."</span><span class="o">);</span>
+<span class="lineno">15 </span>      <span class="n">found</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+<span class="lineno">16 </span>      <span class="k">break</span><span class="o">;</span>
+<span class="lineno">17 </span>    <span class="o">}</span>
+<span class="lineno">18 </span>   
+<span class="lineno">19 </span>  <span class="o">}</span>
+<span class="lineno">20 </span> 
+<span class="lineno">21 </span>  <span class="k">if</span> <span class="o">(</span><span class="n">found</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">22 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Matching!"</span><span class="o">);</span>
+<span class="lineno">23 </span>    <span class="n">currentItems</span> <span class="o">=</span> <span class="n">currentItems</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno">24 </span>  <span class="o">}</span>
+<span class="lineno">25 </span><span class="o">}</span>
+<span class="lineno">26 </span>
+<span class="lineno">27 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Find the value: "</span> <span class="o">+</span> <span class="n">currentCandidate</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>What will be printed in the standard output?</p>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Answer</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Question 3.2</b>
+<pre style="background-color:black; color:white;">
+Test with integer: 2
+Matching!
+Test with integer: 3
+Matching!
+Test with integer: 4
+Not matching...
+Test with integer: 5
+Matching!
+Test with integer: 6
+Not matching...
+Test with integer: 7
+Matching!
+Test with integer: 8
+Not matching...
+Test with integer: 9
+Not matching...
+Test with integer: 10
+Not matching...
+Test with integer: 11
+Matching!
+Find the value: 11
+</pre></td>
+</tr>
+</table>
+<p>The snippet is searching the 5<sup>th</sup> <a href="https://en.wikipedia.org/wiki/Prime_number" class="extiw" title="w:Prime number">prime number</a>, that is to say: 11. It iterates on each positive integer from 2 (2, 3, 4, 5, 6, 7, 8, 9, 10, 11...), among them, it counts the prime numbers (2, 3, 5, 7, 11) and it stops at the 5<sup>th</sup> one.</p>
+<p>So the snippet first iterates on each positive integer from 2 using the <code>while</code> loop:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="answer-2-1"><b>Answer 3.2.1: <code>while</code> loop.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kt">int</span> <span class="n">numberOfItems</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="kt">int</span> <span class="n">currentItems</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno"> 3 </span><span class="kt">int</span> <span class="n">currentCandidate</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span><span class="k">while</span> <span class="o">(</span><span class="n">currentItems</span> <span class="o">&lt;</span> <span class="n">numberOfItems</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 6 </span><span class="hll">  <span class="n">currentCandidate</span> <span class="o">=</span> <span class="n">currentCandidate</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+</span><span class="lineno"> 7 </span><span class="hll">  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Test with integer: "</span> <span class="o">+</span> <span class="n">currentCandidate</span><span class="o">);</span>
+</span><span class="lineno"> 8 </span><span class="hll"> 
+</span><span class="lineno"> 9 </span><span class="hll">  <span class="kt">boolean</span> <span class="n">found</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+</span><span class="lineno">10 </span><span class="hll">  <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">currentCandidate</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span><span class="o">--)</span> <span class="o">{</span>
+</span><span class="lineno">11 </span><span class="hll">   
+</span><span class="lineno">12 </span><span class="hll">    <span class="c1">// Test if i is a divisor of currentCandidate</span>
+</span><span class="lineno">13 </span><span class="hll">    <span class="k">if</span> <span class="o">((</span><span class="n">currentCandidate</span> <span class="o">%</span> <span class="n">i</span><span class="o">)</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">14 </span><span class="hll">      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Not matching..."</span><span class="o">);</span>
+</span><span class="lineno">15 </span><span class="hll">      <span class="n">found</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+</span><span class="lineno">16 </span><span class="hll">      <span class="k">break</span><span class="o">;</span>
+</span><span class="lineno">17 </span><span class="hll">    <span class="o">}</span>
+</span><span class="lineno">18 </span><span class="hll">   
+</span><span class="lineno">19 </span><span class="hll">  <span class="o">}</span>
+</span><span class="lineno">20 </span><span class="hll"> 
+</span><span class="lineno">21 </span><span class="hll">  <span class="k">if</span> <span class="o">(</span><span class="n">found</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">22 </span><span class="hll">    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Matching!"</span><span class="o">);</span>
+</span><span class="lineno">23 </span><span class="hll">    <span class="n">currentItems</span> <span class="o">=</span> <span class="n">currentItems</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+</span><span class="lineno">24 </span><span class="hll">  <span class="o">}</span>
+</span><span class="lineno">25 </span><span class="o">}</span>
+<span class="lineno">26 </span>
+<span class="lineno">27 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Find the value: "</span> <span class="o">+</span> <span class="n">currentCandidate</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>For each iteration, the current number is either a prime number or not. If it is a prime number, the code at the left will be executed. If it is not a prime number, the code at the right will be executed.</p>
+<table style="width: 100%;">
+<tr>
+<td>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="answer-2-2"><b>Answer 3.2.2: A prime number.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kt">int</span> <span class="n">numberOfItems</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="kt">int</span> <span class="n">currentItems</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno"> 3 </span><span class="kt">int</span> <span class="n">currentCandidate</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span><span class="k">while</span> <span class="o">(</span><span class="n">currentItems</span> <span class="o">&lt;</span> <span class="n">numberOfItems</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 6 </span><span class="hll">  <span class="n">currentCandidate</span> <span class="o">=</span> <span class="n">currentCandidate</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+</span><span class="lineno"> 7 </span><span class="hll">  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Test with integer: "</span> <span class="o">+</span> <span class="n">currentCandidate</span><span class="o">);</span>
+</span><span class="lineno"> 8 </span><span class="hll"> 
+</span><span class="lineno"> 9 </span><span class="hll">  <span class="kt">boolean</span> <span class="n">found</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+</span><span class="lineno">10 </span><span class="hll">  <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">currentCandidate</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span><span class="o">--)</span> <span class="o">{</span>
+</span><span class="lineno">11 </span><span class="hll">   
+</span><span class="lineno">12 </span><span class="hll">    <span class="c1">// Test if i is a divisor of currentCandidate</span>
+</span><span class="lineno">13 </span><span class="hll">    <span class="k">if</span> <span class="o">((</span><span class="n">currentCandidate</span> <span class="o">%</span> <span class="n">i</span><span class="o">)</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">14 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Not matching..."</span><span class="o">);</span>
+<span class="lineno">15 </span>      <span class="n">found</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+<span class="lineno">16 </span>      <span class="k">break</span><span class="o">;</span>
+<span class="lineno">17 </span>    <span class="o">}</span>
+<span class="lineno">18 </span><span class="hll">   
+</span><span class="lineno">19 </span><span class="hll">  <span class="o">}</span>
+</span><span class="lineno">20 </span><span class="hll"> 
+</span><span class="lineno">21 </span><span class="hll">  <span class="k">if</span> <span class="o">(</span><span class="n">found</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">22 </span><span class="hll">    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Matching!"</span><span class="o">);</span>
+</span><span class="lineno">23 </span><span class="hll">    <span class="n">currentItems</span> <span class="o">=</span> <span class="n">currentItems</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+</span><span class="lineno">24 </span><span class="hll">  <span class="o">}</span>
+</span><span class="lineno">25 </span><span class="o">}</span>
+<span class="lineno">26 </span>
+<span class="lineno">27 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Find the value: "</span> <span class="o">+</span> <span class="n">currentCandidate</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="answer-2-3"><b>Answer 3.2.3: Not a prime number.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kt">int</span> <span class="n">numberOfItems</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="kt">int</span> <span class="n">currentItems</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno"> 3 </span><span class="kt">int</span> <span class="n">currentCandidate</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span><span class="k">while</span> <span class="o">(</span><span class="n">currentItems</span> <span class="o">&lt;</span> <span class="n">numberOfItems</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 6 </span><span class="hll">  <span class="n">currentCandidate</span> <span class="o">=</span> <span class="n">currentCandidate</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+</span><span class="lineno"> 7 </span><span class="hll">  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Test with integer: "</span> <span class="o">+</span> <span class="n">currentCandidate</span><span class="o">);</span>
+</span><span class="lineno"> 8 </span><span class="hll"> 
+</span><span class="lineno"> 9 </span><span class="hll">  <span class="kt">boolean</span> <span class="n">found</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+</span><span class="lineno">10 </span><span class="hll">  <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">currentCandidate</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span><span class="o">--)</span> <span class="o">{</span>
+</span><span class="lineno">11 </span><span class="hll">   
+</span><span class="lineno">12 </span><span class="hll">    <span class="c1">// Test if i is a divisor of currentCandidate</span>
+</span><span class="lineno">13 </span><span class="hll">    <span class="k">if</span> <span class="o">((</span><span class="n">currentCandidate</span> <span class="o">%</span> <span class="n">i</span><span class="o">)</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">14 </span><span class="hll">      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Not matching..."</span><span class="o">);</span>
+</span><span class="lineno">15 </span><span class="hll">      <span class="n">found</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+</span><span class="lineno">16 </span><span class="hll">      <span class="k">break</span><span class="o">;</span>
+</span><span class="lineno">17 </span><span class="hll">    <span class="o">}</span>
+</span><span class="lineno">18 </span><span class="hll">   
+</span><span class="lineno">19 </span><span class="hll">  <span class="o">}</span>
+</span><span class="lineno">20 </span><span class="hll"> 
+</span><span class="lineno">21 </span><span class="hll">  <span class="k">if</span> <span class="o">(</span><span class="n">found</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">22 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Matching!"</span><span class="o">);</span>
+<span class="lineno">23 </span>    <span class="n">currentItems</span> <span class="o">=</span> <span class="n">currentItems</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno">24 </span>  <span class="o">}</span>
+<span class="lineno">25 </span><span class="o">}</span>
+<span class="lineno">26 </span>
+<span class="lineno">27 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Find the value: "</span> <span class="o">+</span> <span class="n">currentCandidate</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>The prime numbers are counted using <code>currentItems</code>. When <code>currentItems</code> is equal to <code>numberOfItems</code> (5), the program go out of the <code>while</code> loop. <code>currentCandidate</code> contains the last number, that is to say the 5<sup>th</sup> prime number:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="answer-2-4"><b>Answer 3.2.4: End of the program.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kt">int</span> <span class="n">numberOfItems</span> <span class="o">=</span> <span class="mi">5</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="kt">int</span> <span class="n">currentItems</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno"> 3 </span><span class="kt">int</span> <span class="n">currentCandidate</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span><span class="hll"><span class="k">while</span> <span class="o">(</span><span class="n">currentItems</span> <span class="o">&lt;</span> <span class="n">numberOfItems</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno"> 6 </span>  <span class="n">currentCandidate</span> <span class="o">=</span> <span class="n">currentCandidate</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno"> 7 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Test with integer: "</span> <span class="o">+</span> <span class="n">currentCandidate</span><span class="o">);</span>
+<span class="lineno"> 8 </span> 
+<span class="lineno"> 9 </span>  <span class="kt">boolean</span> <span class="n">found</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+<span class="lineno">10 </span>  <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">currentCandidate</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span><span class="o">--)</span> <span class="o">{</span>
+<span class="lineno">11 </span>   
+<span class="lineno">12 </span>    <span class="c1">// Test if i is a divisor of currentCandidate</span>
+<span class="lineno">13 </span>    <span class="k">if</span> <span class="o">((</span><span class="n">currentCandidate</span> <span class="o">%</span> <span class="n">i</span><span class="o">)</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">14 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Not matching..."</span><span class="o">);</span>
+<span class="lineno">15 </span>      <span class="n">found</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+<span class="lineno">16 </span>      <span class="k">break</span><span class="o">;</span>
+<span class="lineno">17 </span>    <span class="o">}</span>
+<span class="lineno">18 </span>   
+<span class="lineno">19 </span>  <span class="o">}</span>
+<span class="lineno">20 </span> 
+<span class="lineno">21 </span>  <span class="k">if</span> <span class="o">(</span><span class="n">found</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">22 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Matching!"</span><span class="o">);</span>
+<span class="lineno">23 </span>    <span class="n">currentItems</span> <span class="o">=</span> <span class="n">currentItems</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno">24 </span>  <span class="o">}</span>
+<span class="lineno">25 </span><span class="o">}</span>
+<span class="lineno">26 </span><span class="hll">
+</span><span class="lineno">27 </span><span class="hll"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Find the value: "</span> <span class="o">+</span> <span class="n">currentCandidate</span><span class="o">);</span>
+</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<h2><span class="mw-headline" id="Labels">Labels</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Loop_blocks&amp;action=edit&amp;section=6" title="Edit section: Labels">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Labels can be used to give a name to a loop. The reason to do this is so we can break out of or continue with upper-level loops from a nested loop.</p>
+<p>Here is how to label a loop:</p>
+<table style="margin: auto;">
+<tr>
+<td><i><b>label name</b></i>:<i><b>loop</b></i></td>
+</tr>
+</table>
+<p>To break out of or continue with a loop, use the <code>break</code> or <code>continue</code> keyword followed by the name of the loop.</p>
+<p>For example:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-36"><b>Code section 3.36: A double <code>for</code> loop.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kt">int</span> <span class="n">i</span><span class="o">,</span> <span class="n">j</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="kt">int</span><span class="o">[][]</span> <span class="n">nums</span> <span class="o">=</span> <span class="o">{</span>
+<span class="lineno"> 3 </span>    <span class="o">{</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">5</span><span class="o">},</span>
+<span class="lineno"> 4 </span>    <span class="o">{</span><span class="mi">6</span><span class="o">,</span> <span class="mi">9</span><span class="o">,</span> <span class="mi">7</span><span class="o">},</span>
+<span class="lineno"> 5 </span>    <span class="o">{</span><span class="mi">8</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">4</span><span class="o">}</span>
+<span class="lineno"> 6 </span><span class="o">};</span>
+<span class="lineno"> 7 </span>
+<span class="lineno"> 8 </span><span class="hll"><span class="nl">Outer:</span>
+</span><span class="lineno"> 9 </span><span class="k">for</span> <span class="o">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">nums</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+<span class="lineno">10 </span>    <span class="k">for</span> <span class="o">(</span><span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">].</span><span class="na">length</span><span class="o">;</span> <span class="n">j</span><span class="o">++)</span> <span class="o">{</span>
+<span class="lineno">11 </span>        <span class="k">if</span> <span class="o">(</span><span class="n">nums</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span> <span class="o">==</span> <span class="mi">9</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">12 </span>            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Found number 9 at ("</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">", "</span> <span class="o">+</span> <span class="n">j</span> <span class="o">+</span> <span class="s">")"</span><span class="o">);</span>
+<span class="lineno">13 </span>            <span class="k">break</span> <span class="n">Outer</span><span class="o">;</span>
+<span class="lineno">14 </span>        <span class="o">}</span>
+<span class="lineno">15 </span>    <span class="o">}</span>
+<span class="lineno">16 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for code section 3.36</b>
+<pre style="background-color:black; color:white;">
+Found number 9 at (1, 1)
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>You needn't worry if you don't understand all the code, but look at how the label is used to break out of the outer loop from the inner loop. However, as such a code is hard to read and maintain, it is highly recommended not to use labels.</p>
+<h2><span class="mw-headline" id="Try..._catch_blocks">Try... catch blocks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Loop_blocks&amp;action=edit&amp;section=7" title="Edit section: Try... catch blocks">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<dl>
+<dd><i>See also <a href="Throwing_and_Catching_Exceptions.html" title="Java Programming/Throwing and Catching Exceptions">Throwing and Catching Exceptions</a>.</i></dd>
+</dl>
+<p>The <code><a href="Keywords\try.html" title="Java Programming/Keywords/try"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">try</font></a></code>-<code><a href="Keywords\catch.html" title="Java Programming/Keywords/catch"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">catch</font></a></code> blocks are used to catch any exceptions or other throwable objects within the code.</p>
+<p>Here's what <code>try-catch</code> blocks looks like:</p>
+<table style="margin: auto;">
+<tr>
+<td>try {
+<dl>
+<dd><i><b>statement<sub>1.1</sub></b></i></dd>
+<dd><i><b>statement<sub>1.2</sub></b></i></dd>
+<dd>...</dd>
+<dd><i><b>statement<sub>1.n</sub></b></i></dd>
+</dl>
+<p>} catch (<i><b>exception<sub>1</sub></b></i>) {</p>
+<dl>
+<dd><i><b>statement<sub>2.1</sub></b></i></dd>
+<dd>...</dd>
+<dd><i><b>statement<sub>2.n</sub></b></i></dd>
+</dl>
+<p>}</p>
+</td>
+</tr>
+</table>
+<p>The <a href="#code-listing-6">code listing 3.6</a> tries to print all the arguments that have been passed to the program. However, if there not enough arguments, it will throw an exception.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-6"><b>Code listing 3.6: Attempt.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Attempt</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 3 </span>    <span class="k">try</span> <span class="o">{</span>
+<span class="lineno"> 4 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">0</span><span class="o">]);</span>
+<span class="lineno"> 5 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">1</span><span class="o">]);</span>
+<span class="lineno"> 6 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">2</span><span class="o">]);</span>
+<span class="lineno"> 7 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">3</span><span class="o">]);</span>
+<span class="lineno"> 8 </span>    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">ArrayIndexOutOfBoundsException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 9 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Not enough arguments"</span><span class="o">);</span>
+<span class="lineno">10 </span>    <span class="o">}</span>
+<span class="lineno">11 </span>  <span class="o">}</span>
+<span class="lineno">12 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>In addition to the try and catch blocks, a <code><a href="Keywords\finally.html" title="Java Programming/Keywords/finally"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">finally</font></a></code> block may be present. The finally block is always executed, even if an exception is thrown. It may appear with or without a catch block, but always with a try block.</p>
+<p>Here is what a finally block looks like:</p>
+<table style="margin: auto;">
+<tr>
+<td>try {
+<dl>
+<dd><i><b>statement<sub>1.1</sub></b></i></dd>
+<dd><i><b>statement<sub>1.2</sub></b></i></dd>
+<dd>...</dd>
+<dd><i><b>statement<sub>1.n</sub></b></i></dd>
+</dl>
+<p>} catch (<i><b>exception<sub>1</sub></b></i>) {</p>
+<dl>
+<dd><i><b>statement<sub>2.1</sub></b></i></dd>
+<dd>...</dd>
+<dd><i><b>statement<sub>2.n</sub></b></i></dd>
+</dl>
+<p>} finally {</p>
+<dl>
+<dd><i><b>statement<sub>3.1</sub></b></i></dd>
+<dd>...</dd>
+<dd><i><b>statement<sub>3.n</sub></b></i></dd>
+</dl>
+<p>}</p>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Loop_blocks&amp;action=edit&amp;section=8" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <a href="#code-listing-7">code listing 3.7</a> recieves a number as parameter and print its binary representation.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-7"><b>Code listing 3.7: GetBinary.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">GetBinary</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 3 </span>        <span class="k">if</span> <span class="o">(</span><span class="n">args</span><span class="o">.</span><span class="na">length</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 4 </span>            <span class="c1">// Print usage</span>
+<span class="lineno"> 5 </span>            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Usage: java GetBinary &lt;decimal integer&gt;"</span><span class="o">);</span>
+<span class="lineno"> 6 </span>            <span class="n">System</span><span class="o">.</span><span class="na">exit</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+<span class="lineno"> 7 </span>        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+<span class="lineno"> 8 </span>            <span class="c1">// Print arguments</span>
+<span class="lineno"> 9 </span>            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Received "</span> <span class="o">+</span> <span class="n">args</span><span class="o">.</span><span class="na">length</span> <span class="o">+</span> <span class="s">" arguments."</span><span class="o">);</span>
+<span class="lineno">10 </span>            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The arguments are:"</span><span class="o">);</span>
+<span class="lineno">11 </span>            <span class="k">for</span> <span class="o">(</span><span class="n">String</span> <span class="n">arg</span> <span class="o">:</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">12 </span>                <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"\t"</span> <span class="o">+</span> <span class="n">arg</span><span class="o">);</span>
+<span class="lineno">13 </span>            <span class="o">}</span>
+<span class="lineno">14 </span>        <span class="o">}</span>
+<span class="lineno">15 </span>
+<span class="lineno">16 </span>        <span class="kt">int</span> <span class="n">number</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno">17 </span>        <span class="n">String</span> <span class="n">binary</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
+<span class="lineno">18 </span>
+<span class="lineno">19 </span>        <span class="c1">// Get the input number</span>
+<span class="lineno">20 </span>        <span class="k">try</span> <span class="o">{</span>
+<span class="lineno">21 </span>            <span class="n">number</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">0</span><span class="o">]);</span>
+<span class="lineno">22 </span>        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">NumberFormatException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">23 </span>            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Error: argument must be a base-10 integer."</span><span class="o">);</span>
+<span class="lineno">24 </span>            <span class="n">System</span><span class="o">.</span><span class="na">exit</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+<span class="lineno">25 </span>        <span class="o">}</span>
+<span class="lineno">26 </span>
+<span class="lineno">27 </span>        <span class="c1">// Convert to a binary string</span>
+<span class="lineno">28 </span>        <span class="k">do</span> <span class="o">{</span>
+<span class="lineno">29 </span>            <span class="k">switch</span> <span class="o">(</span><span class="n">number</span> <span class="o">%</span> <span class="mi">2</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">30 </span>                <span class="k">case</span> <span class="mi">0</span><span class="o">:</span> <span class="n">binary</span> <span class="o">=</span> <span class="sc">'0'</span> <span class="o">+</span> <span class="n">binary</span><span class="o">;</span> <span class="k">break</span><span class="o">;</span>
+<span class="lineno">31 </span>                <span class="k">case</span> <span class="mi">1</span><span class="o">:</span> <span class="n">binary</span> <span class="o">=</span> <span class="sc">'1'</span> <span class="o">+</span> <span class="n">binary</span><span class="o">;</span> <span class="k">break</span><span class="o">;</span>
+<span class="lineno">32 </span>            <span class="o">}</span>
+<span class="lineno">33 </span>            <span class="n">number</span> <span class="o">&gt;&gt;=</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno">34 </span>        <span class="o">}</span> <span class="k">while</span> <span class="o">(</span><span class="n">number</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">);</span>
+<span class="lineno">35 </span>
+<span class="lineno">36 </span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The binary representation of "</span> <span class="o">+</span> <span class="n">args</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">+</span> <span class="s">" is "</span> <span class="o">+</span> <span class="n">binary</span><span class="o">);</span>
+<span class="lineno">37 </span>    <span class="o">}</span>
+<span class="lineno">38 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The <a href="#code-listing-8">code listing 3.8</a> is a simulation of playing a game called Lucky Sevens. It is a dice game where the player rolls two dice. If the numbers on the dice add up to seven, he wins $4. If they do not, he loses $1. The game shows how to use control flow in a program as well as the fruitlessness of gambling.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-8"><b>Code listing 3.8: LuckySevens.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+<span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LuckySevens</span> <span class="o">{</span>
+<span class="lineno"> 4 </span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 5 </span>        <span class="n">Scanner</span> <span class="n">in</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">in</span><span class="o">);</span>
+<span class="lineno"> 6 </span>        <span class="n">Random</span> <span class="n">random</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Random</span><span class="o">();</span>
+<span class="lineno"> 7 </span>        <span class="n">String</span> <span class="n">input</span><span class="o">;</span>
+<span class="lineno"> 8 </span>        <span class="kt">int</span> <span class="n">startingCash</span><span class="o">,</span> <span class="n">cash</span><span class="o">,</span> <span class="n">maxCash</span><span class="o">,</span> <span class="n">rolls</span><span class="o">,</span> <span class="n">roll</span><span class="o">;</span>
+<span class="lineno"> 9 </span>
+<span class="lineno">10 </span>        <span class="c1">// Loop until "quit" is input</span>
+<span class="lineno">11 </span>        <span class="k">while</span> <span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">12 </span>            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">"Enter the amount of cash to start with (or \"quit\" to quit): "</span><span class="o">);</span>
+<span class="lineno">13 </span>
+<span class="lineno">14 </span>            <span class="n">input</span> <span class="o">=</span> <span class="n">in</span><span class="o">.</span><span class="na">nextLine</span><span class="o">();</span>
+<span class="lineno">15 </span>
+<span class="lineno">16 </span>            <span class="c1">// Check if user wants to exit</span>
+<span class="lineno">17 </span>            <span class="k">if</span> <span class="o">(</span><span class="n">input</span><span class="o">.</span><span class="na">toLowerCase</span><span class="o">().</span><span class="na">equals</span><span class="o">(</span><span class="s">"quit"</span><span class="o">))</span> <span class="o">{</span>
+<span class="lineno">18 </span>                <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"\tGoodbye."</span><span class="o">);</span>
+<span class="lineno">19 </span>                <span class="n">System</span><span class="o">.</span><span class="na">exit</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+<span class="lineno">20 </span>            <span class="o">}</span>
+<span class="lineno">21 </span>
+<span class="lineno">22 </span>            <span class="c1">// Get number</span>
+<span class="lineno">23 </span>            <span class="k">try</span> <span class="o">{</span>
+<span class="lineno">24 </span>                <span class="n">startingCash</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">input</span><span class="o">);</span>
+<span class="lineno">25 </span>            <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">NumberFormatException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">26 </span>                <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"\tPlease enter a positive integer greater than 0."</span><span class="o">);</span>
+<span class="lineno">27 </span>                <span class="k">continue</span><span class="o">;</span>
+<span class="lineno">28 </span>            <span class="o">}</span>
+<span class="lineno">29 </span>
+<span class="lineno">30 </span>            <span class="c1">// You have to start with some money!</span>
+<span class="lineno">31 </span>            <span class="k">if</span> <span class="o">(</span><span class="n">startingCash</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">32 </span>                <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"\tPlease enter a positive integer greater than 0."</span><span class="o">);</span>
+<span class="lineno">33 </span>                <span class="k">continue</span><span class="o">;</span>
+<span class="lineno">34 </span>            <span class="o">}</span>
+<span class="lineno">35 </span>
+<span class="lineno">36 </span>            <span class="n">cash</span> <span class="o">=</span> <span class="n">startingCash</span><span class="o">;</span>
+<span class="lineno">37 </span>            <span class="n">maxCash</span> <span class="o">=</span> <span class="n">cash</span><span class="o">;</span>
+<span class="lineno">38 </span>            <span class="n">rolls</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno">39 </span>            <span class="n">roll</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno">40 </span>
+<span class="lineno">41 </span>            <span class="c1">// Here is the game loop</span>
+<span class="lineno">42 </span>            <span class="k">for</span> <span class="o">(;</span> <span class="n">cash</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">;</span> <span class="n">rolls</span><span class="o">++)</span> <span class="o">{</span>
+<span class="lineno">43 </span>               <span class="n">roll</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="na">nextInt</span><span class="o">(</span><span class="mi">6</span><span class="o">)</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno">44 </span>               <span class="n">roll</span> <span class="o">+=</span> <span class="n">random</span><span class="o">.</span><span class="na">nextInt</span><span class="o">(</span><span class="mi">6</span><span class="o">)</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno">45 </span>
+<span class="lineno">46 </span>                <span class="k">if</span> <span class="o">(</span><span class="n">roll</span> <span class="o">==</span> <span class="mi">7</span><span class="o">)</span>
+<span class="lineno">47 </span>                    <span class="n">cash</span> <span class="o">+=</span> <span class="mi">4</span><span class="o">;</span>
+<span class="lineno">48 </span>                <span class="k">else</span>
+<span class="lineno">49 </span>                    <span class="n">cash</span> <span class="o">-=</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno">50 </span>
+<span class="lineno">51 </span>                <span class="k">if</span> <span class="o">(</span><span class="n">cash</span> <span class="o">&gt;</span> <span class="n">maxCash</span><span class="o">)</span>
+<span class="lineno">52 </span>                    <span class="n">maxCash</span> <span class="o">=</span> <span class="n">cash</span><span class="o">;</span>
+<span class="lineno">53 </span>            <span class="o">}</span>
+<span class="lineno">54 </span>
+<span class="lineno">55 </span>            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"\tYou start with $"</span> <span class="o">+</span> <span class="n">startingCash</span> <span class="o">+</span> <span class="s">".\n"</span>
+<span class="lineno">56 </span>                    <span class="o">+</span> <span class="s">"\tYou peak at $"</span> <span class="o">+</span> <span class="n">maxCash</span> <span class="o">+</span> <span class="s">".\n"</span>
+<span class="lineno">57 </span>      <span class="o">+</span> <span class="s">"\tAfter "</span> <span class="o">+</span> <span class="n">rolls</span> <span class="o">+</span> <span class="s">" rolls, you run out of cash."</span><span class="o">);</span>
+<span class="lineno">58 </span>        <span class="o">}</span>
+<span class="lineno">59 </span>    <span class="o">}</span>
+<span class="lineno">60 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p><br></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Conditional_blocks.html" title="Conditional blocks"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Conditional_blocks.html" title="Java Programming/Conditional blocks">Conditional blocks</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Loop blocks</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Boolean_expressions.html" title="Java Programming/Boolean expressions">Boolean expressions</a> <a href="Boolean_expressions.html" title="Boolean expressions"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="100% developed"><img alt="100% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/24px-100_percent.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/36px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/48px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1327
+Cached time: 20171010034236
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.256 seconds
+Real time usage: 2.270 seconds
+Preprocessor visited node count: 1602/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 31763/2097152 bytes
+Template argument size: 5149/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 18/500
+Lua time usage: 0.072/10.000 seconds
+Lua memory usage: 695 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 2174.813      1 -total
+ 66.79% 1452.520     14 Template:XExample
+ 25.50%  554.564      5 Template:XCode
+  4.84%  105.201      2 Template:Programming/Navigation
+  1.17%   25.366      1 Template:Java_Programming/LanguageFundamentalsTopic/Nav
+  0.64%   13.863      1 Template:Java_Programming/LanguageFundamentals/Topic
+  0.52%   11.380      3 Template:BookCat
+  0.42%    9.134     20 Template:Stage_short
+  0.39%    8.562      3 Template:BookCat/default
+  0.35%    7.625      1 Template:Navbar
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:276548-0!canonical and timestamp 20171010034234 and revision id 3295229
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Loop_blocks&amp;oldid=3295229">https://en.wikibooks.org/w/index.php?title=Java_Programming/Loop_blocks&amp;oldid=3295229</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FLoop+blocks" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FLoop+blocks" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Loop_blocks.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="/w/index.php?title=Talk:Java_Programming/Loop_blocks&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Loop_blocks&amp;stable=1">Read</a></span></li>
+							<li id="ca-current" class="collapsible selected"><span><a href="/w/index.php?title=Java_Programming/Loop_blocks&amp;stable=0&amp;redirect=no" title="View this page with the pending changes [v]" accesskey="v">Latest draft</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Loop_blocks&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Loop_blocks&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Loop_blocks" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Loop_blocks" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Loop_blocks&amp;oldid=3295229" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Loop_blocks&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q22340861" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FLoop_blocks&amp;id=3295229" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-fr"><a href="https://fr.wikibooks.org/wiki/Programmation_Java/It%C3%A9rations" title="Programmation Java/Itérations – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q22340861#sitelinks-wikibooks" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FLoop+blocks">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FLoop+blocks&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Loop_blocks&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 14:42.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Loop_blocks&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.256","walltime":"2.270","ppvisitednodes":{"value":1602,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":31763,"limit":2097152},"templateargumentsize":{"value":5149,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":18,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00% 2174.813      1 -total"," 66.79% 1452.520     14 Template:XExample"," 25.50%  554.564      5 Template:XCode","  4.84%  105.201      2 Template:Programming/Navigation","  1.17%   25.366      1 Template:Java_Programming/LanguageFundamentalsTopic/Nav","  0.64%   13.863      1 Template:Java_Programming/LanguageFundamentals/Topic","  0.52%   11.380      3 Template:BookCat","  0.42%    9.134     20 Template:Stage_short","  0.39%    8.562      3 Template:BookCat/default","  0.35%    7.625      1 Template:Navbar"]},"scribunto":{"limitreport-timeusage":{"value":"0.072","limit":"10.000"},"limitreport-memusage":{"value":711593,"limit":52428800}},"cachereport":{"origin":"mw1327","timestamp":"20171010034236","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":89,"wgHostname":"mw1275"});});</script>
+	</body>
+</html>

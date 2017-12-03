@@ -1,0 +1,673 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Overloading and Overriding - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Overloading_Methods_and_Constructors","wgTitle":"Java Programming/Overloading Methods and Constructors","wgCurRevisionId":3295237,"wgRevisionId":3295237,"wgArticleId":90088,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Overloading_Methods_and_Constructors","wgRelevantArticleId":90088,"wgRequestId":"We6uTwpAIDEAAI9FonUAAABL","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3295237,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q37991525","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Overloading_Methods_and_Constructors.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Overloading_Methods_and_Constructors rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Overloading and Overriding</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span><div id="mw-fr-revisiontag" class="flaggedrevs_basic flaggedrevs_draft_notsynced plainlinks noprint nomobile"><img class="flaggedrevs-icon" src="/w/extensions/FlaggedRevs/frontend/modules/img/1.png" alt="Unreviewed changes are displayed on this page" title="Unreviewed changes are displayed on this page">The <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;stable=1">latest reviewed version</a> was <a class="external text" href="//en.wikibooks.org/w/index.php?title=Special:Log&amp;type=review&amp;page=Java_Programming/Overloading_Methods_and_Constructors">checked</a> on <i>17 September 2017</i>. There are <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;oldid=3295237&amp;diff=cur&amp;diffonly=0">template/file changes</a> awaiting review.</div>
+</div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Interfaces.html" title="Interfaces"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Interfaces.html" title="Java Programming/Interfaces">Interfaces</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Overloading Methods and Constructors</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Object_Lifecycle.html" title="Java Programming/Object Lifecycle">Object Lifecycle</a> <a href="Object_Lifecycle.html" title="Object Lifecycle"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="Classes_and_Objects.html" title="Java Programming/Classes and Objects">Classes and Objects</a></b> topic: <span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/ClassesAndObjectsTopic" class="mw-redirect" title="Template:Java Programming/ClassesAndObjectsTopic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/ClassesAndObjectsTopic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/ClassesAndObjectsTopic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/ClassesAndObjectsTopic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Nov 9, 2012"><img alt="100% developed&#160; as of Nov 9, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Defining_Classes.html" title="Java Programming/Defining Classes">Defining classes</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Dec 5, 2013"><img alt="100% developed&#160; as of Dec 5, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Inheritance.html" title="Java Programming/Inheritance">Inheritance</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Dec 5, 2013"><img alt="100% developed&#160; as of Dec 5, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Interfaces.html" title="Java Programming/Interfaces">Interfaces</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jun 4, 2013"><img alt="75% developed&#160; as of Jun 4, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">Overloading methods and constructors</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Nov 20, 2013"><img alt="75% developed&#160; as of Nov 20, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Object_Lifecycle.html" title="Java Programming/Object Lifecycle">Object Lifecycle</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Nov 20, 2013"><img alt="100% developed&#160; as of Nov 20, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Scope.html" title="Java Programming/Scope">Scope</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Oct 27, 2006"><img alt="75% developed&#160; as of Oct 27, 2006" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Nested_Classes.html" title="Java Programming/Nested Classes">Nested classes</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Dec 5, 2013"><img alt="100% developed&#160; as of Dec 5, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Generics.html" title="Java Programming/Generics">Generics</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Method_overloading">Method overloading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;action=edit&amp;section=1" title="Edit section: Method overloading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In a class, there can be several methods with the same name. However they must have a different <i>signature</i>. The signature of a method is comprised of its name, its parameter types and the order of its parameters. The signature of a method is <b>not</b> comprised of its return type nor its visibility nor the exceptions it may throw. The practice of defining two or more methods within the same class that share the same name but have different parameters is called <i>overloading methods</i>.</p>
+<p>Methods with the same name in a class are called <i>overloaded methods</i>. Overloading methods offers no specific benefit to the JVM but it is useful to the programmer to have several methods do the same things but with different parameters. For example, we may have the operation <code>runAroundThe</code> represented as two methods with the same name, but different input parameter types:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-22"><b>Code section 4.22: Method overloading.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">runAroundThe</span><span class="o">(</span><span class="n">Building</span> <span class="n">block</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="o">...</span>
+<span class="lineno">3 </span><span class="o">}</span>
+<span class="lineno">4 </span>
+<span class="lineno">5 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">runAroundThe</span><span class="o">(</span><span class="n">Park</span> <span class="n">park</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">6 </span>  <span class="o">...</span>
+<span class="lineno">7 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>One type can be the subclass of the other:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-10"><b>Code listing 4.11: ClassName.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ClassName</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">sayClassName</span><span class="o">(</span><span class="n">Object</span> <span class="n">aObject</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 4 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Object"</span><span class="o">);</span>
+<span class="lineno"> 5 </span>  <span class="o">}</span>
+<span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">sayClassName</span><span class="o">(</span><span class="n">String</span> <span class="n">aString</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 8 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"String"</span><span class="o">);</span>
+<span class="lineno"> 9 </span>  <span class="o">}</span>
+<span class="lineno">10 </span>
+<span class="lineno">11 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">12 </span><span class="hll">    <span class="n">String</span> <span class="n">aString</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">();</span>
+</span><span class="lineno">13 </span><span class="hll">    <span class="n">sayClassName</span><span class="o">(</span><span class="n">aString</span><span class="o">);</span>
+</span><span class="lineno">14 </span>
+<span class="lineno">15 </span><span class="hll">    <span class="n">Object</span> <span class="n">aObject</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">();</span>
+</span><span class="lineno">16 </span><span class="hll">    <span class="n">sayClassName</span><span class="o">(</span><span class="n">aObject</span><span class="o">);</span>
+</span><span class="lineno">17 </span>  <span class="o">}</span>
+<span class="lineno">18 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Console for Code listing 4.11</b>
+<pre style="background-color:#000; color:#fff;">
+String
+Object
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>Although both methods would be fit to call the method with the <code>String</code> parameter, it is the method with the nearest type that will be called instead. To be more accurate, it will call the method whose parameter type is a subclass of the parameter type of the other method. So, <code>aObject</code> will output <code>Object</code>. Beware! The parameter type is defined by the <i>declared</i> type of an object, <b>not</b> its <i>instantiated</i> type!</p>
+<p>The following two method definitions are valid</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-23"><b>Code section 4.23: Method overloading with the type order.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">logIt</span><span class="o">(</span><span class="n">String</span> <span class="n">param</span><span class="o">,</span> <span class="n">Error</span> <span class="n">err</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="o">...</span>
+<span class="lineno">3 </span><span class="o">}</span>
+<span class="lineno">4 </span>
+<span class="lineno">5 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">logIt</span><span class="o">(</span><span class="n">Error</span> <span class="n">err</span><span class="o">,</span> <span class="n">String</span> <span class="n">param</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">6 </span>  <span class="o">...</span>
+<span class="lineno">7 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>because the type order is different. If both input parameters were type String, that would be a problem since the compiler would not be able to distinguish between the two:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Nuvola_apps_important.svg" class="image" title="Warning"><img alt="Warning" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/32px-Nuvola_apps_important.svg.png" width="32" height="27" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/48px-Nuvola_apps_important.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/64px-Nuvola_apps_important.svg.png" data-file-width="600" data-file-height="500"></a></td>
+<td style="background-color:#fff0f0; border-left: 4px solid red; padding-left: 6px;"><span id="code-section-24" style="color: red;"><b>Code section 4.24: Bad method overloading.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">logIt</span><span class="o">(</span><span class="n">String</span> <span class="n">param</span><span class="o">,</span> <span class="n">String</span> <span class="n">err</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="o">...</span>
+<span class="lineno">3 </span><span class="o">}</span>
+<span class="lineno">4 </span>
+<span class="lineno">5 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">logIt</span><span class="o">(</span><span class="n">String</span> <span class="n">err</span><span class="o">,</span> <span class="n">String</span> <span class="n">param</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">6 </span>  <span class="o">...</span>
+<span class="lineno">7 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The compiler would give an error for the following method definitions as well:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Nuvola_apps_important.svg" class="image" title="Warning"><img alt="Warning" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/32px-Nuvola_apps_important.svg.png" width="32" height="27" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/48px-Nuvola_apps_important.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/64px-Nuvola_apps_important.svg.png" data-file-width="600" data-file-height="500"></a></td>
+<td style="background-color:#fff0f0; border-left: 4px solid red; padding-left: 6px;"><span id="code-section-25" style="color: red;"><b>Code section 4.25: Another bad method overloading.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">logIt</span><span class="o">(</span><span class="n">String</span> <span class="n">param</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="o">...</span>
+<span class="lineno">3 </span><span class="o">}</span>
+<span class="lineno">4 </span>
+<span class="lineno">5 </span><span class="kd">public</span> <span class="n">String</span> <span class="nf">logIt</span><span class="o">(</span><span class="n">String</span> <span class="n">param</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">6 </span>  <span class="n">String</span> <span class="n">retValue</span><span class="o">;</span>
+<span class="lineno">7 </span>  <span class="o">...</span>
+<span class="lineno">8 </span>  <span class="k">return</span> <span class="n">retValue</span><span class="o">;</span>
+<span class="lineno">9 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Note, the return type is not part of the unique signature. Why not? The reason is that a method can be called without assigning its return value to a variable. This feature came from C and C++. So for the call:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Nuvola_apps_important.svg" class="image" title="Warning"><img alt="Warning" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/32px-Nuvola_apps_important.svg.png" width="32" height="27" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/48px-Nuvola_apps_important.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/64px-Nuvola_apps_important.svg.png" data-file-width="600" data-file-height="500"></a></td>
+<td style="background-color:#fff0f0; border-left: 4px solid red; padding-left: 6px;"><span id="code-section-26" style="color: red;"><b>Code section 4.26: Ambiguous method call.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">logIt</span><span class="o">(</span><span class="n">msg</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>the compiler would not know which method to call. It is also the case for the thrown exceptions.</p>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Test your knowledge</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<p><b>Question 4.6</b>: Which methods of the <code>Question6</code> class will cause compile errors?</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Question6.java</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Question6</span> <span class="o">{</span>
+<span class="lineno"> 2 </span> 
+<span class="lineno"> 3 </span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">example1</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno"> 4 </span>  <span class="o">}</span>
+<span class="lineno"> 5 </span>
+<span class="lineno"> 6 </span>  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">example1</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno"> 7 </span>  <span class="o">}</span>
+<span class="lineno"> 8 </span>
+<span class="lineno"> 9 </span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">example2</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">10 </span>  <span class="o">}</span>
+<span class="lineno">11 </span>
+<span class="lineno">12 </span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">example2</span><span class="o">(</span><span class="kt">int</span> <span class="n">y</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">13 </span>  <span class="o">}</span>
+<span class="lineno">14 </span>
+<span class="lineno">15 </span>  <span class="kd">private</span> <span class="kt">void</span> <span class="nf">example3</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">16 </span>  <span class="o">}</span>
+<span class="lineno">17 </span>
+<span class="lineno">18 </span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">example3</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">19 </span>  <span class="o">}</span>
+<span class="lineno">20 </span>
+<span class="lineno">21 </span>  <span class="kd">public</span> <span class="n">String</span> <span class="nf">example4</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">22 </span>    <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+<span class="lineno">23 </span>  <span class="o">}</span>
+<span class="lineno">24 </span>
+<span class="lineno">25 </span>  <span class="kd">public</span> <span class="n">String</span> <span class="nf">example4</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">26 </span>    <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+<span class="lineno">27 </span>  <span class="o">}</span>
+<span class="lineno">28 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Answer</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Question6.java</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Question6</span> <span class="o">{</span>
+<span class="lineno"> 2 </span> 
+<span class="lineno"> 3 </span><span class="hll">  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">example1</span><span class="o">()</span> <span class="o">{</span>
+</span><span class="lineno"> 4 </span>  <span class="o">}</span>
+<span class="lineno"> 5 </span>
+<span class="lineno"> 6 </span><span class="hll">  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">example1</span><span class="o">()</span> <span class="o">{</span>
+</span><span class="lineno"> 7 </span>  <span class="o">}</span>
+<span class="lineno"> 8 </span>
+<span class="lineno"> 9 </span><span class="hll">  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">example2</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">10 </span>  <span class="o">}</span>
+<span class="lineno">11 </span>
+<span class="lineno">12 </span><span class="hll">  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">example2</span><span class="o">(</span><span class="kt">int</span> <span class="n">y</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">13 </span>  <span class="o">}</span>
+<span class="lineno">14 </span>
+<span class="lineno">15 </span><span class="hll">  <span class="kd">private</span> <span class="kt">void</span> <span class="nf">example3</span><span class="o">()</span> <span class="o">{</span>
+</span><span class="lineno">16 </span>  <span class="o">}</span>
+<span class="lineno">17 </span>
+<span class="lineno">18 </span><span class="hll">  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">example3</span><span class="o">()</span> <span class="o">{</span>
+</span><span class="lineno">19 </span>  <span class="o">}</span>
+<span class="lineno">20 </span>
+<span class="lineno">21 </span>  <span class="kd">public</span> <span class="n">String</span> <span class="nf">example4</span><span class="o">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">22 </span>    <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+<span class="lineno">23 </span>  <span class="o">}</span>
+<span class="lineno">24 </span>
+<span class="lineno">25 </span>  <span class="kd">public</span> <span class="n">String</span> <span class="nf">example4</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">26 </span>    <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+<span class="lineno">27 </span>  <span class="o">}</span>
+<span class="lineno">28 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The <code>example1</code>, <code>example2</code> and <code>example3</code> methods will cause compile errors. The <code>example1</code> methods cannot co-exist because they have the same signature (remember, return type is <b>not</b> part of the signature). The <code>example2</code> methods cannot co-exist because the names of the parameters are not part of the signature. The <code>example3</code> methods cannot co-exist because the visibility of the methods are not part of the signature. The <code>example4</code> methods can co-exist, because they have different method signatures.</p>
+</div>
+</div>
+</div>
+</div>
+<h2><span class="mw-headline" id="Variable_Argument">Variable Argument</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;action=edit&amp;section=2" title="Edit section: Variable Argument">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Instead of overloading, you can use a dynamic number of arguments. After the last parameter, you can pass optional unlimited parameters of the same type. These parameters are defined by adding a last parameter and adding <code>...</code> after its type. The dynamic arguments will be received as an array:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-27"><b>Code section 4.27: Variable argument.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="hll">  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">registerPersonInAgenda</span><span class="o">(</span><span class="n">String</span> <span class="n">firstName</span><span class="o">,</span> <span class="n">String</span> <span class="n">lastName</span><span class="o">,</span> <span class="n">Date</span><span class="o">...</span> <span class="n">meeting</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno"> 2 </span>    <span class="n">String</span><span class="o">[]</span> <span class="n">person</span> <span class="o">=</span> <span class="o">{</span><span class="n">firstName</span><span class="o">,</span> <span class="n">lastName</span><span class="o">};</span>
+<span class="lineno"> 3 </span>    <span class="n">lastPosition</span> <span class="o">=</span> <span class="n">lastPosition</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno"> 4 </span>    <span class="n">contactArray</span><span class="o">[</span><span class="n">lastPosition</span><span class="o">]</span> <span class="o">=</span> <span class="n">person</span><span class="o">;</span>
+<span class="lineno"> 5 </span>
+<span class="lineno"> 6 </span><span class="hll">    <span class="k">if</span> <span class="o">(</span><span class="n">meeting</span><span class="o">.</span><span class="na">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno"> 7 </span><span class="hll">      <span class="n">Date</span><span class="o">[]</span> <span class="n">temporaryMeetings</span> <span class="o">=</span> <span class="n">registeredMeetings</span><span class="o">.</span><span class="na">length</span> <span class="o">+</span> <span class="n">meeting</span><span class="o">.</span><span class="na">length</span><span class="o">;</span>
+</span><span class="lineno"> 8 </span><span class="hll">      <span class="k">for</span> <span class="o">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">registeredMeetings</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span><span class="lineno"> 9 </span><span class="hll">        <span class="n">temporaryMeetings</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">registeredMeetings</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+</span><span class="lineno">10 </span><span class="hll">      <span class="o">}</span>
+</span><span class="lineno">11 </span><span class="hll">      <span class="k">for</span> <span class="o">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">meeting</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span><span class="lineno">12 </span><span class="hll">        <span class="n">temporaryMeetings</span><span class="o">[</span><span class="n">registeredMeetings</span><span class="o">.</span><span class="na">length</span> <span class="o">+</span> <span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">meeting</span><span class="o">[</span><span class="n">i</span><span class="o">];</span>
+</span><span class="lineno">13 </span><span class="hll">      <span class="o">}</span>
+</span><span class="lineno">14 </span><span class="hll">      <span class="n">registeredMeetings</span> <span class="o">=</span> <span class="n">temporaryMeetings</span><span class="o">;</span>
+</span><span class="lineno">15 </span><span class="hll">    <span class="o">}</span>
+</span><span class="lineno">16 </span>  <span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The above method can be called with a dynamic number of arguments, for example:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-27"><b>Code section 4.27: Constructor calls.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">registerPersonInAgenda</span><span class="o">(</span><span class="s">"John"</span><span class="o">,</span> <span class="s">"Doe"</span><span class="o">);</span>
+<span class="lineno">2 </span><span class="n">registerPersonInAgenda</span><span class="o">(</span><span class="s">"Mark"</span><span class="o">,</span> <span class="s">"Lee"</span><span class="o">,</span> <span class="k">new</span> <span class="n">Date</span><span class="o">(),</span> <span class="k">new</span> <span class="n">Date</span><span class="o">());</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>This feature was not available before Java 1.5 .</p>
+<h2><span class="mw-headline" id="Constructor_overloading">Constructor overloading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;action=edit&amp;section=3" title="Edit section: Constructor overloading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The constructor can be overloaded. You can define more than one constructor with different parameters. For example:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-12"><b>Code listing 4.12: Constructors.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyClass</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span>  <span class="kd">private</span> <span class="n">String</span> <span class="n">memberField</span><span class="o">;</span>
+<span class="lineno"> 4 </span> 
+<span class="lineno"> 5 </span>  <span class="cm">/**</span>
+<span class="lineno"> 6 </span><span class="cm">   * MyClass Constructor, there is no input parameter</span>
+<span class="lineno"> 7 </span><span class="cm">   */</span>
+<span class="lineno"> 8 </span><span class="hll">  <span class="kd">public</span> <span class="nf">MyClass</span><span class="o">()</span> <span class="o">{</span>
+</span><span class="lineno"> 9 </span><span class="hll">     <span class="o">...</span>
+</span><span class="lineno">10 </span><span class="hll">  <span class="o">}</span>
+</span><span class="lineno">11 </span> 
+<span class="lineno">12 </span>  <span class="cm">/**</span>
+<span class="lineno">13 </span><span class="cm">   * MyClass Constructor, there is one input parameter</span>
+<span class="lineno">14 </span><span class="cm">   */</span>
+<span class="lineno">15 </span><span class="hll">   <span class="kd">public</span> <span class="nf">MyClass</span><span class="o">(</span><span class="n">String</span> <span class="n">param1</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">16 </span><span class="hll">     <span class="n">memberField</span> <span class="o">=</span> <span class="n">param1</span><span class="o">;</span>
+</span><span class="lineno">17 </span><span class="hll">     <span class="o">...</span>
+</span><span class="lineno">18 </span><span class="hll">  <span class="o">}</span>
+</span><span class="lineno">19 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>In the <a href="#code-listing-12">code listing 4.12</a>, we defined two constructors, one with no input parameter, and one with one input parameter. You may ask which constructor will be called. Its depends how the object is created with the <code><a href="Keywords\new.html" title="Java Programming/Keywords/new"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">new</font></a></code> keyword. See below:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-29"><b>Code section 4.29: Constructor calls.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="c1">// The constructor with no input parameter will be called</span>
+<span class="lineno">2 </span><span class="n">MyClass</span> <span class="n">obj1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyClass</span><span class="o">();</span>
+<span class="lineno">3 </span>
+<span class="lineno">4 </span><span class="c1">// The constructor with one input param. will be called</span>
+<span class="lineno">5 </span><span class="n">MyClass</span> <span class="n">obj2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyClass</span><span class="o">(</span><span class="s">"Init Value"</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>In the <a href="#code-section-29">code section 4.29</a>, we created two objects from the same class, or we can also say that <code>obj1</code> and <code>obj2</code> both have the same type. The difference between the two is that in the first one the <code>memberField</code> field is not initialized, in the second one that is initialized to <code>"Init Value"</code>. A constructor may also be called from another constructor, see below:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-13"><b>Code listing 4.13: Constructor pooling.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyClass</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span>  <span class="kd">private</span> <span class="n">String</span> <span class="n">memberField</span><span class="o">;</span>
+<span class="lineno"> 4 </span> 
+<span class="lineno"> 5 </span>  <span class="cm">/**</span>
+<span class="lineno"> 6 </span><span class="cm">   * MyClass Constructor, there is no input parameter</span>
+<span class="lineno"> 7 </span><span class="cm">   */</span>
+<span class="lineno"> 8 </span>  <span class="kd">public</span> <span class="nf">MyClass</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno"> 9 </span><span class="hll">    <span class="n">MyClass</span><span class="o">(</span><span class="s">"Default Value"</span><span class="o">);</span>
+</span><span class="lineno">10 </span>  <span class="o">}</span>
+<span class="lineno">11 </span> 
+<span class="lineno">12 </span>  <span class="cm">/**</span>
+<span class="lineno">13 </span><span class="cm">   * MyClass Constructor, there is one input parameter</span>
+<span class="lineno">14 </span><span class="cm">   */</span>
+<span class="lineno">15 </span>  <span class="kd">public</span> <span class="nf">MyClass</span><span class="o">(</span><span class="n">String</span> <span class="n">param1</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">16 </span>    <span class="n">memberField</span> <span class="o">=</span> <span class="n">param1</span><span class="o">;</span>
+<span class="lineno">17 </span>    <span class="o">...</span>
+<span class="lineno">18 </span>  <span class="o">}</span>
+<span class="lineno">19 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>In the <a href="#code-listing-13">code listing 4.13</a>, the constructor with no input parameter calls the other constructor with the default initial value. This call must be the first instruction of a constructor or else a compiler error will occur. The code gives an option to the user, to create the object with the default value or create the object with a specified value. The first constructor could have been written using the <code><a href="Keywords\this.html" title="Java Programming/Keywords/this"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">this</font></a></code> keyword as well:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-30"><b>Code section 4.30: Another constructor pooling.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span>  <span class="kd">public</span> <span class="nf">MyClass</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">2 </span><span class="hll">    <span class="k">this</span><span class="o">(</span><span class="s">"Default Value"</span><span class="o">);</span>
+</span><span class="lineno">3 </span>  <span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Such a call reduces the code repetition.</p>
+<h2><span class="mw-headline" id="Method_overriding">Method overriding</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;action=edit&amp;section=4" title="Edit section: Method overriding">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>To easily remember what can be done in method overriding, keep in mind that all you can do in an object of a class, you can also do in an object of a subclass, only the behavior can change. A subclass should be <i>covariant</i>.</p>
+<p>Although a method signature has to be unique inside a class, the same method signature can be defined in different classes. If we define a method that exists in the super class then we override the super class method. It is called <i>method overriding</i>. This is different from method overloading. Method overloading happens with methods with the same name but different signature. Method overriding happens with methods with the same name and same signature between inherited classes.</p>
+<p>The return type can cause the same problem we saw above. When we override a super class method the return type also must be the same. If that is not the same, the compiler will give you an error.</p>
+<p>Beware! If a class declares two public methods with the same name, and a subclass overrides one of them, the subclass still inherits the other method. In this respect, the Java programming language differs from C++.</p>
+<p>Method overriding is related to <i>dynamic linking</i>, or <i>runtime binding</i>. In order for the Method Overriding to work, the method call that is going to be called can not be determined at compilation time. It will be decided at runtime, and will be looked up in a table.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-31"><b>Code section 4.31: Runtime binding.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="n">MyClass</span> <span class="n">obj</span><span class="o">;</span>
+<span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span><span class="k">if</span> <span class="o">(</span><span class="k">new</span> <span class="n">java</span><span class="o">.</span><span class="na">util</span><span class="o">.</span><span class="na">Calendar</span><span class="o">().</span><span class="na">get</span><span class="o">(</span><span class="n">java</span><span class="o">.</span><span class="na">util</span><span class="o">.</span><span class="na">Calendar</span><span class="o">.</span><span class="na">AM_PM</span><span class="o">)</span> <span class="o">==</span> <span class="n">java</span><span class="o">.</span><span class="na">util</span><span class="o">.</span><span class="na">Calendar</span><span class="o">.</span><span class="na">AM</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 4 </span>  <span class="c1">// Executed during a morning</span>
+<span class="lineno"> 5 </span>  <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SubOfMyClass</span><span class="o">();</span>
+<span class="lineno"> 6 </span><span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+<span class="lineno"> 7 </span>  <span class="c1">// Executed during an afternoon</span>
+<span class="lineno"> 8 </span>  <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyClass</span><span class="o">();</span>
+<span class="lineno"> 9 </span><span class="o">}</span>
+<span class="lineno">10 </span> 
+<span class="lineno">11 </span><span class="hll"><span class="n">obj</span><span class="o">.</span><span class="na">myMethod</span><span class="o">();</span>
+</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>In the <a href="#code-section-31">code section 4.31</a>, the expression at line 3 is true if it is executed during a morning and false if it is executed during an afternoon. Thus, the instance of <code>obj</code> will be a <code>MyClass</code> or a <code>SubOfMyClass</code> depending on the execution time. So it is impossible to determine the method address at compile time. Because the <code>obj</code> reference can point to an object and all its sub objects, and that will be known only at runtime, a table is kept with all the possible method addresses to be called. Do not confuse:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-32"><b>Code section 4.32: Declared type and instantiated type.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">obj</span><span class="o">.</span><span class="na">myMethod</span><span class="o">(</span><span class="n">myParameter</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The implementation of this method is searched using the <u>instantiated</u> type of the called object (<code>obj</code>) and the <u>declared</u> type of the parameter object (<code>myParameter</code>).</p>
+<p>Also another rule is that when you do an override, the visibility of the new method that overrides the super class method can not be reduced. The visibility can be increased, however. So if the super class method visibility is <code><a href="Keywords\public.html" title="Java Programming/Keywords/public"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">public</font></a></code>, the override method can not be <code><a href="Keywords\package.html" title="Java Programming/Keywords/package"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">package</font></a></code>, or <code><a href="Keywords\private.html" title="Java Programming/Keywords/private"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">private</font></a></code>. An override method must throw the same exceptions as the super class, or their subexceptions.</p>
+<p><code>super</code> references to the parent class (i.e. <code>super.someMethod()</code>). It can be used in a subclass to access inherited methods that the subclass has overridden or inherited fields that the subclass has hidden.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Bombilla_amarilla_-_yellow_Edison_lamp.svg" class="image" title="Note"><img alt="Note" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/30px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" width="30" height="30" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/45px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/60px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" data-file-width="200" data-file-height="200"></a></td>
+<td style="background-color:#fffff0; border-left: 4px solid yellow; padding-left: 6px;">A common mistake is to think that if we can override methods, we could also override member variables. This is not the case, as it is useless. You can redefine a variable that is private in the super class as such a variable is not visible.</td>
+</tr>
+</table>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="75% developed"><img alt="75% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/24px-75_percent.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/36px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/48px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></div>
+<div style="clear: both"></div>
+<table style="background: #ffd; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 60%; margin: auto;" class="notice noprint notice-todo">
+<tr>
+<td style="width: 58px;">
+<div class="floatleft"><img alt="Clipboard" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/45px-Clipboard.svg.png" width="45" height="45" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/68px-Clipboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/90px-Clipboard.svg.png" data-file-width="48" data-file-height="48"></div>
+</td>
+<td>
+<p><b>To do:</b><br>
+Add some exercises like the ones in <a href="Variables.html#Kinds_of_variables" title="Java Programming/Variables">Variables</a></p>
+</td>
+</tr>
+</table>
+<div style="clear: both"></div>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Interfaces.html" title="Interfaces"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Interfaces.html" title="Java Programming/Interfaces">Interfaces</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Overloading Methods and Constructors</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Object_Lifecycle.html" title="Java Programming/Object Lifecycle">Object Lifecycle</a> <a href="Object_Lifecycle.html" title="Object Lifecycle"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1181
+Cached time: 20171010042708
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.208 seconds
+Real time usage: 0.285 seconds
+Preprocessor visited node count: 973/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 21163/2097152 bytes
+Template argument size: 3669/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 40/500
+Lua time usage: 0.106/10.000 seconds
+Lua memory usage: 778 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  219.602      1 -total
+ 72.15%  158.446      2 Template:Programming/Navigation
+  7.27%   15.963      1 Template:Java_Programming/ClassesAndObjectsTopic/Nav
+  5.36%   11.769      3 Template:BookCat
+  4.19%    9.202      3 Template:BookCat/default
+  3.41%    7.480      1 Template:Java_Programming/ClassesAndObjects/Topic
+  3.17%    6.963      8 Template:XExample
+  2.94%    6.455      3 Template:BOOKCATEGORY
+  2.76%    6.071      1 Template:Navbar
+  2.41%    5.287      1 Template:Status
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:90088-0!canonical and timestamp 20171010042708 and revision id 3295237
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;oldid=3295237">https://en.wikibooks.org/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;oldid=3295237</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FOverloading+Methods+and+Constructors" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FOverloading+Methods+and+Constructors" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Overloading_Methods_and_Constructors.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="/w/index.php?title=Talk:Java_Programming/Overloading_Methods_and_Constructors&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;stable=1">Read</a></span></li>
+							<li id="ca-current" class="collapsible selected"><span><a href="/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;stable=0&amp;redirect=no" title="View this page with the pending changes [v]" accesskey="v">Latest draft</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Overloading_Methods_and_Constructors" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Overloading_Methods_and_Constructors" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;oldid=3295237" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q37991525" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FOverloading_Methods_and_Constructors&amp;id=3295237" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q37991525#sitelinks-wikibooks" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FOverloading+Methods+and+Constructors">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FOverloading+Methods+and+Constructors&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 14:42.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Overloading_Methods_and_Constructors&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.208","walltime":"0.285","ppvisitednodes":{"value":973,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":21163,"limit":2097152},"templateargumentsize":{"value":3669,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":40,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  219.602      1 -total"," 72.15%  158.446      2 Template:Programming/Navigation","  7.27%   15.963      1 Template:Java_Programming/ClassesAndObjectsTopic/Nav","  5.36%   11.769      3 Template:BookCat","  4.19%    9.202      3 Template:BookCat/default","  3.41%    7.480      1 Template:Java_Programming/ClassesAndObjects/Topic","  3.17%    6.963      8 Template:XExample","  2.94%    6.455      3 Template:BOOKCATEGORY","  2.76%    6.071      1 Template:Navbar","  2.41%    5.287      1 Template:Status"]},"scribunto":{"limitreport-timeusage":{"value":"0.106","limit":"10.000"},"limitreport-memusage":{"value":796241,"limit":52428800}},"cachereport":{"origin":"mw1181","timestamp":"20171010042708","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":94,"wgHostname":"mw1328"});});</script>
+	</body>
+</html>

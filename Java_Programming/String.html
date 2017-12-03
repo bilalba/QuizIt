@@ -1,0 +1,898 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>String - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/API/java.lang.String","wgTitle":"Java Programming/API/java.lang.String","wgCurRevisionId":3241519,"wgRevisionId":3241519,"wgArticleId":85041,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages with deep filing","Book:Java Programming","Book:Java Programming/API"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/API/java.lang.String","wgRelevantArticleId":85041,"wgRequestId":"We71AwpAMFkAABJ22MAAAABL","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3241519,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="java.lang.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_API_java_lang_String rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">String</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\..\Java_Programming.html" title="Java Programming">Java Programming</a></span><div id="mw-fr-revisiontag" class="flaggedrevs_basic flaggedrevs_draft_notsynced plainlinks noprint nomobile"><img class="flaggedrevs-icon" src="/w/extensions/FlaggedRevs/frontend/modules/img/1.png" alt="Unreviewed changes are displayed on this page" title="Unreviewed changes are displayed on this page">The <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/API/java.lang.String&amp;stable=1">latest reviewed version</a> was <a class="external text" href="//en.wikibooks.org/w/index.php?title=Special:Log&amp;type=review&amp;page=Java_Programming/API/java.lang.String">checked</a> on <i>4 July 2017</i>. There are <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/API/java.lang.String&amp;oldid=3241519&amp;diff=cur&amp;diffonly=0">template/file changes</a> awaiting review.</div>
+</div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table width="100%" style="border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="/wiki/File:Navigation_Left_Arrow.svg" class="image"><img alt="Navigation Left Arrow.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="..\Methods.html" title="Java Programming/Methods">Methods</a></td>
+<td style="text-align:center; width:34%;"><a href="..\..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>String</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="..\Classes,_Objects_and_Types.html" title="Java Programming/Classes, Objects and Types">Classes, Objects and Types</a> <a href="/wiki/File:Navigation_Right_Arrow.svg" class="image"><img alt="Navigation Right Arrow.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="..\Language_Fundamentals.html" title="Java Programming/Language Fundamentals">Language Fundamentals</a></b> topic: <span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/LanguageFundamentalsTopic" class="mw-redirect" title="Template:Java Programming/LanguageFundamentalsTopic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/LanguageFundamentalsTopic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/LanguageFundamentalsTopic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/LanguageFundamentalsTopic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Dec 31, 2012"><img alt="100% developed&#160; as of Dec 31, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Statements.html" title="Java Programming/Statements">Statements</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Conditional_blocks.html" title="Java Programming/Conditional blocks">Conditional blocks</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Loop_blocks.html" title="Java Programming/Loop blocks">Loop blocks</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Boolean_expressions.html" title="Java Programming/Boolean expressions">Boolean expressions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Feb 16, 2010"><img alt="100% developed&#160; as of Feb 16, 2010" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Variables.html" title="Java Programming/Variables">Variables</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Primitive_Types.html" title="Java Programming/Primitive Types">Primitive Types</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Arithmetic_expressions.html" title="Java Programming/Arithmetic expressions">Arithmetic expressions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Literals.html" title="Java Programming/Literals">Literals</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Methods.html" title="Java Programming/Methods">Methods</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">String</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Classes,_Objects_and_Types.html" title="Java Programming/Classes, Objects and Types">Objects</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Jul 5, 2012"><img alt="100% developed&#160; as of Jul 5, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Packages.html" title="Java Programming/Packages">Packages</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Arrays.html" title="Java Programming/Arrays">Arrays</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Mathematical_functions.html" title="Java Programming/Mathematical functions">Mathematical functions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Large_numbers.html" title="Java Programming/Large numbers">Large numbers</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Random_numbers.html" title="Java Programming/Random numbers">Random numbers</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Apr 8, 2013"><img alt="100% developed&#160; as of Apr 8, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Unicode.html" title="Java Programming/Unicode">Unicode</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Apr 8, 2013"><img alt="100% developed&#160; as of Apr 8, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Comments.html" title="Java Programming/Comments">Comments</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Sep 27, 2007"><img alt="100% developed&#160; as of Sep 27, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Keywords.html" title="Java Programming/Keywords">Keywords</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Aug 6, 2013"><img alt="100% developed&#160; as of Aug 6, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="..\Coding_conventions.html" title="Java Programming/Coding conventions">Coding conventions</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p><br>
+<code><a class="mw-selflink selflink">String</a></code> is a class built into the Java language defined in the <code>java.lang</code> package. It represents character strings. Strings are ubiquitous in Java. Study the <code>String</code> class and its methods carefully. It will serve you well to know how to manipulate them skillfully. <a href="..\Literals.html#String_Literals" title="Java Programming/Literals">String literals</a> in Java programs, such as "abc", are implemented as instances of this class like this:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 3.81: String example.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"This is string literal"</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>On the right hand side a String object is created represented by the string literal. Its object reference is assigned to the <code>str</code> variable.</p>
+<h2><span class="mw-headline" id="Immutability">Immutability</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;action=edit&amp;section=1" title="Edit section: Immutability">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Strings are <i>immutable</i>; that is, they cannot be modified once created. Whenever it looks as if a String object was modified actually a new String object was created. For instance, the <code>String.trim()</code> method returns the string with leading and trailing whitespace removed. Actually, it creates a new trimmed string and then returns it. Pay attention on what happens in <a href="#code-section-82">Code section 3.82</a>:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-82"><b>Code section 3.82: Immutability.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">String</span> <span class="n">badlyCutText</span> <span class="o">=</span> <span class="s">"     Java is great.     "</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">badlyCutText</span><span class="o">);</span>
+<span class="lineno">3 </span>
+<span class="lineno">4 </span><span class="hll"><span class="n">badlyCutText</span><span class="o">.</span><span class="na">trim</span><span class="o">();</span>
+</span><span class="lineno">5 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">badlyCutText</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 3.82</b>
+<pre style="background-color:#000; color:#fff;">
+     Java is great.    
+     Java is great.    
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>The <code>trim()</code> method call does not modify the object so nothing happens. It creates a new trimmed string and then throws it away.</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-83"><b>Code section 3.83: Assignment.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">String</span> <span class="n">badlyCutText</span> <span class="o">=</span> <span class="s">"     Java is great.     "</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">badlyCutText</span><span class="o">);</span>
+<span class="lineno">3 </span>
+<span class="lineno">4 </span><span class="hll"><span class="n">badlyCutText</span> <span class="o">=</span> <span class="n">badlyCutText</span><span class="o">.</span><span class="na">trim</span><span class="o">();</span>
+</span><span class="lineno">5 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">badlyCutText</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 3.83</b>
+<pre style="background-color:#000; color:#fff;">
+     Java is great.    
+Java is great.
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>The returned string is assigned to the variable. It does the job as the <code>trim()</code> method has created a new <code>String</code> instance.</p>
+<h2><span class="mw-headline" id="Concatenation">Concatenation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;action=edit&amp;section=2" title="Edit section: Concatenation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Java language provides special support for the string concatenation with operator <code>+</code>:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 3.84: Examples of concatenation.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"First part"</span><span class="o">);</span>
+<span class="lineno">2 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">" second part"</span><span class="o">);</span>
+<span class="lineno">3 </span><span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"First part"</span> <span class="o">+</span> <span class="s">" second part"</span><span class="o">;</span>
+<span class="lineno">4 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 3.84</b>
+<pre style="background-color:#000; color:#fff;">
+First part
+ second part
+First part second part
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>The concatenation is not always processed at the same time. <a href="..\Literals.html#String_Literals" title="Java Programming/Literals">Raw string literals</a> concatenation is done at compile time, hence there is a single string literal in the byte code of the class. Concatenation with at least one object is done at runtime.</p>
+<p><code>+</code> operator can concatenate other objects with strings. For instance, integers will be converted to strings before the concatenation:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 3.85: Concatenation of integers.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Age="</span> <span class="o">+</span> <span class="mi">25</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 3.85</b>
+<pre style="background-color:#000; color:#fff;">
+Age=25
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>Each Java object has the <code>String toString()</code> inherited from the <code><a href="java.lang-1.html" title="Java Programming/API/java.lang.Object">Object</a></code> class. This method provides a way to convert objects into <code>String</code>s. Most classes override the default behavior to provide more specific (and more useful) data in the returned <code>String</code>:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 3.86: Concatenation of objects.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Age="</span> <span class="o">+</span> <span class="k">new</span> <span class="n">Integer</span><span class="o">(</span><span class="mi">31</span><span class="o">));</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 3.86</b>
+<pre style="background-color:#000; color:#fff;">
+Age=31
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<h2><span id="Using_StringBuilder/StringBuffer_to_concatenate_strings"></span><span class="mw-headline" id="Using_StringBuilder.2FStringBuffer_to_concatenate_strings">Using StringBuilder/StringBuffer to concatenate strings</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;action=edit&amp;section=3" title="Edit section: Using StringBuilder/StringBuffer to concatenate strings">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Remember that <code>String</code> objects are immutable objects. Once a <code>String</code> is created, it can not be modified, takes up memory until garbage collected. Be careful of writing a method like this:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 3.87: Raw concatenation.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="n">String</span> <span class="nf">convertToString</span><span class="o">(</span><span class="n">Collection</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">words</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
+<span class="lineno">3 </span>  <span class="c1">// Loops through every element in words collection</span>
+<span class="lineno">4 </span>  <span class="k">for</span> <span class="o">(</span><span class="n">String</span> <span class="n">word</span> <span class="o">:</span> <span class="n">words</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">5 </span><span class="hll">    <span class="n">str</span> <span class="o">=</span> <span class="n">str</span> <span class="o">+</span> <span class="n">word</span> <span class="o">+</span> <span class="s">" "</span><span class="o">;</span>
+</span><span class="lineno">6 </span>  <span class="o">}</span>
+<span class="lineno">7 </span>  <span class="k">return</span> <span class="n">str</span><span class="o">;</span>
+<span class="lineno">8 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>On the <code>+</code> operation a new <code><a class="mw-selflink selflink">String</a></code> object is created at each iteration. Suppose <code>words</code> contains the elements <code>["Foo", "Bar", "Bam", "Baz"]</code>. At runtime, the method creates thirteen <code>String</code>s:</p>
+<ol>
+<li><code>""</code></li>
+<li><code>"Foo"</code></li>
+<li><code>" "</code></li>
+<li><code>"Foo "</code></li>
+<li><code>"Foo Bar"</code></li>
+<li><code>" "</code></li>
+<li><code>"Foo Bar "</code></li>
+<li><code>"Foo Bar Bam"</code></li>
+<li><code>" "</code></li>
+<li><code>"Foo Bar Bam "</code></li>
+<li><code>"Foo Bar Bam Baz"</code></li>
+<li><code>" "</code></li>
+<li><code>"Foo Bar Bam Baz "</code></li>
+</ol>
+<p>Even though only the last one is actually useful.</p>
+<p>To avoid unnecessary memory use like this, use the <code>StringBuilder</code> class. It provides similar functionality to <code><a class="mw-selflink selflink">String</a></code>s, but stores its data in a mutable way. Only one <code>StringBuilder</code> object is created. Also because object creation is time consuming, using <code>StringBuilder</code> produces much faster code.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 3.88: Concatenation with <code>StringBuilder</code>.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="n">String</span> <span class="nf">convertToString</span><span class="o">(</span><span class="n">Collection</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">words</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="n">StringBuilder</span> <span class="n">buf</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="o">();</span>
+<span class="lineno">3 </span>  <span class="c1">// Loops through every element in words collection</span>
+<span class="lineno">4 </span>  <span class="k">for</span> <span class="o">(</span><span class="n">String</span> <span class="n">word</span> <span class="o">:</span> <span class="n">words</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">5 </span>    <span class="n">buf</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">word</span><span class="o">);</span>
+<span class="lineno">6 </span>    <span class="n">buf</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="s">" "</span><span class="o">);</span>
+<span class="lineno">7 </span>  <span class="o">}</span>
+<span class="lineno">8 </span>  <span class="k">return</span> <span class="n">buf</span><span class="o">.</span><span class="na">toString</span><span class="o">();</span>
+<span class="lineno">9 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>As <code>StringBuilder</code> isn't thread safe (see the chapter on <a href="..\Concurrent_Programming.html" title="Java Programming/Concurrent Programming">Concurrency</a>) you can't use it in more than one thread. For a multi-thread environment, use <code>StringBuffer</code> instead which does the same and is thread safe. However, <code>StringBuffer</code> is slower so only use it when it is required. Moreover, before Java 5 only <code>StringBuffer</code> existed.</p>
+<h2><span class="mw-headline" id="Comparing_Strings">Comparing Strings</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;action=edit&amp;section=4" title="Edit section: Comparing Strings">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Comparing strings is not as easy as it may first seem. Be aware of what you are doing when comparing <code>String</code>'s using <code>==</code>:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-89"><b>Code section 3.89: Dangerous comparison.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">String</span> <span class="n">greeting</span> <span class="o">=</span> <span class="s">"Hello World!"</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="k">if</span> <span class="o">(</span><span class="n">greeting</span> <span class="o">==</span> <span class="s">"Hello World!"</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">3 </span><span class="hll">    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Match found."</span><span class="o">);</span>
+</span><span class="lineno">4 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 3.89</b>
+<pre style="background-color:#000; color:#fff;">
+Match found.
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>The difference between the above and below code is that the above code checks to see if the <code>String</code>'s are the same objects in memory which they are. This is as a result of the fact that <code>String</code>'s are stored in a place in memory called the String Constant Pool. If the <code>new</code> keyword is not explicitly used when creating the <code>String</code> it checks to see if it already exists in the Pool and uses the existing one. If it does not exist, a new Object is created. This is what allows Strings to be immutable in Java. To test for equality, use the <code>equals(Object)</code> method inherited by every class and defined by <code>String</code> to return <code><a href="..\Literals\Boolean_Literals\true.html" title="Java Programming/Literals/Boolean Literals/true"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">true</font></a></code> if and only if the object passed in is a <code>String</code> contains the exact same data:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-90"><b>Code section 3.90: Right comparison.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">String</span> <span class="n">greeting</span> <span class="o">=</span> <span class="s">"Hello World!"</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="k">if</span> <span class="o">(</span><span class="n">greeting</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="s">"Hello World!"</span><span class="o">))</span> <span class="o">{</span>
+<span class="lineno">3 </span><span class="hll">    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Match found."</span><span class="o">);</span>
+</span><span class="lineno">4 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 3.90</b>
+<pre style="background-color:#000; color:#fff;">
+Match found.
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>Remember that the comparison is case sensitive.</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-91"><b>Code section 3.91: Comparison with lowercase.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">String</span> <span class="n">greeting</span> <span class="o">=</span> <span class="s">"Hello World!"</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="k">if</span> <span class="o">(</span><span class="n">greeting</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="s">"hello world!"</span><span class="o">))</span> <span class="o">{</span>
+<span class="lineno">3 </span><span class="hll">    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Match found."</span><span class="o">);</span>
+</span><span class="lineno">4 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 3.91</b>
+<pre style="background-color:#000; color:#fff;">
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>To order <code>String</code> objects, use the <b><code>compareTo()</code></b> method, which can be accessed wherever we use a String datatype. The <code>compareTo()</code> method returns a negative, zero, or positive number if the parameter is less than, equal to, or greater than the object on which it is called. Let's take a look at an example:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-92"><b>Code section 3.92: Order.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">String</span> <span class="n">person1</span> <span class="o">=</span> <span class="s">"Peter"</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="n">String</span> <span class="n">person2</span> <span class="o">=</span> <span class="s">"John"</span><span class="o">;</span>
+<span class="lineno">3 </span><span class="hll"><span class="k">if</span> <span class="o">(</span><span class="n">person1</span><span class="o">.</span><span class="na">compareTo</span><span class="o">(</span><span class="n">person2</span><span class="o">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">4 </span>    <span class="c1">// Badly ordered</span>
+<span class="lineno">5 </span>    <span class="n">String</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">person1</span><span class="o">;</span>
+<span class="lineno">6 </span>    <span class="n">person1</span> <span class="o">=</span> <span class="n">person2</span><span class="o">;</span>
+<span class="lineno">7 </span>    <span class="n">person2</span> <span class="o">=</span> <span class="n">temp</span><span class="o">;</span>
+<span class="lineno">8 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The <a href="#code-section-92">code section 3.92</a> is comparing the String variable <code>person1</code> to <code>person2</code>. If <code>person1</code> is different even in the slightest manner, we will get a value above or below 0 depending on the exact difference. The result is negative if this String object lexicographically precedes the argument string. The result is positive if this String object lexicographically follows the argument string. Take a look at the <a rel="nofollow" class="external text" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html#compareTo%28java.lang.String%29">Java API</a> for more details.</p>
+<h2><span class="mw-headline" id="Splitting_a_String">Splitting a String</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;action=edit&amp;section=5" title="Edit section: Splitting a String">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Sometimes it is useful to split a string into separate strings, based on a <i><a href="/wiki/Regular_Expressions" title="Regular Expressions">regular expressions</a></i>. The <code><a class="mw-selflink selflink">String</a></code> class has a <b><code>split()</code></b> method, since Java 1.4, that will return a String array:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-93"><b>Code section 3.93: Order.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">String</span> <span class="n">person</span> <span class="o">=</span> <span class="s">"Brown, John:100 Yonge Street, Toronto:(416)777-9999"</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="o">...</span>
+<span class="lineno">3 </span><span class="hll"><span class="n">String</span><span class="o">[]</span> <span class="n">personData</span> <span class="o">=</span> <span class="n">person</span><span class="o">.</span><span class="na">split</span><span class="o">(</span><span class="s">":"</span><span class="o">);</span>
+</span><span class="lineno">4 </span><span class="o">...</span>
+<span class="lineno">5 </span><span class="n">String</span> <span class="n">name</span>    <span class="o">=</span> <span class="n">personData</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
+<span class="lineno">6 </span><span class="n">String</span> <span class="n">address</span> <span class="o">=</span> <span class="n">personData</span><span class="o">[</span><span class="mi">1</span><span class="o">];</span>
+<span class="lineno">7 </span><span class="n">String</span> <span class="n">phone</span>   <span class="o">=</span> <span class="n">personData</span><span class="o">[</span><span class="mi">2</span><span class="o">];</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Another useful application could be to <i>split</i> the String text based on the new line character, so you could process the text line by line.</p>
+<h2><span class="mw-headline" id="Substrings">Substrings</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;action=edit&amp;section=6" title="Edit section: Substrings">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>It may also be sometimes useful to create <b>substrings</b>, or strings using the order of letters from an existing string. This can be done in two methods.</p>
+<p>The first method involves creating a substring out of the characters of a string from a given index to the end:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-94"><b>Code section 3.94: Truncating string.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"coffee"</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="hll"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">3</span><span class="o">));</span>
+</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 3.94</b>
+<pre style="background-color:#000; color:#fff;">
+fee
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>The index of the first character in a string is 0.</p>
+<table style="margin: auto;" cellspacing="0" cellpadding="2">
+<tr>
+<td style="color: blue;"><code>c</code></td>
+<td style="color: blue;"><code>o</code></td>
+<td style="color: blue;"><code>f</code></td>
+<td style="color: blue; background: grey;"><code>f</code></td>
+<td style="color: blue; background: grey;"><code>e</code></td>
+<td style="color: blue; background: grey;"><code>e</code></td>
+</tr>
+<tr>
+<td><i>0</i></td>
+<td><i>1</i></td>
+<td><i>2</i></td>
+<td><i><b>3</b></i></td>
+<td><i>4</i></td>
+<td><i>5</i></td>
+</tr>
+</table>
+<p>By counting from there, it is apparent that the character in index 3 is the second "f" in "coffee". This is known as the <code>beginIndex</code>. All characters from the <code>beginIndex</code> until the end of the string will be copied into the new substring.</p>
+<p>The second method involves a user-defined <code>beginIndex</code> and <code>endIndex</code>:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-95"><b>Code section 3.95: Extraction of string.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"supporting"</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="hll"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="mi">7</span><span class="o">));</span>
+</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 3.95</b>
+<pre style="background-color:#000; color:#fff;">
+port
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>The string returned by <code>substring()</code> would be "port".</p>
+<table style="margin: auto;" cellspacing="0" cellpadding="2">
+<tr>
+<td style="color: blue;"><code>s</code></td>
+<td style="color: blue;"><code>u</code></td>
+<td style="color: blue;"><code>p</code></td>
+<td style="color: blue; background: grey;"><code>p</code></td>
+<td style="color: blue; background: grey;"><code>o</code></td>
+<td style="color: blue; background: grey;"><code>r</code></td>
+<td style="color: blue; background: grey;"><code>t</code></td>
+<td style="color: blue;"><code>i</code></td>
+<td style="color: blue;"><code>n</code></td>
+<td style="color: blue;"><code>g</code></td>
+</tr>
+<tr>
+<td><i>0</i></td>
+<td><i>1</i></td>
+<td><i>2</i></td>
+<td><i><b>3</b></i></td>
+<td><i>4</i></td>
+<td><i>5</i></td>
+<td><i>6</i></td>
+<td><i><b>7</b></i></td>
+<td><i>8</i></td>
+<td><i>9</i></td>
+</tr>
+</table>
+<p>Please note that the endIndex is <b>not</b> inclusive. This means that the last character will be of the index <code>endIndex-1</code>. Therefore, in this example, every character from index 3 to index 6, inclusive, was copied into the substring.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Bombilla_amarilla_-_yellow_Edison_lamp.svg" class="image" title="Note"><img alt="Note" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/30px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" width="30" height="30" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/45px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/60px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" data-file-width="200" data-file-height="200"></a></td>
+<td style="background-color:#fffff0; border-left: 4px solid yellow; padding-left: 6px;">It is easy to mistake the method <code>substring()</code> for <code><span style="border-bottom: red 1px dashed">subString</span>()</code> (which does not exist and would return with a syntax error on compilation). <i>Substring</i> is considered to be one word. This is why the method name does not seem to follow the common syntax of Java. Just remember that this style only applies to methods or other elements that are made up of more than one word.</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="String_cases">String cases</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;action=edit&amp;section=7" title="Edit section: String cases">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The <code>String</code> class also allows for the modification of cases. The two methods that make this possible are <code>toLowerCase()</code> and <code>toUpperCase()</code>.</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-96"><b>Code section 3.96: Case modification.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">String</span> <span class="n">str</span> <span class="o">=</span> <span class="s">"wIkIbOoKs"</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="hll"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">.</span><span class="na">toLowerCase</span><span class="o">());</span>
+</span><span class="lineno">3 </span><span class="hll"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">str</span><span class="o">.</span><span class="na">toUpperCase</span><span class="o">());</span>
+</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 3.96</b>
+<pre style="background-color:#000; color:#fff;">
+wikibooks
+WIKIBOOKS
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>These methods are useful to do a search which is not case sensitive:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 3.97: Text search.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="n">String</span> <span class="n">word</span> <span class="o">=</span> <span class="s">"Integer"</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="n">String</span> <span class="n">text</span> <span class="o">=</span> <span class="s">"A number without a decimal part is an integer."</span>
+<span class="lineno"> 3 </span>  <span class="o">+</span> <span class="s">" Integers are a list of digits."</span><span class="o">;</span>
+<span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span><span class="o">...</span>
+<span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span><span class="c1">// Remove the case</span>
+<span class="lineno"> 8 </span><span class="hll"><span class="n">String</span> <span class="n">lowerCaseWord</span> <span class="o">=</span> <span class="n">word</span><span class="o">.</span><span class="na">toLowerCase</span><span class="o">();</span>
+</span><span class="lineno"> 9 </span><span class="hll"><span class="n">String</span> <span class="n">lowerCaseText</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="na">toLowerCase</span><span class="o">();</span>
+</span><span class="lineno">10 </span>
+<span class="lineno">11 </span><span class="c1">// Search</span>
+<span class="lineno">12 </span><span class="hll"><span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">lowerCaseText</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="n">lowerCaseWord</span><span class="o">);</span>
+</span><span class="lineno">13 </span><span class="k">while</span> <span class="o">(</span><span class="n">index</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">14 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">word</span>
+<span class="lineno">15 </span>    <span class="o">+</span> <span class="s">" appears at column "</span>
+<span class="lineno">16 </span>    <span class="o">+</span> <span class="o">(</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="o">)</span>
+<span class="lineno">17 </span>    <span class="o">+</span> <span class="s">"."</span><span class="o">);</span>
+<span class="lineno">18 </span><span class="hll">  <span class="n">index</span> <span class="o">=</span> <span class="n">lowerCaseText</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="n">lowerCaseWord</span><span class="o">,</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="o">);</span>
+</span><span class="lineno">19 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 3.97</b>
+<pre style="background-color:#000; color:#fff;">
+Integer appears at column 38.
+Integer appears at column 47.
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Test your knowledge</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<p><b>Question 3.12</b>: You have mail addresses in the following form: <code><i>&lt;firstName&gt;</i>.<i>&lt;lastName&gt;</i>@<i>&lt;companyName&gt;</i>.org</code></p>
+<p>Write the <code>String getDisplayName(String)</code> method that receives the mail string as parameter and returns the readable person name like this: <code>LASTNAME Firstname</code></p>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Answer</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Answer 3.12: <code>getDisplayName()</code></b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">static</span> <span class="n">String</span> <span class="nf">getDisplayName</span><span class="o">(</span><span class="n">String</span> <span class="n">mail</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>  <span class="n">String</span> <span class="n">displayName</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+<span class="lineno"> 3 </span> 
+<span class="lineno"> 4 </span>  <span class="k">if</span> <span class="o">(</span><span class="n">mail</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 5 </span>    <span class="n">String</span><span class="o">[]</span> <span class="n">mailParts</span> <span class="o">=</span> <span class="n">mail</span><span class="o">.</span><span class="na">split</span><span class="o">(</span><span class="s">"@"</span><span class="o">);</span>
+<span class="lineno"> 6 </span>    <span class="n">String</span> <span class="n">namePart</span> <span class="o">=</span> <span class="n">mailParts</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
+<span class="lineno"> 7 </span>    <span class="n">String</span><span class="o">[]</span> <span class="n">namesParts</span> <span class="o">=</span> <span class="n">namePart</span><span class="o">.</span><span class="na">split</span><span class="o">(</span><span class="s">"\\."</span><span class="o">);</span>
+<span class="lineno"> 8 </span>   
+<span class="lineno"> 9 </span>    <span class="c1">// The last name</span>
+<span class="lineno">10 </span>    <span class="n">String</span> <span class="n">lastName</span> <span class="o">=</span> <span class="n">namesParts</span><span class="o">[</span><span class="mi">1</span><span class="o">];</span>
+<span class="lineno">11 </span>    <span class="n">lastName</span> <span class="o">=</span> <span class="n">lastName</span><span class="o">.</span><span class="na">toUpperCase</span><span class="o">();</span>
+<span class="lineno">12 </span>   
+<span class="lineno">13 </span>    <span class="c1">// The first name</span>
+<span class="lineno">14 </span>    <span class="n">String</span> <span class="n">firstName</span> <span class="o">=</span> <span class="n">namesParts</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
+<span class="lineno">15 </span>   
+<span class="lineno">16 </span>    <span class="n">String</span> <span class="n">firstNameInitial</span> <span class="o">=</span> <span class="n">firstName</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+<span class="lineno">17 </span>    <span class="n">firstNameInitial</span> <span class="o">=</span> <span class="n">firstNameInitial</span><span class="o">.</span><span class="na">toUpperCase</span><span class="o">();</span>
+<span class="lineno">18 </span>   
+<span class="lineno">19 </span>    <span class="n">String</span> <span class="n">firstNameEnd</span> <span class="o">=</span> <span class="n">firstName</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+<span class="lineno">20 </span>    <span class="n">firstNameEnd</span> <span class="o">=</span> <span class="n">firstNameEnd</span><span class="o">.</span><span class="na">toLowerCase</span><span class="o">();</span>
+<span class="lineno">21 </span>   
+<span class="lineno">22 </span>    <span class="c1">// Concatenation</span>
+<span class="lineno">23 </span>    <span class="n">StringBuilder</span> <span class="n">displayNameBuilder</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="o">(</span><span class="n">lastName</span><span class="o">).</span><span class="na">append</span><span class="o">(</span><span class="s">" "</span><span class="o">).</span><span class="na">append</span><span class="o">(</span><span class="n">firstNameInitial</span><span class="o">).</span><span class="na">append</span><span class="o">(</span><span class="n">firstNameEnd</span><span class="o">);</span>
+<span class="lineno">24 </span>    <span class="n">displayName</span> <span class="o">=</span> <span class="n">displayNameBuilder</span><span class="o">.</span><span class="na">toString</span><span class="o">();</span>
+<span class="lineno">25 </span>  <span class="o">}</span>
+<span class="lineno">26 </span> 
+<span class="lineno">27 </span>  <span class="k">return</span> <span class="n">displayName</span><span class="o">;</span>
+<span class="lineno">28 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<ol>
+<li>We only process non null strings,</li>
+<li>We first split the mail into two parts to separate the personal information from the company information and we keep the name data,</li>
+<li>Then we split the name information to separate the first name from the last name. As the <code>split()</code> method use regular expression and <code>.</code> is a wildcard character, we have to escape it (<code>\.</code>). However, in a string, the <code>\</code> is also a special character, so we need to escape it too (<code>\\.</code>),</li>
+<li>The last name is just capitalized,</li>
+<li>As the case of all the first name characters will not be the same, we have to cut the first name. Only the first name initial will be capitalized,</li>
+<li>Now we can concatenate all the fragments. We prefer to use a <code>StringBuilder</code> to do that.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;action=edit&amp;section=8" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html" rel="nofollow"><img alt="Oracle wordmark.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/29/Oracle_wordmark.svg/40px-Oracle_wordmark.svg.png" width="40" height="5" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/29/Oracle_wordmark.svg/60px-Oracle_wordmark.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/29/Oracle_wordmark.svg/80px-Oracle_wordmark.svg.png" data-file-width="800" data-file-height="104"></a> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html">Java API: java.lang.String</a></span></li>
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/StringBuffer.html" rel="nofollow"><img alt="Oracle wordmark.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/29/Oracle_wordmark.svg/40px-Oracle_wordmark.svg.png" width="40" height="5" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/29/Oracle_wordmark.svg/60px-Oracle_wordmark.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/29/Oracle_wordmark.svg/80px-Oracle_wordmark.svg.png" data-file-width="800" data-file-height="104"></a> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://docs.oracle.com/javase/7/docs/api/java/lang/StringBuffer.html">Java API: java.lang.StringBuffer</a></span></li>
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html" rel="nofollow"><img alt="Oracle wordmark.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/29/Oracle_wordmark.svg/40px-Oracle_wordmark.svg.png" width="40" height="5" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/29/Oracle_wordmark.svg/60px-Oracle_wordmark.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/29/Oracle_wordmark.svg/80px-Oracle_wordmark.svg.png" data-file-width="800" data-file-height="104"></a> <span class="plainlinks"><a rel="nofollow" class="external text" href="http://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html">Java API: java.lang.StringBuilder</a></span></li>
+</ul>
+<table width="100%" style="border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="/wiki/File:Navigation_Left_Arrow.svg" class="image"><img alt="Navigation Left Arrow.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="..\Methods.html" title="Java Programming/Methods">Methods</a></td>
+<td style="text-align:center; width:34%;"><a href="..\..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>String</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="..\Classes,_Objects_and_Types.html" title="Java Programming/Classes, Objects and Types">Classes, Objects and Types</a> <a href="/wiki/File:Navigation_Right_Arrow.svg" class="image"><img alt="Navigation Right Arrow.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="100% developed"><img alt="100% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/24px-100_percent.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/36px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/48px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1209
+Cached time: 20171007115759
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.144 seconds
+Real time usage: 0.198 seconds
+Preprocessor visited node count: 1593/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 29501/2097152 bytes
+Template argument size: 5127/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 2/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   87.563      1 -total
+ 38.17%   33.427      1 Template:Java_Programming/LanguageFundamentalsTopic/Nav
+ 27.81%   24.355      1 Template:Java_Programming/LanguageFundamentals/Topic
+ 16.97%   14.863      2 Template:Java/Hidden_begin
+ 12.73%   11.144     18 Template:XExample
+ 12.44%   10.890      3 Template:BookCat
+ 11.47%   10.040     20 Template:Stage_short
+  9.90%    8.666      3 Template:BookCat/default
+  7.35%    6.432      1 Template:Navbar
+  6.84%    5.992      3 Template:BOOKCATEGORY
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:85041-0!canonical and timestamp 20171007115759 and revision id 3241519
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/API/java.lang.String&amp;oldid=3241519">https://en.wikibooks.org/w/index.php?title=Java_Programming/API/java.lang.String&amp;oldid=3241519</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li><li><a href="/wiki/Category:Book:Java_Programming/API" title="Category:Book:Java Programming/API">Book:Java Programming/API</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden category: <ul><li><a href="/wiki/Category:Pages_with_deep_filing" title="Category:Pages with deep filing">Pages with deep filing</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FAPI%2Fjava.lang.String" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FAPI%2Fjava.lang.String" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="java.lang.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk"><span><a href="/wiki/Talk:Java_Programming/API/java.lang.String" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;stable=1">Read</a></span></li>
+							<li id="ca-current" class="collapsible selected"><span><a href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;stable=0&amp;redirect=no" title="View this page with the pending changes [v]" accesskey="v">Latest draft</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/API/java.lang.String" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/API/java.lang.String" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;oldid=3241519" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FAPI%2Fjava.lang.String&amp;id=3241519" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:NewItem?site=enwikibooks&amp;page=Java+Programming%2FAPI%2Fjava.lang.String" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FAPI%2Fjava.lang.String">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FAPI%2Fjava.lang.String&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/API/java.lang.String&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 4 July 2017, at 18:00.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/API/java.lang.String&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.144","walltime":"0.198","ppvisitednodes":{"value":1593,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":29501,"limit":2097152},"templateargumentsize":{"value":5127,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":2,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%   87.563      1 -total"," 38.17%   33.427      1 Template:Java_Programming/LanguageFundamentalsTopic/Nav"," 27.81%   24.355      1 Template:Java_Programming/LanguageFundamentals/Topic"," 16.97%   14.863      2 Template:Java/Hidden_begin"," 12.73%   11.144     18 Template:XExample"," 12.44%   10.890      3 Template:BookCat"," 11.47%   10.040     20 Template:Stage_short","  9.90%    8.666      3 Template:BookCat/default","  7.35%    6.432      1 Template:Navbar","  6.84%    5.992      3 Template:BOOKCATEGORY"]},"cachereport":{"origin":"mw1209","timestamp":"20171007115759","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":58,"wgHostname":"mw1254"});});</script>
+	</body>
+</html>

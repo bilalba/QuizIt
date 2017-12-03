@@ -1,0 +1,525 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>ArrayList - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/ArrayList","wgTitle":"Java Programming/ArrayList","wgCurRevisionId":3295176,"wgRevisionId":3295176,"wgArticleId":284723,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/ArrayList","wgRelevantArticleId":284723,"wgRequestId":"We-LDwpAME4AAIbB8tAAAAAN","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3295176,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/ArrayList&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/ArrayList&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="ArrayList.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_ArrayList rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">ArrayList</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span><div id="mw-fr-revisiontag" class="flaggedrevs_basic flaggedrevs_draft_notsynced plainlinks noprint nomobile"><img class="flaggedrevs-icon" src="/w/extensions/FlaggedRevs/frontend/modules/img/1.png" alt="Unreviewed changes are displayed on this page" title="Unreviewed changes are displayed on this page">The <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/ArrayList&amp;stable=1">latest reviewed version</a> was <a class="external text" href="//en.wikibooks.org/w/index.php?title=Special:Log&amp;type=review&amp;page=Java_Programming/ArrayList">checked</a> on <i>17 September 2017</i>. There are <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/ArrayList&amp;oldid=3295176&amp;diff=cur&amp;diffonly=0">template/file changes</a> awaiting review.</div>
+</div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Collection.html" title="Collection"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Collection.html" title="Java Programming/Collection">Collection</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>ArrayList</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Map.html" title="Java Programming/Map">Map</a> <a href="Map.html" title="Map"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="Aggregate.html" title="Java Programming/Aggregate">Aggregate</a></b> topic: <span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/Aggregate/Topic" title="Template:Java Programming/Aggregate/Topic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/Aggregate/Topic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/Aggregate/Topic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/Aggregate/Topic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jul 2, 2013"><img alt="75% developed&#160; as of Jul 2, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Collection.html" title="Java Programming/Collection">Collection</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="50% developed&#160; as of Mar 18, 2013"><img alt="50% developed&#160; as of Mar 18, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/9px-50_percents.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/14px-50_percents.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/18px-50_percents.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">ArrayList</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jul 2, 2013"><img alt="75% developed&#160; as of Jul 2, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Map.html" title="Java Programming/Map">Map</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jul 23, 2007"><img alt="75% developed&#160; as of Jul 23, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Comparing_Objects.html" title="Java Programming/Comparing Objects">Comparing Objects</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p>The ArrayList class extends AbstractList and implements the List interface. ArrayList supports dynamic arrays that can grow as needed.</p>
+<p>Standard Java arrays are of a fixed length. After arrays are created, they cannot grow or shrink, which means that you must know in advance how many elements an array will hold.</p>
+<p>Array lists are created with an initial size. When this size is exceeded, the collection is automatically enlarged. When objects are removed, the array may be shrunk.</p>
+<h2><span class="mw-headline" id="Initializing">Initializing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/ArrayList&amp;action=edit&amp;section=1" title="Edit section: Initializing">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The ArrayList class supports three constructors. The first constructor builds an empty array list.:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">ArrayList</span><span class="o">(</span> <span class="o">)</span>
+</pre></div>
+<p>The following constructor builds an array list that is initialized with the elements of the collection c.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">ArrayList</span><span class="o">(</span><span class="n">Collection</span> <span class="n">c</span><span class="o">)</span>
+</pre></div>
+<p>The following constructor builds an array list that has the specified initial capacity. The capacity is the size of the underlying array that is used to store the elements.</p>
+<p>The capacity grows automatically as elements are added to an array list.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ <span class="n">ArrayList</span><span class="o">(</span><span class="kt">int</span> <span class="n">capacity</span><span class="o">)</span>
+</pre></div>
+<h2><span class="mw-headline" id="Methods">Methods</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/ArrayList&amp;action=edit&amp;section=2" title="Edit section: Methods">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>ArrayList defines following methods:</p>
+<h3><span class="mw-headline" id="Adding_Element_in_ArrayList">Adding Element in ArrayList</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/ArrayList&amp;action=edit&amp;section=3" title="Edit section: Adding Element in ArrayList">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>Inserts the specified element at the specified position index in this list. Throws IndexOutOfBoundsException if the specified index is out of range (index &lt; 0 || index &gt;= size()).</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">void</span> <span class="nf">add</span><span class="o">(</span><span class="kt">int</span> <span class="n">index</span><span class="o">,</span> <span class="n">Object</span> <span class="n">element</span><span class="o">)</span>
+</pre></div>
+<ul>
+<li>Appends the specified element to the end of this list.</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">boolean</span> <span class="nf">add</span><span class="o">(</span><span class="n">Object</span> <span class="n">o</span><span class="o">)</span>
+</pre></div>
+<ul>
+<li>Appends all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator. Throws NullPointerException if the specified collection is null.</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">boolean</span> <span class="nf">addAll</span><span class="o">(</span><span class="n">Collection</span> <span class="n">c</span><span class="o">)</span>
+</pre></div>
+<ul>
+<li>Inserts all of the elements in the specified collection into this list, starting at the specified position. Throws NullPointerException if the specified collection is null.</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">boolean</span> <span class="nf">addAll</span><span class="o">(</span><span class="kt">int</span> <span class="n">index</span><span class="o">,</span> <span class="n">Collection</span> <span class="n">c</span><span class="o">)</span>
+</pre></div>
+<h3><span class="mw-headline" id="Size_of_ArrayList">Size of ArrayList</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/ArrayList&amp;action=edit&amp;section=4" title="Edit section: Size of ArrayList">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>Returns the number of elements in this list.</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">int</span> <span class="nf">size</span><span class="o">()</span>
+</pre></div>
+<p><i>Adding Element and Size of ArrayList</i></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ 
+<span class="kn">import</span> <span class="nn">java.util.*</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListDemo</span><span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="c1">// create an array list</span>
+		<span class="n">ArrayList</span> <span class="n">al</span><span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">();</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Initial ArrayList : "</span><span class="o">+</span><span class="n">al</span><span class="o">);</span>
+		
+		 <span class="c1">// add elements to the array list</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"A"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"B"</span><span class="o">);</span>
+		
+		<span class="c1">//find size of ArrayList</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Size of al :"</span><span class="o">+</span><span class="n">al</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+		<span class="c1">// display the array list</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Contents of al :"</span><span class="o">+</span><span class="n">al</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="s">"C"</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Contents of al :"</span><span class="o">+</span><span class="n">al</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Size of al :"</span><span class="o">+</span><span class="n">al</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p><i>Output for Adding Element and Size of ArrayList</i></p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;">
+<pre style="background-color:#000; color:#fff;">
+Initial ArrayList : []
+Size of al :2
+Contents of al :[A, B]
+Contents of al :[A, C, B]
+Size of al :3
+</pre></td>
+</tr>
+</table>
+<p><br></p>
+<h3><span class="mw-headline" id="Get_and_Set_ArrayList_Element">Get and Set ArrayList Element</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/ArrayList&amp;action=edit&amp;section=5" title="Edit section: Get and Set ArrayList Element">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>Returns the element at the specified position in this list. Throws IndexOutOfBoundsException if the specified index is is out of range (index &lt; 0 or index &gt;= size()).</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">Object</span> <span class="nf">get</span><span class="o">(</span><span class="kt">int</span> <span class="n">index</span><span class="o">)</span>
+</pre></div>
+<ul>
+<li>Replaces the element at the specified position in this list with the specified element. Throws IndexOutOfBoundsException if the specified index is is out of range (index &lt; 0 or index &gt;= size()).</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="n">Object</span> <span class="nf">set</span><span class="o">(</span><span class="kt">int</span> <span class="n">index</span><span class="o">,</span> <span class="n">Object</span> <span class="n">element</span><span class="o">)</span>
+</pre></div>
+<h3><span class="mw-headline" id="Find_Index_of_ArrayList_Element">Find Index of ArrayList Element</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/ArrayList&amp;action=edit&amp;section=6" title="Edit section: Find Index of ArrayList Element">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>Returns the index in this list of the first occurrence of the specified element, or -1 if the List does not contain this element.</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">int</span> <span class="nf">indexOf</span><span class="o">(</span><span class="n">Object</span> <span class="n">o</span><span class="o">)</span>
+</pre></div>
+<ul>
+<li>Returns the index in this list of the last occurrence of the specified element, or -1 if the list does not contain this element.</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">int</span> <span class="nf">lastIndexOf</span><span class="o">(</span><span class="n">Object</span> <span class="n">o</span><span class="o">)</span>
+</pre></div>
+<h3><span class="mw-headline" id="Find_Element_Contain_in_ArrayList">Find Element Contain in ArrayList</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/ArrayList&amp;action=edit&amp;section=7" title="Edit section: Find Element Contain in ArrayList">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li>Returns true if this list contains the specified element. More formally, returns true if and only if this list contains at least one element e such that (o==null&#160;? e==null&#160;: o.equals(e)).</li>
+</ul>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">boolean</span> <span class="nf">contains</span><span class="o">(</span><span class="n">Object</span> <span class="n">o</span><span class="o">)</span>
+</pre></div>
+<p><i>Different Method in ArrayList</i></p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+ 
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListDemo</span> <span class="o">{</span>
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+		<span class="c1">// create an array list</span>
+		<span class="n">ArrayList</span> <span class="n">al</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">();</span>
+
+		<span class="c1">// add elements to the array list</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"A"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"B"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"C"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"A"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"D"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"A"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"E"</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Contents of al : "</span> <span class="o">+</span> <span class="n">al</span><span class="o">);</span>
+
+		<span class="c1">// find index of element in ArrayList</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Index of D : "</span> <span class="o">+</span> <span class="n">al</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="s">"D"</span><span class="o">));</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Index of A : "</span> <span class="o">+</span> <span class="n">al</span><span class="o">.</span><span class="na">indexOf</span><span class="o">(</span><span class="s">"A"</span><span class="o">));</span>
+
+		<span class="c1">// find index of element in ArrayList</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Index of A : "</span> <span class="o">+</span> <span class="n">al</span><span class="o">.</span><span class="na">lastIndexOf</span><span class="o">(</span><span class="s">"A"</span><span class="o">));</span>
+
+		<span class="c1">// get element at given Index</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Element at Second Index : "</span> <span class="o">+</span> <span class="n">al</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">2</span><span class="o">));</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Element at Sixth Index : "</span> <span class="o">+</span> <span class="n">al</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">6</span><span class="o">));</span>
+		
+		<span class="c1">//set element at given Index</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span><span class="s">"B"</span><span class="o">);</span> <span class="c1">// replacing third index element by "B"</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Contents of al : "</span> <span class="o">+</span> <span class="n">al</span><span class="o">);</span>
+		
+		<span class="c1">//check ArrayList contains given element</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"ArrayList contain D : "</span><span class="o">+</span><span class="n">al</span><span class="o">.</span><span class="na">contains</span><span class="o">(</span><span class="s">"D"</span><span class="o">));</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"ArrayList contain F : "</span><span class="o">+</span><span class="n">al</span><span class="o">.</span><span class="na">contains</span><span class="o">(</span><span class="s">"F"</span><span class="o">));</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<p><i>Output for Different Method in ArrayList</i></p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;">
+<pre style="background-color:#000; color:#fff;">
+Contents of al : [A, B, C, A, D, A, E]
+Index of D : 4
+Index of A : 0
+Index of A : 5
+Element at Second Index : C
+Element at Sixth Index : E
+Contents of al : [A, B, C, B, D, A, E]
+ArrayList contain D : true
+ArrayList contain F : false
+</pre></td>
+</tr>
+</table>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Test your knowledge</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<p><b>Question</b>: Consider the following code:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;">
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListDemo</span> <span class="o">{</span>
+		<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+	
+		<span class="n">ArrayList</span> <span class="n">al</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">();</span>
+
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"A"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"B"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"C"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"E"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"F"</span><span class="o">);</span>
+	
+		<span class="n">al</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="s">"F"</span><span class="o">);</span>
+		
+		<span class="n">al</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="s">"G"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"H"</span><span class="o">);</span>
+		<span class="n">al</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="s">"I"</span><span class="o">);</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Size of al : "</span> <span class="o">+</span> <span class="n">al</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+		<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Contents of al : "</span> <span class="o">+</span> <span class="n">al</span><span class="o">);</span>
+
+	<span class="o">}</span>
+  <span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p><br>
+In the example above, what is output?</p>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Answer</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;">
+<pre style="background-color:#000; color:#fff;">
+Size of al : 4
+Contents of al : [A, G, E, I]
+</pre></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<p><b>Some more ArrayList methods:</b></p>
+<table class="wikitable">
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><code>Object clone()</code></td>
+<td>Returns a shallow copy of this ArrayList.</td>
+</tr>
+<tr>
+<td><code>Object[] toArray()</code></td>
+<td>Returns an array containing all of the elements in this list in the correct order. Throws NullPointerException if the specified array is null.</td>
+</tr>
+<tr>
+<td><code>void trimToSize()</code></td>
+<td>Trims the capacity of this ArrayList instance to be the list's current size.</td>
+</tr>
+<tr>
+<td><code>void ensureCapacity(int minCapacity)</code></td>
+<td>Increases the capacity of this ArrayList instance, if necessary, to ensure that it can hold at least the number of elements specified by the minimum capacity argument.</td>
+</tr>
+<tr>
+<td><code>protected void removeRange(int fromIndex, int toIndex)</code></td>
+<td>Removes from this List all of the elements whose index is between fromIndex, inclusive and toIndex, exclusive.</td>
+</tr>
+</table>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Collection.html" title="Collection"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Collection.html" title="Java Programming/Collection">Collection</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>ArrayList</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Map.html" title="Java Programming/Map">Map</a> <a href="Map.html" title="Map"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1326
+Cached time: 20171009162908
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.192 seconds
+Real time usage: 1.910 seconds
+Preprocessor visited node count: 617/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 10382/2097152 bytes
+Template argument size: 1522/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 47/500
+Lua time usage: 0.095/10.000 seconds
+Lua memory usage: 777 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1861.457      1 -total
+  7.95%  147.971      2 Template:Programming/Navigation
+  6.13%  114.039      4 Template:XCode
+  6.09%  113.353      1 Template:Java
+  0.73%   13.640      1 Template:Java_Programming/CollectionsTopic/Nav
+  0.56%   10.428      3 Template:BookCat
+  0.45%    8.301      3 Template:BookCat/default
+  0.31%    5.713      3 Template:BOOKCATEGORY
+  0.29%    5.359      1 Template:Navbar
+  0.27%    5.008      1 Template:Java_Programming/Aggregate/Topic
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:284723-0!canonical and timestamp 20171009162906 and revision id 3295176
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/ArrayList&amp;oldid=3295176">https://en.wikibooks.org/w/index.php?title=Java_Programming/ArrayList&amp;oldid=3295176</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FArrayList" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FArrayList" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="ArrayList.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="/w/index.php?title=Talk:Java_Programming/ArrayList&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/ArrayList&amp;stable=1">Read</a></span></li>
+							<li id="ca-current" class="collapsible selected"><span><a href="/w/index.php?title=Java_Programming/ArrayList&amp;stable=0&amp;redirect=no" title="View this page with the pending changes [v]" accesskey="v">Latest draft</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/ArrayList&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/ArrayList&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/ArrayList" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/ArrayList" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/ArrayList&amp;oldid=3295176" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/ArrayList&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FArrayList&amp;id=3295176" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:NewItem?site=enwikibooks&amp;page=Java+Programming%2FArrayList" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FArrayList">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FArrayList&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/ArrayList&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 14:40.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/ArrayList&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.192","walltime":"1.910","ppvisitednodes":{"value":617,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":10382,"limit":2097152},"templateargumentsize":{"value":1522,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":47,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00% 1861.457      1 -total","  7.95%  147.971      2 Template:Programming/Navigation","  6.13%  114.039      4 Template:XCode","  6.09%  113.353      1 Template:Java","  0.73%   13.640      1 Template:Java_Programming/CollectionsTopic/Nav","  0.56%   10.428      3 Template:BookCat","  0.45%    8.301      3 Template:BookCat/default","  0.31%    5.713      3 Template:BOOKCATEGORY","  0.29%    5.359      1 Template:Navbar","  0.27%    5.008      1 Template:Java_Programming/Aggregate/Topic"]},"scribunto":{"limitreport-timeusage":{"value":"0.095","limit":"10.000"},"limitreport-memusage":{"value":796079,"limit":52428800}},"cachereport":{"origin":"mw1326","timestamp":"20171009162908","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":72,"wgHostname":"mw1243"});});</script>
+	</body>
+</html>

@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Variables - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Variables","wgTitle":"Java Programming/Variables","wgCurRevisionId":3295262,"wgRevisionId":3295262,"wgArticleId":198129,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Variables","wgRelevantArticleId":198129,"wgRequestId":"We12LApAEK0AAE8oIcUAAABU","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3295262,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Variables&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Variables&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Variables.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Variables rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Variables</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span><div id="mw-fr-revisiontag" class="flaggedrevs_basic flaggedrevs_draft_notsynced plainlinks noprint nomobile"><img class="flaggedrevs-icon" src="/w/extensions/FlaggedRevs/frontend/modules/img/1.png" alt="Unreviewed changes are displayed on this page" title="Unreviewed changes are displayed on this page">The <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Variables&amp;stable=1">latest reviewed version</a> was <a class="external text" href="//en.wikibooks.org/w/index.php?title=Special:Log&amp;type=review&amp;page=Java_Programming/Variables">checked</a> on <i>17 September 2017</i>. There are <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Variables&amp;oldid=3295262&amp;diff=cur&amp;diffonly=0">template/file changes</a> awaiting review.</div>
+</div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Boolean_expressions.html" title="Boolean expressions"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Boolean_expressions.html" title="Java Programming/Boolean expressions">Boolean expressions</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Variables</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Primitive_Types.html" title="Java Programming/Primitive Types">Primitive Types</a> <a href="Primitive_Types.html" title="Primitive Types"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="Language_Fundamentals.html" title="Java Programming/Language Fundamentals">Language Fundamentals</a></b> topic: <span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/LanguageFundamentalsTopic" class="mw-redirect" title="Template:Java Programming/LanguageFundamentalsTopic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/LanguageFundamentalsTopic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/LanguageFundamentalsTopic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/LanguageFundamentalsTopic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Dec 31, 2012"><img alt="100% developed&#160; as of Dec 31, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Statements.html" title="Java Programming/Statements">Statements</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Conditional_blocks.html" title="Java Programming/Conditional blocks">Conditional blocks</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Loop_blocks.html" title="Java Programming/Loop blocks">Loop blocks</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Boolean_expressions.html" title="Java Programming/Boolean expressions">Boolean expressions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Feb 16, 2010"><img alt="100% developed&#160; as of Feb 16, 2010" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">Variables</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Primitive_Types.html" title="Java Programming/Primitive Types">Primitive Types</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Arithmetic_expressions.html" title="Java Programming/Arithmetic expressions">Arithmetic expressions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Literals.html" title="Java Programming/Literals">Literals</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Methods.html" title="Java Programming/Methods">Methods</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="API\java.lang.html" title="Java Programming/API/java.lang.String">String</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Classes,_Objects_and_Types.html" title="Java Programming/Classes, Objects and Types">Objects</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Jul 5, 2012"><img alt="100% developed&#160; as of Jul 5, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Packages.html" title="Java Programming/Packages">Packages</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Arrays.html" title="Java Programming/Arrays">Arrays</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Mathematical_functions.html" title="Java Programming/Mathematical functions">Mathematical functions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Large_numbers.html" title="Java Programming/Large numbers">Large numbers</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Random_numbers.html" title="Java Programming/Random numbers">Random numbers</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Apr 8, 2013"><img alt="100% developed&#160; as of Apr 8, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Unicode.html" title="Java Programming/Unicode">Unicode</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Apr 8, 2013"><img alt="100% developed&#160; as of Apr 8, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Comments.html" title="Java Programming/Comments">Comments</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Sep 27, 2007"><img alt="100% developed&#160; as of Sep 27, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Keywords.html" title="Java Programming/Keywords">Keywords</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Aug 6, 2013"><img alt="100% developed&#160; as of Aug 6, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Coding_conventions.html" title="Java Programming/Coding conventions">Coding conventions</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p>In the Java programming language, the words <b>field</b> and <b>variable</b> are both one and the same thing. Variables are devices that are used to store data, such as a number, or a string of character data.</p>
+<h2><span class="mw-headline" id="Variables_in_Java_programming">Variables in Java programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Variables&amp;action=edit&amp;section=1" title="Edit section: Variables in Java programming">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Java is considered as a <b>strongly typed</b> programming language. Thus all variables in the Java programming language ought to have a particular <b>data type</b>. This is either declared or inferred and the Java language only allows programs to run if they adhere to type constraints.</p>
+<p>If you present a numeric type with data that is not numeric, say textual content, then such declarations would violate Java’s type system. This gives Java the ability of <b>type safety</b>. Java checks if an expression or data is encountered with an incorrect type or none at all. It then automatically flags this occurrence as an error at compile time. Most type-related errors are caught by the Java compiler, hence making a program more secure and safe once compiled completely and successfully. Some languages (such as C) define an interpretation of such a statement and use that interpretation without any warning; others (such as PL/I) define a conversion for almost all such statements and perform the conversion to complete the assignment. Some type errors can still occur at runtime because Java supports a cast operation which is a way of changing the type of one expression to another. However, Java performs run time type checking when doing such casts, so an incorrect type cast will cause a runtime exception rather than succeeding silently and allowing data corruption.</p>
+<p>On the other hand, Java is also known as a <b>hybrid language</b>. While supporting <a href="/wiki/Object_Oriented_Programming" title="Object Oriented Programming">object oriented programming</a> (OOP), Java is not a pure OO language like <a href="/wiki/Programming:Smalltalk" class="mw-redirect" title="Programming:Smalltalk">Smalltalk</a> or <a href="/wiki/Ruby_Programming" title="Ruby Programming">Ruby</a>. Instead, Java offers both object types and <a href="Primitive_Types.html" title="Java Programming/Primitive Types">primitive types</a>. Primitive types are used for boolean, character, and numeric values and operations. This allows relatively good performance when manipulating numeric data, at the expense of flexibility. For example, you cannot subclass the primitive types and add new operations to them.</p>
+<h2><span class="mw-headline" id="Kinds_of_variables">Kinds of variables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Variables&amp;action=edit&amp;section=2" title="Edit section: Kinds of variables">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In the Java programming language, there are four kinds of variables.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-9"><b>Code listing 3.9: ClassWithVariables.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ClassWithVariables</span> <span class="o">{</span>
+<span class="lineno">2 </span><span class="hll">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class="lineno">3 </span><span class="hll">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="n">isClassUsed</span><span class="o">;</span>
+</span><span class="lineno">4 </span>
+<span class="lineno">5 </span><span class="hll">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">processData</span><span class="o">(</span><span class="n">String</span> <span class="n">parameter</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">6 </span><span class="hll">      <span class="n">Object</span> <span class="n">currentValue</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span><span class="lineno">7 </span>    <span class="o">}</span>
+<span class="lineno">8 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>In the <a href="#code-listing-9">code listing 3.9</a>, are examples of all four kinds of variables.</p>
+<ul>
+<li><b>Instance variables</b>: These are variables that are used to store the state of an object (for example, <code>id</code>). Every object created from a class definition would have its own copy of the variable. It is valid for and occupies storage for as long as the corresponding object is in memory.</li>
+<li><b>Class variables</b>: These variables are explicitly defined within the class-level scope with a <code><a href="Keywords\static.html" title="Java Programming/Keywords/static"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">static</font></a></code> modifier (for example, <code>isClassUsed</code>). No other variables can have a <code>static</code> modifier attached to them. Because these variables are defined with the <code>static</code> modifier, there would always be a single copy of these variables no matter how many times the class has been instantiated. They live as long as the class is loaded in memory.</li>
+<li><b>Parameters</b> or <b>Arguments</b>: These are variables passed into a method signature (for example, <code>parameter</code>). Recall the usage of the <code>args</code> variable in the main method. They are not attached to modifiers (i.e. <code>public</code>, <code>private</code>, <code>protected</code> or <code>static</code>) and they can be used everywhere in the method. They are in memory during the execution of the method and can't be used after the method returns.</li>
+<li><b>Local variables</b>: These variables are defined and used specifically within the method-level scope (for example, <code>currentValue</code>) but not in the method signature. They do not have any modifiers attached to it. They no longer exist after the method has returned.</li>
+</ul>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Test your knowledge</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<p><b>Question 3.5</b>: Consider the following code:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="question-5"><b>Question 3.5: SomeClass.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SomeClass</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno"> 3 </span>  <span class="kd">public</span> <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="n">c</span><span class="o">;</span>
+<span class="lineno"> 4 </span>  <span class="kd">private</span> <span class="kt">int</span> <span class="n">b</span><span class="o">;</span>
+<span class="lineno"> 5 </span>
+<span class="lineno"> 6 </span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">someMethod</span><span class="o">(</span><span class="kt">int</span> <span class="n">d</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 7 </span>    <span class="n">d</span> <span class="o">=</span> <span class="n">c</span><span class="o">;</span>
+<span class="lineno"> 8 </span>    <span class="kt">int</span> <span class="n">e</span><span class="o">;</span>
+<span class="lineno"> 9 </span>  <span class="o">}</span>
+<span class="lineno">10 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>In the example above, we created five variables: <code>a</code>, <code>b</code>, <code>c</code>, <code>d</code> and <code>e</code>. All these variables have the same data type <code>int</code> (integer). However, can you tell what kind of variable each one is?</p>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Answer</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<ul>
+<li><code>a</code> and <code>b</code> are <b>instance variables</b>;</li>
+<li><code>c</code> is a <b>class variable</b>;</li>
+<li><code>d</code> is a <b>parameter</b> or <b>argument</b>; and,</li>
+<li><code>e</code> is a <b>local variable</b>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<h2><span class="mw-headline" id="Creating_variables">Creating variables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Variables&amp;action=edit&amp;section=3" title="Edit section: Creating variables">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/File:Java_Numeric_Types_Memory.png" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/9/93/Java_Numeric_Types_Memory.png" width="300" height="300" class="thumbimage" data-file-width="300" data-file-height="300"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Java_Numeric_Types_Memory.png" class="internal" title="Enlarge"></a></div>
+A graphical representation of computer memory</div>
+</div>
+</div>
+<p>Variables and all the information they store are kept in the computer's memory for access. Think of a computer's memory as a table of data — where each cell corresponds to a variable.</p>
+<p>Upon creating a variable, we basically create a new address space and give it a unique name. Java goes one step further and lets you define what you can place within the variable — in Java parlance you call this a <i>data type</i>. So, you essentially have to do two things in order to create a variable:</p>
+<ul>
+<li>Create a variable by giving it a unique name; and,</li>
+<li>Define a data type for the variable.</li>
+</ul>
+<p>The following code demonstrates how a simple variable can be created. This process is known as <i>variable declaration</i>.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-40"><b>Code section 3.40: A simple variable declaration.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">int</span> <span class="n">a</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Assigning_values_to_variables">Assigning values to variables</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Variables&amp;action=edit&amp;section=4" title="Edit section: Assigning values to variables">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Because we have provided a data type for the variable, we have a hint as to what the variable can and cannot hold. We know that <code>int</code> (integer) data type supports numbers that are either positive or negative integers. Therefore once a variable is created, we can provide it with any integer value using the following syntax. This process is called an <i>assignment operation</i>.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-41"><b>Code section 3.41: Variable declaration and assignment operation (on different lines).</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">int</span> <span class="n">a</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Java provides programmers with a simpler way of combining both variable declaration and assignment operation in one line. Consider the following code:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-42"><b>Code section 3.42: Variable declaration and assignment operation (on the same line).</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Grouping_variable_declarations_and_assignment_operations">Grouping variable declarations and assignment operations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Variables&amp;action=edit&amp;section=5" title="Edit section: Grouping variable declarations and assignment operations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Consider the following code:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-43"><b>Code section 3.43: Ungrouped declarations.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">int</span> <span class="n">a</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="kt">int</span> <span class="n">b</span><span class="o">;</span>
+<span class="lineno">3 </span><span class="n">String</span> <span class="n">c</span><span class="o">;</span>
+<span class="lineno">4 </span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+<span class="lineno">5 </span><span class="n">b</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+<span class="lineno">6 </span><span class="n">c</span> <span class="o">=</span> <span class="s">"some text"</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>There are various ways by which you can streamline the writing of this code. You can group the declarations of similar data types in one statement, for instance:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-44"><b>Code section 3.44: Grouped declarations.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="n">b</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="n">String</span> <span class="n">c</span><span class="o">;</span>
+<span class="lineno">3 </span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="o">;</span>
+<span class="lineno">4 </span><span class="n">b</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+<span class="lineno">5 </span><span class="n">c</span> <span class="o">=</span> <span class="s">"some text"</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Alternatively, you can further reduce the syntax by doing group declarations and assignments together, as such:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-45"><b>Code section 3.45: Grouped declarations and assignments.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="o">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">20</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="n">String</span> <span class="n">c</span> <span class="o">=</span> <span class="s">"some text"</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Identifiers">Identifiers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Variables&amp;action=edit&amp;section=6" title="Edit section: Identifiers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Although <a href="https://en.wikipedia.org/wiki/Address_space" class="extiw" title="w:Address space">memory spaces</a> have their own addresses — usually a hash number such as <code>0xCAD3</code>, etc. — it is much easier to remember a variable's location in the memory if we can give it a recognizable name. <b>Identifiers</b> are the names we give to our variables. You can name your variable anything like <code>aVariable</code>, <code>someVariable</code>, <code>age</code>, <code>someonesImportantData</code>, etcetera. But notice: none of the names we described here has a space within it. Hence, it is pretty obvious that spaces aren't allowed in variable names. In fact, there are a lot of other things that are not allowed in variable names. The things that <i>are</i> allowed are:</p>
+<ul>
+<li>Characters <code>A</code> to <code>Z</code> and their lower-case counterparts <code>a</code> to <code>z</code>.</li>
+<li>Numbers <code>0</code> to <code>9</code>. However, numbers should not come at the beginning of a variable's name.</li>
+<li>And finally, special characters that include only <code>$</code> (dollar sign) and <code>_</code> (underscore).</li>
+</ul>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Test your knowledge</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<p><b>Question 3.6</b>: Which of the ones below are proper variable identifiers?</p>
+<ol>
+<li><code>f_name</code></li>
+<li><code>lastname</code></li>
+<li><code>someones name</code></li>
+<li><code>$SomeoneElsesName</code></li>
+<li><code>7days</code></li>
+<li><code>TheAnswerIs42</code></li>
+</ol>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Answer</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<p>I can tell you that 3 and 5 are not the right way to do things around here, the rest are proper identifiers.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Any valid variable names might be correct but they are not always what you should be naming your variables for a few reasons as listed below:</p>
+<ul>
+<li>The name of the variable should reflect the value within them.</li>
+<li>The identifier should be named following the naming guidelines or conventions for doing so. We will explain that in a bit.</li>
+<li>The identifier shouldn't be a nonsense name like <code>lname</code>, you should always name it properly: <code>lastName</code> is the best way of naming a variable.</li>
+</ul>
+<h2><span class="mw-headline" id="Naming_conventions_for_identifiers">Naming conventions for identifiers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Variables&amp;action=edit&amp;section=7" title="Edit section: Naming conventions for identifiers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>When naming identifiers, you need to use the following guidelines which ensure that your variables are named accurately. As we discussed earlier, we should always name our variables in a way that tells us what they hold. Consider this example:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-46"><b>Code section 3.46: Unknown process.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">24</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">365</span><span class="o">;</span>
+<span class="lineno">3 </span><span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Do you know what this program does? Well, it multiplies two values. That much you guessed right. But, do you know what those values are? Exactly, you don't. Now consider this code:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-47"><b>Code section 3.47: Time conversion.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">24</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="kt">int</span> <span class="n">daysInYear</span> <span class="o">=</span> <span class="mi">365</span><span class="o">;</span>
+<span class="lineno">3 </span><span class="kt">int</span> <span class="n">ageInDays</span> <span class="o">=</span> <span class="n">age</span> <span class="o">*</span> <span class="n">daysInYear</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Now you can tell what's happening, can't you? However, before we continue, notice the <i>case</i> of the variables. If a word contains CAPITAL LETTERS, it is in <b>UPPER CASE</b>. If a word has small letters, it is in <b>lower case</b>. Both cases in a word renders it as <b>mIxEd CaSe</b>.</p>
+<p>The variables we studied so far had a mixed case. When there are two or more words making up the names of a variable, you need to use a special case called the <i>camel-case</i>. Just like the humps of a camel, your words need to stand out. Using this technique, the words <code>first</code> and <code>name</code> could be written as either <code>firstName</code> or <code>FirstName</code>.</p>
+<p>The first instance, <code>firstName</code> is what we use as the names of variables. Remember though, <code>firstName</code> is not the same as <code>FirstName</code> because Java is <b>case-sensitive</b>. Case-sensitive basically implies that the case in which you wrote one word is the case you have to call that word in when using them later on. Anything other than that is not the same as you intended. You'll know more as you progress. You can hopefully tell now why the variables you were asked to identify weren't proper.</p>
+<h2><span id="Literals_(values)"></span><span class="mw-headline" id="Literals_.28values.29">Literals (values)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Variables&amp;action=edit&amp;section=8" title="Edit section: Literals (values)">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Now that we know how variables should be named, let us look at the values of those variables. Simple values like numbers are called <i>literals</i>. This section shows you what literals are and how to use them. Consider the following code:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-48"><b>Code section 3.48: Literals.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">int</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">24</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="kt">long</span> <span class="n">bankBalance</span> <span class="o">=</span> <span class="mi">20000005L</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>By now, we've only seen how numbers work in assignment statements. Let's look at data types other than numbers. Characters are basically letters of the English alphabet. When writing a single character, we use single quotes to encapsulate them. Take a look at the code below:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-49"><b>Code section 3.49: Character.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="sc">'a'</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Why, you ask? Well, the explanation is simple. If written without quotes, the system would think it's a variable identifier. That's the very distinction you have to make when differentiating between variables and their literal values. Character data types are a bit unusual. First, they can only hold a single character. What if you had to store a complete name within them, say <i>John</i>, would you write something like:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-50"><b>Code section 3.50: Character list.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">char</span> <span class="n">firstChar</span> <span class="o">=</span> <span class="sc">'J'</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="kt">char</span> <span class="n">secondChar</span> <span class="o">=</span> <span class="sc">'o'</span><span class="o">;</span>
+<span class="lineno">3 </span><span class="kt">char</span> <span class="n">thirdChar</span> <span class="o">=</span> <span class="sc">'h'</span><span class="o">;</span>
+<span class="lineno">4 </span><span class="kt">char</span> <span class="n">fourthChar</span> <span class="o">=</span> <span class="sc">'n'</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Now, that's pathetic. Thankfully, there's a data type that handles large number of characters, it's called a <code>String</code>. A string can be initialized as follows:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-51"><b>Code section 3.51: String.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"John"</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Notice, the use of double quotation marks instead of single quotation marks. That's the only thing you need to worry about.</p>
+<p><br></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Boolean_expressions.html" title="Boolean expressions"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Boolean_expressions.html" title="Java Programming/Boolean expressions">Boolean expressions</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Variables</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Primitive_Types.html" title="Java Programming/Primitive Types">Primitive Types</a> <a href="Primitive_Types.html" title="Primitive Types"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="100% developed"><img alt="100% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/24px-100_percent.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/36px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/48px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1241
+Cached time: 20171009160300
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.152 seconds
+Real time usage: 1.371 seconds
+Preprocessor visited node count: 1438/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 24733/2097152 bytes
+Template argument size: 3738/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 20/500
+Lua time usage: 0.055/10.000 seconds
+Lua memory usage: 710 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1313.641      1 -total
+ 77.97% 1024.255     12 Template:XExample
+ 12.98%  170.500      2 Template:XCode
+  6.27%   82.331      2 Template:Programming/Navigation
+  1.28%   16.809      1 Template:Java_Programming/LanguageFundamentalsTopic/Nav
+  0.72%    9.472      1 Template:Java_Programming/LanguageFundamentals/Topic
+  0.61%    8.046      3 Template:BookCat
+  0.48%    6.287      3 Template:BookCat/default
+  0.48%    6.248     20 Template:Stage_short
+  0.44%    5.749      4 Template:Java/Hidden_begin
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:198129-0!canonical and timestamp 20171009160258 and revision id 3295262
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Variables&amp;oldid=3295262">https://en.wikibooks.org/w/index.php?title=Java_Programming/Variables&amp;oldid=3295262</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FVariables" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FVariables" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Variables.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk"><span><a href="/wiki/Talk:Java_Programming/Variables" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Variables&amp;stable=1">Read</a></span></li>
+							<li id="ca-current" class="collapsible selected"><span><a href="/w/index.php?title=Java_Programming/Variables&amp;stable=0&amp;redirect=no" title="View this page with the pending changes [v]" accesskey="v">Latest draft</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Variables&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Variables&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Variables" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Variables" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Variables&amp;oldid=3295262" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Variables&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FVariables&amp;id=3295262" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:NewItem?site=enwikibooks&amp;page=Java+Programming%2FVariables" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FVariables">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FVariables&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Variables&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 14:43.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Variables&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.152","walltime":"1.371","ppvisitednodes":{"value":1438,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":24733,"limit":2097152},"templateargumentsize":{"value":3738,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":20,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00% 1313.641      1 -total"," 77.97% 1024.255     12 Template:XExample"," 12.98%  170.500      2 Template:XCode","  6.27%   82.331      2 Template:Programming/Navigation","  1.28%   16.809      1 Template:Java_Programming/LanguageFundamentalsTopic/Nav","  0.72%    9.472      1 Template:Java_Programming/LanguageFundamentals/Topic","  0.61%    8.046      3 Template:BookCat","  0.48%    6.287      3 Template:BookCat/default","  0.48%    6.248     20 Template:Stage_short","  0.44%    5.749      4 Template:Java/Hidden_begin"]},"scribunto":{"limitreport-timeusage":{"value":"0.055","limit":"10.000"},"limitreport-memusage":{"value":727539,"limit":52428800}},"cachereport":{"origin":"mw1241","timestamp":"20171009160300","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":73,"wgHostname":"mw1218"});});</script>
+	</body>
+</html>

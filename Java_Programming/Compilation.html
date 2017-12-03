@@ -1,0 +1,574 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Compilation - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Compilation","wgTitle":"Java Programming/Compilation","wgCurRevisionId":3314280,"wgRevisionId":3314280,"wgArticleId":49931,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Compilation","wgRelevantArticleId":49931,"wgRequestId":"WeTZvwpAME0AALWWNHQAAABF","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3314280,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q3081213","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.3">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Compilation&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Compilation&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Compilation.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Compilation rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Compilation</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Installation.html" title="Installation"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Installation.html" title="Java Programming/Installation">Installation</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Compilation</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Execution.html" title="Java Programming/Execution">Execution</a> <a href="Execution.html" title="Execution"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="Getting_started.html" title="Java Programming/Getting started">Getting Started</a></b> topic: <span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/GettingStartedTopic" class="mw-redirect" title="Template:Java Programming/GettingStartedTopic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/GettingStartedTopic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/GettingStartedTopic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/GettingStartedTopic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="50% developed&#160; as of Aug 22, 2012"><img alt="50% developed&#160; as of Aug 22, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/9px-50_percents.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/14px-50_percents.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/18px-50_percents.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Installation.html" title="Java Programming/Installation">Installing Java on Your Computer</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Dec 12, 2012"><img alt="75% developed&#160; as of Dec 12, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">Compiling programs</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Aug 22, 2012"><img alt="75% developed&#160; as of Aug 22, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Execution.html" title="Java Programming/Execution">Running Java programs</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Nov 20, 2013"><img alt="100% developed&#160; as of Nov 20, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Understanding_a_Java_Program.html" title="Java Programming/Understanding a Java Program">Understanding a Java program</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Nov 20, 2013"><img alt="100% developed&#160; as of Nov 20, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Java_IDEs.html" title="Java Programming/Java IDEs">Java IDEs</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p><br>
+In Java, programs are not compiled into executable files; they are compiled into <a href="https://en.wikipedia.org/wiki/Bytecode" class="extiw" title="w:Bytecode">bytecode</a> (as discussed <a href="The_Java_Platform.html" title="Java Programming/The Java Platform">earlier</a>), which the JVM (Java Virtual Machine) then executes at runtime. Java source code is compiled into bytecode when we use the <code>javac</code> compiler. The bytecode gets saved on the disk with the file extension <code>.class</code>. When the program is to be run, the bytecode is converted, using the <a href="https://en.wikipedia.org/wiki/Just-in-time_compiliation" class="extiw" title="w:Just-in-time compiliation">just-in-time</a> (JIT) compiler. The result is machine code which is then fed to the memory and is executed.</p>
+<p>Java code needs to be compiled twice in order to be executed:</p>
+<ol>
+<li>Java programs need to be compiled to bytecode.</li>
+<li>When the bytecode is run, it needs to be converted to machine code.</li>
+</ol>
+<p>The Java classes/bytecode are compiled to machine code and loaded into memory by the JVM when needed the first time. This is different from other languages like C/C++ where programs are to be compiled to machine code and linked to create an executable file before it can be executed.</p>
+<h2><span class="mw-headline" id="Quick_compilation_procedure">Quick compilation procedure</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Compilation&amp;action=edit&amp;section=1" title="Edit section: Quick compilation procedure">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>To execute your first Java program, follow the instructions below:</p>
+<table style="padding-left:1.5em;">
+<tr>
+<td></td>
+</tr>
+<tr>
+<td valign="top">1.</td>
+<td>Proceed only if you have successfully installed and configured your system for Java as discussed <a href="Installation.html" title="Java Programming/Installation">here</a>.</td>
+</tr>
+<tr>
+<td valign="top">2.</td>
+<td>Open your preferred text editor — this is the editor you set while installing the Java platform.</td>
+</tr>
+<tr>
+<td></td>
+<td>For example, <b>Notepad</b> or <b>Notepad++</b> on Windows; <b>Gedit</b>, <b>Kate</b> or <b>SciTE</b> on Linux; or, <b>XCode</b> on Mac OS, etc.</td>
+</tr>
+<tr>
+<td valign="top">3.</td>
+<td>Write the following lines of code in a new text document:
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-1"><b>Code listing 2.5: HelloWorld.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloWorld</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello World!"</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">4.</td>
+<td>Save the file as <b>HelloWorld.java</b> — the name of your file should be the same as the name of your class definition and followed by the <code>.java</code> extension. This name is <i>case-sensitive</i>, which means you need to capitalize the precise letters that were capitalized in the name for the class definition.</td>
+</tr>
+<tr>
+<td valign="top">5.</td>
+<td>Next, open your preferred command-line application.</td>
+</tr>
+<tr>
+<td></td>
+<td>For example, <b>Command Prompt</b> on Windows; and, <b>Terminal</b> on Linux and Mac OS.</td>
+</tr>
+<tr>
+<td valign="top">6.</td>
+<td>In your command-line application, navigate to the directory where you just created your file. If you do not know how to do this, consider reading through our crash courses for command-line applications for <a href="/wiki/Windows_Batch_Scripting#CD" title="Windows Batch Scripting">Windows</a> or <a href="/wiki/Linux_Guide/Using_the_shell#Using_cd" title="Linux Guide/Using the shell">Linux</a>.</td>
+</tr>
+<tr>
+<td valign="top">7.</td>
+<td>Compile the Java source file using the following command which you can copy and paste in if you want:
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Compilation</b>
+<pre style="background-color:#000; color:#fff;">
+javac HelloWorld.java
+</pre></td>
+</tr>
+</table>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Nuvola_apps_important.svg" class="image" title="Warning"><img alt="Warning" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/32px-Nuvola_apps_important.svg.png" width="32" height="27" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/48px-Nuvola_apps_important.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/64px-Nuvola_apps_important.svg.png" data-file-width="600" data-file-height="500"></a></td>
+<td style="background-color:#fff0f0; border-left: 4px solid red; padding-left: 6px;">If you obtain an error message like <code>error: cannot read: HelloWorld.java 1 error</code>, your file is not in the current folder or it is badly spelled. Did you navigate to the program's location in the command prompt using the <a href="https://en.wikipedia.org/wiki/cd_(command)" class="extiw" title="w:cd (command)">cd</a> (<i>c</i>hange <i>d</i>irectory) command?
+<p>If you obtain another message ending by <code>1 error</code> or <code>... errors</code>, there may be a mistake in your code. Are you sure all words are spelled correctly and with the exact case as shown? Are there semicolons and brackets in the appropriate spot? Are you missing a quote? Usually, modern IDEs would try coloring the entire source as a quote in this case.</p>
+<p>If your computer emits beeps, then you may have illegal characters in your <code>HelloWorld.java</code>.</p>
+<p>If no <code>HelloWorld.class</code> file has been created in the same folder, then you've got an error. Are you launching the <code>javac</code> program correctly?</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">8.</td>
+<td>Once the compiler returns to the prompt, run the application using the following command:
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Execution</b>
+<pre style="background-color:#000; color:#fff;">
+java HelloWorld
+</pre></td>
+</tr>
+</table>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Nuvola_apps_important.svg" class="image" title="Warning"><img alt="Warning" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/32px-Nuvola_apps_important.svg.png" width="32" height="27" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/48px-Nuvola_apps_important.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/64px-Nuvola_apps_important.svg.png" data-file-width="600" data-file-height="500"></a></td>
+<td style="background-color:#fff0f0; border-left: 4px solid red; padding-left: 6px;">If you obtain an error message like <code>Exception in thread "main" java.lang.NoClassDefFoundError: HelloWorld</code>, the <code>HelloWorld.class</code> file is not in the current folder or it is badly spelled.
+<p>If you obtain an error message like <code>Exception in thread "main" java.lang.NoSuchMethodError: main</code>, your source file may have been badly written.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top">9.</td>
+<td>The above command should result in your command-line application displaying the following result:
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output</b>
+<pre style="background-color:#000; color:#fff;">
+Hello World!
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<dl>
+<dd><i>Ask for help if the program did not execute properly in the <a href="/wiki/Talk:Java_Programming/Getting_started" title="Talk:Java Programming/Getting started">Discussion page</a> for this chapter</i>.</dd>
+</dl>
+<h2><span class="mw-headline" id="Automatic_Compilation_of_Dependent_Classes">Automatic Compilation of Dependent Classes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Compilation&amp;action=edit&amp;section=2" title="Edit section: Automatic Compilation of Dependent Classes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In Java, if you have used any reference to any other java object, then the class for that object will be automatically compiled, if that was not compiled already. These automatic compilations are nested, and this continues until all classes are compiled that are needed to run the program. So it is usually enough to compile only the high level class, since all the dependent classes will be automatically compiled.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Main class compilation</b>
+<pre style="background-color:#000; color:#fff;">
+javac ... MainClass.java
+</pre></td>
+</tr>
+</table>
+<p>However, you can't rely on this feature if your program is using reflection to create objects, or you are compiling for servlets or for a "jar", package. In these cases you should list these classes for explicit compilation.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Main class compilation</b>
+<pre style="background-color:#000; color:#fff;">
+javac ... MainClass.java ServletOne.java ...
+</pre></td>
+</tr>
+</table>
+<h2><span id="Packages,_Subdirectories,_and_Resources"></span><span class="mw-headline" id="Packages.2C_Subdirectories.2C_and_Resources">Packages, Subdirectories, and Resources</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Compilation&amp;action=edit&amp;section=3" title="Edit section: Packages, Subdirectories, and Resources">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Each Java top level class belongs to a package (covered in the chapter about <a href="Packages.html" title="Java Programming/Packages">Packages</a>). This may be declared in a <code>package</code> statement at the beginning of the file; if that is missing, the class belongs to the unnamed package.</p>
+<p>For compilation, the file must be in the right directory structure. A file containing a class in the unnamed package must be in the current/root directory; if the class belongs to a package, it must be in a directory with the same name as the package.</p>
+<p>The convention is that package names and directory names corresponding to the package consist of only lower case letters.</p>
+<h3><span class="mw-headline" id="Top_level_package">Top level package</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Compilation&amp;action=edit&amp;section=4" title="Edit section: Top level package">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A class with this package declaration</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.1: Package declaration</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kn">package</span> <span class="nn">example</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>has to be in a directory named <code>example</code>.</p>
+<h3><span class="mw-headline" id="Subpackages">Subpackages</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Compilation&amp;action=edit&amp;section=5" title="Edit section: Subpackages">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A class with this package declaration</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.2: Package declaration with sub-packages</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kn">package</span> <span class="nn">org.wikibooks.en</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>has to be in a directory named <code>en</code> which has to be a sub-directory of <code>wikibooks</code> which in turn has to be a sub-directory of <code>org</code> resulting in <code>org/wikibooks/en</code> on Linux or <code>org\wikibooks\en</code> on Windows.</p>
+<p>Java programs often contain non-code files such as images and properties files. These are referred to generally as <i>resources</i> and stored in directories local to the classes in which they're used. For example, if the class <code>com.example.ExampleApp</code> uses the <code>icon.png</code> file, this file could be stored as <code>/com/example/resources/icon.png</code>. These resources present a problem when a program is compiled, because <code>javac</code> does not copy them to wherever the <code>.class</code> files are being complied to (see above); it is up to the programmer to move the resource files and directories.</p>
+<h2><span class="mw-headline" id="Filename_Case">Filename Case</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Compilation&amp;action=edit&amp;section=6" title="Edit section: Filename Case">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Java source file name must be the same as the public class name that the file contains. There can be only one public class defined per file. The Java class name is case sensitive, as is the source file name.</p>
+<p>The naming convention for the class name is for it to start with a capital letter.</p>
+<h2><span class="mw-headline" id="Compiler_Options">Compiler Options</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Compilation&amp;action=edit&amp;section=7" title="Edit section: Compiler Options">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Debugging_and_Symbolic_Information">Debugging and Symbolic Information</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Compilation&amp;action=edit&amp;section=8" title="Edit section: Debugging and Symbolic Information">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div style="clear: both"></div>
+<table style="background: #ffd; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 60%; margin: auto;" class="notice noprint notice-todo">
+<tr>
+<td style="width: 58px;">
+<div class="floatleft"><img alt="Clipboard" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/45px-Clipboard.svg.png" width="45" height="45" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/68px-Clipboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/90px-Clipboard.svg.png" data-file-width="48" data-file-height="48"></div>
+</td>
+<td>
+<p><b>To do:</b><br>
+Complete this section.</p>
+</td>
+</tr>
+</table>
+<div style="clear: both"></div>
+<p>To debug into Java system classes such as String and ArrayList, you need a special version of the JRE which is compiled with "debug information". The JRE included inside the JDK provides this info, but the regular JRE does not. Regular JRE does not include this info to ensure better performance.</p>
+<p><br></p>
+<pre>
+   Modern compilers do a pretty good job converting your high-level code, with its nicely indented and nested control structures and arbitrarily typed variables into a big pile of bits called machine code (or bytecode in case of Java), the sole purpose of which is to run as fast as possible on the target CPU (virtual CPU of your JVM). Java code gets converted into several machine code instructions. Variables are shoved all over the place – into the stack, into registers, or completely optimized away. Structures and objects don’t even exist in the resulting code – they’re merely an abstraction that gets translated to hard-coded offsets into memory buffers.
+</pre>
+<pre>
+   So how does a debugger know where to stop when you ask it to break at the entry to some function? How does it manage to find what to show you when you ask it for the value of a variable? The answer is – debugging information.
+</pre>
+<pre>
+   Debugging information is generated by the compiler together with the machine code. It is a representation of the relationship between the executable program and the original source code. This information is encoded into a pre-defined format and stored alongside the machine code. Many such formats were invented over the years for different platforms and executable files.
+</pre>
+<p><br>
+Symbolic Information&#160;: Symbolic resolution is done at class loading time at linking resolution step. It is the process of replacing symbolic references from the type with direct references. It is done by searching into method area to locate the referenced entity</p>
+<h2><span class="mw-headline" id="Ant">Ant</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Compilation&amp;action=edit&amp;section=9" title="Edit section: Ant">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<dl>
+<dd><i>For comprehensive information about all aspects of Ant, please see the <a href="/wiki/Programming:Apache_Ant" class="mw-redirect" title="Programming:Apache Ant">Ant Wikibook</a>.</i></dd>
+</dl>
+<p>The best way to build your application is to use a build tool. This checks all the needed dependencies and compiles only the needed class for the build. <a href="Compilation.html#Ant" title="Java Programming/Compilation">Ant</a> tool is one of the best and the most popular build tools currently available. Ant is a build management tool designed to replace MAKE as the tool for automated builds of large Java applications. Like Java, and unlike MAKE, Ant is designed to be platform independent.</p>
+<p>Using <a href="Compilation.html#Ant" title="Java Programming/Compilation">Ant</a> you would build your application from the command line by typing:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Ant building</b>
+<pre style="background-color:#000; color:#fff;">
+ant build.xml
+</pre></td>
+</tr>
+</table>
+<p>The <code>build.xml</code> file contains all the information needed to build the application.</p>
+<p>Building a Java application requires certain tasks to be performed defined in a <code>build.xml</code> file. Those tasks may include not only compiling the code, but also copying code, packaging the program to a Jar, creating EJBs, running automated tests, doing ftp for the code to remote site, and so on. For some tasks a condition can be assigned, for example to compile only changed code, or do the task if that was not already done so. Tasks dependency can also be specified, which will make sure that the order of executions of the tasks are in the right order. For example, when compiling the code before packaging it to a jar, the package-to-jar task depends on the compilation task.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Bombilla_amarilla_-_yellow_Edison_lamp.svg" class="image" title="Note"><img alt="Note" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/30px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" width="30" height="30" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/45px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/60px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" data-file-width="200" data-file-height="200"></a></td>
+<td style="background-color:#fffff0; border-left: 4px solid yellow; padding-left: 6px;">In rare cases, your code may appear to compile correctly but the program behaves as if you were using an old copy of the source code (or otherwise reports errors during runtime.) When this occurs, you may need to clean your compilation folder by either deleting the class files or using the Clean command from an IDE.</td>
+</tr>
+</table>
+<p>The <code>build.xml</code> file is generally kept in the root directory of the java project. Ant parses this file and executes the tasks therein. Below we give an example <code>build.xml</code> file.</p>
+<p>Ant tool is written in Java and is open source, so it can be extended if there is a task you'd like to be done during the build that is not in the predefined tasks list. It is very easy to hook your ant task code to the other tasks: your code only needs to be in the classpath, and the Ant tool will load it at runtime. For more information about writing your own Ant tasks, please see the project website at <a rel="nofollow" class="external free" href="http://ant.apache.org/">http://ant.apache.org/</a>.</p>
+<div class="collapsible" style="border:1px solid #aaaaaa; width:100%; background:#ccccff;">
+<div class="title" style="text-align:left; padding:0.5em; background:#ccccff; color:black;">Example <code>build.xml</code> file.</div>
+<div class="NavContent" style="margin:0.5em; margin-top:0em; background:white; border:1px solid #aaaaaa;">
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="cp">&lt;?xml version="1.0"?&gt;</span>
+
+<span class="nt">&lt;project</span> <span class="na">name=</span><span class="s">"ExampleApp"</span> <span class="na">basedir=</span><span class="s">"."</span> <span class="na">default=</span><span class="s">"main"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"source.dir"</span>    <span class="na">value=</span><span class="s">"source"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"libraries.dir"</span> <span class="na">value=</span><span class="s">"libraries"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"build.dir"</span>     <span class="na">value=</span><span class="s">"build"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"classes.dir"</span>   <span class="na">value=</span><span class="s">"${build.dir}/classes"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"dist.dir"</span>      <span class="na">value=</span><span class="s">"${build.dir}/dist"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"main-class"</span>    <span class="na">value=</span><span class="s">"com.example.ExampleApp"</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;path</span> <span class="na">id=</span><span class="s">"classpath"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;fileset</span> <span class="na">dir=</span><span class="s">"${libraries.dir}"</span> <span class="na">includes=</span><span class="s">"**/*.jar"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/path&gt;</span>
+
+    <span class="nt">&lt;target</span> <span class="na">name=</span><span class="s">"clean"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;delete</span> <span class="na">dir=</span><span class="s">"${build.dir}"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/target&gt;</span>
+
+    <span class="nt">&lt;target</span> <span class="na">name=</span><span class="s">"compile"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;mkdir</span> <span class="na">dir=</span><span class="s">"${classes.dir}"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;javac</span> <span class="na">srcdir=</span><span class="s">"${source.dir}"</span> <span class="na">destdir=</span><span class="s">"${classes.dir}"</span> <span class="na">classpathref=</span><span class="s">"classpath"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;copy</span> <span class="na">todir=</span><span class="s">"${classes.dir}"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;fileset</span> <span class="na">dir=</span><span class="s">"${src.dir}"</span> <span class="na">excludes=</span><span class="s">"**/*.java"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/copy&gt;</span>
+    <span class="nt">&lt;/target&gt;</span>
+
+    <span class="nt">&lt;target</span> <span class="na">name=</span><span class="s">"build"</span> <span class="na">depends=</span><span class="s">"compile"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;mkdir</span> <span class="na">dir=</span><span class="s">"${dist.dir}"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;copy</span> <span class="na">todir=</span><span class="s">"${dist.dir}/lib"</span> <span class="na">flatten=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;path</span> <span class="na">refid=</span><span class="s">"classpath"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/copy&gt;</span>
+        <span class="nt">&lt;path</span> <span class="na">id=</span><span class="s">"dist.classpath"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;fileset</span> <span class="na">dir=</span><span class="s">"${dist.dir}/lib"</span> <span class="na">includes=</span><span class="s">"*.jar"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/path&gt;</span>
+        <span class="nt">&lt;manifestclasspath</span> <span class="na">property=</span><span class="s">"dist.manifest.classpath"</span> <span class="na">jarfile=</span><span class="s">"${dist.dir}/${ant.project.name}.jar"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;classpath</span> <span class="na">refid=</span><span class="s">"dist.classpath"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;/manifestclasspath&gt;</span>
+        <span class="nt">&lt;jar</span> <span class="na">destfile=</span><span class="s">"${dist.dir}/${ant.project.name}.jar"</span> <span class="nt">&gt;</span>
+            <span class="nt">&lt;zipfileset</span> <span class="na">dir=</span><span class="s">"${classes.dir}"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;manifest&gt;</span>
+                <span class="nt">&lt;attribute</span> <span class="na">name=</span><span class="s">"Class-Path"</span> <span class="na">value=</span><span class="s">"${dist.manifest.classpath}"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;attribute</span> <span class="na">name=</span><span class="s">"Main-Class"</span> <span class="na">value=</span><span class="s">"${main-class}"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/manifest&gt;</span>
+        <span class="nt">&lt;/jar&gt;</span>
+    <span class="nt">&lt;/target&gt;</span>
+
+    <span class="nt">&lt;target</span> <span class="na">name=</span><span class="s">"run-build"</span> <span class="na">depends=</span><span class="s">"build"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;java</span> <span class="na">jar=</span><span class="s">"${dist.dir}/${ant.project.name}.jar"</span> <span class="na">fork=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;classpath&gt;</span>
+                <span class="nt">&lt;path</span> <span class="na">refid=</span><span class="s">"classpath"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;path</span> <span class="na">location=</span><span class="s">"${dist.dir}/${ant.project.name}.jar"</span><span class="nt">/&gt;</span>
+            <span class="nt">&lt;/classpath&gt;</span>
+        <span class="nt">&lt;/java&gt;</span>
+    <span class="nt">&lt;/target&gt;</span>
+
+    <span class="nt">&lt;target</span> <span class="na">name=</span><span class="s">"run"</span> <span class="na">depends=</span><span class="s">"compile"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;java</span> <span class="na">classname=</span><span class="s">"${main-class}"</span> <span class="nt">&gt;</span>
+            <span class="nt">&lt;classpath&gt;</span>
+                <span class="nt">&lt;path</span> <span class="na">refid=</span><span class="s">"classpath"</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;pathelement</span> <span class="na">location=</span><span class="s">"${classes.dir}"</span> <span class="nt">/&gt;</span>
+            <span class="nt">&lt;/classpath&gt;</span>
+        <span class="nt">&lt;/java&gt;</span>
+    <span class="nt">&lt;/target&gt;</span>
+
+    <span class="nt">&lt;target</span> <span class="na">name=</span><span class="s">"clean-build"</span> <span class="na">depends=</span><span class="s">"clean, build"</span><span class="nt">/&gt;</span>
+
+    <span class="nt">&lt;target</span> <span class="na">name=</span><span class="s">"main"</span> <span class="na">depends=</span><span class="s">"clean, run"</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/project&gt;</span>
+</pre></div>
+</div>
+</div>
+<p>The next most popular way to build applications is using an <a href="Java_IDEs.html" title="Java Programming/Java IDEs">Integrated Development Environment</a> (IDE).</p>
+<h2><span class="mw-headline" id="The_JIT_compiler">The JIT compiler</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Compilation&amp;action=edit&amp;section=10" title="Edit section: The JIT compiler">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Just-In-Time (JIT) compiler is the compiler that converts the byte-code to machine code. It compiles byte-code once and the compiled machine code is re-used again and again, to speed up execution. Early Java compilers compiled the byte-code to machine code each time it was used, but more modern compilers cache this machine code for reuse on the machine. Even then, java's JIT compiling was still faster than an "interpreter-language", where code is compiled from <b>high level language</b>, instead of from byte-code each time it was used.</p>
+<p>The standard JIT compiler runs <i>on demand</i>. When a method is called repeatedly, the JIT compiler analyzes the bytecode and produces highly efficient machine code, which runs very fast. The JIT compiler is smart enough to recognize when the code has already been compiled, so as the application runs, compilation happens only as needed. As Java applications run, they tend to become faster and faster, because the JIT can perform runtime profiling and optimization to the code to meet the execution environment. Methods or code blocks which do not run often receive less optimization; those which run often (so called <i>hotspots</i>) receive more profiling and optimization.</p>
+<p><br></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Installation.html" title="Installation"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Installation.html" title="Java Programming/Installation">Installation</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Compilation</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Execution.html" title="Java Programming/Execution">Execution</a> <a href="Execution.html" title="Execution"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="75% developed"><img alt="75% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/24px-75_percent.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/36px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/48px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1319
+Cached time: 20171016152659
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.124 seconds
+Real time usage: 0.153 seconds
+Preprocessor visited node count: 740/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 14998/2097152 bytes
+Template argument size: 5563/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 11/500
+Lua time usage: 0.064/10.000 seconds
+Lua memory usage: 635 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  119.016      1 -total
+ 76.89%   91.510      2 Template:Programming/Navigation
+  9.10%   10.835      1 Template:Java_Programming/GettingStartedTopic/Nav
+  6.80%    8.091      3 Template:BookCat
+  5.40%    6.430      3 Template:BookCat/default
+  4.21%    5.014      1 Template:Navbar
+  3.76%    4.473      3 Template:BOOKCATEGORY
+  3.55%    4.230      1 Template:Java_Programming/GettingStarted/Topic
+  2.78%    3.313      1 Template:Status
+  2.63%    3.128      3 Template:BOOKCATEGORY/core
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:49931-0!canonical and timestamp 20171016152659 and revision id 3314280
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Compilation&amp;oldid=3314280">https://en.wikibooks.org/w/index.php?title=Java_Programming/Compilation&amp;oldid=3314280</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FCompilation" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FCompilation" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Compilation.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk"><span><a href="/wiki/Talk:Java_Programming/Compilation" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible selected"><span><a href="Compilation.html">Read</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Compilation&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Compilation&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Compilation" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Compilation" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Compilation&amp;oldid=3314280" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Compilation&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q3081213" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FCompilation&amp;id=3314280" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-cs"><a href="https://cs.wikibooks.org/wiki/Java/Hello_World" title="Java/Hello World – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_Java/Primer_programa" title="Programación en Java/Primer programa – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikibooks.org/wiki/Programmation_Java/Premier_programme" title="Programmation Java/Premier programme – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikibooks.org/wiki/Java/Dal_sorgente_all%27esecuzione" title="Java/Dal sorgente all'esecuzione – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikibooks.org/wiki/Java/Criando_e_executando_o_primeiro_programa" title="Java/Criando e executando o primeiro programa – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q3081213#sitelinks-wikibooks" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FCompilation">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FCompilation&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Compilation&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-wikipedia"><a href="https://en.wikipedia.org/wiki/Java_compiler" hreflang="en">Wikipedia</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 16 October 2017, at 08:19.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Compilation&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.124","walltime":"0.153","ppvisitednodes":{"value":740,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":14998,"limit":2097152},"templateargumentsize":{"value":5563,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":11,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  119.016      1 -total"," 76.89%   91.510      2 Template:Programming/Navigation","  9.10%   10.835      1 Template:Java_Programming/GettingStartedTopic/Nav","  6.80%    8.091      3 Template:BookCat","  5.40%    6.430      3 Template:BookCat/default","  4.21%    5.014      1 Template:Navbar","  3.76%    4.473      3 Template:BOOKCATEGORY","  3.55%    4.230      1 Template:Java_Programming/GettingStarted/Topic","  2.78%    3.313      1 Template:Status","  2.63%    3.128      3 Template:BOOKCATEGORY/core"]},"scribunto":{"limitreport-timeusage":{"value":"0.064","limit":"10.000"},"limitreport-memusage":{"value":649751,"limit":52428800}},"cachereport":{"origin":"mw1319","timestamp":"20171016152659","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":66,"wgHostname":"mw1242"});});</script>
+	</body>
+</html>

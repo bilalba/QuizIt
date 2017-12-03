@@ -1,0 +1,274 @@
+/* Quick Reset */
+* {
+	margin: 0;
+ 	padding: 0;
+  	list-style: none;
+   	line-height: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+/* General Styles */
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 10pt;
+	padding: 0 35px;
+	background-color: #f5f5f5;
+	}
+strong {
+	font-weight: 500;
+}
+
+/* Question Meta */
+.question-meta {
+	margin: 25px auto;
+	text-align: center;
+	}
+.question-meta .progress,
+.question-meta .question-score {
+	display: inline-block;
+	vertical-align: middle;
+	}
+.question-meta .question-score {
+	overflow: hidden;
+	border: 1px solid #99f;
+	border-radius: 5px;
+	background-color: #ccc;
+	}
+.question-meta .question-score .score {
+	float: left;
+	width: 26px;
+	line-height: 26px;
+	height: 26px;
+}
+.question-meta .question-score #right {
+	background-color: #33b35a;
+}
+.question-meta .question-score #wrong {
+	background-color: #f99;
+}
+
+
+/* Progress Bar */
+.progress {
+	width: 200px;
+	border: 1px solid #33b35a;
+	border-radius: 5px;
+	background-color: #ccc;
+	overflow: hidden;
+	-webkit-box-shadow: 0 0 3px #090;
+	-moz-box-shadow: 0 0 3px #090;
+	box-shadow: 0 0 3px #090;
+	   }
+.progress .bar {
+	width: 0%;
+	height: 25px;
+	background-color: #33b35a;
+	text-align: center;
+	line-height: 25px;}
+.progress .bar.bar-1 {
+	width: 10%;
+}
+.progress .bar.bar-2 {
+	width: 20%;
+}
+.progress .bar.bar-3 {
+	width: 30%;
+}
+.progress .bar.bar-4 {
+	width: 40%;
+}
+.progress .bar.bar-5 {
+	width: 50%;
+}
+.progress .bar.bar-6 {
+	width: 60%;
+}
+.progress .bar.bar-7 {
+	width: 70%;
+}
+.progress .bar.bar-8 {
+	width: 80%;
+}
+.progress .bar.bar-9 {
+	width: 90%;
+}
+.progress .bar.bar-10 {
+	width: 100%;
+}
+
+/* Heading Stuff */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	}
+
+/* Container */
+/* Should be half the width.
+   Should be centred.
+   Should not exceed a certain width.
+*/
+.container {
+	margin: 20px auto;
+	min-width: 300px;
+	max-width: 750px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 3px;
+	padding: 15px;
+	}
+.container h1 {
+	text-align: center;
+	padding: 0 15px;
+	margin: 0 0 15px;
+	text-shadow: 0 0 2px rgba(0,0,0,0.5);
+	}
+.container .intro {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.75);
+	margin: 0 15px;
+	border-radius: 5px;
+	}
+.container .intro p {
+	text-align: justify;
+	line-height: 1.5;
+	margin: 15px 0 0;
+	}
+.container .intro p:first-child {
+	margin: 0;
+}
+/* Questions & Answers */
+.container .intro h2 {
+	font-size: 1.25em;
+	line-height: 1.5;
+	}
+.container .intro .answers li {
+	position: relative;
+	overflow: hidden;
+	width: 75%;
+	}
+.container .intro .answers li input {
+	position: absolute;
+	left: -150px;
+	}
+.container .intro .answers li label {
+	display: block;
+	padding: 8px;
+	border: 1px solid #ccf;
+	border-radius: 3px;
+	margin: 10px 0 0;
+	line-height: 1.2;
+	cursor: pointer;
+	overflow: hidden;
+	line-height: 20px;
+	   }
+.container .intro .answers li label:hover {
+	background-color: #ccf;
+}
+.container .intro .answers li label .result {
+	float: right;
+	background-color: rgba(0,0,0,0.25);
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 3px;
+	display: none;
+	   }
+.container .intro .answers.show-result li input.correct + label,
+.container .intro .answers li input.correct:checked + label,
+.container .intro .answers li input.correct:checked + label:hover {
+	background-color: #cfc;
+	border-color: #f90;
+	}
+.container .intro .answers li input.wrong:checked + label,
+.container .intro .answers li input.wrong:checked + label:hover {
+	background-color: #fcc;
+	border-color: #f99;
+	}
+.container .intro .answers.show-result li input.correct + label .result,
+.container .intro .answers li input:checked + label .result {
+	display: block;
+}
+.container .intro .action-buttons {
+	text-align: center;
+}
+.container .intro .action-buttons .btn {
+	display: inline-block;
+ margin: 15px 15px 0;
+}
+/* Button Styles */
+.btn {
+	border: 2px solid #33b35a;
+    line-height: 1.5;
+    padding: 5px;
+    display: block;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px auto 0;
+    border-radius: 3px;
+    color: #33b35a; -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -ms-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear; background-color: transparent; cursor: pointer;
+      }
+.btn:hover {background-color: #33b35a
+}
+.btn.disabled, .btn.disabled:hover, .btn:disabled, .btn:disabled:hover {
+	color: #999;
+	border-color: #999;
+	cursor: not-allowed;
+    background-color: transparent;
+}
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc; 
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+}
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ccc; 
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+}

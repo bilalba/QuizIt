@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Swing - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Swings/Overview","wgTitle":"Java Swings/Overview","wgCurRevisionId":2460960,"wgRevisionId":2460960,"wgArticleId":4566,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Swings"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Swings/Overview","wgRelevantArticleId":4566,"wgRequestId":"We-JTQpAMFsAAEadOnsAAABC","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Java_Programming/Swing","wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":2460960,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgInternalRedirectTargetUrl":"/wiki/Java_Swings/Overview","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["mediawiki.action.view.redirect","ext.cite.a11y","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.flaggedRevs.basic%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Swings/Overview&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Swings/Overview&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="https://en.wikibooks.org/wiki/Java_Swings/Overview">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Swings_Overview rootpage-Java_Swings vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Swing</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="/wiki/Java_Swings" title="Java Swings">Java Swings</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/w/index.php?title=Java_Programming/Swing&amp;redirect=no" class="mw-redirect" title="Java Programming/Swing">Java Programming/Swing</a>)</span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<div style="float:right; width:17ex; border: 1px solid #C6C9FF; padding: 1em; margin:1em;"><i><b>Content</b> &#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Swings/Content" title="Template:Java Swings/Content"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Swings/Content&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Swings/Content (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Swings/Content&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;</i>
+<ul>
+<li><a href="/wiki/Java_Swings/Java_Swing" title="Java Swings/Java Swing">Java Swing</a></li>
+<li><a class="mw-selflink selflink">Overview</a></li>
+<li><a href="/wiki/Java_Swings/AWT" title="Java Swings/AWT">AWT</a></li>
+<li><a href="/wiki/Java_Swings/Swings" title="Java Swings/Swings">Dive into Swings</a></li>
+<li><a href="/wiki/Java_Swings/First_Examples" title="Java Swings/First Examples">First Examples</a></li>
+<li><a href="/wiki/Java_Swings/Swing_Top_Level_Containers" title="Java Swings/Swing Top Level Containers">Swing Top Level Containers</a></li>
+<li><a href="/wiki/Java_Swings/Swing_Layouts" title="Java Swings/Swing Layouts">Swing Layouts</a></li>
+<li><a href="/wiki/Java_Swings/Event_Handling" title="Java Swings/Event Handling">Event Handling</a></li>
+<li><a href="/wiki/Java_Swings/MVC" title="Java Swings/MVC">MVC architecture</a></li>
+<li><a href="/wiki/Java_Swings/Responsive_Swing_Application" title="Java Swings/Responsive Swing Application">Responsive Swing Application</a></li>
+<li><a href="/wiki/Java_Swings/Large_Examples" title="Java Swings/Large Examples">Large Examples</a></li>
+</ul>
+<p><b>Appendix</b></p>
+<ul>
+<li><a href="/wiki/Java_Swings/Reference" title="Java Swings/Reference">Reference</a></li>
+</ul>
+</div>
+<p><br>
+Swing is a tool kit in Java which provides a way to build cross platform user interfaces. It is built on top of and designed as a replacement for AWT, the other UI toolkit built into Java. SWT is a third toolkit you may hear about. SWT is an open source toolkit and is a full topic in of itself, see <a rel="nofollow" class="external text" href="http://www.eclipse.org/swt/">SWT's Homepage</a> for more information.</p>
+<h2><span class="mw-headline" id="Overview">Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Swings/Overview&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="thumb tleft">
+<div class="thumbinner" style="width:202px;"><a href="/wiki/File:GC_SwingDemo.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/05/GC_SwingDemo.jpg/200px-GC_SwingDemo.jpg" width="200" height="133" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/05/GC_SwingDemo.jpg/300px-GC_SwingDemo.jpg,//upload.wikimedia.org/wikipedia/commons/thumb/0/05/GC_SwingDemo.jpg/400px-GC_SwingDemo.jpg" data-file-width="929" data-file-height="619"></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:GC_SwingDemo.jpg" class="internal" title="Enlarge"></a></div>
+Figure 10.1: Example of a Swing application</div>
+</div>
+</div>
+<p>Swing<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> provides many controls and widgets to build user interfaces with. Swing class names typically begin with a J such as <code>JButton</code>, <code>JList</code>, <code>JFrame</code>. This is mainly to differentiate them from their AWT<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">[2]</a></sup> counterparts and in general are one-to-one replacements. Swing is built on the concept of <i>Lightweight components</i> vs AWT and SWT's concept of <i>Heavyweight components</i>. The difference between the two is that the Lightweight components are rendered (drawn) using purely Java code, such as drawLine and drawImage, whereas Heavyweight components use the native operating system to render the components.</p>
+<p>Some components in Swing are actually heavyweight components. The top-level classes and any derived from them are heavyweight as they extend the AWT versions. This is needed because at the root of the UI, the parent windows need to be provided by the OS. These top-level classes include <code>JWindow</code>, <code>JFrame</code>, <code>JDialog</code> and <code>JApplet</code>. All Swing components to be rendered to the screen must be able to trace their way to a root window or one of those classes.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Bombilla_amarilla_-_yellow_Edison_lamp.svg" class="image" title="Note"><img alt="Note" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/30px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" width="30" height="30" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/45px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/60px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" data-file-width="200" data-file-height="200"></a></td>
+<td style="background-color:#fffff0; border-left: 4px solid yellow; padding-left: 6px;">Generally it is not a good idea to mix heavyweight components with lightweight components (other than as previously mentioned) as you will encounter layering issues, e.g., a lightweight component that should appear "on top" ends up being obscured by a heavyweight component. The few exceptions to this include using heavyweight components as the root pane and for popup windows. Generally speaking, heavyweight components will render on top of lightweight components and will not be consistent with the look and feel being used in Swing. There are exceptions, but that is an advanced topic. The truly adventurous may want to consider reading this <a rel="nofollow" class="external text" href="http://java.sun.com/products/jfc/tsc/articles/mixing/">article</a> from Sun on mixing heavyweight and lightweight components.</td>
+</tr>
+</table>
+<p>So what does using Swing get you? So far we've only talked about components and rendering. Well, to start with you get the following.</p>
+<ul>
+<li>Controls: Buttons, Check Boxes, Lists, Trees, Tables, Combo boxes (dropdown list), Menus, Text fields</li>
+<li>Displays: Labels, Progress bars, Icons, Tool Tips</li>
+<li>Pluggable look and feels (PLAFs): Windows, CDE/Motif, Mac. Allows for "skinning" the application without changing any code</li>
+</ul>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Bombilla_amarilla_-_yellow_Edison_lamp.svg" class="image" title="Note"><img alt="Note" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/30px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" width="30" height="30" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/45px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/60px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" data-file-width="200" data-file-height="200"></a></td>
+<td style="background-color:#fffff0; border-left: 4px solid yellow; padding-left: 6px;">Due to legal issues between Sun, Microsoft &amp; Apple, you are only able to use the Windows Look and Feel (LAF) on Windows and the Mac LAF on Apple computers</td>
+</tr>
+</table>
+<ul>
+<li>Standard Top-Level Windows: Windows, Frames, Dialogs etc.</li>
+<li>Event Listener APIs</li>
+<li>Key bindings &amp; mnemonics: Allow keystrokes to map to specific actions.</li>
+</ul>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Swings/Overview&amp;action=edit&amp;section=2" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text">Swing is also referred to incorrectly as JFC (Java Foundation Classes), however the JFC includes APIs in addition to Swing, such as the Java 2D and Drag-n-Drop APIs.</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text">AWT is the Abstract Windowing Toolkit, where the components are rendered by the native operating system</span></li>
+</ol>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Swings/Overview&amp;action=edit&amp;section=3" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://javalessons.com/cgi-bin/fun/java-tutorials-main.cgi?sub=gui&amp;ses=ao789">Swing Tutorial, interactive lessons based on examples</a></li>
+<li><a rel="nofollow" class="external text" href="http://java.sun.com/docs/books/tutorial/ui/index.html">The Java Tutorials: Graphic User Interfaces</a></li>
+</ul>
+<p><br></p>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="50% developed"><img alt="50% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/24px-50_percents.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/36px-50_percents.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/48px-50_percents.svg.png" data-file-width="9" data-file-height="9"></a></div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1319
+Cached time: 20171006235555
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.044 seconds
+Real time usage: 0.061 seconds
+Preprocessor visited node count: 318/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 6593/2097152 bytes
+Template argument size: 2438/2097152 bytes
+Highest expansion depth: 15/40
+Expensive parser function count: 1/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   35.126      1 -total
+ 62.22%   21.857      1 Template:Side_note
+ 57.57%   20.221      1 Template:Java_Swings/Content
+ 33.87%   11.896      1 Java_Swings/TOC
+ 31.06%   10.911      2 Template:BookCat
+ 25.03%    8.792      2 Template:BookCat/default
+ 18.56%    6.520      2 Template:BOOKCATEGORY
+ 18.34%    6.441      1 Template:Navbar
+ 13.64%    4.792      1 Template:Status
+ 13.14%    4.617      2 Template:BOOKCATEGORY/core
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:4566-0!canonical and timestamp 20171006235555 and revision id 2460960
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Swings/Overview&amp;oldid=2460960">https://en.wikibooks.org/w/index.php?title=Java_Swings/Overview&amp;oldid=2460960</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Swings" title="Category:Book:Java Swings">Book:Java Swings</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Swings%2FOverview" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Swings%2FOverview" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Java_Swings/Overview" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk"><span><a href="/wiki/Talk:Java_Swings/Overview" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Java_Swings/Overview">Read</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Swings/Overview&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Swings/Overview&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Swings/Overview" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Swings/Overview" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Swings/Overview&amp;oldid=2460960" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Swings/Overview&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Swings%2FOverview&amp;id=2460960" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikibooks.org/wiki/Java_Standard:_Grafische_Oberfl%C3%A4chen_mit_Swing" title="Java Standard: Grafische Oberflächen mit Swing – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikibooks.org/wiki/Programmeren_in_Java/GUI" title="Programmeren in Java/GUI – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikibooks.org/wiki/Java/Swing" title="Java/Swing – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:NewItem?site=enwikibooks&amp;page=Java+Swings%2FOverview" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Swings%2FOverview">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Swings%2FOverview&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Swings/Overview&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 13 December 2012, at 21:38.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Swings/Overview&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.044","walltime":"0.061","ppvisitednodes":{"value":318,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":6593,"limit":2097152},"templateargumentsize":{"value":2438,"limit":2097152},"expansiondepth":{"value":15,"limit":40},"expensivefunctioncount":{"value":1,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%   35.126      1 -total"," 62.22%   21.857      1 Template:Side_note"," 57.57%   20.221      1 Template:Java_Swings/Content"," 33.87%   11.896      1 Java_Swings/TOC"," 31.06%   10.911      2 Template:BookCat"," 25.03%    8.792      2 Template:BookCat/default"," 18.56%    6.520      2 Template:BOOKCATEGORY"," 18.34%    6.441      1 Template:Navbar"," 13.64%    4.792      1 Template:Status"," 13.14%    4.617      2 Template:BOOKCATEGORY/core"]},"cachereport":{"origin":"mw1319","timestamp":"20171006235555","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":82,"wgHostname":"mw1256"});});</script>
+	</body>
+</html>

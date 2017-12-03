@@ -1,0 +1,597 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Throwing and Catching Exceptions - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Throwing_and_Catching_Exceptions","wgTitle":"Java Programming/Throwing and Catching Exceptions","wgCurRevisionId":3295257,"wgRevisionId":3295257,"wgArticleId":56651,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Throwing_and_Catching_Exceptions","wgRelevantArticleId":56651,"wgRequestId":"We042QpAIC0AAHaN@0oAAAAP","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3295257,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Throwing_and_Catching_Exceptions.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Throwing_and_Catching_Exceptions rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Throwing and Catching Exceptions</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span><div id="mw-fr-revisiontag" class="flaggedrevs_basic flaggedrevs_draft_notsynced plainlinks noprint nomobile"><img class="flaggedrevs-icon" src="/w/extensions/FlaggedRevs/frontend/modules/img/1.png" alt="Unreviewed changes are displayed on this page" title="Unreviewed changes are displayed on this page">The <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;stable=1">latest reviewed version</a> was <a class="external text" href="//en.wikibooks.org/w/index.php?title=Special:Log&amp;type=review&amp;page=Java_Programming/Throwing_and_Catching_Exceptions">checked</a> on <i>17 September 2017</i>. There are <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;oldid=3295257&amp;diff=cur&amp;diffonly=0">template/file changes</a> awaiting review.</div>
+</div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Exceptions.html" title="Exceptions"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Exceptions.html" title="Java Programming/Exceptions">Exceptions</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Throwing and Catching Exceptions</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Checked_Exceptions.html" title="Java Programming/Checked Exceptions">Checked Exceptions</a> <a href="Checked_Exceptions.html" title="Checked Exceptions"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="Exceptions.html" title="Java Programming/Exceptions">Exceptions</a></b> topic:<span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/ExceptionsTopic" class="mw-redirect" title="Template:Java Programming/ExceptionsTopic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/ExceptionsTopic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/ExceptionsTopic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/ExceptionsTopic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of 8 Aug, 2013"><img alt="75% developed&#160; as of 8 Aug, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">Throwing and catching exceptions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of 8 Aug, 2013"><img alt="75% developed&#160; as of 8 Aug, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Checked_Exceptions.html" title="Java Programming/Checked Exceptions">Checked exceptions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of 8 Aug, 2013"><img alt="75% developed&#160; as of 8 Aug, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Unchecked_Exceptions.html" title="Java Programming/Unchecked Exceptions">Unchecked exceptions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of 8 Aug, 2013"><img alt="75% developed&#160; as of 8 Aug, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Preventing_NullPointerException.html" title="Java Programming/Preventing NullPointerException">Preventing <code>NullPointerException</code></a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of 8 Aug, 2013"><img alt="75% developed&#160; as of 8 Aug, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Stack_trace.html" title="Java Programming/Stack trace">Stack trace</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of 8 Aug, 2013"><img alt="75% developed&#160; as of 8 Aug, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Nesting_Exceptions.html" title="Java Programming/Nesting Exceptions">Nesting exceptions (chained exceptions)</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p><br>
+Language compilers are adept at pointing out most of the erroneous code in a program, however there are some errors that only become apparent when the program is executed. Consider the <a href="#code-listing-1">code listing 6.1</a>; here, the program defines a method <b>divide</b> that does a simple division operation taking two integers as parameter arguments and returning the result of their division. It can safely be assumed that when the <b>divide(4, 2)</b> statement is called, it would return the number <b>2</b>. However, consider the next statement, where the program relies upon the provided command line arguments to generate a division operation. What if the user provides the number zero (<b>0</b>) as the second argument? We all know that division by zero is impossible, but the compiler couldn't possibly have anticipated the user providing zero as an argument.<br clear="all"></p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-1"><b>Code listing 6.1: SimpleDivisionOperation.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SimpleDivisionOperation</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 3 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">divide</span><span class="o">(</span><span class="mi">4</span><span class="o">,</span> <span class="mi">2</span><span class="o">));</span>
+<span class="lineno"> 4 </span>    <span class="k">if</span> <span class="o">(</span><span class="n">args</span><span class="o">.</span><span class="na">length</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 5 </span>      <span class="kt">int</span> <span class="n">arg0</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">0</span><span class="o">]);</span>
+<span class="lineno"> 6 </span>      <span class="kt">int</span> <span class="n">arg1</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">1</span><span class="o">]);</span>
+<span class="lineno"> 7 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">divide</span><span class="o">(</span><span class="n">arg0</span><span class="o">,</span> <span class="n">arg1</span><span class="o">));</span>
+<span class="lineno"> 8 </span>    <span class="o">}</span>
+<span class="lineno"> 9 </span>  <span class="o">}</span>
+<span class="lineno">10 </span>
+<span class="lineno">11 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">divide</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">12 </span><span class="hll">    <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="o">;</span>
+</span><span class="lineno">13 </span>  <span class="o">}</span>
+<span class="lineno">14 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code listing 6.1</b>
+<pre style="background-color:black; color:white;">
+$ java SimpleDivisionOperation 1 0
+2
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+     at SimpleDivisionOperation.divide(SimpleDivisionOperation.java:12)
+     at SimpleDivisionOperation.main(SimpleDivisionOperation.java:7)
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>Such <i>exceptional code</i> that results in erroneous interpretations at program runtime usually results in errors that are called <i>exceptions</i> in Java. When the Java interpreter encounters an exceptional code, it halts execution and displays information about the error that occurs. This information is known as a <i>stack trace</i>. The <a href="Stack_trace.html" title="Java Programming/Stack trace">stack trace</a> in the above example tells us more about the error, such as the thread — <code>"main"</code> — where the exception occurred, the type of exception — <code>java.lang.ArithmeticException</code>, a comprehensible display message — <code>/ by zero</code>, and the exact methods and the line numbers where the exception may have occurred.</p>
+<h2><span class="mw-headline" id="Exception_object">Exception object</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;action=edit&amp;section=1" title="Edit section: Exception object">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The preceding exception could have been created explicitly by the developer as it is the case in the following code:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-2"><b>Code listing 6.2: SimpleDivisionOperation.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SimpleDivisionOperation</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 3 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">divide</span><span class="o">(</span><span class="mi">4</span><span class="o">,</span> <span class="mi">2</span><span class="o">));</span>
+<span class="lineno"> 4 </span>    <span class="k">if</span> <span class="o">(</span><span class="n">args</span><span class="o">.</span><span class="na">length</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 5 </span>      <span class="c1">// Convert a string to an integer</span>
+<span class="lineno"> 6 </span>      <span class="kt">int</span> <span class="n">arg0</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">0</span><span class="o">]);</span>
+<span class="lineno"> 7 </span>      <span class="kt">int</span> <span class="n">arg1</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">1</span><span class="o">]);</span>
+<span class="lineno"> 8 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">divide</span><span class="o">(</span><span class="n">arg0</span><span class="o">,</span> <span class="n">arg1</span><span class="o">));</span>
+<span class="lineno"> 9 </span>    <span class="o">}</span>
+<span class="lineno">10 </span>  <span class="o">}</span>
+<span class="lineno">11 </span>
+<span class="lineno">12 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">divide</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">13 </span>    <span class="k">if</span> <span class="o">(</span><span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">14 </span><span class="hll">      <span class="k">throw</span> <span class="k">new</span> <span class="n">ArithmeticException</span><span class="o">(</span><span class="s">"You can\'t divide by zero!"</span><span class="o">);</span>       
+</span><span class="lineno">15 </span>    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+<span class="lineno">16 </span>      <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="o">;</span>
+<span class="lineno">17 </span>    <span class="o">}</span>
+<span class="lineno">18 </span>  <span class="o">}</span>
+<span class="lineno">19 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code listing 6.2</b>
+<pre style="background-color:black; color:white;">
+$ java SimpleDivisionOperation 1 0
+2
+Exception in thread "main" java.lang.ArithmeticException: You can't divide by zero!
+at SimpleDivisionOperation.divide(SimpleDivisionOperation.java:14)
+at SimpleDivisionOperation.main(SimpleDivisionOperation.java:7)
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>Note that when <code>b</code> equals zero, there is no return value. Instead of a <code>java.lang.ArithmeticException</code> generated by the Java interpreter itself, it is an exception created by the coder. The result is the same. It shows you that an exception is an object. Its main particularity is that it can be thrown. An exception object must inherit from <code>java.lang.Exception</code>. Standard exceptions have two constructors:</p>
+<ol>
+<li>The default constructor; and,</li>
+<li>A constructor taking a string argument so that you can place pertinent information in the exception.</li>
+</ol>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-1"><b>Code section 6.1: Instance of an exception object with the default constructor.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="k">new</span> <span class="n">Exception</span><span class="o">();</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-2"><b>Code section 6.2: Instance of an <code>Exception</code> object by passing string in constructor.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="k">new</span> <span class="n">Exception</span><span class="o">(</span><span class="s">"Something unexpected happened"</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>This string can later be extracted using various methods, as you can see in the <a href="#code-listing-2">code listing 6.2</a>.</p>
+<p>You can throw any type of <b>Throwable</b> object using the keyword <code><a href="Keywords\throw.html" title="Java Programming/Keywords/throw"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">throw</font></a></code>. It interrupts the method. Anything after the <b>throw</b> statement would not be executed, unless the <i>thrown</i> exception is <a href="#Exception_handlers">handled</a>. The exception object is not <i>returned</i> from the method, it is <i>thrown</i> from the method. That means that the exception object is not the return value of the method and the calling method can be interrupted too and so on and so on...</p>
+<p>Typically, you'll throw a different class of exception for each different type of error. The information about the error is represented both inside the exception object and implicitly in the name of the exception class, so someone in the bigger context can figure out what to do with your exception. Often, the only information is the type of exception, and nothing meaningful is stored within the exception object.</p>
+<h3><span class="mw-headline" id="Oracle_standard_exception_classes">Oracle standard exception classes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;action=edit&amp;section=2" title="Edit section: Oracle standard exception classes">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The box 6.1 below talks about the various exception classes within the <code>java.lang</code> package.</p>
+<table style="border:solid 1px #2a7fff; background-color:#fdfdfd;">
+<tr>
+<td style="padding:8px;">
+<p><b>Box 6.1: The Java exception classes</b></p>
+<dl>
+<dt>Throwable&#160;</dt>
+<dd>The Throwable class is the superclass of all errors and exceptions in the Java language. Only objects that are instances of this class (or one of its subclasses) are thrown by the Java Virtual Machine or can be thrown by the Java throw statement.</dd>
+<dd>A throwable contains a snapshot of the execution stack of its thread at the time it was created. It can also contain a message string that gives more information about the error. Finally, it can contain a cause: another throwable that caused this throwable to get thrown. The cause facility was added in release 1.4. It is also known as the chained exception facility, as the cause can, itself, have a cause, and so on, leading to a "chain" of exceptions, each caused by another.</dd>
+<dt>Error&#160;</dt>
+<dd>An Error indicates serious problems that a reasonable application should not try to handle. Most such errors are abnormal conditions.</dd>
+<dt>Exception&#160;</dt>
+<dd>The class Exception and its subclasses are a form of Throwable that indicates conditions that a reasonable application might want to handle. Also this is the class that a programmer may want to extend when adding business logic exceptions.</dd>
+<dt>RuntimeException&#160;</dt>
+<dd>RuntimeException is the superclass of those exceptions that can be thrown during the normal operation of the Java Virtual Machine. A method is not required to declare in its throws clause any subclasses of RuntimeException that might be thrown during the execution of the method but not caught.</dd>
+</dl>
+</td>
+<td style="padding:8px;"><span style="color:#2a7fff;"><b>Figure 6.2:</b> The exception classes and their inheritance model in the JCL.</span><br>
+<div class="center">
+<div class="floatnone"><a href="/wiki/File:Java_exception_classes.svg" class="image"><img alt="Java exception classes.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Java_exception_classes.svg/339px-Java_exception_classes.svg.png" width="339" height="226" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Java_exception_classes.svg/509px-Java_exception_classes.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Java_exception_classes.svg/678px-Java_exception_classes.svg.png" data-file-width="339" data-file-height="226"></a></div>
+</div>
+</td>
+</tr>
+</table>
+<h2><span id="try/catch_statement"></span><span class="mw-headline" id="try.2Fcatch_statement"><code>try</code>/<code>catch</code> statement</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;action=edit&amp;section=3" title="Edit section: try/catch statement">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>By default, when an exception is thrown, the current method is interrupted, the calling method is interrupted too and so on till the <code>main</code> method. A thrown exception can also be caught using a <code>try</code>/<code>catch</code> statement. Below is how a <code>try</code>/<code>catch</code> statement works:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-3"><b>Code section 6.3: Division into a <code>try</code> block.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="hll"><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">4</span><span class="o">;</span>
+</span><span class="lineno"> 2 </span><span class="hll"><span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span><span class="o">;</span>
+</span><span class="lineno"> 3 </span><span class="hll"><span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class="lineno"> 4 </span><span class="k">try</span> <span class="o">{</span>
+<span class="lineno"> 5 </span><span class="hll">  <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="o">;</span>
+</span><span class="lineno"> 6 </span><span class="hll">  <span class="n">result</span> <span class="o">=</span> <span class="n">c</span><span class="o">;</span>
+</span><span class="lineno"> 7 </span><span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="n">ArithmeticException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 8 </span>  <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno"> 9 </span><span class="o">}</span>
+<span class="lineno">10 </span><span class="hll"><span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The executed code lines have been highlighted. When no exception is thrown, the method flow executes the <code>try</code> statement and not the <code>catch</code> statement.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-4"><b>Code section 6.4: Catching 'division by zero' errors.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="hll"><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">4</span><span class="o">;</span>
+</span><span class="lineno"> 2 </span><span class="hll"><span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class="lineno"> 3 </span><span class="hll"><span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class="lineno"> 4 </span><span class="k">try</span> <span class="o">{</span>
+<span class="lineno"> 5 </span><span class="hll">  <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="o">;</span>
+</span><span class="lineno"> 6 </span>  <span class="n">result</span> <span class="o">=</span> <span class="n">c</span><span class="o">;</span>
+<span class="lineno"> 7 </span><span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="n">ArithmeticException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 8 </span><span class="hll">  <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class="lineno"> 9 </span><span class="o">}</span>
+<span class="lineno">10 </span><span class="hll"><span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>As there is a thrown exception at line 5, the line 6 is not executed, but the exception is caught by the <code>catch</code> statement so the <code>catch</code> block is executed. The following code is also executed. Note that the <code>catch</code> statement takes an exception as parameter. There is a third case: when the exception is not from the same class as the parameter:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-5"><b>Code section 6.5: Uncaught exception.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="hll"><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">4</span><span class="o">;</span>
+</span><span class="lineno"> 2 </span><span class="hll"><span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class="lineno"> 3 </span><span class="hll"><span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class="lineno"> 4 </span><span class="k">try</span> <span class="o">{</span>
+<span class="lineno"> 5 </span><span class="hll">  <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="o">;</span>
+</span><span class="lineno"> 6 </span>  <span class="n">result</span> <span class="o">=</span> <span class="n">c</span><span class="o">;</span>
+<span class="lineno"> 7 </span><span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="n">NullPointerException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 8 </span>  <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno"> 9 </span><span class="o">}</span>
+<span class="lineno">10 </span><span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>It is as if there is no <code>try</code>/<code>catch</code> statement. The exception is thrown to the calling method.</p>
+<h2><span class="mw-headline" id="catch_blocks"><code>catch</code> blocks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;action=edit&amp;section=4" title="Edit section: catch blocks">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A <code>try</code>/<code>catch</code> statement can contain several <code>catch</code> blocks, to handle different exceptions in different ways. Each <code>catch</code> block must take a parameter of a different throwable class. A thrown object may match several <code>catch</code> block but only the first <code>catch</code> block that matches the object will be executed. A catch-block will catch a thrown exception if and only if:</p>
+<ul>
+<li>the thrown exception object is the same as the exception object specified by the catch-block.</li>
+<li>the thrown exception object is the subtype of the exception object specified by the catch-block.</li>
+</ul>
+<p>This means that the <code>catch</code> block order is important. As a consequence, you can't put a <code>catch</code> block that catches all the exception (which take a <code>java.lang.Exception</code> as parameter) before a <code>catch</code> block that catches a more specific exception as the second block could never be executed.</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-6"><b>Code section 6.6: Exception handling with catch blocks.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="k">try</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>  <span class="c1">// Suppose the code here throws any exceptions,</span>
+<span class="lineno"> 3 </span>  <span class="c1">// then each is handled in a separate catch block.</span>
+<span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span>  <span class="kt">int</span><span class="o">[]</span> <span class="n">tooSmallArray</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">2</span><span class="o">];</span>
+<span class="lineno"> 6 </span>  <span class="kt">int</span> <span class="n">outOfBoundsIndex</span> <span class="o">=</span> <span class="mi">10000</span><span class="o">;</span>
+<span class="lineno"> 7 </span><span class="hll">  <span class="n">tooSmallArray</span><span class="o">[</span><span class="n">outOfBoundsIndex</span><span class="o">]</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
+</span><span class="lineno"> 8 </span>
+<span class="lineno"> 9 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"No exception thrown."</span><span class="o">);</span>
+<span class="lineno">10 </span><span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="n">NullPointerException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">11 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Exception handling code for the NullPointerException."</span><span class="o">);</span>
+<span class="lineno">12 </span><span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="n">NumberFormatException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">13 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Exception handling code for the NumberFormatException."</span><span class="o">);</span>
+<span class="lineno">14 </span><span class="hll"><span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="n">ArithmeticException</span> <span class="o">|</span> <span class="n">IndexOutOfBoundsException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">15 </span><span class="hll">  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Exception handling code for ArithmeticException"</span>
+</span><span class="lineno">16 </span><span class="hll">    <span class="o">+</span> <span class="s">" or IndexOutOfBoundsException."</span><span class="o">);</span>
+</span><span class="lineno">17 </span><span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="n">Exception</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">18 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Exception handling code for any other Exception."</span><span class="o">);</span>
+<span class="lineno">19 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 6.6</b>
+<pre style="background-color:black; color:white;">
+Exception handling code for ArithmeticException or IndexOutOfBoundsException.
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>At line 14, we use a <b>multi-catch</b> clause. It is available since the JDK 7. This is a combination of several <b>catch</b> clauses and let's you handle exceptions in a single handler while also maintaining their types. So, instead of being boxed into a parent Exception super-class, they retain their individual types.</p>
+<p>You can also use the <code>java.lang.Throwable</code> class here, since <b>Throwable</b> is the parent class for the <i>application-specific</i> <b>Exception</b> classes. However, this is discouraged in Java programming circles. This is because <b>Throwable</b> happens to also be the parent class for the <i>non-application specific</i> <b>Error</b> classes which are not meant to be handled explicitly as they are catered for by the JVM itself.</p>
+<h2><span class="mw-headline" id="finally_block"><code>finally</code> block</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;action=edit&amp;section=5" title="Edit section: finally block">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A <code><a href="Keywords\finally.html" title="Java Programming/Keywords/finally"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">finally</font></a></code> block can be added after the <code>catch</code> blocks. A <code>finally</code> block is always executed, even when no exception is thrown, an exception is thrown and caught, or an exception is thrown and not caught. It's a place to put code that should always be executed after an unsafe operation like a file close or a database disconnection. You can define a <code>try</code> block without <code>catch</code> block, however, in this case, it must be followed by a <code>finally</code> block.</p>
+<h2><span class="mw-headline" id="Example_of_handling_exceptions">Example of handling exceptions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;action=edit&amp;section=6" title="Edit section: Example of handling exceptions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Let's examine the following code:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Nuvola_apps_important.svg" class="image" title="Warning"><img alt="Warning" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/32px-Nuvola_apps_important.svg.png" width="32" height="27" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/48px-Nuvola_apps_important.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/64px-Nuvola_apps_important.svg.png" data-file-width="600" data-file-height="500"></a></td>
+<td style="background-color:#fff0f0; border-left: 4px solid red; padding-left: 6px;"><span id="code-section-7" style="color: red;"><b>Code section 6.7: Handling exceptions.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">methodA</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">SomeException</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>    <span class="c1">// Method body</span>
+<span class="lineno"> 3 </span><span class="o">}</span>
+<span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">methodB</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">CustomException</span><span class="o">,</span> <span class="n">AnotherException</span> <span class="o">{</span>
+<span class="lineno"> 6 </span>    <span class="c1">// Method body</span>
+<span class="lineno"> 7 </span><span class="o">}</span>
+<span class="lineno"> 8 </span>
+<span class="lineno"> 9 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">methodC</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">10 </span><span class="hll">    <span class="n">methodB</span><span class="o">();</span>
+</span><span class="lineno">11 </span><span class="hll">    <span class="n">methodA</span><span class="o">();</span>
+</span><span class="lineno">12 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>In the <a href="#code-section-7">code section 6.7</a>, <code>methodC</code> is invalid. Because <code>methodA</code> and <code>methodB</code> pass (or throw) exceptions, <code>methodC</code> must be prepared to handle them. This can be handled in two ways: a <code><a href="Keywords\try.html" title="Java Programming/Keywords/try"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">try</font></a></code>-<code><a href="Keywords\catch.html" title="Java Programming/Keywords/catch"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">catch</font></a></code> block, which will handle the exception within the method and a <code><a href="Keywords\throws.html" title="Java Programming/Keywords/throws"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">throws</font></a></code> clause which would in turn throw the exception to the caller to handle. The above example will cause a compilation error, as Java is very strict about exception handling. So the programmer is forced to handle any possible error condition at some point.</p>
+<p>A method can do two things with an exception: ask the calling method to handle it by the <code><a href="Keywords\throws.html" title="Java Programming/Keywords/throws"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">throws</font></a></code> declaration or handle the exception inside the method by the <code><a href="Keywords\try.html" title="Java Programming/Keywords/try"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">try</font></a></code>-<code><a href="Keywords\catch.html" title="Java Programming/Keywords/catch"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">catch</font></a></code> block.</p>
+<p>To work correctly, the original code can be modified in multiple ways. For example, the following:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-8"><b>Code section 6.8: Catching and throwing exceptions.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="hll"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">methodC</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">CustomException</span><span class="o">,</span> <span class="n">SomeException</span> <span class="o">{</span>
+</span><span class="lineno">2 </span><span class="hll">  <span class="k">try</span> <span class="o">{</span>
+</span><span class="lineno">3 </span>    <span class="n">methodB</span><span class="o">();</span>
+<span class="lineno">4 </span><span class="hll">  <span class="o">}</span> <span class="k">catch</span><span class="o">(</span><span class="n">AnotherException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">5 </span><span class="hll">    <span class="c1">// Handle caught exceptions.</span>
+</span><span class="lineno">6 </span><span class="hll">  <span class="o">}</span>
+</span><span class="lineno">7 </span>  <span class="n">methodA</span><span class="o">();</span>
+<span class="lineno">8 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The <code>AnotherException</code> from <code>methodB</code> will be handled locally, while <code>CustomException</code> and <code>SomeException</code> will be thrown to the caller to handle it. Most of the developers are embarrassed when they have to choose between the two options. This type of decision should not be taken at development time. If you are a development team, it should be discussed between all the developers in order to have a common exception handling policy.</p>
+<h2><span class="mw-headline" id="Keyword_references">Keyword references</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;action=edit&amp;section=7" title="Edit section: Keyword references">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><code><a href="Keywords\try.html" title="Java Programming/Keywords/try"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">try</font></a></code></li>
+<li><code><a href="Keywords\catch.html" title="Java Programming/Keywords/catch"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">catch</font></a></code></li>
+<li><code><a href="Keywords\finally.html" title="Java Programming/Keywords/finally"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">finally</font></a></code></li>
+<li><code><a href="Keywords\throws.html" title="Java Programming/Keywords/throws"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">throws</font></a></code></li>
+<li><code><a href="Keywords\throw.html" title="Java Programming/Keywords/throw"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">throw</font></a></code></li>
+</ul>
+<p><br></p>
+<div style="clear: both"></div>
+<table style="background: #ffd; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 60%; margin: auto;" class="notice noprint notice-todo">
+<tr>
+<td style="width: 58px;">
+<div class="floatleft"><img alt="Clipboard" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/45px-Clipboard.svg.png" width="45" height="45" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/68px-Clipboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/90px-Clipboard.svg.png" data-file-width="48" data-file-height="48"></div>
+</td>
+<td>
+<p><b>To do:</b><br>
+Add some exercises like the ones in <a href="Variables.html#Kinds_of_variables" title="Java Programming/Variables">Variables</a></p>
+</td>
+</tr>
+</table>
+<div style="clear: both"></div>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Exceptions.html" title="Exceptions"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Exceptions.html" title="Java Programming/Exceptions">Exceptions</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Throwing and Catching Exceptions</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Checked_Exceptions.html" title="Java Programming/Checked Exceptions">Checked Exceptions</a> <a href="Checked_Exceptions.html" title="Checked Exceptions"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="75% developed"><img alt="75% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/24px-75_percent.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/36px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/48px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1216
+Cached time: 20171009221100
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.176 seconds
+Real time usage: 0.243 seconds
+Preprocessor visited node count: 821/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 17965/2097152 bytes
+Template argument size: 2589/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 51/500
+Lua time usage: 0.091/10.000 seconds
+Lua memory usage: 778 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  181.633      1 -total
+ 75.79%  137.667      2 Template:Programming/Navigation
+  6.95%   12.629      1 Template:Java_Programming/ExceptionsTopic/Nav
+  6.84%   12.419      3 Template:BookCat
+  5.72%   10.393      3 Template:BookCat/default
+  4.66%    8.471      3 Template:BOOKCATEGORY
+  4.15%    7.540      7 Template:XExample
+  3.73%    6.768      3 Template:BOOKCATEGORY/core
+  2.96%    5.376      1 Template:Navbar
+  2.85%    5.178      1 Template:Java_Programming/Exceptions/Topic
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:56651-0!canonical and timestamp 20171009221100 and revision id 3295257
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;oldid=3295257">https://en.wikibooks.org/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;oldid=3295257</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FThrowing+and+Catching+Exceptions" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FThrowing+and+Catching+Exceptions" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Throwing_and_Catching_Exceptions.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk"><span><a href="/wiki/Talk:Java_Programming/Throwing_and_Catching_Exceptions" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;stable=1">Read</a></span></li>
+							<li id="ca-current" class="collapsible selected"><span><a href="/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;stable=0&amp;redirect=no" title="View this page with the pending changes [v]" accesskey="v">Latest draft</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Throwing_and_Catching_Exceptions" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Throwing_and_Catching_Exceptions" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;oldid=3295257" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FThrowing_and_Catching_Exceptions&amp;id=3295257" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:NewItem?site=enwikibooks&amp;page=Java+Programming%2FThrowing+and+Catching+Exceptions" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FThrowing+and+Catching+Exceptions">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FThrowing+and+Catching+Exceptions&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 14:43.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Throwing_and_Catching_Exceptions&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.176","walltime":"0.243","ppvisitednodes":{"value":821,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":17965,"limit":2097152},"templateargumentsize":{"value":2589,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":51,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  181.633      1 -total"," 75.79%  137.667      2 Template:Programming/Navigation","  6.95%   12.629      1 Template:Java_Programming/ExceptionsTopic/Nav","  6.84%   12.419      3 Template:BookCat","  5.72%   10.393      3 Template:BookCat/default","  4.66%    8.471      3 Template:BOOKCATEGORY","  4.15%    7.540      7 Template:XExample","  3.73%    6.768      3 Template:BOOKCATEGORY/core","  2.96%    5.376      1 Template:Navbar","  2.85%    5.178      1 Template:Java_Programming/Exceptions/Topic"]},"scribunto":{"limitreport-timeusage":{"value":"0.091","limit":"10.000"},"limitreport-memusage":{"value":796217,"limit":52428800}},"cachereport":{"origin":"mw1216","timestamp":"20171009221100","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":58,"wgHostname":"mw1324"});});</script>
+	</body>
+</html>

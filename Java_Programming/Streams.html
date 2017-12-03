@@ -1,0 +1,460 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Streams - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Streams","wgTitle":"Java Programming/Streams","wgCurRevisionId":3295254,"wgRevisionId":3295254,"wgArticleId":161370,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Streams","wgRelevantArticleId":161370,"wgRequestId":"We7L9ApAAEQAAIPAWFIAAABF","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3295254,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q22122698","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Streams&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Streams&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Streams.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Streams rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Streams</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span><div id="mw-fr-revisiontag" class="flaggedrevs_basic flaggedrevs_draft_notsynced plainlinks noprint nomobile"><img class="flaggedrevs-icon" src="/w/extensions/FlaggedRevs/frontend/modules/img/1.png" alt="Unreviewed changes are displayed on this page" title="Unreviewed changes are displayed on this page">The <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Streams&amp;stable=1">latest reviewed version</a> was <a class="external text" href="//en.wikibooks.org/w/index.php?title=Special:Log&amp;type=review&amp;page=Java_Programming/Streams">checked</a> on <i>17 September 2017</i>. There are <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Streams&amp;oldid=3295254&amp;diff=cur&amp;diffonly=0">template/file changes</a> awaiting review.</div>
+</div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Basic_IO.html" title="Basic IO"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Basic_IO.html" title="Java Programming/Basic IO">Basic IO</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Streams</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Event_Handling.html" title="Java Programming/Event Handling">Event Handling</a> <a href="Event_Handling.html" title="Event Handling"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="/w/index.php?title=Java_Programming/UserInterface&amp;action=edit&amp;redlink=1" class="new" title="Java Programming/UserInterface (does not exist)">User Interface</a></b> topic:<span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/UserInterface/Topic" title="Template:Java Programming/UserInterface/Topic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/UserInterface/Topic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/UserInterface/Topic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/UserInterface/Topic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Nov 8, 2012"><img alt="75% developed&#160; as of Nov 8, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Basic_IO.html" title="Java Programming/Basic IO">Basic I/O</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Nov 20, 2013"><img alt="75% developed&#160; as of Nov 20, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">Streams</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Nov 8, 2012"><img alt="75% developed&#160; as of Nov 8, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Event_Handling.html" title="Java Programming/Event Handling">Event handling</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Dec 18, 2012"><img alt="75% developed&#160; as of Dec 18, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="JavaBeans.html" title="Java Programming/JavaBeans">JavaBeans</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Nov 20, 2013"><img alt="100% developed&#160; as of Nov 20, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Canvas.html" title="Java Programming/Canvas">Canvas</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="25% developed&#160; as of Nov 20, 2013"><img alt="25% developed&#160; as of Nov 20, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/9px-25_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/14px-25_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/18px-25_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Graphics.html" title="Java Programming/Graphics">Graphics</a>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Sep 22, 2007"><img alt="100% developed&#160; as of Sep 22, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Graphics\Drawing_shapes.html" title="Java Programming/Graphics/Drawing shapes">Drawing basic shapes</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="0% developed&#160; as of Sep 22, 2007"><img alt="0% developed&#160; as of Sep 22, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/9px-00%25.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/14px-00%25.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/18px-00%25.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Graphics\Drawing_complex_shapes.html" title="Java Programming/Graphics/Drawing complex shapes">Drawing complex shapes</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="0% developed&#160; as of Sep 21, 2007"><img alt="0% developed&#160; as of Sep 21, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/9px-00%25.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/14px-00%25.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/18px-00%25.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Graphics\Drawing_text.html" title="Java Programming/Graphics/Drawing text">Drawing text</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="0% developed&#160; as of March 11,2015"><img alt="0% developed&#160; as of March 11,2015" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/9px-00%25.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/14px-00%25.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/18px-00%25.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Graphics\Understanding_gradients.html" title="Java Programming/Graphics/Understanding gradients">Understanding gradients</a></li>
+</ul>
+</li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Nov 20, 2013"><img alt="75% developed&#160; as of Nov 20, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Applets.html" title="Java Programming/Applets">Applets</a></li>
+</ul>
+<dl>
+<dd>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Nov 16, 2012"><img alt="100% developed&#160; as of Nov 16, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Applets\Overview.html" title="Java Programming/Applets/Overview">Overview</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Nov 20, 2013"><img alt="100% developed&#160; as of Nov 20, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Applets\User_Interface.html" title="Java Programming/Applets/User Interface">User Interface</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Nov 20, 2013"><img alt="75% developed&#160; as of Nov 20, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Applets\Event_Listeners.html" title="Java Programming/Applets/Event Listeners">Event Listeners</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="0% developed&#160; as of Nov 16, 2012"><img alt="0% developed&#160; as of Nov 16, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/9px-00%25.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/14px-00%25.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/18px-00%25.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Applets\Graphics_and_Media.html" title="Java Programming/Applets/Graphics and Media">Graphics and Media</a></li>
+</ul>
+<table>
+<tr>
+<td></td>
+</tr>
+</table>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><br>
+The most basic input and output in Java (<code>System.in</code> and <code>System.out</code> fields that have been used in the <a href="Basic_IO.html" title="Java Programming/Basic IO">Basic I/O</a>) is done using streams. Streams are objects that represent sources and destinations of data. Streams that are sources of data can be read from, and streams that are destinations of data can be written to. A stream in Java is an ordered sequence of bytes of undetermined length. Streams are ordered and in sequence so that the java virtual machine can understand and work upon the stream. Streams are analogous to water streams. They exist as a communication medium, just like electromagnetic waves in communication. The order or sequence of bytes in a Java stream allow the virtual machine to classify it among other streams.</p>
+<p>Java has various inbuilt streams implemented as classes in the package <code>java.io</code> like the classes of <code>System.in</code> and <code>System.out</code>. Streams can be classed as both input and output streams. All Java streams are derived from Input Stream (<code>java.io.InputStream</code>) and Output Stream (<code>java.io.OutputStream</code>) classes. They are abstract base classes meant for other stream classes. The <code>System.in</code> is the input stream class derivative and analogically <code>System.out</code> is the output counterpart. Both are basic classes used to directly interact with input and output through console, similarly follows <code>System.err</code>. Also Java has streams to communicate across different parts of a program or even among threads. There are also classes that "filter" streams, changing one format to another (e.g. class <code>DataOutputStream</code>, which translates various primitive types to byte streams).</p>
+<p>It is a characteristic of streams that they deal only in one discrete unit of data at a time, and different streams deal with different types of data. If one had a stream that represented a destination for bytes, for example, one would send data to the destination one byte at a time. If a stream was a source of byte data, one would read the data a byte at a time. Because this is the only way to access data from a stream, in this latter case, we wouldn't know when we had read all the data from the stream until we actually got there. When reading a stream, one generally has to check each unit of data each read operation to see if the end of the stream has been reached (with byte streams, the special value is the integer -1, or FFFF hex).</p>
+<h2><span class="mw-headline" id="Input_streams">Input streams</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Streams&amp;action=edit&amp;section=1" title="Edit section: Input streams">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Input streams acquire bytes for our programmed java application/program (e.g. a file, an array, a keyboard or monitor, etc.). <code>InputStream</code> is an abstract class that represents a source of byte data. It has a <code>read()</code> method, which returns the next byte in the stream and a <code>close()</code> method, which should be called by a program when that program is done with the stream. The <code>read()</code> method is overloaded, and can take a byte array to read to. It has a <code>skip()</code> method that can skip a number of bytes, and an <code>available()</code> method that a program can use to determine the number of bytes immediately available to be read, as not all the data is necessarily ready immediately. As an abstract class, it cannot be instantiated, but describes the general behavior of an input stream. A few examples of concrete subclasses would be <code>ByteArrayInputStream</code>, which reads from a byte array, and <code>FileInputStream</code>, which reads byte data from a file.</p>
+<p>In the <a href="#code-listing-1">following example</a>, we print "Hello world!" on the screen several times. The number of times the message is printed is stored in a file named <code>source.txt</code>. This file should only contain a integer and should be placed in the same folder of the <code>ConfiguredApplication</code> class.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-1"><b>Code listing 9.1: Example of input stream.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kn">import</span> <span class="nn">java.io.File</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="kn">import</span> <span class="nn">java.io.FileInputStream</span><span class="o">;</span>
+<span class="lineno"> 3 </span> 
+<span class="lineno"> 4 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ConfiguredApplication</span> <span class="o">{</span>
+<span class="lineno"> 5 </span> 
+<span class="lineno"> 6 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+<span class="lineno"> 7 </span> 
+<span class="lineno"> 8 </span>    <span class="c1">// Data reading</span>
+<span class="lineno"> 9 </span>    <span class="n">File</span> <span class="n">file</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="s">"source.txt"</span><span class="o">);</span>
+<span class="lineno">10 </span>    <span class="n">FileInputStream</span> <span class="n">stream</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FileInputStream</span><span class="o">(</span><span class="n">file</span><span class="o">);</span>
+<span class="lineno">11 </span> 
+<span class="lineno">12 </span>    <span class="n">StringBuffer</span> <span class="n">buffer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuffer</span><span class="o">();</span>
+<span class="lineno">13 </span> 
+<span class="lineno">14 </span>    <span class="kt">int</span> <span class="n">character</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno">15 </span>    <span class="k">while</span> <span class="o">((</span><span class="n">character</span> <span class="o">=</span> <span class="n">stream</span><span class="o">.</span><span class="na">read</span><span class="o">())</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">16 </span>      <span class="n">buffer</span><span class="o">.</span><span class="na">append</span><span class="o">((</span><span class="kt">char</span><span class="o">)</span> <span class="n">character</span><span class="o">);</span>
+<span class="lineno">17 </span>    <span class="o">}</span>
+<span class="lineno">18 </span> 
+<span class="lineno">19 </span>    <span class="n">stream</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+<span class="lineno">20 </span> 
+<span class="lineno">21 </span>    <span class="c1">// Data use</span>
+<span class="lineno">22 </span>    <span class="n">Integer</span> <span class="n">readInteger</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">buffer</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
+<span class="lineno">23 </span>    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">readInteger</span> <span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+<span class="lineno">24 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello world!"</span><span class="o">);</span>
+<span class="lineno">25 </span>    <span class="o">}</span>
+<span class="lineno">26 </span>  <span class="o">}</span>
+<span class="lineno">27 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The <code>close()</code> method is not always mandatory but can avoid some inter-process concurrency conflicts. However if it occurs before a <code>read()</code> or <code>write()</code> (in the same process) they return the warning <code>Stream closed</code>.</p>
+<p>The class start to identify the filename with a <code>File</code> object. The <code>File</code> object is used by an input stream as the source of the stream. We create a buffer and a character to prepare the data loading. The buffer will contain all the file content and the character will temporary contain each character present in the file, one after one. This is done <code>while{}</code>in the loop. Each iteration of the loop will copy a character from the stream to the buffer. The loop ends when no more character is present in the stream. Then we close the stream. The last part of the code use the data we have loaded in from the file. It is transformed into string and then into an integer (so the data must be an integer). If it works, the integer is used to determine the number of time we print "Hello world!" on the screen. No try/catch block has been defined for readability but the thrown exceptions should be caught.</p>
+<p>Let's try with the following source file:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Code listing 9.2: source.txt</b>
+<p>4</p>
+</td>
+</tr>
+</table>
+<p>We should obtain this:</p>
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for ConfiguredApplication</b>
+<pre style="background-color:#000; color:#fff;">
+$ java ConfiguredApplication
+Hello world!
+Hello world!
+Hello world!
+Hello world!
+</pre></td>
+</tr>
+</table>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Nuvola_apps_important.svg" class="image" title="Warning"><img alt="Warning" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/32px-Nuvola_apps_important.svg.png" width="32" height="27" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/48px-Nuvola_apps_important.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/64px-Nuvola_apps_important.svg.png" data-file-width="600" data-file-height="500"></a></td>
+<td style="background-color:#fff0f0; border-left: 4px solid red; padding-left: 6px;">If it shows a <code>FileNotFoundException</code> or an <code>IOException</code>, the source may not be placed in the right folder or its name is badly spelled.<br>
+If it shows a <code>NumberFormatException</code>, the content of the file may not be an integer.</td>
+</tr>
+</table>
+<p>There is also <code>Reader</code> which is an abstract class that represents a source of character data. It is analogous to <code>InputStream</code>, except that it deals with characters instead of bytes (remember that Java uses Unicode, so that a character is 2 bytes, not one). Its methods are generally similar to those of <code>InputStream</code>. Concrete subclasses include classes like <code>FileReader</code>, which reads characters from files, and <code>StringReader</code>, which reads characters from strings. You can also convert an <code>InputStream</code> object to a Reader object with the <code>InputStreamReader</code> class, which can be "wrapped around" an <code>InputStream</code> object (by passing it as an argument in its constructor). It uses a character encoding scheme (which can be changed by the programmer) to translate a byte into a 16-bit Unicode character.</p>
+<h2><span class="mw-headline" id="Output_streams">Output streams</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Streams&amp;action=edit&amp;section=2" title="Edit section: Output streams">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Output Streams direct streams of bytes outwards to the environment from our program or application. <code>OutputStream</code> is an abstract class which is the destination counterpart of <code>InputStream</code>. <code>OutputStream</code> has a <code>write()</code> method which can be used to write a byte to the stream. The method is overloaded, and can take an array as well. A <code>close()</code> method closes the stream when the application is finished with it, and it has a <code>flush()</code> method. The stream may wait until it has a certain amount before it writes it all at once for efficiency. If the stream object is buffering any data before writing it, the <code>flush()</code> method will force it to write all of this data. Like <code>InputStream</code>, this class cannot be instantiated, but has concrete subclasses that parallel those of <code>InputStream</code>, eg <code>ByteArrayOutputStream</code>, <code>FileOutputStream</code>, etc.</p>
+<p>In the <a href="#code-listing-2">following example</a>, we store the current time in an already existing file called <code>log.txt</code> located in the same folder than the class.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-2"><b>Code listing 9.2: Example of output stream.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kn">import</span> <span class="nn">java.io.File</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="kn">import</span> <span class="nn">java.io.FileOutputStream</span><span class="o">;</span>
+<span class="lineno"> 3 </span><span class="kn">import</span> <span class="nn">java.util.Date</span><span class="o">;</span>
+<span class="lineno"> 4 </span> 
+<span class="lineno"> 5 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LogTime</span> <span class="o">{</span>
+<span class="lineno"> 6 </span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+<span class="lineno"> 7 </span>        <span class="c1">// Generate data</span>
+<span class="lineno"> 8 </span>        <span class="n">String</span> <span class="n">timeInString</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Date</span><span class="o">().</span><span class="na">toString</span><span class="o">();</span>
+<span class="lineno"> 9 </span>
+<span class="lineno">10 </span>        <span class="c1">// Store data</span>
+<span class="lineno">11 </span>        <span class="n">File</span> <span class="n">file</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="s">"log.txt"</span><span class="o">);</span>
+<span class="lineno">12 </span>        <span class="n">FileOutputStream</span> <span class="n">stream</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FileOutputStream</span><span class="o">(</span><span class="n">file</span><span class="o">);</span>
+<span class="lineno">13 </span>
+<span class="lineno">14 </span>        <span class="kt">byte</span><span class="o">[]</span> <span class="n">timeInBytes</span> <span class="o">=</span> <span class="n">timeInString</span><span class="o">.</span><span class="na">getBytes</span><span class="o">();</span>
+<span class="lineno">15 </span>
+<span class="lineno">16 </span>        <span class="n">stream</span><span class="o">.</span><span class="na">write</span><span class="o">(</span><span class="n">timeInBytes</span><span class="o">);</span>
+<span class="lineno">17 </span>        <span class="n">stream</span><span class="o">.</span><span class="na">flush</span><span class="o">();</span>
+<span class="lineno">18 </span>        <span class="n">stream</span><span class="o">.</span><span class="na">close</span><span class="o">();</span>
+<span class="lineno">19 </span>    <span class="o">}</span>
+<span class="lineno">20 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>This case is more simple as we can put all the data in the stream at the same time. The first part of the code generate a string containing the current time. Then we create a <code>File</code> object identifying the output file and an output stream for this file. We write the data in the stream, flush it and close it. That's all. No try/catch block has been defined for readability but the thrown exceptions should be caught.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Nuvola_apps_important.svg" class="image" title="Warning"><img alt="Warning" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/32px-Nuvola_apps_important.svg.png" width="32" height="27" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/48px-Nuvola_apps_important.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/64px-Nuvola_apps_important.svg.png" data-file-width="600" data-file-height="500"></a></td>
+<td style="background-color:#fff0f0; border-left: 4px solid red; padding-left: 6px;">In order to read a text file several times from the beginning, a <code>FileChannel</code> variable should be introduced, only to reposition the reader.</td>
+</tr>
+</table>
+<p>Now let's execute it:</p>
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>LogTime execution</b>
+<pre style="background-color:#000; color:#fff;">
+$ java LogTime
+</pre></td>
+</tr>
+</table>
+<p>We should obtain this content:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Code listing 9.4: log.txt</b>
+<p>Tue Oct 10 10:15:25 CEUTC 2017</p>
+</td>
+</tr>
+</table>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Nuvola_apps_important.svg" class="image" title="Warning"><img alt="Warning" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/32px-Nuvola_apps_important.svg.png" width="32" height="27" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/48px-Nuvola_apps_important.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/64px-Nuvola_apps_important.svg.png" data-file-width="600" data-file-height="500"></a></td>
+<td style="background-color:#fff0f0; border-left: 4px solid red; padding-left: 6px;">If it shows a <code>FileNotFoundException</code> or an <code>IOException</code>, the file should not have been created or it is not placed in the right folder.</td>
+</tr>
+</table>
+<p>There is also <code>Writer</code> which is a character counterpart of <code>OutputStream</code>, and a destination counterpart to Reader, this is also an abstract superclass. Particular implementations parallel those of Reader, eg <code>FileWriter</code>, <code>StringWriter</code>, and <code>OutputStreamWriter</code>, for converting a regular <code>OutputStream</code> into a reader so that it can take character data.</p>
+<h2><span class="mw-headline" id="System.out_and_System.err"><code>System.out</code> and <code>System.err</code></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Streams&amp;action=edit&amp;section=3" title="Edit section: System.out and System.err">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><code>System</code> is a class in the package <code>java.lang</code> with a number of static members that are available to Java programs. Two members that are useful for console output are <code>System.out</code> and <code>System.err</code>. Both System.out and System.err are <code>PrintStream</code> objects. <code>PrintStream</code> is a subclass of <code>FilterOutputStream</code>, itself a subclass of <code>OutputStream</code> (discussed above), and its main purpose is to translate a wide variety of data types into streams of bytes that represent that data in characters according to some encoding scheme.</p>
+<p><code>System.out</code> and <code>System.err</code> both display text to a console where the user can read it, however what this means exactly depends on the platform used and the environment in which the program is running. In BlueJay and Eclipse IDE, for example, there is a special "terminal" window that will display this output. If the program is launched in Windows, the output will be sent to the DOS prompt (usually this means that you have to launch the program from the command line to see the output).</p>
+<p><code>System.out</code> and <code>System.err</code> differ in what they're supposed to be used for. <code>System.out</code> should be used for normal program output, <code>System.err</code> should be used to inform the user that some kind of error has occurred in the program. In some situations, this may be important. In DOS, for instance, a user can redirect standard output to some other destination (a file, for example), but error output will not be redirected, but rather displayed on the screen. If this weren't the case, the user might never be able to tell that an error had occurred.</p>
+<div style="clear: both"></div>
+<table style="background: #ffd; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 60%; margin: auto;" class="notice noprint notice-todo">
+<tr>
+<td style="width: 58px;">
+<div class="floatleft"><img alt="Clipboard" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/45px-Clipboard.svg.png" width="45" height="45" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/68px-Clipboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/90px-Clipboard.svg.png" data-file-width="48" data-file-height="48"></div>
+</td>
+<td>
+<p><b>To do:</b><br>
+Illustrate how the <code>print()</code> method works, emphasize that this method does not break up lines, but that this can be accomplished with the <code>\n</code> escape sequence. Talk about how it works with different data types, and then introduce the <code>println()</code> method as a convenience method that automatically adds the <code>\n</code> character.</p>
+</td>
+</tr>
+</table>
+<div style="clear: both"></div>
+<h2><span id="New_I/O"></span><span class="mw-headline" id="New_I.2FO">New I/O</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Streams&amp;action=edit&amp;section=4" title="Edit section: New I/O">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Versions of Java prior to J2SE 1.4 only supported stream-based blocking I/O. This required a thread per stream being handled, as no other processing could take place while the active thread blocked waiting for input or output. This was a major scalability and performance issue for anyone needing to implement any Java network service. Since the introduction of NIO (<a href="https://en.wikipedia.org/wiki/New_I/O" class="extiw" title="w:New I/O">New I/O</a>) in J2SE 1.4, this scalability problem has been rectified by the introduction of a non-blocking I/O framework (though there are a number of open issues in the NIO API as implemented by Oracle).</p>
+<p>The non-blocking IO framework, though considerably more complex than the original blocking IO framework, allows any number of "channels" to be handled by a single thread. The framework is based on the Reactor Pattern.</p>
+<h2><span class="mw-headline" id="More_Info">More Info</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Streams&amp;action=edit&amp;section=5" title="Edit section: More Info">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>More information on the contents of the <code>java.io</code> package can be viewed on the Oracle website by clicking this link (<a rel="nofollow" class="external free" href="http://docs.oracle.com/javase/7/docs/api/index.html">http://docs.oracle.com/javase/7/docs/api/index.html</a>).</p>
+<p><br></p>
+<div style="clear: both"></div>
+<table style="background: #ffd; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 60%; margin: auto;" class="notice noprint notice-todo">
+<tr>
+<td style="width: 58px;">
+<div class="floatleft"><img alt="Clipboard" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/45px-Clipboard.svg.png" width="45" height="45" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/68px-Clipboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/90px-Clipboard.svg.png" data-file-width="48" data-file-height="48"></div>
+</td>
+<td>
+<p><b>To do:</b><br>
+Add some exercises like the ones in <a href="Variables.html#Kinds_of_variables" title="Java Programming/Variables">Variables</a></p>
+</td>
+</tr>
+</table>
+<div style="clear: both"></div>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Basic_IO.html" title="Basic IO"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Basic_IO.html" title="Java Programming/Basic IO">Basic IO</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Streams</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Event_Handling.html" title="Java Programming/Event Handling">Event Handling</a> <a href="Event_Handling.html" title="Event Handling"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="75% developed"><img alt="75% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/24px-75_percent.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/36px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/48px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1258
+Cached time: 20171010101525
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.184 seconds
+Real time usage: 0.253 seconds
+Preprocessor visited node count: 1015/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 19676/2097152 bytes
+Template argument size: 2725/2097152 bytes
+Highest expansion depth: 15/40
+Expensive parser function count: 71/500
+Lua time usage: 0.111/10.000 seconds
+Lua memory usage: 847 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  199.188      1 -total
+ 83.67%  166.651      2 Template:Programming/Navigation
+  7.93%   15.793      1 Template:Java_Programming/UserInterfaceTopics/Nav
+  5.59%   11.132      4 Template:BookCat
+  4.76%    9.479      1 Template:Java_Programming/UserInterface/Topic
+  4.64%    9.247      4 Template:BookCat/default
+  3.19%    6.349      4 Template:BOOKCATEGORY
+  2.86%    5.702      4 Template:XCode
+  2.40%    4.783     15 Template:Stage_short
+  2.29%    4.561      1 Template:Navbar
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:161370-0!canonical and timestamp 20171010101525 and revision id 3295254
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Streams&amp;oldid=3295254">https://en.wikibooks.org/w/index.php?title=Java_Programming/Streams&amp;oldid=3295254</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FStreams" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FStreams" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Streams.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="/w/index.php?title=Talk:Java_Programming/Streams&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Streams&amp;stable=1">Read</a></span></li>
+							<li id="ca-current" class="collapsible selected"><span><a href="/w/index.php?title=Java_Programming/Streams&amp;stable=0&amp;redirect=no" title="View this page with the pending changes [v]" accesskey="v">Latest draft</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Streams&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Streams&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Streams" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Streams" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Streams&amp;oldid=3295254" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Streams&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q22122698" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FStreams&amp;id=3295254" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikibooks.org/wiki/Java_Standard:_File" title="Java Standard: File – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikibooks.org/wiki/Programmation_Java/Entr%C3%A9es_Sorties" title="Programmation Java/Entrées Sorties – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikibooks.org/wiki/Java/Input_e_output" title="Java/Input e output – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikibooks.org/wiki/Java/Fluxos_de_entrada_e_sa%C3%ADda" title="Java/Fluxos de entrada e saída – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q22122698#sitelinks-wikibooks" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FStreams">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FStreams&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Streams&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-wikiversity"><a href="https://en.wikiversity.org/wiki/Learning_Java/File_IO" hreflang="en">Wikiversity</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 14:43.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Streams&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.184","walltime":"0.253","ppvisitednodes":{"value":1015,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":19676,"limit":2097152},"templateargumentsize":{"value":2725,"limit":2097152},"expansiondepth":{"value":15,"limit":40},"expensivefunctioncount":{"value":71,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  199.188      1 -total"," 83.67%  166.651      2 Template:Programming/Navigation","  7.93%   15.793      1 Template:Java_Programming/UserInterfaceTopics/Nav","  5.59%   11.132      4 Template:BookCat","  4.76%    9.479      1 Template:Java_Programming/UserInterface/Topic","  4.64%    9.247      4 Template:BookCat/default","  3.19%    6.349      4 Template:BOOKCATEGORY","  2.86%    5.702      4 Template:XCode","  2.40%    4.783     15 Template:Stage_short","  2.29%    4.561      1 Template:Navbar"]},"scribunto":{"limitreport-timeusage":{"value":"0.111","limit":"10.000"},"limitreport-memusage":{"value":867188,"limit":52428800}},"cachereport":{"origin":"mw1258","timestamp":"20171010101525","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":85,"wgHostname":"mw1273"});});</script>
+	</body>
+</html>

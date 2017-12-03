@@ -1,0 +1,825 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Generics - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Generics","wgTitle":"Java Programming/Generics","wgCurRevisionId":3295203,"wgRevisionId":3295203,"wgArticleId":87847,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Generics","wgRelevantArticleId":87847,"wgRequestId":"WfAE0wpAEK4AADmnhTkAAAAA","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3295203,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q379273","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Generics&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Generics&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Generics.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Generics rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Generics</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Nested_Classes.html" title="Nested Classes"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Nested_Classes.html" title="Java Programming/Nested Classes">Nested Classes</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Generics</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Aggregate.html" title="Java Programming/Aggregate">Aggregate</a> <a href="Aggregate.html" title="Aggregate"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="Classes_and_Objects.html" title="Java Programming/Classes and Objects">Classes and Objects</a></b> topic: <span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/ClassesAndObjectsTopic" class="mw-redirect" title="Template:Java Programming/ClassesAndObjectsTopic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/ClassesAndObjectsTopic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/ClassesAndObjectsTopic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/ClassesAndObjectsTopic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Nov 9, 2012"><img alt="100% developed&#160; as of Nov 9, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Defining_Classes.html" title="Java Programming/Defining Classes">Defining classes</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Dec 5, 2013"><img alt="100% developed&#160; as of Dec 5, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Inheritance.html" title="Java Programming/Inheritance">Inheritance</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Dec 5, 2013"><img alt="100% developed&#160; as of Dec 5, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Interfaces.html" title="Java Programming/Interfaces">Interfaces</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jun 4, 2013"><img alt="75% developed&#160; as of Jun 4, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Overloading_Methods_and_Constructors.html" title="Java Programming/Overloading Methods and Constructors">Overloading methods and constructors</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Nov 20, 2013"><img alt="75% developed&#160; as of Nov 20, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Object_Lifecycle.html" title="Java Programming/Object Lifecycle">Object Lifecycle</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Nov 20, 2013"><img alt="100% developed&#160; as of Nov 20, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Scope.html" title="Java Programming/Scope">Scope</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Oct 27, 2006"><img alt="75% developed&#160; as of Oct 27, 2006" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Nested_Classes.html" title="Java Programming/Nested Classes">Nested classes</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Dec 5, 2013"><img alt="100% developed&#160; as of Dec 5, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">Generics</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p>Java is a strongly typed language, so a field in a class may be typed like this:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-34"><b>Code listing 4.34: Repository.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Repository</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span><span class="hll">   <span class="kd">public</span> <span class="n">Integer</span> <span class="n">item</span><span class="o">;</span>
+</span><span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span>   <span class="kd">public</span> <span class="n">Integer</span> <span class="nf">getItem</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno"> 6 </span>      <span class="k">return</span> <span class="n">item</span><span class="o">;</span>
+<span class="lineno"> 7 </span>   <span class="o">}</span>
+<span class="lineno"> 8 </span>
+<span class="lineno"> 9 </span>   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setItem</span><span class="o">(</span><span class="n">Integer</span> <span class="n">newItem</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">10 </span>      <span class="n">item</span> <span class="o">=</span> <span class="n">newItem</span><span class="o">;</span>
+<span class="lineno">11 </span>   <span class="o">}</span>
+<span class="lineno">12 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>This ensures that, only <code>Integer</code> objects can be put in the field and a <code>ClassCastException</code> can't occur at runtime, only compile-time error can occur. Unfortunately, it can be used only with <code>Integer</code> objects. If you want to use the same class in another context with <code>String</code>s, you have to generalize the type like this:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-35"><b>Code listing 4.35: Repository.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Repository</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span><span class="hll">   <span class="kd">public</span> <span class="n">Object</span> <span class="n">item</span><span class="o">;</span>
+</span><span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span><span class="hll">   <span class="kd">public</span> <span class="n">Object</span> <span class="nf">getItem</span><span class="o">()</span> <span class="o">{</span>
+</span><span class="lineno"> 6 </span>      <span class="k">return</span> <span class="n">item</span><span class="o">;</span>
+<span class="lineno"> 7 </span>   <span class="o">}</span>
+<span class="lineno"> 8 </span>
+<span class="lineno"> 9 </span>   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setItem</span><span class="o">(</span><span class="n">Integer</span> <span class="n">newItem</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">10 </span>      <span class="n">item</span> <span class="o">=</span> <span class="n">newItem</span><span class="o">;</span>
+<span class="lineno">11 </span>   <span class="o">}</span>
+<span class="lineno">12 </span>
+<span class="lineno">13 </span><span class="hll">   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setItem</span><span class="o">(</span><span class="n">String</span> <span class="n">newItem</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">14 </span><span class="hll">      <span class="n">item</span> <span class="o">=</span> <span class="n">newItem</span><span class="o">;</span>
+</span><span class="lineno">15 </span><span class="hll">   <span class="o">}</span>
+</span><span class="lineno">16 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>But you will have <code>ClassCastException</code> at runtime again and you can't easily use your field. The solution is to use <a href="https://en.wikipedia.org/wiki/Generic_programming" class="extiw" title="w:Generic programming">Generics</a>.</p>
+<h2><span class="mw-headline" id="Generic_class">Generic class</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Generics&amp;action=edit&amp;section=1" title="Edit section: Generic class">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A generic class does not hard code the type of a field, a return value or a parameter. The class only indicates that a generic type should be the same, for a given object instance. The generic type is not specified in the class definition. It is specified during object instantiation. This allows the generic type to be different from an instance to another. So we should write our class this way:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-36"><b>Code listing 4.36: Repository.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="hll"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Repository</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="o">{</span>
+</span><span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span><span class="hll">   <span class="kd">public</span> <span class="n">T</span> <span class="n">item</span><span class="o">;</span>
+</span><span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span><span class="hll">   <span class="kd">public</span> <span class="n">T</span> <span class="nf">getItem</span><span class="o">()</span> <span class="o">{</span>
+</span><span class="lineno"> 6 </span>      <span class="k">return</span> <span class="n">item</span><span class="o">;</span>
+<span class="lineno"> 7 </span>   <span class="o">}</span>
+<span class="lineno"> 8 </span>
+<span class="lineno"> 9 </span><span class="hll">   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setItem</span><span class="o">(</span><span class="n">T</span> <span class="n">newItem</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">10 </span>      <span class="n">item</span> <span class="o">=</span> <span class="n">newItem</span><span class="o">;</span>
+<span class="lineno">11 </span>   <span class="o">}</span>
+<span class="lineno">12 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Here, the generic type is defined after the name of the class. Any new identifier can be chosen. Here, we have chosen <i>T</i>, which is the most common choice. The actual type is defined at the object instantiation:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-35"><b>Code section 4.35: Instantiation.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="hll"><span class="n">Repository</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">arithmeticRepository</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Repository</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;();</span>
+</span><span class="lineno">2 </span><span class="n">arithmeticRepository</span><span class="o">.</span><span class="na">setItem</span><span class="o">(</span><span class="k">new</span> <span class="n">Integer</span><span class="o">(</span><span class="mi">1</span><span class="o">));</span>
+<span class="lineno">3 </span><span class="n">Integer</span> <span class="n">number</span> <span class="o">=</span> <span class="n">arithmeticRepository</span><span class="o">.</span><span class="na">getItem</span><span class="o">();</span>
+<span class="lineno">4 </span>
+<span class="lineno">5 </span><span class="hll"><span class="n">Repository</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">textualRepository</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Repository</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+</span><span class="lineno">6 </span><span class="n">textualRepository</span><span class="o">.</span><span class="na">setItem</span><span class="o">(</span><span class="s">"Hello!"</span><span class="o">);</span>
+<span class="lineno">7 </span><span class="n">String</span> <span class="n">message</span> <span class="o">=</span> <span class="n">textualRepository</span><span class="o">.</span><span class="na">getItem</span><span class="o">();</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Although each object instance has its own type, each object instance is still strongly typed:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Nuvola_apps_important.svg" class="image" title="Warning"><img alt="Warning" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/32px-Nuvola_apps_important.svg.png" width="32" height="27" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/48px-Nuvola_apps_important.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/64px-Nuvola_apps_important.svg.png" data-file-width="600" data-file-height="500"></a></td>
+<td style="background-color:#fff0f0; border-left: 4px solid red; padding-left: 6px;"><span id="code-section-36" style="color: red;"><b>Code section 4.36: Compile error.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">Repository</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">arithmeticRepository</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Repository</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;();</span>
+<span class="lineno">2 </span><span class="hll"><span class="n">arithmeticRepository</span><span class="o">.</span><span class="na">setItem</span><span class="o">(</span><span class="s">"Hello!"</span><span class="o">);</span>
+</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>A class can define as many generic types as you like. Choose a different identifier for each generic type and separate them by a comma:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-37"><b>Code listing 4.37: Repository.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="hll"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Repository</span><span class="o">&lt;</span><span class="n">T</span><span class="o">,</span> <span class="n">U</span><span class="o">&gt;</span> <span class="o">{</span>
+</span><span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span>   <span class="kd">public</span> <span class="n">T</span> <span class="n">item</span><span class="o">;</span>
+<span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span><span class="hll">   <span class="kd">public</span> <span class="n">U</span> <span class="n">anotherItem</span><span class="o">;</span>
+</span><span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span>   <span class="kd">public</span> <span class="n">T</span> <span class="nf">getItem</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno"> 8 </span>      <span class="k">return</span> <span class="n">item</span><span class="o">;</span>
+<span class="lineno"> 9 </span>   <span class="o">}</span>
+<span class="lineno">10 </span>
+<span class="lineno">11 </span>   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setItem</span><span class="o">(</span><span class="n">T</span> <span class="n">newItem</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">12 </span>      <span class="n">item</span> <span class="o">=</span> <span class="n">newItem</span><span class="o">;</span>
+<span class="lineno">13 </span>   <span class="o">}</span>
+<span class="lineno">14 </span>
+<span class="lineno">15 </span>   <span class="kd">public</span> <span class="n">U</span> <span class="nf">getAnotherItem</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">16 </span>      <span class="k">return</span> <span class="n">anotherItem</span><span class="o">;</span>
+<span class="lineno">17 </span>   <span class="o">}</span>
+<span class="lineno">18 </span>
+<span class="lineno">19 </span>   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setAnotherItem</span><span class="o">(</span><span class="n">U</span> <span class="n">newItem</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">20 </span>      <span class="n">anotherItem</span> <span class="o">=</span> <span class="n">newItem</span><span class="o">;</span>
+<span class="lineno">21 </span>   <span class="o">}</span>
+<span class="lineno">22 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>When a type that is defined with generic (for example, <code>Collection&lt;T&gt;</code>) is not used with generics (for example, <code>Collection</code>) is called a <i>raw type</i>.</p>
+<h2><span class="mw-headline" id="Generic_method">Generic method</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Generics&amp;action=edit&amp;section=2" title="Edit section: Generic method">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A generic type can be defined for just a method:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-37"><b>Code section 4.37: Generic method.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="hll"><span class="kd">public</span> <span class="o">&lt;</span><span class="n">D</span><span class="o">&gt;</span> <span class="n">D</span> <span class="nf">assign</span><span class="o">(</span><span class="n">Collection</span><span class="o">&lt;</span><span class="n">D</span><span class="o">&gt;</span> <span class="n">generic</span><span class="o">,</span> <span class="n">D</span> <span class="n">obj</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">2 </span>  <span class="n">generic</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">obj</span><span class="o">);</span>
+<span class="lineno">3 </span>  <span class="k">return</span> <span class="n">obj</span><span class="o">;</span>
+<span class="lineno">4 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Here a new identifier (<i>D</i>) has been chosen at the beginning of the method declaration. The type is <i>specific to a method call</i> and different types can be used for the same object instance:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-38"><b>Code section 4.38: Generic method call.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">Collection</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;();</span>
+<span class="lineno">2 </span><span class="n">Integer</span> <span class="n">number</span> <span class="o">=</span> <span class="n">assign</span><span class="o">(</span><span class="n">numbers</span><span class="o">,</span> <span class="k">new</span> <span class="n">Integer</span><span class="o">(</span><span class="mi">1</span><span class="o">));</span>
+<span class="lineno">3 </span><span class="n">Collection</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">texts</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno">4 </span><span class="n">String</span> <span class="n">text</span> <span class="o">=</span> <span class="n">assign</span><span class="o">(</span><span class="n">texts</span><span class="o">,</span> <span class="s">"Store it."</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The actual type will be defined by the type of the method parameter. Hence, the generic type can't be defined only for the return value as it wouldn't be resolved. See the <a href="#Class.3CT.3E">Class&lt;T&gt;</a> section for a solution.</p>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Test your knowledge</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<p><b>Question 4.8</b>: Consider the following class.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="question-8"><b>Question 4.8: Question8.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Question8</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>  <span class="kd">public</span> <span class="n">T</span> <span class="n">item</span><span class="o">;</span>
+<span class="lineno"> 3 </span> 
+<span class="lineno"> 4 </span>  <span class="kd">public</span> <span class="n">T</span> <span class="nf">getItem</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno"> 5 </span>    <span class="k">return</span> <span class="n">item</span><span class="o">;</span>
+<span class="lineno"> 6 </span>  <span class="o">}</span>
+<span class="lineno"> 7 </span> 
+<span class="lineno"> 8 </span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setItem</span><span class="o">(</span><span class="n">T</span> <span class="n">newItem</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 9 </span>    <span class="n">item</span> <span class="o">=</span> <span class="n">newItem</span><span class="o">;</span>
+<span class="lineno">10 </span>  <span class="o">}</span>
+<span class="lineno">11 </span>
+<span class="lineno">12 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">13 </span>    <span class="n">Question8</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">aQuestion</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Question8</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno">14 </span>    <span class="n">aQuestion</span><span class="o">.</span><span class="na">setItem</span><span class="o">(</span><span class="s">"Open your mind."</span><span class="o">);</span>
+<span class="lineno">15 </span>    <span class="n">aQuestion</span><span class="o">.</span><span class="na">display</span><span class="o">(</span><span class="n">aQuestion</span><span class="o">.</span><span class="na">getItem</span><span class="o">());</span>
+<span class="lineno">16 </span>  <span class="o">}</span>
+<span class="lineno">17 </span>
+<span class="lineno">18 </span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">display</span><span class="o">(</span><span class="n">String</span> <span class="n">parameter</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">19 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Here is the text: "</span> <span class="o">+</span> <span class="n">parameter</span><span class="o">);</span>
+<span class="lineno">20 </span>  <span class="o">}</span>
+<span class="lineno">21 </span>
+<span class="lineno">22 </span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">display</span><span class="o">(</span><span class="n">Integer</span> <span class="n">parameter</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">23 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Here is the number: "</span> <span class="o">+</span> <span class="n">parameter</span><span class="o">);</span>
+<span class="lineno">24 </span>  <span class="o">}</span>
+<span class="lineno">25 </span>
+<span class="lineno">26 </span>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">display</span><span class="o">(</span><span class="n">Object</span> <span class="n">parameter</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">27 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Here is the object: "</span> <span class="o">+</span> <span class="n">parameter</span><span class="o">);</span>
+<span class="lineno">28 </span>  <span class="o">}</span>
+<span class="lineno">29 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>What will be displayed on the console?</p>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Answer</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Console for Answer 4.8</b>
+<pre style="background-color:#000; color:#fff;">
+Here is the text: Open your mind.
+</pre></td>
+</tr>
+</table>
+<p><code>aQuestion.getItem()</code> is typed as a string.</p>
+</div>
+</div>
+</div>
+</div>
+<h2><span class="mw-headline" id="Wildcard_Types">Wildcard Types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Generics&amp;action=edit&amp;section=3" title="Edit section: Wildcard Types">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>As we have seen above, generics give the impression that a new container type is created with each different type parameter. We have also seen that in addition to the normal type checking, the type parameter has to match as well when we assign generics variables. In some cases this is too restrictive. What if we would like to relax this additional checking? What if we would like to define a collection variable that can hold any generic collection, regardless of the parameter type it holds? The wildcard type is represented by the character <b>&lt;?&gt;</b>, and pronounced <b>Unknown</b>, or <b>Any-Type</b>. Any-Type can be expressed also by <code>&lt;? extends Object&gt;</code>. Any-Type includes Interfaces, not only Classes. So now we can define a collection whose element type matches anything. See below:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-39"><b>Code section 4.39: Wildcard type.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">Collection</span><span class="o">&lt;?&gt;</span> <span class="n">collUnknown</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Upper_bounded_wildcards">Upper bounded wildcards</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Generics&amp;action=edit&amp;section=4" title="Edit section: Upper bounded wildcards">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>You can specify a restriction on the types of classes that may be used. For example, <code>&lt;? extends ClassName&gt;</code> only allows objects of class <code>ClassName</code> or a subclass. For example, to create a collection that may only contain "Serializable" objects, specify:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-40"><b>Code section 4.40: Collection of serializable subobjects.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">Collection</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">textColl</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno">2 </span>
+<span class="lineno">3 </span><span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Serializable</span><span class="o">&gt;</span> <span class="n">serColl</span> <span class="o">=</span> <span class="n">textColl</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The above code is valid because the <code><a href="API\java.lang.html" title="Java Programming/API/java.lang.String">String</a></code> class is serializable. Use of a class that is not serializable would cause a compilation error. The added items can be retrieved as <code>Serializable</code> object. You can call methods of the <code>Serializable</code> interface or cast it to <code>String</code>. The following collection can only contain objects that extend the class <code>Animal</code>.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-38"><b>Code listing 4.38: Dog.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="o">{</span>
+<span class="lineno">2 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-41"><b>Code section 4.41: Example of subclass.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="c1">// Create "Animal Collection" variable</span>
+<span class="lineno">2 </span><span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Animal</span><span class="o">&gt;</span> <span class="n">animalColl</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Dog</span><span class="o">&gt;();</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Lower_bounded_wildcards">Lower bounded wildcards</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Generics&amp;action=edit&amp;section=5" title="Edit section: Lower bounded wildcards">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><code>&lt;? super ClassName&gt;</code> specifies a restriction on the types of classes that may be used. For example, to declare a Comparator that can compare Dogs, you use:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-42"><b>Code section 4.42: Superclass.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">Comparator</span><span class="o">&lt;?</span> <span class="kd">super</span> <span class="n">Dog</span><span class="o">&gt;</span> <span class="n">myComparator</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Now suppose you define a comparator that can compare Animals:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-43"><b>Code section 4.43: Comparator.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">class</span> <span class="nc">AnimalComparator</span> <span class="kd">implements</span> <span class="n">Comparator</span><span class="o">&lt;</span><span class="n">Animal</span><span class="o">&gt;</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="kt">int</span> <span class="nf">compare</span><span class="o">(</span><span class="n">Animal</span> <span class="n">a</span><span class="o">,</span> <span class="n">Animal</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">3 </span>   <span class="c1">//...</span>
+<span class="lineno">4 </span>  <span class="o">}</span>
+<span class="lineno">5 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Since <code>Dogs</code> are <code>Animals</code>, you can use this comparator to compare Dogs also. Comparators for any superclass of Dog can also compare Dog; but comparators for any strict subclass cannot.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-44"><b>Code section 4.44: Generic comparator.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">Comparator</span><span class="o">&lt;</span><span class="n">Animal</span><span class="o">&gt;</span> <span class="n">myAnimalComparator</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AnimalComparator</span><span class="o">();</span>
+<span class="lineno">2 </span>
+<span class="lineno">3 </span><span class="kd">static</span> <span class="kt">int</span> <span class="nf">compareTwoDogs</span><span class="o">(</span><span class="n">Comparator</span><span class="o">&lt;?</span> <span class="kd">super</span> <span class="n">Dog</span><span class="o">&gt;</span> <span class="n">comp</span><span class="o">,</span> <span class="n">Dog</span> <span class="n">dog1</span><span class="o">,</span> <span class="n">Dog</span> <span class="n">dog2</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">4 </span>  <span class="k">return</span> <span class="n">comp</span><span class="o">.</span><span class="na">compare</span><span class="o">(</span><span class="n">dog1</span><span class="o">,</span> <span class="n">dog2</span><span class="o">);</span>
+<span class="lineno">5 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The above code is valid because the <code>Animal</code> class is a supertype of the <code>Dog</code> class. Use of a class that is not a supertype would cause a compilation error.</p>
+<h3><span class="mw-headline" id="Unbounded_wildcard">Unbounded wildcard</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Generics&amp;action=edit&amp;section=6" title="Edit section: Unbounded wildcard">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The advantage of the unbounded wildcard (i.e. <code>&lt;?&gt;</code>) compared to a raw type (i.e. without generic) is to explicitly say that the parameterized type is unknown, not <i>any type</i>. That way, all the operations that implies to know the type are forbidden to avoid unsafe operation. Consider the following code:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-45"><b>Code section 4.45: Unsafe operation.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">addAtBottom</span><span class="o">(</span><span class="n">Collection</span> <span class="n">anyCollection</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="n">anyCollection</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Integer</span><span class="o">(</span><span class="mi">1</span><span class="o">));</span>
+<span class="lineno">3 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>This code will compile but this code may corrupt the collection if the collection only contains strings:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-46"><b>Code section 4.46: Corruption of list.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">col</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno">2 </span><span class="n">addAtBottom</span><span class="o">(</span><span class="n">col</span><span class="o">);</span>
+<span class="lineno">3 </span><span class="hll"><span class="n">col</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">endsWith</span><span class="o">(</span><span class="s">"."</span><span class="o">);</span>
+</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Console for Code section 4.46</b>
+<pre style="background-color:#000; color:#fff;">
+Exception in thread "main" java.lang.ClassCastException: java.lang.Integer incompatible with java.lang.String
+at Example.main(Example.java:17)
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>This situation could have been avoided if the <code>addAtBottom(Collection)</code> method was defined with an unbounded wildcard: <code>addAtBottom(Collection&lt;?&gt;)</code>. With this signature, it is impossible to compile a code that is dependent of the parameterized type. Only independent methods of a collection (<code>clear()</code>, <code>isEmpty()</code>, <code>iterator()</code>, <code>remove(Object o)</code>, <code>size()</code>, ...) can be called. For instance, <code>addAtBottom(Collection&lt;?&gt;)</code> could contain the following code:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-47"><b>Code section 4.47: Safe operation.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">addAtBottom</span><span class="o">(</span><span class="n">Collection</span><span class="o">&lt;?&gt;</span> <span class="n">anyCollection</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>   <span class="n">Iterator</span><span class="o">&lt;?&gt;</span> <span class="n">iterator</span> <span class="o">=</span> <span class="n">anyCollection</span><span class="o">.</span><span class="na">iterator</span><span class="o">();</span>
+<span class="lineno">3 </span>   <span class="k">while</span> <span class="o">(</span><span class="n">iterator</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span> <span class="o">{</span>
+<span class="lineno">4 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">iterator</span><span class="o">.</span><span class="na">next</span><span class="o">());</span>
+<span class="lineno">5 </span>   <span class="o">}</span>
+<span class="lineno">6 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<h2><span id="Class&lt;T&gt;"></span><span class="mw-headline" id="Class.3CT.3E">Class&lt;T&gt;</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Generics&amp;action=edit&amp;section=7" title="Edit section: Class&lt;T&gt;">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Since Java 1.5, the class <code>java.lang.Class</code> is generic. It is an interesting example of using generics for something other than a container class. For example, the type of String.class is <code>Class&lt;String&gt;</code>, and the type of Serializable.class is <code>Class&lt;Serializable&gt;</code>. This can be used to improve the type safety of your reflection code. In particular, since the <code>newInstance()</code> method in Class now returns T, you can get more precise types when creating objects reflectively. Now we can use the <code>newInstance()</code> method to return a new object with exact type, without casting. An example with generics:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-48"><b>Code section 4.48: Automatic cast.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="n">Customer</span> <span class="n">cust</span> <span class="o">=</span> <span class="n">Utility</span><span class="o">.</span><span class="na">createAnyObject</span><span class="o">(</span><span class="n">Customer</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>  <span class="c1">// No casting</span>
+<span class="lineno"> 2 </span><span class="o">...</span>
+<span class="lineno"> 3 </span><span class="kd">public</span> <span class="kd">static</span> <span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">T</span> <span class="nf">createAnyObject</span><span class="o">(</span><span class="n">Class</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">cls</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 4 </span>    <span class="n">T</span> <span class="n">ret</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+<span class="lineno"> 5 </span>    <span class="k">try</span> <span class="o">{</span>
+<span class="lineno"> 6 </span>        <span class="n">ret</span> <span class="o">=</span> <span class="n">cls</span><span class="o">.</span><span class="na">newInstance</span><span class="o">();</span>
+<span class="lineno"> 7 </span>    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 8 </span>        <span class="c1">// Exception Handling</span>
+<span class="lineno"> 9 </span>    <span class="o">}</span>
+<span class="lineno">10 </span>    <span class="k">return</span> <span class="n">ret</span><span class="o">;</span>
+<span class="lineno">11 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The same code without generics:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-49"><b>Code section 4.49: Former version.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="n">Customer</span> <span class="n">cust</span> <span class="o">=</span> <span class="o">(</span><span class="n">Customer</span><span class="o">)</span> <span class="n">Utility</span><span class="o">.</span><span class="na">createAnyObject</span><span class="o">(</span><span class="n">Customer</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>  <span class="c1">// Casting is needed</span>
+<span class="lineno"> 2 </span><span class="o">...</span>
+<span class="lineno"> 3 </span><span class="kd">public</span> <span class="kd">static</span> <span class="n">Object</span> <span class="nf">createAnyObject</span><span class="o">(</span><span class="n">Class</span> <span class="n">cls</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 4 </span>    <span class="n">Object</span> <span class="n">ret</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+<span class="lineno"> 5 </span>    <span class="k">try</span> <span class="o">{</span>
+<span class="lineno"> 6 </span>        <span class="n">ret</span> <span class="o">=</span> <span class="n">cls</span><span class="o">.</span><span class="na">newInstance</span><span class="o">();</span>
+<span class="lineno"> 7 </span>    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Exception</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 8 </span>        <span class="c1">// Exception Handling</span>
+<span class="lineno"> 9 </span>    <span class="o">}</span>
+<span class="lineno">10 </span>    <span class="k">return</span> <span class="n">ret</span><span class="o">;</span>
+<span class="lineno">11 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Motivation">Motivation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Generics&amp;action=edit&amp;section=8" title="Edit section: Motivation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Java was long criticized for the need to explicitly type-cast an element when it was taken out of a "container/collection" class. There was no way to enforce that a "collection" class contains only one type of object (e.g., to forbid <i>at compile time</i> that an <code>Integer</code> object is added to a <code>Collection</code> that should only contain <code>String</code>s). This is possible since Java 1.5. In the first couple of years of Java evolution, Java did not have a real competitor. This has changed by the appearance of Microsoft C#. With Generics Java is better suited to compete against C#. Similar constructs to Java Generics exist in other languages, see <a href="https://en.wikipedia.org/wiki/Generic_programming" class="extiw" title="w:Generic programming">Generic programming</a> for more information. Generics were added to the Java language syntax in version 1.5. This means that code using Generics will not compile with Java 1.4 and less. Use of generics is optional. For backwards compatibility with pre-Generics code, it is okay to use generic classes without the generics type specification (<code>&lt;T&gt;</code>). In such a case, when you retrieve an object reference from a generic object, you will have to manually cast it from type Object to the correct type.</p>
+<h2><span id="Note_for_C++_programmers"></span><span class="mw-headline" id="Note_for_C.2B.2B_programmers">Note for C++ programmers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Generics&amp;action=edit&amp;section=9" title="Edit section: Note for C++ programmers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Java Generics are similar to C++ Templates in that both were added for the same reason. The syntax of Java Generic and C++ Template are also similar. There are some differences however. The C++ template can be seen as a kind of macro, in that a new copy of the code is generated for each generic type referenced. All extra code for templates is generated at compiler time. In contrast, Java Generics are built into the language. The same code is used for each generic type. For example:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-50"><b>Code section 4.50: Java generics.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">Collection</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span>  <span class="n">collString</span>  <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno">2 </span><span class="n">Collection</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">collInteger</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;();</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Both these objects appear as the same type at runtime (both <code>ArrayList</code>'s). The generic type information is erased during compilation (type erasure). For example:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-51"><b>Code section 4.51: Type erasure.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="kt">void</span> <span class="nf">method</span><span class="o">(</span><span class="n">T</span> <span class="n">argument</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="n">T</span> <span class="n">variable</span><span class="o">;</span>
+<span class="lineno">3 </span>  <span class="err">…</span>
+<span class="lineno">4 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>is transformed by erasure into:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-52"><b>Code section 4.52: Transformation.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">method</span><span class="o">(</span><span class="n">Object</span> <span class="n">argument</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="n">Object</span> <span class="n">variable</span><span class="o">;</span>
+<span class="lineno">3 </span>  <span class="err">…</span>
+<span class="lineno">4 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Test your knowledge</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<p><b>Question 4.9</b>: Consider the following class.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="question-9"><b>Question 4.9: Question9.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="kn">import</span> <span class="nn">java.util.Collection</span><span class="o">;</span>
+<span class="lineno"> 3 </span>
+<span class="lineno"> 4 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Question9</span> <span class="o">{</span>
+<span class="lineno"> 5 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 6 </span>    <span class="n">Collection</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">collection1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno"> 7 </span>    <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">collection2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno"> 8 </span>    <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">String</span><span class="o">&gt;</span> <span class="n">collection3</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno"> 9 </span>    <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">String</span><span class="o">&gt;</span> <span class="n">collection4</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;();</span>
+<span class="lineno">10 </span>    <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">super</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">collection5</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno">11 </span>    <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">super</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">collection6</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;();</span>
+<span class="lineno">12 </span>    <span class="n">Collection</span><span class="o">&lt;?&gt;</span> <span class="n">collection7</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno">13 </span>    <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">collection8</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;?&gt;();</span>
+<span class="lineno">14 </span>    <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">collection9</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;();</span>
+<span class="lineno">15 </span>    <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">collection10</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno">16 </span>    <span class="n">Collection</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">collection11</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno">17 </span>    <span class="n">Collection</span> <span class="n">collection12</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno">18 </span>  <span class="o">}</span>
+<span class="lineno">19 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Which lines will generate a compile error?</p>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Answer</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="answer-9"><b>Answer 4.9: Answer9.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="kn">import</span> <span class="nn">java.util.Collection</span><span class="o">;</span>
+<span class="lineno"> 3 </span>
+<span class="lineno"> 4 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Answer9</span> <span class="o">{</span>
+<span class="lineno"> 5 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 6 </span>    <span class="n">Collection</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">collection1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno"> 7 </span>    <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">collection2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno"> 8 </span>    <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">String</span><span class="o">&gt;</span> <span class="n">collection3</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno"> 9 </span><span class="hll">    <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">String</span><span class="o">&gt;</span> <span class="n">collection4</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;();</span>
+</span><span class="lineno">10 </span><span class="hll">    <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">super</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">collection5</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+</span><span class="lineno">11 </span>    <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">super</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">collection6</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;();</span>
+<span class="lineno">12 </span>    <span class="n">Collection</span><span class="o">&lt;?&gt;</span> <span class="n">collection7</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno">13 </span><span class="hll">    <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">collection8</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;?&gt;();</span>
+</span><span class="lineno">14 </span>    <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">collection9</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;();</span>
+<span class="lineno">15 </span><span class="hll">    <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">collection10</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+</span><span class="lineno">16 </span><span class="hll">    <span class="n">Collection</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">collection11</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">String</span><span class="o">&gt;();</span>
+</span><span class="lineno">17 </span>    <span class="n">Collection</span> <span class="n">collection12</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;();</span>
+<span class="lineno">18 </span>  <span class="o">}</span>
+<span class="lineno">19 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<ul>
+<li>Line 9: <code>Object</code> does not extend <code>String</code>.</li>
+<li>Line 10: <code>String</code> is not a superclass of <code>Object</code>.</li>
+<li>Line 13: <code>ArrayList&lt;?&gt;</code> can't be instantiated.</li>
+<li>Line 15: <code>Integer</code> does not extend <code>String</code>.</li>
+<li>Line 16: <code>ArrayList&lt;? extends String&gt;</code> can't be instantiated.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<p><br></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Nested_Classes.html" title="Nested Classes"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Nested_Classes.html" title="Java Programming/Nested Classes">Nested Classes</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Generics</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Aggregate.html" title="Java Programming/Aggregate">Aggregate</a> <a href="Aggregate.html" title="Aggregate"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="100% developed"><img alt="100% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/24px-100_percent.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/36px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/48px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1182
+Cached time: 20171009182636
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.240 seconds
+Real time usage: 2.738 seconds
+Preprocessor visited node count: 1112/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 23557/2097152 bytes
+Template argument size: 4730/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 44/500
+Lua time usage: 0.082/10.000 seconds
+Lua memory usage: 777 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 2647.452      1 -total
+ 59.08% 1564.153     17 Template:XExample
+ 30.25%  800.922      8 Template:XCode
+  4.77%  126.370      1 Template:XWarning
+  4.48%  118.733      2 Template:Programming/Navigation
+  0.49%   13.017      1 Template:Java_Programming/ClassesAndObjectsTopic/Nav
+  0.37%    9.844      3 Template:BookCat
+  0.28%    7.475      3 Template:BookCat/default
+  0.22%    5.742      1 Template:Java_Programming/ClassesAndObjects/Topic
+  0.20%    5.214      3 Template:BOOKCATEGORY
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:87847-0!canonical and timestamp 20171009182633 and revision id 3295203
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Generics&amp;oldid=3295203">https://en.wikibooks.org/w/index.php?title=Java_Programming/Generics&amp;oldid=3295203</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FGenerics" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FGenerics" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Generics.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk"><span><a href="/wiki/Talk:Java_Programming/Generics" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible selected"><span><a href="Generics.html">Read</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Generics&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Generics&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Generics" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Generics" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Generics&amp;oldid=3295203" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Generics&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q379273" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FGenerics&amp;id=3295203" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-fr"><a href="https://fr.wikibooks.org/wiki/Programmation_Java/Types_g%C3%A9n%C3%A9riques" title="Programmation Java/Types génériques – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikibooks.org/wiki/Java/Generics" title="Java/Generics – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikibooks.org/wiki/Java/Gen%C3%A9ricos" title="Java/Genéricos – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q379273#sitelinks-wikibooks" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FGenerics">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FGenerics&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Generics&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-wikipedia"><a href="https://en.wikipedia.org/wiki/Generics_in_Java" hreflang="en">Wikipedia</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 14:41.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Generics&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.240","walltime":"2.738","ppvisitednodes":{"value":1112,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":23557,"limit":2097152},"templateargumentsize":{"value":4730,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":44,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00% 2647.452      1 -total"," 59.08% 1564.153     17 Template:XExample"," 30.25%  800.922      8 Template:XCode","  4.77%  126.370      1 Template:XWarning","  4.48%  118.733      2 Template:Programming/Navigation","  0.49%   13.017      1 Template:Java_Programming/ClassesAndObjectsTopic/Nav","  0.37%    9.844      3 Template:BookCat","  0.28%    7.475      3 Template:BookCat/default","  0.22%    5.742      1 Template:Java_Programming/ClassesAndObjects/Topic","  0.20%    5.214      3 Template:BOOKCATEGORY"]},"scribunto":{"limitreport-timeusage":{"value":"0.082","limit":"10.000"},"limitreport-memusage":{"value":796073,"limit":52428800}},"cachereport":{"origin":"mw1182","timestamp":"20171009182636","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":68,"wgHostname":"mw1219"});});</script>
+	</body>
+</html>

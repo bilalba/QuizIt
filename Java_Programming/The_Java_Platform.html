@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>The Java platform - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/The_Java_Platform","wgTitle":"Java Programming/The Java Platform","wgCurRevisionId":3295255,"wgRevisionId":3295255,"wgArticleId":49910,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/The_Java_Platform","wgRelevantArticleId":49910,"wgRequestId":"We-obApAEKYAADz1IFUAAABC","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3295255,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q741303","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="The_Java_Platform.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_The_Java_Platform rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">The Java platform</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Java_Overview.html" title="Java Overview"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Java_Overview.html" title="Java Programming/Java Overview">Java Overview</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>The Java Platform</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Getting_started.html" title="Java Programming/Getting started">Getting started</a> <a href="Getting_started.html" title="Getting started"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable noprint" style="float: right;">
+<tr>
+<td>Navigate <b><a href="Preface.html" title="Java Programming/Preface">Preface</a></b>: (&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/Overview/Topic" title="Template:Java Programming/Overview/Topic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/Overview/Topic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/Overview/Topic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/Overview/Topic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of 18 Oct, 2011"><img alt="100% developed&#160; as of 18 Oct, 2011" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="About_This_Book.html" title="Java Programming/About This Book">About this book</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of 8 Mar, 2013"><img alt="100% developed&#160; as of 8 Mar, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="History.html" title="Java Programming/History">History of Java</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of 8 Mar, 2013"><img alt="100% developed&#160; as of 8 Mar, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Java_Overview.html" title="Java Programming/Java Overview">Overview of the Java programming language</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of 8 Mar, 2013"><img alt="75% developed&#160; as of 8 Mar, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">The Java platform (JRE &amp; JDK)</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p>The <b>Java platform</b> is the name given to the computing platform from Oracle that helps users to <i>run</i> and <i>develop</i> Java applications. The platform does not just enable a user to run and develop a Java application, but also features a wide variety of tools that can help developers work efficiently with the Java programming language.</p>
+<p>The platform consists of two essential softwares:</p>
+<ul>
+<li>the <b>Java Runtime Environment (JRE)</b>, which is needed to <i>run</i> Java applications and applets; and,</li>
+<li>the <b>Java Development Kit (JDK)</b>, which is needed to <i>develop</i> those Java applications and applets. If you have installed the JDK, you should know that it comes equipped with a JRE as well. So, for all the purposes of this book, you would only require the JDK.</li>
+</ul>
+<p>In this section, we will explore in further detail what these two software components of the Java platform do.</p>
+<h2><span id="Java_Runtime_Environment_(JRE)"></span><span class="mw-headline" id="Java_Runtime_Environment_.28JRE.29">Java Runtime Environment (JRE)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=1" title="Edit section: Java Runtime Environment (JRE)">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Any piece of code written in the Java programming language can be run on any operating system, platform or architecture — in fact, it can be run on any device that supports the Java platform. Before Java, this amount of ubiquity was very hard to achieve. If a software was written for a Unix-based system, it was impossible to run the same application on a Windows system — in this case, the application was native only to Unix-based systems.</p>
+<p>A major milestone in the development of the Java programming language was to develop a special runtime environment that would execute any Java application <i>independent</i> of the computer's operating system, platform or architecture.</p>
+<p>The <b>Java Runtime Environment (JRE)</b> sits on top of the machine's operating system, platform and architecture. If and when a Java application is run, the JRE acts as a liaison between the underlying platform and that application. It interprets the Java application to run in accordance with the underlying platform, such that upon running the application, it looks and behaves like a native application. The part of the JRE that accomplishes this complex liaison agreement is called the <b>Java Virtual Machine (JVM)</b>.</p>
+<p><br></p>
+<table align="center" style="border:solid 1px lightgray; padding:8px; background: #fdfdfd">
+<tr>
+<td style="text-align:center; padding:2px 8px;">
+<div style="color:#2a7fff; border-bottom:solid 1px #ddd; padding-bottom:4px;"><b>Figure 1:</b> Java applications can be <i>written once</i> and <i>run anywhere</i>. This feature of the Java platform<br>
+is commonly abbreviated to <b>WORA</b> in formal Java texts.</div>
+</td>
+</tr>
+<tr>
+<td style="padding-top:8px;">
+<div class="center">
+<div class="floatnone"><a href="/wiki/File:Explaining_Java_Runtime_Environment.svg" class="image"><img alt="Explaining Java Runtime Environment.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/60/Explaining_Java_Runtime_Environment.svg/638px-Explaining_Java_Runtime_Environment.svg.png" width="638" height="472" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/60/Explaining_Java_Runtime_Environment.svg/957px-Explaining_Java_Runtime_Environment.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/60/Explaining_Java_Runtime_Environment.svg/1276px-Explaining_Java_Runtime_Environment.svg.png" data-file-width="638" data-file-height="472"></a></div>
+</div>
+</td>
+</tr>
+</table>
+<p><br></p>
+<h3><span id="Executing_native_Java_code_(or_byte-code)"></span><span class="mw-headline" id="Executing_native_Java_code_.28or_byte-code.29">Executing native Java code (or <i>byte-code</i>)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=2" title="Edit section: Executing native Java code (or byte-code)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Native Java applications are preserved in a special format called the <i><b><a href="Byte_Code.html" title="Java Programming/Byte Code">byte-code</a></b></i>. Byte-code remains the same, no matter what hardware architecture, operating system, or software platform it is running under. On a file-system, Java byte-code resides in files that have the <code>.class</code> (also known as a <i><b>class file</b></i>) or the <code>.jar</code> (also known as a <i><b>Java archive</b></i>) extension. To run byte-code, the JRE comes with a special tool (appropriately named <b>java</b>).</p>
+<p>Suppose your byte-code is called <code>SomeApplication.class</code>. If you want to execute this Java byte-code, you would need to use the following command in Command Prompt (on Windows) or Terminal (on Linux or Mac OS):</p>
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Execution</b>
+<pre style="background-color:#000; color:#fff;">
+$ java SomeApplication
+</pre></td>
+</tr>
+</table>
+<p>If you want to execute a Java byte-code with a <code>.jar</code> extension (say, <code>SomeApplication.jar</code>), you would need to use the following command in Command Prompt (on Windows) or Terminal (on Linux or Mac OS):</p>
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Execution with a jar</b>
+<pre style="background-color:#000; color:#fff;">
+$ java -jar SomeApplication.jar
+</pre></td>
+</tr>
+</table>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Bombilla_amarilla_-_yellow_Edison_lamp.svg" class="image" title="Note"><img alt="Note" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/30px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" width="30" height="30" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/45px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/60px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" data-file-width="200" data-file-height="200"></a></td>
+<td style="background-color:#fffff0; border-left: 4px solid yellow; padding-left: 6px;">Not all Java class files or Java archives are executable. Therefore, the <b>java</b> tool would only be able to execute files that are executable. Non-executable class files and Java archives are simply called <i><b>class libraries</b></i>.</td>
+</tr>
+</table>
+<h3><span id="Do_you_have_a_JRE?"></span><span class="mw-headline" id="Do_you_have_a_JRE.3F">Do you have a JRE?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=3" title="Edit section: Do you have a JRE?">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Most computers come with a pre-installed copy of the JRE. If your computer doesn't have a JRE, then the above commands would not work. You can always check what version of the JRE is installed on the computer by writing the following command in Command Prompt (on Windows) or Terminal (on Linux or Mac OS):</p>
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Java version</b>
+<pre style="background-color:#000; color:#fff;">
+$ java -version
+</pre></td>
+</tr>
+</table>
+<h3><span id="Java_Virtual_Machine_(JVM)"></span><span class="mw-headline" id="Java_Virtual_Machine_.28JVM.29">Java Virtual Machine (JVM)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=4" title="Edit section: Java Virtual Machine (JVM)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Quite possibly, the most important part of the JRE is the <b>Java Virtual Machine (JVM)</b>. The JVM acts like a <i>virtual</i> processor, enabling Java applications to be run on the local system. Its main purpose is to interpret (<i>read</i> translate) the received byte-code and make it appear as native code. The older Java architecture used this process of <b>interpretation</b> to execute Java byte-code. Even though the process of interpretation brought the WORA principle to diverse machines, it had a drawback — it consumed a lot of time and clocked the system processor intensively to load an application.</p>
+<p><br></p>
+<table align="center" style="border:solid 1px lightgray; padding:8px; background: #fdfdfd">
+<tr>
+<td style="text-align:center; padding:2px 8px;">
+<div style="color:#2a7fff; border-bottom:solid 1px #ddd; padding-bottom:4px;"><b>Figure 2:</b> A JVM interpreter <i>translates</i> the byte-code line-by-line to make it appear as if a native application is being executed.</div>
+</td>
+</tr>
+<tr>
+<td style="padding-top:8px;">
+<div class="center">
+<div class="floatnone"><a href="/wiki/File:How_JVM_Interpreter_works.svg" class="image"><img alt="How JVM Interpreter works.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/18/How_JVM_Interpreter_works.svg/656px-How_JVM_Interpreter_works.svg.png" width="656" height="167" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/18/How_JVM_Interpreter_works.svg/984px-How_JVM_Interpreter_works.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/18/How_JVM_Interpreter_works.svg/1312px-How_JVM_Interpreter_works.svg.png" data-file-width="656" data-file-height="167"></a></div>
+</div>
+</td>
+</tr>
+</table>
+<p><br></p>
+<h4><span class="mw-headline" id="Just-in-Time_Compilation">Just-in-Time Compilation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=5" title="Edit section: Just-in-Time Compilation">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Since version 1.2, the JRE features a more robust JVM. Instead of interpreting byte-code, it down-right converts the code straight into equivalent native code for the local system. This process of conversion is called <i><a href="https://en.wikipedia.org/wiki/just-in-time_compilation" class="extiw" title="w:just-in-time compilation">just-in-time compilation</a></i> or <i>JIT-compilation</i>. This process only occurs when the byte-code is executed for the first time. Unless the byte-code itself is changed, the JVM uses the compiled version of the byte-code on every successive execution. Doing so saves a lot of time and processor effort, allowing applications to execute much faster at the cost of a <i>small</i> delay on first execution.</p>
+<p><br></p>
+<table align="center" style="border:solid 1px lightgray; padding:8px; background: #fdfdfd">
+<tr>
+<td style="text-align:center; padding:2px 8px;">
+<div style="color:#2a7fff; border-bottom:solid 1px #ddd; padding-bottom:4px;"><b>Figure 3:</b> A just-in-time compiler only compiles the byte-code to equivalent native code at first execution. Upon every successive<br>
+execution, the JVM merely uses the already <i>compiled</i> native code to optimize performance.</div>
+</td>
+</tr>
+<tr>
+<td style="padding-top:8px;">
+<div class="center">
+<div class="floatnone"><a href="/wiki/File:How_JIT_Compilation_works.svg" class="image"><img alt="How JIT Compilation works.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/91/How_JIT_Compilation_works.svg/756px-How_JIT_Compilation_works.svg.png" width="756" height="190" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/91/How_JIT_Compilation_works.svg/1134px-How_JIT_Compilation_works.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/91/How_JIT_Compilation_works.svg/1512px-How_JIT_Compilation_works.svg.png" data-file-width="756" data-file-height="190"></a></div>
+</div>
+</td>
+</tr>
+</table>
+<p><br></p>
+<h4><span class="mw-headline" id="Native_optimization">Native optimization</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=6" title="Edit section: Native optimization">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The JVM is an intelligent <i>virtual</i> processor. It has the ability to identify areas within the Java code itself that can be optimized for faster and better performance. Based on every successive run of your Java applications, the JVM would optimize it to run even better.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Bombilla_amarilla_-_yellow_Edison_lamp.svg" class="image" title="Note"><img alt="Note" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/30px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" width="30" height="30" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/45px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/60px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" data-file-width="200" data-file-height="200"></a></td>
+<td style="background-color:#fffff0; border-left: 4px solid yellow; padding-left: 6px;">There are portions of Java code that do not require it to be JIT-compiled at runtime, e.g., the <a href="Reflection.html" title="Java Programming/Reflection">Reflection API</a>; therefore, code that uses such functions are not necessarily fully compiled to native code.</td>
+</tr>
+</table>
+<h4><span id="Was_JVM_the_first_virtual_machine?"></span><span class="mw-headline" id="Was_JVM_the_first_virtual_machine.3F">Was JVM the first <i>virtual machine</i>?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=7" title="Edit section: Was JVM the first virtual machine?">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Java was not the first virtual-machine-based platform, though it is by far the most successful and well-known. Previous uses for virtual machine technology primarily involved <a href="https://en.wikipedia.org/wiki/emulators" class="extiw" title="w:emulators">emulators</a> to aid development for not-yet-developed hardware or operating systems, but the JVM was designed to be implemented entirely in software, while making it easy to efficiently port an implementation to hardware of all kinds.</p>
+<h2><span id="Java_Development_Kit_(JDK)"></span><span class="mw-headline" id="Java_Development_Kit_.28JDK.29">Java Development Kit (JDK)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=8" title="Edit section: Java Development Kit (JDK)">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The JRE takes care of running the Java code on multiple platforms, however as developers, we are interested in writing pure code in Java which can then be converted into Java byte-code for mass deployment. As developers, we do <i>not</i> need to write Java byte-code; rather we write the code in the Java programming language (which is quite similar to writing C or C++ code).</p>
+<p>Upon downloading the JDK, a developer ensures that their system has the appropriate JRE and additional tools to help with the development of applications in the Java programming language. Java code can be found in files with the extension <b>.java</b>. These files are called <i><b>Java source files</b></i>. In order to convert the Java code in these source files to Java byte-code, you need to use the <b>Java compiler</b> tool installed with your JDK.</p>
+<h3><span class="mw-headline" id="The_Java_compiler">The Java compiler</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=9" title="Edit section: The Java compiler">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <b>Java compiler</b> tool (named <b>javac</b> in the JDK) is the most important utility found with the JDK. In order to compile a Java source file (say, <code>SomeApplication.java</code>) to its respective Java byte-code, you would need to use the following command in Command Prompt (on Windows) or Terminal (on Linux or Mac OS):</p>
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Compilation</b>
+<pre style="background-color:#000; color:#fff;">
+javac SomeApplication.java
+</pre></td>
+</tr>
+</table>
+<p>This command would convert the <code>SomeApplication.java</code> source file into its equivalent Java byte-code. The resultant byte-code would exist in a newly created file named <code>SomeApplication.class</code>. This process of converting Java source files into their equivalent byte-codes is known as <i><b>compilation</b></i>.</p>
+<p><br></p>
+<table align="center" style="border:solid 1px lightgray; padding:8px; background: #fdfdfd">
+<tr>
+<td style="text-align:center; padding:2px 8px;">
+<div style="color:#2a7fff; border-bottom:solid 1px #ddd; padding-bottom:4px;"><b>Figure 4:</b> The basic Java compilation process</div>
+</td>
+</tr>
+<tr>
+<td style="padding-top:8px;">
+<div class="center">
+<div class="floatnone"><a href="/wiki/File:Java_Compilation_Basics.svg" class="image"><img alt="Java Compilation Basics.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Java_Compilation_Basics.svg/505px-Java_Compilation_Basics.svg.png" width="505" height="116" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Java_Compilation_Basics.svg/758px-Java_Compilation_Basics.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Java_Compilation_Basics.svg/1010px-Java_Compilation_Basics.svg.png" data-file-width="505" data-file-height="116"></a></div>
+</div>
+</td>
+</tr>
+</table>
+<p><br></p>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">A list of other JDK tools</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<p>There are a huge array of tools available with the JDK that will all be explained in due time as you progress with the book. These tools are briefly listed below in order of their usage:</p>
+<h3><span class="mw-headline" id="Applet_development">Applet development</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=10" title="Edit section: Applet development">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><code>appletviewer</code> — Java applets require a particular environment to execute. Typically, this environment is provided by a browser with a Java plug-in, and a web server serving the applet. However, during development and testing of an applet it might be more convenient to start an applet without the need to fiddle with a browser and a web server. In such a case, Oracle's appletviewer from the JDK can be used to run an applet.</li>
+</ul>
+<h3><span class="mw-headline" id="Annotation_processing">Annotation processing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=11" title="Edit section: Annotation processing">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<dl>
+<dd><i>For more about annotation processing, <a rel="nofollow" class="external text" href="http://docs.oracle.com/javase/1.5.0/docs/guide/apt/GettingStarted.html">read this</a></i></dd>
+</dl>
+<p>In Java 1.5 (alias Java 5.0) Oracle added a mechanism called <i>annotations</i>. Annotations allow the addition of meta-data to Java source code, and even provide mechanisms to carry that meta-data into compiled <code>.class</code> files.</p>
+<ul>
+<li><code>apt</code> — An annotation processing tool which digs through source code, finds annotation statements in the source code and executes actions if it finds known annotations. The most common task is to generate some particular source code. The actions apt performs when finding annotations in the source code are not hard-coded into apt. Instead, one has to code particular annotation handlers (in Java). These handlers are called annotation processors. It can also be described in a simple way without the Oracle terminology: apt can be seen as a source code preprocessor framework, and annotation processors are typically code generators.</li>
+</ul>
+<h3><span class="mw-headline" id="Integration_of_non-Java_and_Java_code">Integration of non-Java and Java code</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=12" title="Edit section: Integration of non-Java and Java code">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><code>javah</code> — A Java class can call native, or non-Java, code that has been prepared to be called from Java. The details and procedures are specified in the JNI (Java Native Interface). Commonly, native code is written in C (or C++). The JDK tool javah helps to write the necessary C code, by generating C header files and C stub code.</li>
+</ul>
+<h3><span class="mw-headline" id="Class_library_conflicts">Class library conflicts</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=13" title="Edit section: Class library conflicts">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><code>extcheck</code> — It can be used prior to the installation of a Java extension into the JDK or JRE environment. It checks if a particular Jar file conflicts with an already installed extension. This tool appeared first with Java 1.5.</li>
+</ul>
+<h3><span class="mw-headline" id="Software_security_and_cryptography_tools">Software security and cryptography tools</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=14" title="Edit section: Software security and cryptography tools">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The JDK comes with a large number of tools related to the security features of Java. Usage of these tools first requires study of the particular security mechanisms. The tools are:</p>
+<ul>
+<li><code>keytool</code> — To manage keys and certificates</li>
+<li><code>jarsigner</code> — To generate and verify digital signatures of JARs (Java ARchives)</li>
+<li><code>policytool</code> — To edit policy files</li>
+<li><code>kinit</code> — To obtain Kerberos v5 tickets</li>
+<li><code>klist</code> — To manage Kerberos credential cache and key table</li>
+<li><code>ktab</code> — To manage entries in a key table</li>
+</ul>
+<h3><span class="mw-headline" id="The_Java_archiver">The Java archiver</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=15" title="Edit section: The Java archiver">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><code>jar</code> — (short for Java archiver) is a tool for creating Java archives or jar files — a file with <code>.jar</code> as the extension. A Java archive is a collection of compiled Java classes and other resources which those classes may require (such as text files, configuration files, images) at runtime. Internally, a jar file is really a <a href="https://en.wikipedia.org/wiki/ZIP_(file_format)" class="extiw" title="w:ZIP (file format)">.zip file</a>.</li>
+</ul>
+<h3><span class="mw-headline" id="The_Java_debugger">The Java debugger</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=16" title="Edit section: The Java debugger">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul>
+<li><code>jdb</code> — (short for Java debugger) is a command-line console that provides a <a href="https://en.wikipedia.org/wiki/Debugging" class="extiw" title="w:Debugging">debugging</a> environment for Java programs. Although you can use this command line console, IDE's normally provide easier to use debugging environments.</li>
+</ul>
+<h3><span class="mw-headline" id="Documenting_code_with_Java">Documenting code with Java</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=17" title="Edit section: Documenting code with Java">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>As programs grow large and complex, programmers need ways to track changes and to understand the code better at each step of its evolution. For decades, programmers have been employing the use of special programming constructs called comments — regions that help declare user definitions for a code snippet within the source code. But comments are prone to be verbose and incomprehensible, let alone be difficult to read in applications having hundreds of lines of code.</p>
+<ul>
+<li><code>javadoc</code> — Java provides the user with a way to easily publish documentation about the code using a special commenting system and the javadoc tool. The javadoc tool generates documentation about the Application Programming Interface (API) of a set of user-created Java classes. javadoc reads source file comments from the <code>.java</code> source files and generates HTML documents that are easier to read and understand without looking at the code itself.</li>
+</ul>
+<ul>
+<li><code>javap</code> — Where Javadoc provide a detailed view into the API and documentation of a Java class, the javap tool prints information regarding members (constructors, methods and variables) in a class. In other words, it lists the class' API and/or the compiled instructions of the class. javap is a formatting disassembler for Java bytecode.</li>
+</ul>
+<h3><span class="mw-headline" id="The_native2ascii_tool">The native2ascii tool</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=18" title="Edit section: The native2ascii tool">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><code>native2ascii</code> is an important, though underappreciated, tool for writing properties files — files containing configuration data — or resource bundles — files containing language translations of text.</p>
+<p>Such files can contain only ASCII and Latin-1 characters, but international programmers need a full range of character sets. Text using these characters can appear in properties files and resource bundles only if the non-ASCII and non-Latin-^1 characters are converted into <a href="Syntax\Unicode_Escape_Sequences.html" class="mw-redirect" title="Java Programming/Syntax/Unicode Escape Sequences">Unicode escape sequences</a> (\uXXXX notation).</p>
+<p>The task of writing such escape sequences is handled by <code>native2ascii</code>. You can write the international text in an editor using the appropriate character encoding, then use <code>native2ascii</code> to generate the necessary ASCII text with embedded Unicode escape sequences. Despite the name, <code>native2ascii</code> can also convert from ASCII to native, so it is useful for converting an existing properties file or resource bundle back to some other encoding.</p>
+<p><code>native2ascii</code> makes most sense when integrated into a build system to automate the conversion.</p>
+<h3><span id="Remote_Method_Invocation_(RMI)_tools"></span><span class="mw-headline" id="Remote_Method_Invocation_.28RMI.29_tools">Remote Method Invocation (RMI) tools</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=19" title="Edit section: Remote Method Invocation (RMI) tools">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div style="clear: both"></div>
+<table style="background: #ffd; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 60%; margin: auto;" class="notice noprint notice-todo">
+<tr>
+<td style="width: 58px;">
+<div class="floatleft"><img alt="Clipboard" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/45px-Clipboard.svg.png" width="45" height="45" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/68px-Clipboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/90px-Clipboard.svg.png" data-file-width="48" data-file-height="48"></div>
+</td>
+<td>
+<p><b>To do:</b><br>
+Add section</p>
+</td>
+</tr>
+</table>
+<div style="clear: both"></div>
+<h3><span class="mw-headline" id="Java_IDL_and_RMI-IIOP_Tools">Java IDL and RMI-IIOP Tools</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=20" title="Edit section: Java IDL and RMI-IIOP Tools">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div style="clear: both"></div>
+<table style="background: #ffd; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 60%; margin: auto;" class="notice noprint notice-todo">
+<tr>
+<td style="width: 58px;">
+<div class="floatleft"><img alt="Clipboard" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/45px-Clipboard.svg.png" width="45" height="45" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/68px-Clipboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/90px-Clipboard.svg.png" data-file-width="48" data-file-height="48"></div>
+</td>
+<td>
+<p><b>To do:</b><br>
+Add section</p>
+</td>
+</tr>
+</table>
+<div style="clear: both"></div>
+<h3><span id="Deployment_&amp;_Web_Start_Tools"></span><span class="mw-headline" id="Deployment_.26_Web_Start_Tools">Deployment &amp; Web Start Tools</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=21" title="Edit section: Deployment &amp; Web Start Tools">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div style="clear: both"></div>
+<table style="background: #ffd; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 60%; margin: auto;" class="notice noprint notice-todo">
+<tr>
+<td style="width: 58px;">
+<div class="floatleft"><img alt="Clipboard" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/45px-Clipboard.svg.png" width="45" height="45" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/68px-Clipboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/90px-Clipboard.svg.png" data-file-width="48" data-file-height="48"></div>
+</td>
+<td>
+<p><b>To do:</b><br>
+Add section</p>
+</td>
+</tr>
+</table>
+<div style="clear: both"></div>
+<h3><span class="mw-headline" id="Browser_Plug-In_Tools">Browser Plug-In Tools</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=22" title="Edit section: Browser Plug-In Tools">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div style="clear: both"></div>
+<table style="background: #ffd; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 60%; margin: auto;" class="notice noprint notice-todo">
+<tr>
+<td style="width: 58px;">
+<div class="floatleft"><img alt="Clipboard" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/45px-Clipboard.svg.png" width="45" height="45" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/68px-Clipboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/90px-Clipboard.svg.png" data-file-width="48" data-file-height="48"></div>
+</td>
+<td>
+<p><b>To do:</b><br>
+Add section</p>
+</td>
+</tr>
+</table>
+<div style="clear: both"></div>
+<h3><span id="Monitoring_and_Management_Tools_/_Troubleshooting_Tools"></span><span class="mw-headline" id="Monitoring_and_Management_Tools_.2F_Troubleshooting_Tools">Monitoring and Management Tools / Troubleshooting Tools</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=23" title="Edit section: Monitoring and Management Tools / Troubleshooting Tools">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>With Java 1.5 a set of monitoring and management tools have been added to the JDK, in addition to a set of troubleshooting tools.</p>
+<p>The monitoring and management tools are intended for monitoring and managing the virtual machine and the execution environment. They allow, for example, monitoring memory usage during the execution of a Java program.</p>
+<p>The troubleshooting tools provide rather esoteric insight into aspects of the virtual machine. (Interestingly, the Java debugger is not categorized as a troubleshooting tool.)</p>
+<p>All the monitoring and management and troubleshooting tools are currently marked as "experimental" (which does not affect jdb). So they might disappear in future JDKs.</p>
+</div>
+</div>
+<h3><span id="Java_class_libraries_(JCL)"></span><span class="mw-headline" id="Java_class_libraries_.28JCL.29">Java class libraries (JCL)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=24" title="Edit section: Java class libraries (JCL)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In most modern operating systems, a large body of reusable code is provided to simplify the programmer's job. This code is typically provided as a set of <a href="https://en.wikipedia.org/wiki/Library_(computer_science)#Dynamic_linking" class="extiw" title="w:Library (computer science)">dynamically loadable libraries</a> that applications can call at runtime. Because the Java platform is not dependent on any specific operating system, applications cannot rely on any of the existing libraries. Instead, the Java platform provides a comprehensive set of standard class libraries, containing much of the same reusable functions commonly found in modern operating systems.</p>
+<p>The Java class libraries serve three purposes within the Java platform. Like other standard code libraries, they provide the programmer with a well-known set of functions to perform common tasks, such as maintaining lists of items or performing complex string parsing. In addition, the class libraries provide an abstract interface to tasks that would normally depend heavily on the hardware and operating system. Tasks such as network access and file access are often heavily dependent on the native capabilities of the platform. The Java java.net and java.io libraries implement the required native code internally, then provide a standard interface for the Java applications to perform those tasks. Finally, some underlying platforms may not support all of the features a Java application expects. In these cases, the class libraries can either emulate those features using whatever is available, or provide a consistent way to check for the presence of a specific feature.</p>
+<h2><span class="mw-headline" id="Similar_concepts">Similar concepts</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=25" title="Edit section: Similar concepts">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The success of the Java platform and the concepts of the write once, run anywhere principle has led to the development of similar frameworks and platforms. Most notable of these is the Microsoft's <a href="https://en.wikipedia.org/wiki/.NET_Framework" class="extiw" title="w:.NET Framework">.NET framework</a> and its open-source equivalent <a href="https://en.wikipedia.org/wiki/Mono_(software)" class="extiw" title="w:Mono (software)">Mono</a>.</p>
+<h3><span class="mw-headline" id="The_.NET_framework">The .NET framework</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=26" title="Edit section: The .NET framework">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The .NET framework borrows many of the concepts and innovations of Java — their alternative for the JVM is called the <a href="https://en.wikipedia.org/wiki/Common_Language_Runtime" class="extiw" title="w:Common Language Runtime">Common Language Runtime (CLR)</a>, while their alternative for the byte-code is the <a href="https://en.wikipedia.org/wiki/Common_Intermediate_Language" class="extiw" title="w:Common Intermediate Language">Common Intermediate Language (CIL)</a>. In fact, the .NET platform had an implementation of a Java-like language called <a href="https://en.wikipedia.org/wiki/J_Sharp" class="extiw" title="w:J Sharp">Visual J#</a> (formerly known as <a href="https://en.wikipedia.org/wiki/J_plus_plus" class="extiw" title="w:J plus plus">J++</a>).</p>
+<p>J# is normally not supported with the JVM because instead of compiling it in Java byte-code, the .NET platform compiles the code into CIL, thus making J# different from the Java programming language. Furthermore, because J# implements the .NET Base Class Libraries (BCL) instead of the Java Class Libraries, J# is nothing more than a non-standard extension of the Java programming language. Due to the lack of interest from developers, Microsoft had to withdraw their support for J#, and focused on a similar programming language: C#.</p>
+<h3><span class="mw-headline" id="Third-party_compilers_targeting_the_JVM">Third-party compilers targeting the JVM</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit&amp;section=27" title="Edit section: Third-party compilers targeting the JVM">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The word Java, by itself, usually refers to the Java programming language which was designed for use with the Java platform. Programming languages are typically outside of the scope of the phrase "platform". However, Oracle does not encourage the use of any other languages with the platform, and lists the Java programming language as a core part of the Java 2 platform. The language and runtime are therefore commonly considered a single unit.</p>
+<p>There are cases where you might want to program using a different language (say, <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" class="extiw" title="w:Python (programming language)">Python</a>) and yet be able to generate Java byte-code (instead of the Python compiled code) to be run with the JVM. Many third-party programming language vendors provide compilers that can compile code written in their language to Java byte-code. For instance, Python developers can use <a href="https://en.wikipedia.org/wiki/Jython" class="extiw" title="w:Jython">Jython</a> compilers to compile Python code to the Java byte-code format (<i>as illustrated below</i>).</p>
+<p><br></p>
+<table align="center" style="border:solid 1px lightgray; padding:8px; background: #fdfdfd">
+<tr>
+<td style="text-align:center; padding:2px 8px;">
+<div style="color:#2a7fff; border-bottom:solid 1px #ddd; padding-bottom:4px;"><b>Figure 5:</b> Third-party JVM-targeted compilation for non-Java source compilation to Java byte-code. Illustrated example<br>
+shows Python source being compiled to both Python compiled code and Java byte-code.</div>
+</td>
+</tr>
+<tr>
+<td style="padding-top:8px;">
+<div class="center">
+<div class="floatnone"><a href="/wiki/File:Third-party_JVM-targeted_Compilation.svg" class="image"><img alt="Third-party JVM-targeted Compilation.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/84/Third-party_JVM-targeted_Compilation.svg/508px-Third-party_JVM-targeted_Compilation.svg.png" width="508" height="240" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/84/Third-party_JVM-targeted_Compilation.svg/762px-Third-party_JVM-targeted_Compilation.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/8/84/Third-party_JVM-targeted_Compilation.svg/1016px-Third-party_JVM-targeted_Compilation.svg.png" data-file-width="508" data-file-height="240"></a></div>
+</div>
+</td>
+</tr>
+</table>
+<p><br>
+Of late, JVM-targeted third-party programming and scripting languages have seen tremendous growth. Some of these languages are also used to extend the functionalities of the Java language itself. A few examples include the following:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Groovy_(programming_language)" class="extiw" title="w:Groovy (programming language)">Groovy</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pizza_(programming_language)" class="extiw" title="w:Pizza (programming language)">Pizza</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Generic_Java_(programming_language)" class="extiw" title="w:Generic Java (programming language)">GJ</a> (Generic Java) – later officially incorporated into Java SE 5.</li>
+<li><a href="https://en.wikipedia.org/wiki/NetREXX" class="extiw" title="w:NetREXX">NetREXX</a></li>
+</ul>
+<p><br></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Java_Overview.html" title="Java Overview"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Java_Overview.html" title="Java Programming/Java Overview">Java Overview</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>The Java Platform</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Getting_started.html" title="Java Programming/Getting started">Getting started</a> <a href="Getting_started.html" title="Getting started"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="75% developed"><img alt="75% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/24px-75_percent.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/36px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/48px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1319
+Cached time: 20171010063645
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.164 seconds
+Real time usage: 0.218 seconds
+Preprocessor visited node count: 770/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 14622/2097152 bytes
+Template argument size: 2560/2097152 bytes
+Highest expansion depth: 13/40
+Expensive parser function count: 8/500
+Lua time usage: 0.068/10.000 seconds
+Lua memory usage: 610 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  147.870      1 -total
+ 74.82%  110.635      2 Template:Programming/Navigation
+ 14.08%   20.825      2 Template:BookCat
+ 12.98%   19.197      2 Template:BookCat/default
+  8.64%   12.777      1 Template:Java_Programming/OverviewTopic/Nav
+  4.04%    5.972      1 Template:Java_Programming/OverviewTopic
+  3.46%    5.116      4 Template:TODO
+  3.42%    5.053      1 Template:Navbar
+  3.14%    4.650      1 Template:Status
+  2.87%    4.248      2 Template:BOOKCATEGORY
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:49910-0!canonical and timestamp 20171010063645 and revision id 3295255
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/The_Java_Platform&amp;oldid=3295255">https://en.wikibooks.org/w/index.php?title=Java_Programming/The_Java_Platform&amp;oldid=3295255</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FThe+Java+Platform" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FThe+Java+Platform" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="The_Java_Platform.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="/w/index.php?title=Talk:Java_Programming/The_Java_Platform&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible selected"><span><a href="The_Java_Platform.html">Read</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/The_Java_Platform" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/The_Java_Platform" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;oldid=3295255" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q741303" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FThe_Java_Platform&amp;id=3295255" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-es"><a href="https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_Java/Instalaci%C3%B3n_JDK" title="Programación en Java/Instalación JDK – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikibooks.org/wiki/Programmation_Java/JDK" title="Programmation Java/JDK – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikibooks.org/wiki/Java/Procurarsi_il_JDK" title="Java/Procurarsi il JDK – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q741303#sitelinks-wikibooks" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FThe+Java+Platform">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FThe+Java+Platform&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/The_Java_Platform&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-wikipedia"><a href="https://en.wikipedia.org/wiki/Java_Development_Kit" hreflang="en">Wikipedia</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 14:43.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/The_Java_Platform&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.164","walltime":"0.218","ppvisitednodes":{"value":770,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":14622,"limit":2097152},"templateargumentsize":{"value":2560,"limit":2097152},"expansiondepth":{"value":13,"limit":40},"expensivefunctioncount":{"value":8,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  147.870      1 -total"," 74.82%  110.635      2 Template:Programming/Navigation"," 14.08%   20.825      2 Template:BookCat"," 12.98%   19.197      2 Template:BookCat/default","  8.64%   12.777      1 Template:Java_Programming/OverviewTopic/Nav","  4.04%    5.972      1 Template:Java_Programming/OverviewTopic","  3.46%    5.116      4 Template:TODO","  3.42%    5.053      1 Template:Navbar","  3.14%    4.650      1 Template:Status","  2.87%    4.248      2 Template:BOOKCATEGORY"]},"scribunto":{"limitreport-timeusage":{"value":"0.068","limit":"10.000"},"limitreport-memusage":{"value":624177,"limit":52428800}},"cachereport":{"origin":"mw1319","timestamp":"20171010063645","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":65,"wgHostname":"mw1211"});});</script>
+	</body>
+</html>

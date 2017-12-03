@@ -1,0 +1,842 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Methods - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Methods","wgTitle":"Java Programming/Methods","wgCurRevisionId":3295232,"wgRevisionId":3295232,"wgArticleId":23296,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Methods","wgRelevantArticleId":23296,"wgRequestId":"We9MTQpAAEEAAHjQziQAAABR","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3295232,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Methods&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Methods&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Methods.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Methods rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Methods</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span><div id="mw-fr-revisiontag" class="flaggedrevs_basic flaggedrevs_draft_notsynced plainlinks noprint nomobile"><img class="flaggedrevs-icon" src="/w/extensions/FlaggedRevs/frontend/modules/img/1.png" alt="Unreviewed changes are displayed on this page" title="Unreviewed changes are displayed on this page">The <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Methods&amp;stable=1">latest reviewed version</a> was <a class="external text" href="//en.wikibooks.org/w/index.php?title=Special:Log&amp;type=review&amp;page=Java_Programming/Methods">checked</a> on <i>17 September 2017</i>. There are <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Methods&amp;oldid=3295232&amp;diff=cur&amp;diffonly=0">template/file changes</a> awaiting review.</div>
+</div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Literals.html" title="Literals"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Literals.html" title="Java Programming/Literals">Literals</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Methods</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="API\java.lang.html" title="Java Programming/API/java.lang.String">API/java.lang.String</a> <a href="API\java.lang.html" title="API/java.lang.String"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="Language_Fundamentals.html" title="Java Programming/Language Fundamentals">Language Fundamentals</a></b> topic: <span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/LanguageFundamentalsTopic" class="mw-redirect" title="Template:Java Programming/LanguageFundamentalsTopic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/LanguageFundamentalsTopic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/LanguageFundamentalsTopic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/LanguageFundamentalsTopic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Dec 31, 2012"><img alt="100% developed&#160; as of Dec 31, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Statements.html" title="Java Programming/Statements">Statements</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Conditional_blocks.html" title="Java Programming/Conditional blocks">Conditional blocks</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Loop_blocks.html" title="Java Programming/Loop blocks">Loop blocks</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Boolean_expressions.html" title="Java Programming/Boolean expressions">Boolean expressions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Feb 16, 2010"><img alt="100% developed&#160; as of Feb 16, 2010" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Variables.html" title="Java Programming/Variables">Variables</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Primitive_Types.html" title="Java Programming/Primitive Types">Primitive Types</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Arithmetic_expressions.html" title="Java Programming/Arithmetic expressions">Arithmetic expressions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Literals.html" title="Java Programming/Literals">Literals</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">Methods</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="API\java.lang.html" title="Java Programming/API/java.lang.String">String</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Classes,_Objects_and_Types.html" title="Java Programming/Classes, Objects and Types">Objects</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Jul 5, 2012"><img alt="100% developed&#160; as of Jul 5, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Packages.html" title="Java Programming/Packages">Packages</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Arrays.html" title="Java Programming/Arrays">Arrays</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Mathematical_functions.html" title="Java Programming/Mathematical functions">Mathematical functions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Large_numbers.html" title="Java Programming/Large numbers">Large numbers</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Random_numbers.html" title="Java Programming/Random numbers">Random numbers</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Apr 8, 2013"><img alt="100% developed&#160; as of Apr 8, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Unicode.html" title="Java Programming/Unicode">Unicode</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Apr 8, 2013"><img alt="100% developed&#160; as of Apr 8, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Comments.html" title="Java Programming/Comments">Comments</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Sep 27, 2007"><img alt="100% developed&#160; as of Sep 27, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Keywords.html" title="Java Programming/Keywords">Keywords</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Aug 6, 2013"><img alt="100% developed&#160; as of Aug 6, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Coding_conventions.html" title="Java Programming/Coding conventions">Coding conventions</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p><br>
+<i>Methods</i> are how we communicate with objects. When we invoke or call a method we are asking the object to carry out a task. We can say methods implement the behaviour of objects. For each method we need to give a name, we need to define its input parameters and we need to define its return type. We also need to set its <a href="Scope.html" title="Java Programming/Scope">visibility</a> (private, protected or public). If the method throws a checked exception, that needs to be declared as well. It is called a <i>method definition</i>. The syntax of method definition is:</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">MyClass</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="o">...</span>
+<span class="lineno">3 </span>  <span class="kd">public</span> <span class="n">ReturnType</span> <span class="nf">methodName</span><span class="o">(</span><span class="n">ParamOneType</span> <span class="n">parameter1</span><span class="o">,</span> <span class="n">ParamTwoType</span> <span class="n">parameter2</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">4 </span>      <span class="o">...</span>
+<span class="lineno">5 </span>      <span class="k">return</span> <span class="n">returnType</span><span class="o">;</span>
+<span class="lineno">6 </span>  <span class="o">}</span>
+<span class="lineno">7 </span>  <span class="o">...</span>
+<span class="lineno">8 </span><span class="o">}</span>
+</pre></div>
+<p>We can declare that the method does not return anything using the <code><a href="Keywords\void.html" title="Java Programming/Keywords/void"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">void</font></a></code> Java keyword. For example:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-67"><b>Code section 3.67: Method without returned data.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">private</span> <span class="kt">void</span> <span class="nf">methodName</span><span class="o">(</span><span class="n">String</span> <span class="n">parameter1</span><span class="o">,</span> <span class="n">String</span> <span class="n">parameter2</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="o">...</span>
+<span class="lineno">3 </span>  <span class="k">return</span><span class="o">;</span>
+<span class="lineno">4 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>When the method returns nothing, the <code><a href="Keywords\return.html" title="Java Programming/Keywords/return"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">return</font></a></code> keyword at the end of the method is optional. When the execution flow reaches the <code><a href="Keywords\return.html" title="Java Programming/Keywords/return"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">return</font></a></code> keyword, the method execution is stopped and the execution flow returns to the caller method. The <code><a href="Keywords\return.html" title="Java Programming/Keywords/return"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">return</font></a></code> keyword can be used anywhere in the method as long as there is a way to execute the instructions below:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Nuvola_apps_important.svg" class="image" title="Warning"><img alt="Warning" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/32px-Nuvola_apps_important.svg.png" width="32" height="27" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/48px-Nuvola_apps_important.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/64px-Nuvola_apps_important.svg.png" data-file-width="600" data-file-height="500"></a></td>
+<td style="background-color:#fff0f0; border-left: 4px solid red; padding-left: 6px;"><span id="code-section-68" style="color: red;"><b>Code section 3.68: <code><a href="Keywords\return.html" title="Java Programming/Keywords/return"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">return</font></a></code> keyword location.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">private</span> <span class="kt">void</span> <span class="nf">aMethod</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>  <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno"> 3 </span>  <span class="k">if</span> <span class="o">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 4 </span>    <span class="n">c</span> <span class="o">=</span> <span class="n">a</span><span class="o">;</span>
+<span class="lineno"> 5 </span><span class="hll">    <span class="k">return</span><span class="o">;</span>
+</span><span class="lineno"> 6 </span>  <span class="o">}</span>
+<span class="lineno"> 7 </span>  <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="n">b</span><span class="o">;</span>
+<span class="lineno"> 8 </span><span class="hll">  <span class="k">return</span><span class="o">;</span>
+</span><span class="lineno"> 9 </span>  <span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="n">c</span> <span class="o">*</span> <span class="mi">2</span><span class="o">;</span>
+<span class="lineno">10 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>In the <a href="#code-section-68">code section 3.68</a>, the <code><a href="Keywords\return.html" title="Java Programming/Keywords/return"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">return</font></a></code> keyword at line 5 is well placed because the instructions below can be reached when <code>a</code> is negative or equal to 0. However, the <code><a href="Keywords\return.html" title="Java Programming/Keywords/return"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">return</font></a></code> keyword at line 8 is badly placed because the instructions below can't be reached.</p>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Test your knowledge</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<p><b>Question 3.9</b>: Consider the following code:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="question-9"><b>Question 3.9: Compiler error.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">private</span> <span class="kt">int</span> <span class="nf">myMethod</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">c</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="n">b</span> <span class="o">=</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">2</span><span class="o">;</span>
+<span class="lineno">3 </span>  <span class="k">if</span> <span class="o">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">4 </span>    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">;</span>
+<span class="lineno">5 </span>    <span class="k">return</span> <span class="n">a</span><span class="o">;</span>
+<span class="lineno">6 </span>  <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+<span class="lineno">7 </span>    <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno">8 </span>  <span class="o">}</span>
+<span class="lineno">9 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The code above will return a compiler error. Why?</p>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Answer</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="answer-9">Answer 3.9: Compiler error.</span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="hll"><span class="kd">private</span> <span class="kt">int</span> <span class="nf">myMethod</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">,</span> <span class="kt">boolean</span> <span class="n">c</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">2 </span>  <span class="n">b</span> <span class="o">=</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">2</span><span class="o">;</span>
+<span class="lineno">3 </span>  <span class="k">if</span> <span class="o">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">4 </span>    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="o">;</span>
+<span class="lineno">5 </span>    <span class="k">return</span> <span class="n">a</span><span class="o">;</span>
+<span class="lineno">6 </span>  <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+<span class="lineno">7 </span><span class="hll">    <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class="lineno">8 </span>  <span class="o">}</span>
+<span class="lineno">9 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The method is supposed to return a <code><a href="Keywords\int.html" title="Java Programming/Keywords/int"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">int</font></a></code> but when <code>a</code> is negative or equal to 0, it returns nothing.</p>
+</div>
+</div>
+</div>
+</div>
+<h2><span class="mw-headline" id="Parameter_passing">Parameter passing</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Methods&amp;action=edit&amp;section=1" title="Edit section: Parameter passing">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>We can pass any <a href="Primitive_Types.html" title="Java Programming/Primitive Types">primitive data types</a> or reference data type to a method.</p>
+<h3><span class="mw-headline" id="Primitive_type_parameter">Primitive type parameter</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Methods&amp;action=edit&amp;section=2" title="Edit section: Primitive type parameter">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The primitive types are <i>passed in by value</i>. It means that as soon as the primitive type is passed in, there is no more link between the value inside the method and the source variable:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-69"><b>Code section 3.69: A method modifying a variable.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">private</span> <span class="kt">void</span> <span class="nf">modifyValue</span><span class="o">(</span><span class="kt">int</span> <span class="n">number</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="n">number</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">;</span>
+<span class="lineno">3 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-70"><b>Code section 3.70: Passing primitive value to method.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="hll"><span class="n">modifyValue</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+</span><span class="lineno">3 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 3.70</b>
+<pre style="background-color:#000; color:#fff;">
+0  
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>As you can see in <a href="#code-section-70">code section 3.70</a>, the <code>modifyValue()</code> method has not modified the value of <code>i</code>.</p>
+<h3><span class="mw-headline" id="Reference_type_parameter">Reference type parameter</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Methods&amp;action=edit&amp;section=3" title="Edit section: Reference type parameter">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The object references are passed by value. It means that:</p>
+<ul>
+<li>There is no more link between the reference inside the method and the source reference,</li>
+<li>The source object itself and the object itself inside the method are still the same.</li>
+</ul>
+<p>You must understand the difference between the reference of an object and the object itself. A <i>object reference</i> is the link between a variable name and an instance of object:</p>
+<table style="margin: auto;">
+<tr>
+<td><code>Object object</code> ⇔ <code>new Object()</code></td>
+</tr>
+</table>
+<p>An object reference is a pointer, an address to the object instance.</p>
+<p>The object itself is the value of its attributes inside the object instance:</p>
+<table style="margin: auto;">
+<tr>
+<td>object.firstName</td>
+<td>⇒</td>
+<td>"James"</td>
+</tr>
+<tr>
+<td>object.lastName</td>
+<td>⇒</td>
+<td>"Gosling"</td>
+</tr>
+<tr>
+<td>object.birthDay</td>
+<td>⇒</td>
+<td>"May 19"</td>
+</tr>
+</table>
+<p>Take a look at the example above:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-71"><b>Code section 3.71: A method modifying an object.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">private</span> <span class="kt">void</span> <span class="nf">modifyObject</span><span class="o">(</span><span class="n">FirstClass</span> <span class="n">anObject</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="n">anObject</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">"Susan"</span><span class="o">);</span>
+<span class="lineno">3 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-72"><b>Code section 3.72: Passing reference value to method.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">FirstClass</span> <span class="n">object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FirstClass</span><span class="o">();</span>
+<span class="lineno">2 </span><span class="n">object</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">"Christin"</span><span class="o">);</span>
+<span class="lineno">3 </span>
+<span class="lineno">4 </span><span class="hll"><span class="n">modifyObject</span><span class="o">(</span><span class="n">object</span><span class="o">);</span>
+</span><span class="lineno">5 </span>
+<span class="lineno">6 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">object</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 3.72</b>
+<pre style="background-color:#000; color:#fff;">
+Susan
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>The name has changed because the method has changed the object itself and not the reference. Now take a look at the other example:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-73"><b>Code section 3.73: A method modifying an object reference.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">private</span> <span class="kt">void</span> <span class="nf">modifyObject</span><span class="o">(</span><span class="n">FirstClass</span> <span class="n">anObject</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="n">anObject</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FirstClass</span><span class="o">();</span>
+<span class="lineno">3 </span>  <span class="n">anObject</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">"Susan"</span><span class="o">);</span>
+<span class="lineno">4 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-74"><b>Code section 3.74: Passing reference value to method.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">FirstClass</span> <span class="n">object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FirstClass</span><span class="o">();</span>
+<span class="lineno">2 </span><span class="n">object</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">"Christin"</span><span class="o">);</span>
+<span class="lineno">3 </span>
+<span class="lineno">4 </span><span class="hll"><span class="n">modifyObject</span><span class="o">(</span><span class="n">object</span><span class="o">);</span>
+</span><span class="lineno">5 </span>
+<span class="lineno">6 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">object</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 3.74</b>
+<pre style="background-color:#000; color:#fff;">
+Christin
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>The name has not changed because the method has changed the reference and not the object itself. The behavior is the same as if the method was in-lined and the parameters were assigned to new variable names:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-75"><b>Code section 3.75: In-lined method.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="n">FirstClass</span> <span class="n">object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FirstClass</span><span class="o">();</span>
+<span class="lineno"> 2 </span><span class="n">object</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">"Christin"</span><span class="o">);</span>
+<span class="lineno"> 3 </span>
+<span class="lineno"> 4 </span><span class="c1">// Start of the method</span>
+<span class="lineno"> 5 </span><span class="hll"><span class="n">FirstClass</span> <span class="n">anObject</span> <span class="o">=</span> <span class="n">object</span><span class="o">;</span>
+</span><span class="lineno"> 6 </span><span class="hll"><span class="n">anObject</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FirstClass</span><span class="o">();</span>
+</span><span class="lineno"> 7 </span><span class="hll"><span class="n">anObject</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">"Susan"</span><span class="o">);</span>
+</span><span class="lineno"> 8 </span><span class="c1">// End of the method</span>
+<span class="lineno"> 9 </span>
+<span class="lineno">10 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">object</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code section 3.75</b>
+<pre style="background-color:#000; color:#fff;">
+Christin
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Variable_argument_list">Variable argument list</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Methods&amp;action=edit&amp;section=4" title="Edit section: Variable argument list">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Java SE 5.0 added syntactic support for methods with <a rel="nofollow" class="external text" href="http://docs.oracle.com/javase/1.5.0/docs/guide/language/varargs.html">variable argument list</a>, which simplifies the typesafe usage of methods requiring a variable number of arguments. Less formally, these parameters are called <i>varargs</i><a rel="nofollow" class="external autonumber" href="http://www.javabeat.net/qna/645-varargs-in-java-50/">[1]</a>. The type of a variable parameter must be followed with <code>...</code>, and Java will box all the arguments into an array:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-76"><b>Code section 3.76: A method using vararg parameters.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="hll"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">drawPolygon</span><span class="o">(</span><span class="n">Point</span><span class="o">...</span> <span class="n">points</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">2 </span>  <span class="c1">//…</span>
+<span class="lineno">3 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>When calling the method, a programmer can simply separate the points by commas, without having to explicitly create an <a href="Arrays.html" title="Java Programming/Arrays">array</a> of <code>Point</code> objects. Within the method, the points can be referenced as <code>points[0]</code>, <code>points[1]</code>, etc. If no points are passed, the array has a length of zero.</p>
+<p>A method can have both normal parameters and a variable parameter but the variable parameter must always be the last parameter. For instance, if the programmer is required to use a minimum number of parameters, those parameters can be specified before the variable argument:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-77"><b>Code section 3.77: Variable arguments.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="c1">// A polygon needs at least three points.</span>
+<span class="lineno">2 </span><span class="hll"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">drawPolygon</span><span class="o">(</span><span class="n">Point</span> <span class="n">p1</span><span class="o">,</span> <span class="n">Point</span> <span class="n">p2</span><span class="o">,</span> <span class="n">Point</span> <span class="n">p3</span><span class="o">,</span> <span class="n">Point</span><span class="o">...</span> <span class="n">otherPoints</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">3 </span>  <span class="c1">//…</span>
+<span class="lineno">4 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Return_parameter">Return parameter</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Methods&amp;action=edit&amp;section=5" title="Edit section: Return parameter">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A method may return a value (which can be a primitive type or an object reference). If the method does not return a value we use the <code><a href="Keywords\void.html" title="Java Programming/Keywords/void"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">void</font></a></code> Java keyword.</p>
+<p>However, a method can return only one value so what if you want to return more than one value from a method? You can pass in an object reference to the method, and let the method modify the object properties so the modified values can be considered as an output value from the method. You can also create an Object array inside the method, assign the return values and return the array to the caller. However, this gives a problem if you want to mix primitive data types and object references as the output values from the method.</p>
+<p>There is a better approach, define a special return object with the needed return values. Create that object inside the method, assign the values and return the reference to this object. This special object is "bound" to this method and used only for returning values, so do not use a public class. The best way is to use a nested class, see example below:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-12"><b>Code listing 3.12: Multiple returned variables.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyObject</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>  <span class="o">...</span>
+<span class="lineno"> 3 </span> 
+<span class="lineno"> 4 </span>  <span class="cm">/** Nested object is for return values from getPersonInfoById method */</span>
+<span class="lineno"> 5 </span>  <span class="kd">private</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">ReturnObject</span> <span class="o">{</span>
+<span class="lineno"> 6 </span>      <span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+<span class="lineno"> 7 </span>      <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+<span class="lineno"> 8 </span>
+<span class="lineno"> 9 </span>      <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setAge</span><span class="o">(</span><span class="kt">int</span> <span class="n">age</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">10 </span>          <span class="k">this</span><span class="o">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">age</span><span class="o">;</span>
+<span class="lineno">11 </span>      <span class="o">}</span>
+<span class="lineno">12 </span> 
+<span class="lineno">13 </span>      <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getAge</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">14 </span>          <span class="k">return</span> <span class="n">age</span><span class="o">;</span>
+<span class="lineno">15 </span>      <span class="o">}</span>
+<span class="lineno">16 </span>
+<span class="lineno">17 </span>      <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setName</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">18 </span>          <span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+<span class="lineno">19 </span>      <span class="o">}</span>
+<span class="lineno">20 </span> 
+<span class="lineno">21 </span>      <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">22 </span>          <span class="k">return</span> <span class="n">name</span><span class="o">;</span>
+<span class="lineno">23 </span>      <span class="o">}</span>
+<span class="lineno">24 </span>  <span class="o">}</span> <span class="c1">// End of nested class definition</span>
+<span class="lineno">25 </span>
+<span class="lineno">26 </span>  <span class="cm">/** Method using the nested class to return values */</span>
+<span class="lineno">27 </span>  <span class="kd">public</span> <span class="n">ReturnObject</span> <span class="nf">getPersonInfoById</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">28 </span>    <span class="kt">int</span>    <span class="n">age</span><span class="o">;</span>
+<span class="lineno">29 </span>    <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+<span class="lineno">30 </span>    <span class="o">...</span>
+<span class="lineno">31 </span>    <span class="c1">// Get the name and age based on the ID from the database</span>
+<span class="lineno">32 </span>    <span class="o">...</span>
+<span class="lineno">33 </span>    <span class="n">ReturnObject</span> <span class="n">result</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ReturnObject</span><span class="o">();</span>
+<span class="lineno">34 </span>    <span class="n">result</span><span class="o">.</span><span class="na">setAge</span><span class="o">(</span><span class="n">age</span><span class="o">);</span>
+<span class="lineno">35 </span>    <span class="n">result</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="n">name</span><span class="o">);</span>
+<span class="lineno">36 </span>
+<span class="lineno">37 </span><span class="hll">    <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+</span><span class="lineno">38 </span>  <span class="o">}</span>
+<span class="lineno">39 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>In the above example the <code>getPersonInfoById</code> method returns an object reference that contains both values of the name and the age. See below how you may use that object:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-78"><b>Code section 3.78: Retrieving the values.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">MyObject</span> <span class="n">object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyObject</span><span class="o">();</span>
+<span class="lineno">2 </span><span class="hll"><span class="n">MyObject</span><span class="o">.</span><span class="na">ReturnObject</span> <span class="n">person</span> <span class="o">=</span> <span class="n">object</span><span class="o">.</span><span class="na">getPersonInfoById</span><span class="o">(</span><span class="mi">102</span><span class="o">);</span>
+</span><span class="lineno">3 </span>
+<span class="lineno">4 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Person Name="</span> <span class="o">+</span> <span class="n">person</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+<span class="lineno">5 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Person Age ="</span> <span class="o">+</span> <span class="n">person</span><span class="o">.</span><span class="na">getAge</span><span class="o">());</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Test your knowledge</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<p><b>Question 3.10</b>: Consider the following code:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="question-10"><b>Question 3.10: Compiler error.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">private</span> <span class="kt">int</span> <span class="nf">myMethod</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">,</span> <span class="n">String</span> <span class="n">c</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="k">if</span> <span class="o">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">3 </span>    <span class="n">c</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
+<span class="lineno">4 </span>    <span class="k">return</span> <span class="n">c</span><span class="o">;</span>
+<span class="lineno">5 </span>  <span class="o">}</span>
+<span class="lineno">6 </span>  <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">2</span><span class="o">;</span>
+<span class="lineno">7 </span>  <span class="k">return</span> <span class="n">b</span><span class="o">;</span>
+<span class="lineno">8 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The code above will return a compiler error. Why?</p>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Answer</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="answer-10">Answer 3.10: Compiler error.</span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="hll"><span class="kd">private</span> <span class="kt">int</span> <span class="nf">myMethod</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">,</span> <span class="n">String</span> <span class="n">c</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">2 </span>  <span class="k">if</span> <span class="o">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">3 </span>    <span class="n">c</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
+<span class="lineno">4 </span><span class="hll">    <span class="k">return</span> <span class="n">c</span><span class="o">;</span>
+</span><span class="lineno">5 </span>  <span class="o">}</span>
+<span class="lineno">6 </span>  <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">2</span><span class="o">;</span>
+<span class="lineno">7 </span>  <span class="k">return</span> <span class="n">b</span><span class="o">;</span>
+<span class="lineno">8 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The method is supposed to return a <code><a href="Keywords\int.html" title="Java Programming/Keywords/int"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">int</font></a></code> but at line 4, it returns <code>c</code>, which is a String.</p>
+</div>
+</div>
+</div>
+</div>
+<h2><span id="Special_method,_the_constructor"></span><span class="mw-headline" id="Special_method.2C_the_constructor">Special method, the constructor</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Methods&amp;action=edit&amp;section=6" title="Edit section: Special method, the constructor">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The constructor is a special method called automatically when an object is created with the <code><a href="Keywords\new.html" title="Java Programming/Keywords/new"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">new</font></a></code> keyword. Constructor does not have a return value and its name is the same as the class name. Each class must have a constructor. If we do not define one, the compiler will create a default so called <b>empty constructor</b> automatically.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-13"><b>Code listing 3.13: Automatically created constructor.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyClass</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="cm">/**</span>
+<span class="lineno">3 </span><span class="cm">  * MyClass Empty Constructor</span>
+<span class="lineno">4 </span><span class="cm">  */</span>
+<span class="lineno">5 </span><span class="hll">  <span class="kd">public</span> <span class="nf">MyClass</span><span class="o">()</span> <span class="o">{</span>
+</span><span class="lineno">6 </span><span class="hll">  <span class="o">}</span>
+</span><span class="lineno">7 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Static_methods">Static methods</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Methods&amp;action=edit&amp;section=7" title="Edit section: Static methods">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A <i>static method</i> is a method that can be called without an object instance. It can be called on the class directly. For example, the <code>valueOf(String)</code> method of the <code>Integer</code> class is a static method:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-79"><b>Code section 3.79: Static method.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">Integer</span> <span class="n">i</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">valueOf</span><span class="o">(</span><span class="s">"10"</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The static keyword makes attributes instance-agnostic. This means that you cannot reference a static attribute of a single object (because such a specific object attribute doesn't exist). Instead, only one instance of a static attribute exists, whether there is one object in the JVM or one hundred. Here is an example of using a static attribute in a static method:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-80"><b>Code section 3.80: Static attribute.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="lineno">2 </span>
+<span class="lineno">3 </span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">getNewInteger</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">4 </span>  <span class="k">return</span> <span class="n">count</span><span class="o">++;</span>
+<span class="lineno">5 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>You can notice that when you use <code>System.out.println()</code>, <code>out</code> is a static attribute of the <code>System</code> class. A static attribute is related to a class, not to any object instance. This is how Java achieves one universal output stream that we can use to print output. Here is a more complex use case:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-14"><b>Code listing 3.14: A static attribute.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyProgram</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>
+<span class="lineno"> 3 </span><span class="hll">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span><span class="lineno"> 4 </span>
+<span class="lineno"> 5 </span>    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span> <span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 6 </span>        <span class="n">MyProgram</span><span class="o">.</span><span class="na">count</span><span class="o">++;</span>
+<span class="lineno"> 7 </span>
+<span class="lineno"> 8 </span>        <span class="n">MyProgram</span> <span class="n">program1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyProgram</span><span class="o">();</span>
+<span class="lineno"> 9 </span>        <span class="n">program1</span><span class="o">.</span><span class="na">count</span><span class="o">++;</span>
+<span class="lineno">10 </span>
+<span class="lineno">11 </span>        <span class="n">MyProgram</span> <span class="n">program2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MyProgram</span><span class="o">();</span>
+<span class="lineno">12 </span>        <span class="n">program2</span><span class="o">.</span><span class="na">count</span><span class="o">++;</span>
+<span class="lineno">13 </span>
+<span class="lineno">14 </span>        <span class="k">new</span> <span class="n">MyProgram</span><span class="o">().</span><span class="na">count</span><span class="o">++;</span>
+<span class="lineno">15 </span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">MyProgram</span><span class="o">.</span><span class="na">count</span><span class="o">);</span>
+<span class="lineno">16 </span>    <span class="o">}</span>
+<span class="lineno">17 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for Code listing 3.14</b>
+<pre style="background-color:#000; color:#fff;">
+4
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Test your knowledge</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<p><b>Question 3.11</b>: Visit the Oracle <a rel="nofollow" class="external text" href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html">JavaDoc of the class <code>java.lang.Integer</code></a>.</p>
+<p>How many static fields does this class have?</p>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Answer</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<p>4.</p>
+<ul>
+<li><code>int MAX_VALUE</code>,</li>
+<li><code>int MIN_VALUE</code>,</li>
+<li><code>int SIZE</code> and</li>
+<li><code>Class&lt;Integer&gt; TYPE</code>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<dl>
+<dd><i>To learn how to overload and override a method, see <a href="Overloading_Methods_and_Constructors.html" title="Java Programming/Overloading Methods and Constructors">Overloading Methods and Constructors</a>.</i></dd>
+</dl>
+<p><br></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Literals.html" title="Literals"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Literals.html" title="Java Programming/Literals">Literals</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Methods</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="API\java.lang.html" title="Java Programming/API/java.lang.String">API/java.lang.String</a> <a href="API\java.lang.html" title="API/java.lang.String"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="100% developed"><img alt="100% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/24px-100_percent.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/36px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/48px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1262
+Cached time: 20171010125857
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.200 seconds
+Real time usage: 0.252 seconds
+Preprocessor visited node count: 1673/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 32445/2097152 bytes
+Template argument size: 5341/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 24/500
+Lua time usage: 0.064/10.000 seconds
+Lua memory usage: 742 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  155.134      1 -total
+ 64.15%   99.519      2 Template:Programming/Navigation
+  9.81%   15.224      1 Template:Java_Programming/LanguageFundamentalsTopic/Nav
+  7.38%   11.447      3 Template:BookCat
+  6.32%    9.806     17 Template:XExample
+  5.71%    8.859      1 Template:Java_Programming/LanguageFundamentals/Topic
+  5.68%    8.809      3 Template:BookCat/default
+  3.69%    5.719      3 Template:BOOKCATEGORY
+  3.61%    5.599     20 Template:Stage_short
+  3.41%    5.290      1 Template:Status
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:23296-0!canonical and timestamp 20171010125857 and revision id 3295232
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Methods&amp;oldid=3295232">https://en.wikibooks.org/w/index.php?title=Java_Programming/Methods&amp;oldid=3295232</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FMethods" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FMethods" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Methods.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk"><span><a href="/wiki/Talk:Java_Programming/Methods" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Methods&amp;stable=1">Read</a></span></li>
+							<li id="ca-current" class="collapsible selected"><span><a href="/w/index.php?title=Java_Programming/Methods&amp;stable=0&amp;redirect=no" title="View this page with the pending changes [v]" accesskey="v">Latest draft</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Methods&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Methods&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Methods" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Methods" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Methods&amp;oldid=3295232" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Methods&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FMethods&amp;id=3295232" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:NewItem?site=enwikibooks&amp;page=Java+Programming%2FMethods" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FMethods">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FMethods&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Methods&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 14:42.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Methods&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.200","walltime":"0.252","ppvisitednodes":{"value":1673,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":32445,"limit":2097152},"templateargumentsize":{"value":5341,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":24,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  155.134      1 -total"," 64.15%   99.519      2 Template:Programming/Navigation","  9.81%   15.224      1 Template:Java_Programming/LanguageFundamentalsTopic/Nav","  7.38%   11.447      3 Template:BookCat","  6.32%    9.806     17 Template:XExample","  5.71%    8.859      1 Template:Java_Programming/LanguageFundamentals/Topic","  5.68%    8.809      3 Template:BookCat/default","  3.69%    5.719      3 Template:BOOKCATEGORY","  3.61%    5.599     20 Template:Stage_short","  3.41%    5.290      1 Template:Status"]},"scribunto":{"limitreport-timeusage":{"value":"0.064","limit":"10.000"},"limitreport-memusage":{"value":759566,"limit":52428800}},"cachereport":{"origin":"mw1262","timestamp":"20171010125857","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":82,"wgHostname":"mw1270"});});</script>
+	</body>
+</html>

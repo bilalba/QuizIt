@@ -1,0 +1,546 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Conventions - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Conventions","wgTitle":"Java Programming/Conventions","wgCurRevisionId":3295195,"wgRevisionId":3295195,"wgArticleId":258913,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Conventions","wgRelevantArticleId":258913,"wgRequestId":"We-ADwpAMF0AADqN7ccAAAAL","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3295195,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Conventions.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Conventions rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Conventions</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b>Project Page</b> topic: <span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/Project_Pages" title="Template:Java Programming/Project Pages"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/Project_Pages&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/Project Pages (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/Project_Pages&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><a href="/wiki/Special:RecentChangesLinked/Category:Java_Programming" title="Special:RecentChangesLinked/Category:Java Programming">Recent changes</a></li>
+<li><a href="Q&A.html" title="Java Programming/Q&amp;A">If you have questions related to Java</a></li>
+<li><a href="Todo.html" title="Java Programming/Todo">If you are interested in editing this book</a></li>
+<li><a class="mw-selflink selflink">How to format the content</a></li>
+<li><a href="Contributors.html" title="Java Programming/Contributors">Who is contributing</a></li>
+<li><span class="plainlinks"><a rel="nofollow" class="external text" href="http://stats.grok.se/en.b/201710/Java_Programming">Traffic</a></span></li>
+</ul>
+</td>
+</tr>
+</table>
+<p><br>
+These conventions are aimed to increase the readability and the comprehension of the Java Programming Wikibook. It completes the <a href="/wiki/Wikibooks:MOS" class="mw-redirect" title="Wikibooks:MOS">Wikibooks Manual of Style</a>. However exceptions can be made if needed. If you find it too complex to follow, add the content rawly. It will be formatted by someone.</p>
+<h2><span class="mw-headline" id="Page_formatting">Page formatting</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit&amp;section=1" title="Edit section: Page formatting">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Most of the time a page from the Java Programming Wikibook has a structure that looks like this:</p>
+<table style="text-align: left; width:100%">
+<tr>
+<td style="border-right:1px solid grey; text-align:center;">You write</td>
+<td style="text-align:center;">You get</td>
+</tr>
+<tr>
+<td style="border-right:1px solid grey">
+<pre>
+&lt;noinclude&gt;{{Displaytitle|title=The title of the page}}
+{{Programming/Navigation}}
+{{Java Programming/LanguageFundamentalsTopic/Nav}}
+__NOTOC__&lt;/noinclude&gt;
+
+This is the introduction.
+
+==First section==
+
+This is a section.
+
+&lt;noinclude&gt;
+{{Programming/Navigation}}
+{{Status|50%}}&lt;/noinclude&gt;
+</pre></td>
+<td>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="Language_Fundamentals.html" title="Java Programming/Language Fundamentals">Language Fundamentals</a></b> topic: <span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/LanguageFundamentalsTopic" class="mw-redirect" title="Template:Java Programming/LanguageFundamentalsTopic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/LanguageFundamentalsTopic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/LanguageFundamentalsTopic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/LanguageFundamentalsTopic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Dec 31, 2012"><img alt="100% developed&#160; as of Dec 31, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Statements.html" title="Java Programming/Statements">Statements</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Conditional_blocks.html" title="Java Programming/Conditional blocks">Conditional blocks</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Loop_blocks.html" title="Java Programming/Loop blocks">Loop blocks</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Boolean_expressions.html" title="Java Programming/Boolean expressions">Boolean expressions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Feb 16, 2010"><img alt="100% developed&#160; as of Feb 16, 2010" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Variables.html" title="Java Programming/Variables">Variables</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Primitive_Types.html" title="Java Programming/Primitive Types">Primitive Types</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Arithmetic_expressions.html" title="Java Programming/Arithmetic expressions">Arithmetic expressions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Literals.html" title="Java Programming/Literals">Literals</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Methods.html" title="Java Programming/Methods">Methods</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="API\java.lang.html" title="Java Programming/API/java.lang.String">String</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Classes,_Objects_and_Types.html" title="Java Programming/Classes, Objects and Types">Objects</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Jul 5, 2012"><img alt="100% developed&#160; as of Jul 5, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Packages.html" title="Java Programming/Packages">Packages</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Arrays.html" title="Java Programming/Arrays">Arrays</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Mathematical_functions.html" title="Java Programming/Mathematical functions">Mathematical functions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Large_numbers.html" title="Java Programming/Large numbers">Large numbers</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Random_numbers.html" title="Java Programming/Random numbers">Random numbers</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Apr 8, 2013"><img alt="100% developed&#160; as of Apr 8, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Unicode.html" title="Java Programming/Unicode">Unicode</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Apr 8, 2013"><img alt="100% developed&#160; as of Apr 8, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Comments.html" title="Java Programming/Comments">Comments</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Sep 27, 2007"><img alt="100% developed&#160; as of Sep 27, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Keywords.html" title="Java Programming/Keywords">Keywords</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Aug 6, 2013"><img alt="100% developed&#160; as of Aug 6, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Coding_conventions.html" title="Java Programming/Coding conventions">Coding conventions</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p><br>
+This is the introduction.</p>
+<h2><span class="mw-headline" id="First_section">First section</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit&amp;section=2" title="Edit section: First section">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>This is a section.</p>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Samples">Samples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit&amp;section=3" title="Edit section: Samples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Java_file">Java file</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit&amp;section=4" title="Edit section: Java file">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Sometimes we wish to convey an entire java file, this can be done as follows:</p>
+<table style="text-align: left; width:100%">
+<tr>
+<td style="border-right:1px solid grey; text-align:center;">You write</td>
+<td style="text-align:center;">You get</td>
+</tr>
+<tr>
+<td style="border-right:1px solid grey">
+<pre>
+{{XCode|1='''Code listing 1.1: The &lt;code&gt;MyClass&lt;/code&gt; class'''
+&lt;source lang="java"&gt;
+class MyClass{}
+&lt;/source&gt;}}
+</pre></td>
+<td>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Code listing 1.1: The <code>MyClass</code> class</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kd">class</span> <span class="nc">MyClass</span><span class="o">{}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>"1.1" means that it is the first code of the first chapter. Using <code>&lt;source/&gt;</code> is better than using a template as <code>||</code> is a part of the Java syntax.</p>
+<h3><span class="mw-headline" id="Snippets">Snippets</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit&amp;section=5" title="Edit section: Snippets">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>When just a small section of code is shown, the code template may be used as follows:</p>
+<table style="text-align: left; width:100%">
+<tr>
+<td style="border-right:1px solid grey; text-align:center;">You write</td>
+<td style="text-align:center;">You get</td>
+</tr>
+<tr>
+<td style="border-right:1px solid grey">
+<pre>
+{{XExample|1='''Code section 1.1: The &lt;code&gt;MyClass&lt;/code&gt; class'''
+&lt;source lang="java"&gt;
+for (int i=0; i&lt;10; i++) {
+    System.out.println("Hello!");
+}
+&lt;/source&gt;}}
+</pre></td>
+<td>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 1.1: The <code>MyClass</code> class</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello!"</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="Screen_print">Screen print</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit&amp;section=6" title="Edit section: Screen print">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>To represent what is shown on the screen, use the following syntax:</p>
+<table style="text-align: left; width:100%">
+<tr>
+<td style="border-right:1px solid grey; text-align:center;">You write</td>
+<td style="text-align:center;">You get</td>
+</tr>
+<tr>
+<td style="border-right:1px solid grey">
+<pre>
+{{XConsole|1='''Output for the application'''
+&lt;pre style="background-color:#000; color:#fff;"&gt;
+Hello World!
+&lt;/pre&gt;}}
+</pre></td>
+<td>
+<table style="padding:2px; margin:2px; width:100%;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Standard input or output" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/32px-Nuvola_apps_display.png" title="Standard input or output" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/48px-Nuvola_apps_display.png,//upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nuvola_apps_display.png/64px-Nuvola_apps_display.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0f0ff; border-left: 4px solid blue; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for the application</b>
+<pre style="background-color:#000; color:#fff;">
+Hello World!
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit&amp;section=7" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Notes grant readers additional information about a certain topic. You can enter additional or side notes by using the following template:</p>
+<table style="text-align: left; width:100%">
+<tr>
+<td style="border-right:1px solid grey; text-align:center;">You write</td>
+<td style="text-align:center;">You get</td>
+</tr>
+<tr>
+<td style="border-right:1px solid grey">
+<pre>
+{{XNote|This is an additional note.}}
+</pre></td>
+<td>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Bombilla_amarilla_-_yellow_Edison_lamp.svg" class="image" title="Note"><img alt="Note" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/30px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" width="30" height="30" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/45px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/15/Bombilla_amarilla_-_yellow_Edison_lamp.svg/60px-Bombilla_amarilla_-_yellow_Edison_lamp.svg.png" data-file-width="200" data-file-height="200"></a></td>
+<td style="background-color:#fffff0; border-left: 4px solid yellow; padding-left: 6px;">This is an additional note.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>Use notes only when it is necessary. A note is less readable than paragraphs.</p>
+<h2><span class="mw-headline" id="Warning">Warning</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit&amp;section=8" title="Edit section: Warning">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>To warn the user of things like common pitfalls, the <code>XWarning</code> template should be used as demonstrated:</p>
+<table style="text-align: left; width:100%">
+<tr>
+<td style="border-right:1px solid grey; text-align:center;">You write</td>
+<td style="text-align:center;">You get</td>
+</tr>
+<tr>
+<td style="border-right:1px solid grey">
+<pre>
+{{XWarning|This is a warning.}}
+</pre></td>
+<td>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Nuvola_apps_important.svg" class="image" title="Warning"><img alt="Warning" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/32px-Nuvola_apps_important.svg.png" width="32" height="27" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/48px-Nuvola_apps_important.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/64px-Nuvola_apps_important.svg.png" data-file-width="600" data-file-height="500"></a></td>
+<td style="background-color:#fff0f0; border-left: 4px solid red; padding-left: 6px;">This is a warning.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="To-do_items">To-do items</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit&amp;section=9" title="Edit section: To-do items">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>If there are sections of the book that require attention at a later time, you can add a to-do note by including the following template:</p>
+<table style="text-align: left; width:100%">
+<tr>
+<td style="border-right:1px solid grey; text-align:center;">You write</td>
+<td style="text-align:center;">You get</td>
+</tr>
+<tr>
+<td style="border-right:1px solid grey">
+<pre>
+{{TODO|To-do items for pages should be kept in their respective comment boxes.|Java Programming}}
+</pre></td>
+<td>
+<div style="clear: both"></div>
+<table style="background: #ffd; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 60%; margin: auto;" class="notice noprint notice-todo">
+<tr>
+<td style="width: 58px;">
+<div class="floatleft"><img alt="Clipboard" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/45px-Clipboard.svg.png" width="45" height="45" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/68px-Clipboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/90px-Clipboard.svg.png" data-file-width="48" data-file-height="48"></div>
+</td>
+<td>
+<p><b>To do:</b><br>
+To-do items for pages should be kept in their respective comment boxes.</p>
+</td>
+</tr>
+</table>
+<div style="clear: both"></div>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Hidden_section">Hidden section</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit&amp;section=10" title="Edit section: Hidden section">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>If a section is optional, it can be hidden like this:</p>
+<table style="text-align: left; width:100%">
+<tr>
+<td style="border-right:1px solid grey; text-align:center;">You write</td>
+<td style="text-align:center;">You get</td>
+</tr>
+<tr>
+<td style="border-right:1px solid grey">
+<pre>
+{{Java/Hidden begin|title=Hidden section}}
+This section is not mandatory.
+{{Hidden end}}
+</pre></td>
+<td>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Hidden section</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<p>This section is not mandatory.</p>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Illustrations_and_diagrams">Illustrations and diagrams</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit&amp;section=11" title="Edit section: Illustrations and diagrams">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>This book uses various illustrations and diagrams to convey its message, e.g., flow-chart or UML diagrams, etc. Due to the nature of diagrams, they need to be designed in a scalable vector format. It is highly recommended that you use the SVG format for your diagrams. Please, do <i>not</i> use JPG or PNG for diagrams that could otherwise be done in SVG. Ask a regular contributor for his/her help in this matter.</p>
+<p>A regular feature for diagrams used in this book is the overall color scheme. The most notable color used for illustrations in this book is <span style="display: inline-block; background-color: #2a7fff; width: 16px; height: 16px; border: solid 1px #0a5fdf;">&#160;</span> <code style="color:#2a7fff;width:20px;">#2a7fff</code> (<i>as is shown for the diagrams below, for instance</i>). In order to include illustrations into your content, you need to use the <code>{{<a href="/wiki/Template:Java/Illustration" title="Template:Java/Illustration">Java/Illustration</a>}}</code> template. Given below is an example of how this template ought to be used.</p>
+<table style="text-align: left; width:100%">
+<tr>
+<td style="border-right:1px solid grey; text-align:center;">You write</td>
+<td style="text-align:center;">You get</td>
+</tr>
+<tr>
+<td style="border-right:1px solid grey">
+<pre>
+{{Java/Illustration
+|number=1
+|caption=A sample illustration from the book
+|image=[[File:Java Compilation Basics.svg|center]]
+}}
+</pre></td>
+<td>
+<table align="center" style="border:solid 1px lightgray; padding:8px; background: #fdfdfd">
+<tr>
+<td style="text-align:center; padding:2px 8px;">
+<div style="color:#2a7fff; border-bottom:solid 1px #ddd; padding-bottom:4px;"><b>Figure 1:</b> A sample illustration from the book</div>
+</td>
+</tr>
+<tr>
+<td style="padding-top:8px;">
+<div class="center">
+<div class="floatnone"><a href="/wiki/File:Java_Compilation_Basics.svg" class="image"><img alt="Java Compilation Basics.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Java_Compilation_Basics.svg/505px-Java_Compilation_Basics.svg.png" width="505" height="116" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Java_Compilation_Basics.svg/758px-Java_Compilation_Basics.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Java_Compilation_Basics.svg/1010px-Java_Compilation_Basics.svg.png" data-file-width="505" data-file-height="116"></a></div>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Text_formatting">Text formatting</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit&amp;section=12" title="Edit section: Text formatting">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Use italic when you use a term for the first time.</li>
+<li>Use the <code>&lt;code/&gt;</code> markup when you refer to a class, a field or a method.</li>
+</ul>
+<h2><span class="mw-headline" id="Preferred_English">Preferred English</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit&amp;section=13" title="Edit section: Preferred English">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>This book uses United States English, purely for the sake of consistency. Most programming languages have words represented in the United States English, e.g., <code>color</code>, etc. You should use the US English wherever possible.</p>
+<h2><span class="mw-headline" id="Code_conventions">Code conventions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit&amp;section=14" title="Edit section: Code conventions">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The book follows the <a rel="nofollow" class="external text" href="http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html">official Java code conventions</a>. Here is an example:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 0.1: The official Java code conventions</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="k">if</span> <span class="o">(</span><span class="n">foo</span> <span class="o">==</span> <span class="n">bar</span><span class="o">)</span> <span class="o">{</span>
+    <span class="c1">// do stuff</span>
+<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+    <span class="c1">// do other stuff</span>
+<span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="100% developed"><img alt="100% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/24px-100_percent.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/36px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/48px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1182
+Cached time: 20171024025501
+Cache expiry: 86400
+Dynamic content: true
+CPU time usage: 0.220 seconds
+Real time usage: 0.303 seconds
+Preprocessor visited node count: 1538/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 21775/2097152 bytes
+Template argument size: 2524/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 96/500
+Lua time usage: 0.139/10.000 seconds
+Lua memory usage: 1.05 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  258.111      1 -total
+ 77.31%  199.547      4 Template:Programming/Navigation
+  7.24%   18.698      1 Template:Java_Programming/Project_Pages/Nav
+  5.95%   15.359      1 Template:Java_Programming/LanguageFundamentalsTopic/Nav
+  4.41%   11.394      4 Template:BookCat
+  4.36%   11.256      1 Template:Java_Programming/LanguageFundamentals/Topic
+  3.94%   10.162      1 Template:Java_Programming/Project_Pages
+  3.43%    8.847      4 Template:BookCat/default
+  3.42%    8.817      1 Template:Rc
+  3.14%    8.095      2 Template:Navbar
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:258913-0!canonical and timestamp 20171024025501 and revision id 3295195
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Conventions&amp;oldid=3295195">https://en.wikibooks.org/w/index.php?title=Java_Programming/Conventions&amp;oldid=3295195</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FConventions" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FConventions" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Conventions.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk"><span><a href="/wiki/Talk:Java_Programming/Conventions" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible selected"><span><a href="Conventions.html">Read</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Conventions" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Conventions" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Conventions&amp;oldid=3295195" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Conventions&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FConventions&amp;id=3295195" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:NewItem?site=enwikibooks&amp;page=Java+Programming%2FConventions" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FConventions">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FConventions&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Conventions&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 14:41.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Conventions&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.220","walltime":"0.303","ppvisitednodes":{"value":1538,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":21775,"limit":2097152},"templateargumentsize":{"value":2524,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":96,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  258.111      1 -total"," 77.31%  199.547      4 Template:Programming/Navigation","  7.24%   18.698      1 Template:Java_Programming/Project_Pages/Nav","  5.95%   15.359      1 Template:Java_Programming/LanguageFundamentalsTopic/Nav","  4.41%   11.394      4 Template:BookCat","  4.36%   11.256      1 Template:Java_Programming/LanguageFundamentals/Topic","  3.94%   10.162      1 Template:Java_Programming/Project_Pages","  3.43%    8.847      4 Template:BookCat/default","  3.42%    8.817      1 Template:Rc","  3.14%    8.095      2 Template:Navbar"]},"scribunto":{"limitreport-timeusage":{"value":"0.139","limit":"10.000"},"limitreport-memusage":{"value":1096611,"limit":52428800}},"cachereport":{"origin":"mw1182","timestamp":"20171024025501","ttl":86400,"transientcontent":true}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":53,"wgHostname":"mw1258"});});</script>
+	</body>
+</html>

@@ -1,0 +1,484 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Java Programming/Spring framework - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Spring_framework","wgTitle":"Java Programming/Spring framework","wgCurRevisionId":3242375,"wgRevisionId":3242375,"wgArticleId":66436,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Spring_framework","wgRelevantArticleId":66436,"wgRequestId":"We-JTApAADwAAIxRFkUAAACB","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3242375,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q720314","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.cite.styles":"ready","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["ext.cite.a11y","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Spring_framework.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Spring_framework rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Java Programming/Spring framework</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p>This is intended to be a short, simple tutorial on writing a Java application that uses the Spring framework. Please note, this tutorial is intended for those with a moderate amount of background with <a href="/wiki/Java" class="mw-redirect" title="Java">Java</a>, and a basic working knowledge of <a href="/wiki/XML" class="mw-redirect" title="XML">XML</a>.</p>
+<p>For this tutorial, we will be making an application that reads short stories from a Spring bean configuration file. (For the sake of this example, these short stories are <i>real short</i> stories.) There will be three Java classes, and one Spring config file. So let's begin…</p>
+<p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Step_1:_Setting_up_your_environment"><span class="tocnumber">1</span> <span class="toctext">Step 1: Setting up your environment</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Step_2:_Creating_a_Spring_beans_configuration_file"><span class="tocnumber">2</span> <span class="toctext"><b>Step 2</b>: Creating a Spring beans configuration file</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#story_configuration.xml"><span class="tocnumber">2.1</span> <span class="toctext">story_configuration.xml</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Explanation"><span class="tocnumber">2.2</span> <span class="toctext">Explanation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Step_3:_Making_JavaBean_classes"><span class="tocnumber">3</span> <span class="toctext">Step 3: Making JavaBean classes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#Story.java"><span class="tocnumber">3.1</span> <span class="toctext">Story.java</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#StoryList.java"><span class="tocnumber">3.2</span> <span class="toctext">StoryList.java</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Explanation_2"><span class="tocnumber">3.3</span> <span class="toctext">Explanation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Step_4:_A_main_method_to_put_it_all_together"><span class="tocnumber">4</span> <span class="toctext">Step 4: A main method to put it all together</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#StoryReader.java"><span class="tocnumber">4.1</span> <span class="toctext">StoryReader.java</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Explanation_3"><span class="tocnumber">4.2</span> <span class="toctext">Explanation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Step_5:_Running_your_program"><span class="tocnumber">5</span> <span class="toctext">Step 5: Running your program</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Afterthoughts"><span class="tocnumber">6</span> <span class="toctext">Afterthoughts</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#Things_to_remember"><span class="tocnumber">6.1</span> <span class="toctext">Things to remember</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Try_it_yourself"><span class="tocnumber">6.2</span> <span class="toctext">Try it yourself</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#About_the_author"><span class="tocnumber">6.3</span> <span class="toctext">About the author</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+<p>
+<h2><span class="mw-headline" id="Step_1:_Setting_up_your_environment">Step 1: Setting up your environment</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=1" title="Edit section: Step 1: Setting up your environment">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Before we can directly make the files, we first need to setup Spring. I'm assuming you already have the latest version of Java installed. If not, you can download Java Development Kit <a rel="nofollow" class="external text" href="http://java.sun.com/javase/downloads/index.jsp">here</a>.</p>
+<p>Spring recommends to use Maven or Gradle to set up your dependencies.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup> If you don't have them installed or provided by your <a href="/w/index.php?title=IDE&amp;action=edit&amp;redlink=1" class="new" title="IDE (does not exist)">IDE</a> such as <a href="/wiki/Eclipse" title="Eclipse">Eclipse</a>, you can find instruction how to use and download them <a rel="nofollow" class="external text" href="http://spring.io/guides/gs/maven/">here</a> and <a rel="nofollow" class="external text" href="http://spring.io/guides/gs/gradle/">here</a>. Maven or Gradle will make sure that your dependencies, and those they depend upon are loaded in your project.</p>
+<p>See section QuickStart in <a rel="nofollow" class="external free" href="http://projects.spring.io/spring-framework/">http://projects.spring.io/spring-framework/</a> on how to add spring dependencies to your project. Using maven you will need to provide a pom.xml file with the following content in the root of your project:</p>
+<p>If you are using Maven make sure that you provide a pom.xml file which contains the following line.</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nt">&lt;project</span> <span class="na">xmlns=</span><span class="s">"http://maven.apache.org/POM/4.0.0"</span> <span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span> <span class="na">xsi:schemaLocation=</span><span class="s">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;modelVersion&gt;</span>4.0.0<span class="nt">&lt;/modelVersion&gt;</span>
+  <span class="nt">&lt;groupId&gt;</span>com.mygroup<span class="nt">&lt;/groupId&gt;</span>
+  <span class="nt">&lt;artifactId&gt;</span>spring<span class="nt">&lt;/artifactId&gt;</span>
+  <span class="nt">&lt;version&gt;</span>0.0.1-SNAPSHOT<span class="nt">&lt;/version&gt;</span>
+  
+  <span class="c">&lt;!-- Copy the following lines from http://projects.spring.io/spring-framework/ to depend on the latest version of spring --&gt;</span>
+  <span class="nt">&lt;dependencies&gt;</span>
+    <span class="nt">&lt;dependency&gt;</span>
+        <span class="nt">&lt;groupId&gt;</span>org.springframework<span class="nt">&lt;/groupId&gt;</span>
+        <span class="nt">&lt;artifactId&gt;</span>spring-context<span class="nt">&lt;/artifactId&gt;</span>
+        <span class="nt">&lt;version&gt;</span>4.1.3.RELEASE<span class="nt">&lt;/version&gt;</span>
+    <span class="nt">&lt;/dependency&gt;</span>
+<span class="nt">&lt;/dependencies&gt;</span>
+<span class="nt">&lt;/project&gt;</span>
+</pre></div>
+<p>From here on out, you can just copy and paste the text into the files for Steps 2, 3, and 4; skip the explanations; and run the program yourself. The explanations are only there to provide you with a background of the way Spring puts it all together. Ok, now on to the meat and potatoes, <code>story_configuration.xml</code>.</p>
+<h2><span class="mw-headline" id="Step_2:_Creating_a_Spring_beans_configuration_file"><b>Step 2</b>: Creating a Spring beans configuration file</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=2" title="Edit section: Step 2: Creating a Spring beans configuration file">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Create a new XML file in the directory where you are planning to put your java files. Call it <code>story_configuration.xml</code>. Then copy and paste the text below into the file and save it:</p>
+<h3><span class="mw-headline" id="story_configuration.xml">story_configuration.xml</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=3" title="Edit section: story configuration.xml">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="cp">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span>
+<span class="cp">&lt;!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" </span>
+<span class="cp">      "http://www.springframework.org/dtd/spring-beans.dtd"&gt;</span>
+<span class="nt">&lt;beans&gt;</span>
+   <span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"StoryList"</span> <span class="na">class=</span><span class="s">"spring.StoryList"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"stories"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;list&gt;</span>
+           <span class="nt">&lt;ref</span> <span class="na">bean=</span><span class="s">"HelloWorld"</span><span class="nt">/&gt;</span>
+           <span class="nt">&lt;ref</span> <span class="na">bean=</span><span class="s">"OnceUpon"</span><span class="nt">/&gt;</span>
+         <span class="nt">&lt;/list&gt;</span>
+       <span class="nt">&lt;/property&gt;</span>
+   <span class="nt">&lt;/bean&gt;</span>
+
+   <span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"HelloWorld"</span> <span class="na">class=</span><span class="s">"spring.Story"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"title"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;value&gt;</span>Hello World!<span class="nt">&lt;/value&gt;</span>
+      <span class="nt">&lt;/property&gt;</span>
+      <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"author"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;value&gt;</span>User:Hyad<span class="nt">&lt;/value&gt;</span>
+      <span class="nt">&lt;/property&gt;</span>
+      <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;value&gt;</span>This is a simple story.
+This is a story about a man who said, "Hello, World."
+See, now wasn't that simple.<span class="nt">&lt;/value&gt;</span>
+      <span class="nt">&lt;/property&gt;</span>
+   <span class="nt">&lt;/bean&gt;</span>
+	
+   <span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"OnceUpon"</span> <span class="na">class=</span><span class="s">"spring.Story"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"title"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;value&gt;</span>Once Upon a Time<span class="nt">&lt;/value&gt;</span>
+      <span class="nt">&lt;/property&gt;</span>
+      <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"author"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;value&gt;</span>Rob Yates<span class="nt">&lt;/value&gt;</span>
+      <span class="nt">&lt;/property&gt;</span>
+      <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;value&gt;</span>Once upon a time there were some interesting things going on.
+The end.<span class="nt">&lt;/value&gt;</span>
+      <span class="nt">&lt;/property&gt;</span>
+   <span class="nt">&lt;/bean&gt;</span>
+<span class="nt">&lt;/beans&gt;</span>
+</pre></div>
+<h3><span class="mw-headline" id="Explanation">Explanation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=4" title="Edit section: Explanation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The first two lines are just standard XML declarations. Technically we don't really need them, but we'll put them in anyway. Next, you'll see the <code>&lt;beans&gt;</code> tag, this is where all the Java beans go.</p>
+<p>Below that you'll see <code>&lt;bean class="spring.StoryList"&gt;</code>. This will be a bean for our Java class, <code>StoryList.java</code> in package <code>spring</code>. This class is simply a placeholder for the List where we will be holding our stories. Note the attributes of the bean element: there must always be a class attribute to represent the Java Class the bean is using. The id attribute is optional; it is used by the XMLBeanFactory class, to tell it what bean to get with the getBean method: ex. <code>getBean("My id attribute name here")</code>. If no ID attribute is provided, like with <code>&lt;bean class="StoryList"&gt;</code>, the class name is used as if it were the id attribute. Think: <code>&lt;bean id="StoryList" class="spring.StoryList"&gt;</code>. Also note a bean's id value must not have any spaces, ex. don't write <code>id="Story List"</code>.</p>
+<p>Next we have <code>&lt;property name="stories"&gt;</code>. The property tag just specifies what property variable in the Java bean file we want to specify with a bean property. The <code>&lt;list&gt;</code> tag is used next to tell Spring that we're dealing with a List of things, not just one. Next we have <code>&lt;ref bean="HelloWorld"/&gt;</code>, this tells Spring to return the <code>&lt;bean id="HelloWorld" class="spring.Story"&gt;</code> bean inside this List. In a different example, you might simply need a list of values like Strings. For a grocery list you might have something like,</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nt">&lt;list&gt;</span>
+	<span class="nt">&lt;value&gt;</span>milk<span class="nt">&lt;/value&gt;</span>
+	<span class="nt">&lt;value&gt;</span>eggs<span class="nt">&lt;/value&gt;</span>
+	<span class="nt">&lt;value&gt;</span>bread<span class="nt">&lt;/value&gt;</span>
+<span class="nt">&lt;/list&gt;</span>
+</pre></div>
+<p>Either way your property is mapped to a LIST</p>
+<p>For our <b><code>HelloWorld</code></b> story, we have <code>&lt;bean id="HelloWorld" class="spring.Story"&gt;</code>. Hopefully, nothing too surprising here. There are three properties of this bean, <code>&lt;property name="title"&gt;</code>, <code>&lt;property name="author"&gt;</code>, <code>&lt;property name="content"&gt;</code>. These are again mapping to property variables: title, author, content in the Story class. Within each value we have: &lt;value&gt;Hello World!&lt;/value&gt;, &lt;value&gt;User:Hyad&lt;/value&gt;, &lt;value&gt;This is a simple story.</p>
+<p>This is a story about a man who said, "Hello, World."</p>
+<p>See, now wasn't that simple.&lt;/value&gt; Since we are dealing with Strings, everything between the start and end value tags is converted into a String. Hence to add a newline, we must actually put text on separate lines without any indentation. Be aware that values don't have to be mapped to Strings, they can be primitives like int or char, or objects like Integer or Float. Spring automatically knows how to convert them.</p>
+<p>We won't be covering the OnceUpon bean, it's essentially the same thing as <b><code>HelloWorld</code></b>, only with different values. In fact, that is the main purpose for using Spring, storing different sets of values for a Java class as a bean instead of making a new class. Up next are the Java Bean classes themselves.</p>
+<h2><span class="mw-headline" id="Step_3:_Making_JavaBean_classes">Step 3: Making JavaBean classes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=5" title="Edit section: Step 3: Making JavaBean classes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There are two JavaBean classes: <code>Story.java</code> and <code>StoryList.java</code>, both in the package <code>spring</code>. Copy and paste the following text into their respective classes.</p>
+<h3><span class="mw-headline" id="Story.java">Story.java</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=6" title="Edit section: Story.java">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kn">package</span> <span class="nn">spring</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Story</span> <span class="o">{</span>
+	
+	<span class="kd">private</span> <span class="n">String</span> <span class="n">title</span><span class="o">;</span>
+	<span class="kd">private</span> <span class="n">String</span> <span class="n">author</span><span class="o">;</span>
+	<span class="kd">private</span> <span class="n">String</span> <span class="n">content</span><span class="o">;</span>
+	
+	<span class="kd">public</span> <span class="nf">Story</span> <span class="o">()</span> <span class="o">{</span>
+	<span class="o">}</span>	
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setTitle</span><span class="o">(</span><span class="n">String</span> <span class="n">title</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">title</span> <span class="o">=</span> <span class="n">title</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="nf">getTitle</span><span class="o">()</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="n">title</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setAuthor</span><span class="o">(</span><span class="n">String</span> <span class="n">author</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">author</span> <span class="o">=</span> <span class="n">author</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="nf">getAuthor</span><span class="o">()</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="n">author</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setContent</span><span class="o">(</span><span class="n">String</span> <span class="n">content</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">content</span> <span class="o">=</span> <span class="n">content</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="n">String</span> <span class="nf">getContent</span><span class="o">()</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="n">content</span><span class="o">;</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="StoryList.java">StoryList.java</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=7" title="Edit section: StoryList.java">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kn">package</span> <span class="nn">spring</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">StoryList</span> <span class="o">{</span>
+
+	<span class="kd">private</span> <span class="n">List</span> <span class="n">stories</span><span class="o">;</span>
+	
+	<span class="kd">public</span> <span class="nf">StoryList</span> <span class="o">(){</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setStories</span><span class="o">(</span><span class="n">List</span> <span class="n">stories</span><span class="o">)</span> <span class="o">{</span>
+		<span class="k">this</span><span class="o">.</span><span class="na">stories</span> <span class="o">=</span> <span class="n">stories</span><span class="o">;</span>
+	<span class="o">}</span>
+	<span class="kd">public</span> <span class="n">List</span> <span class="nf">getStories</span><span class="o">()</span> <span class="o">{</span>
+		<span class="k">return</span> <span class="n">stories</span><span class="o">;</span>
+	<span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Explanation_2">Explanation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=8" title="Edit section: Explanation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Not too complicated, right? These are JavaBeans; simple classes with getters and setters for property variables, and a constructor without any parameters. For a more in-depth discussion of JavaBeans visit <a href="https://en.wikipedia.org/wiki/JavaBeans" class="extiw" title="wikipedia:JavaBeans">Wikipedia:JavaBeans</a>. The setters, like <code>setTitle(String title)</code>, are what Spring uses to create the beans in the XmlBeanFactory. The setters must follow specific bean naming conventions. For example, <code>settitle(String title)</code> with a lowercase "t" won't work. However, as an example <code>setURL(String url)</code> with property name "URL" will work because the second letter "R" is also capitalized in addition to the first "U". Getters aren't actually used by Spring in this example, however StoryReader needs them as we'll see later on. In addition, we don't actually have to specify a no-argument constructor, we could just leave it out and the Java compiler will automatically put one in the class when it's compiled. However, writing a constructor with one or more arguments without a no-argument constructor would invalidate the class as a bean.</p>
+<h2><span class="mw-headline" id="Step_4:_A_main_method_to_put_it_all_together">Step 4: A main method to put it all together</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=9" title="Edit section: Step 4: A main method to put it all together">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>As we have before, copy and paste the text. And save your class as <code>StoryReader.java</code>.</p>
+<h3><span class="mw-headline" id="StoryReader.java">StoryReader.java</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=10" title="Edit section: StoryReader.java">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kn">package</span> <span class="nn">spring</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">org.springframework.beans.factory.xml.XmlBeanFactory</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.springframework.context.support.ClassPathXmlApplicationContext</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.springframework.core.io.ClassPathResource</span><span class="o">;</span>
+ 
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">StoryReader</span> <span class="o">{</span>
+ 
+	<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[])</span> <span class="o">{</span>
+		<span class="n">ClassPathXmlApplicationContext</span> <span class="n">springApplicationContext</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ClassPathXmlApplicationContext</span><span class="o">(</span><span class="s">"story_configuration.xml"</span><span class="o">);</span>
+ 
+		<span class="n">StoryList</span> <span class="n">storyList</span> <span class="o">=</span> <span class="o">(</span><span class="n">StoryList</span><span class="o">)</span> <span class="n">springApplicationContext</span><span class="o">.</span><span class="na">getBean</span><span class="o">(</span><span class="s">"StoryList"</span><span class="o">);</span>
+ 
+		<span class="n">List</span> <span class="n">myStories</span> <span class="o">=</span> <span class="n">storyList</span><span class="o">.</span><span class="na">getStories</span><span class="o">();</span>
+ 
+		<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">myStories</span><span class="o">.</span><span class="na">size</span><span class="o">();</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+			<span class="n">Story</span> <span class="n">currentStory</span> <span class="o">=</span> <span class="o">(</span><span class="n">Story</span><span class="o">)</span> <span class="n">myStories</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"\""</span> <span class="o">+</span> <span class="n">currentStory</span><span class="o">.</span><span class="na">getTitle</span><span class="o">()</span> <span class="o">+</span> <span class="s">"\" by "</span>
+					<span class="o">+</span> <span class="n">currentStory</span><span class="o">.</span><span class="na">getAuthor</span><span class="o">()</span> <span class="o">+</span> <span class="s">":"</span><span class="o">);</span>
+			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">currentStory</span><span class="o">.</span><span class="na">getContent</span><span class="o">());</span>
+			<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">();</span>
+		<span class="o">}</span>
+	<span class="o">}</span><span class="c1">//end main</span>
+ 
+<span class="o">}</span><span class="c1">//end StoryReader</span>
+</pre></div>
+<h3><span class="mw-headline" id="Explanation_3">Explanation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=11" title="Edit section: Explanation">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Here is our main class, <code>StoryReader.java</code> in package <code>spring</code>. First we have to import two Spring classes, XmlBeanFactory and ClassPathResource. XmlBeanFactory is essentially a Java class representation of the Spring XML configuation file, <code>story_configuration.xml</code>. However, before we can get the XML file, we have to tell Spring to look in our class path for that file. That's where ClassPathResource comes in. It searchs the class path, which is where our .class files are stored, for the file specified in its constructor, story_configuration.xml. Any other class that implements the Resource interface may be used, such as <code>org.springframework.core.io.FileSystemResource</code>. Therefore, we see <code>XmlBeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("story_configuration.xml"));</code> creates a new bean factory from <code>story_configuration.xml</code>.</p>
+<p>The next line, <code>StoryList storyList = (StoryList) beanFactory.getBean("StoryList");</code>, tells us which bean we want to get next. The <code>getBean("StoryList")</code> tells the bean factory to return an object corresponding to the bean with the id "<code>StoryList</code>", since it is the class name. Since it is an Object, we have to cast it into a <code>StoryList</code> class.</p>
+<p>Next, we get the list of stories from the <code>StoryList</code> class, and loop through them. Since this is a bean, the Stories are already there in the list, within the values already in the stories. All we have to do is print them out; which we do. Note: <code>\"</code> is used to escape quotes within the String.</p>
+<h2><span class="mw-headline" id="Step_5:_Running_your_program">Step 5: Running your program</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=12" title="Edit section: Step 5: Running your program">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>So now that we're done creating our classes and files, lets run the program! Fix any errors you get by making sure you copied everything correctly. When you run the main method of <code>StoryReader</code>, your output should be as follows:</p>
+<pre>
+Mar 12, 2006 5:42:30 PM org.springframework.core.CollectionFactory &lt;clinit&gt;
+INFO: JDK 1.4+ collections available
+Mar 12, 2006 5:42:30 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [story_configuration.xml]
+"Hello World!" by User:Hyad:
+This is a simple story.
+This is a story about a man who said, "Hello, World."
+See, now wasn't that simple.
+
+"Once Upon a Time" by Rob Yates:
+Once upon a time there were some interesting things going on.
+The end.
+
+</pre>
+<p>The dates will obviously be different when you run it yourself. Also, the four lines that begin with either a date or the word "INFO" are printed to System.err and may be above, or below, or even in between the rest of the output. This is because some operating systems may print to System.out and System.err at different times. Check that your output matches the one shown, disregarding the dates and order of the four lines that Spring prints. Now, you have a fully functioning Spring application, but what next?</p>
+<h2><span class="mw-headline" id="Afterthoughts">Afterthoughts</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=13" title="Edit section: Afterthoughts">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Things_to_remember">Things to remember</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=14" title="Edit section: Things to remember">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>As I mentioned earlier, Spring performs automatic conversion of values to both primitives and Objects; <code>int</code>, <code>float</code>, <code>char</code>, <code>Double</code>, <code>boolean</code>, <code>Byte</code>, you name it. Also note that <code>&lt;list&gt;</code>, which is simply a list of values, can be mapped to a List object, an Array object, or a primitive array (the two square brackets kind). There are even <code>&lt;set&gt;</code> and <code>&lt;map&gt;</code> tags which can be mapped to <code>Set</code>s and <code>Map</code>s, respectively. And at any point you can replace a value with a reference to a bean, like replace &lt;value&gt;myValue&lt;/value&gt; with <code>&lt;ref bean="myBeanId"/&gt;</code>. This reference will return the corresponding JavaBean and Spring will store it as that variable.</p>
+<p>In addition, Spring can also serve as a replacement for properties files. An advantage is that Spring is XML based, so any XML parser can read it. And multiple beans can be stored for the same class within the same file. However, you may also place beans across multiple files, and use <code>&lt;import resource="myOtherBeanConfigFile.xml"/&gt;</code> to "import" other beans, just like importing Java classes.</p>
+<p>The last thing you may want to know is that Spring is most helpful when you use one bean to reference to other beans, classes, files, etc. You may have one bean contain a list of beans, which contain a list of beans, each of which contain another list of beans, … This way only the file name and location of most top level bean is "hard-coded" in the Java class, and everything else is specified by the XML configuration files.</p>
+<h3><span class="mw-headline" id="Try_it_yourself">Try it yourself</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=15" title="Edit section: Try it yourself">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Here are a few tasks you might do to make your Spring application more robust. Do as many, or as little, as you like:</p>
+<ul>
+<li>Separate the StoryList bean into another XML file, using <code>&lt;import resource="story_configuration.xml"/&gt;</code> in your new file.</li>
+<li>Add publication date to each of your stories. How will you store the date?</li>
+<li>Make a separate class for the author. What attributes might an author have?</li>
+<li>Put additional functionality into StoryList. How about a printStories() method that can be called by StoryReader's main method?</li>
+<li>Create a writer so all output will be written to a file. And store that file name as a bean.</li>
+<li>Add more stories. (Mine suck, I know.)</li>
+<li>Instead of stories, how about TV shows, or video games?</li>
+<li>Change random code around until it breaks. Have fun!&#160;:)</li>
+</ul>
+<h3><span class="mw-headline" id="About_the_author">About the author</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=16" title="Edit section: About the author">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>I go by <a href="/w/index.php?title=User:Hyad&amp;action=edit&amp;redlink=1" class="new" title="User:Hyad (does not exist)">User:Hyad</a> on Wikipedia and Wikibooks. Having been frustrated by other Spring tutorials that were too long, I decided after actually learning (and using) Spring at work that I would actually create my own. <a rel="nofollow" class="external text" href="http://www.drrockit.com/space/Java/Simple+Spring+Demo">This tutorial</a> came the closest to what I was looking for in a good tutorial, but it was a little too short. So I figured, why not give an example that could be used in the real world. And I figured Wikibooks would be the best place for it, considering if I put it on my website, 1. It would be too cumbersome to edit, and 2. Other people wouldn't be able to edit and update it easily. So drop me a line at <a href="https://en.wikipedia.org/wiki/User_talk:Hyad" class="extiw" title="wikipedia:User talk:Hyad">my Wikipedia talk page</a> and tell me what you think.</p>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit&amp;section=17" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist references" style="">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text">Spring Boot Reference Guide. <a rel="nofollow" class="external text" href="https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-build-systems.html">"Build systems"</a>.</span></li>
+</ol>
+</div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1267
+Cached time: 20171007182120
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.048 seconds
+Real time usage: 0.726 seconds
+Preprocessor visited node count: 183/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 557/2097152 bytes
+Template argument size: 48/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 1/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   14.431      1 -total
+ 69.62%   10.047      1 Template:BookCat
+ 53.79%    7.762      1 Template:BookCat/default
+ 37.47%    5.408      1 Template:BOOKCATEGORY
+ 29.49%    4.256      1 Template:Reflist
+ 27.52%    3.972      1 Template:BOOKCATEGORY/core
+ 11.94%    1.723      1 Template:FULLBOOKNAME
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:66436-0!canonical and timestamp 20171007182119 and revision id 3242375
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Spring_framework&amp;oldid=3242375">https://en.wikibooks.org/w/index.php?title=Java_Programming/Spring_framework&amp;oldid=3242375</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FSpring+framework" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FSpring+framework" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Spring_framework.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk"><span><a href="/wiki/Talk:Java_Programming/Spring_framework" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible selected"><span><a href="Spring_framework.html">Read</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Spring_framework" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Spring_framework" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;oldid=3242375" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q720314" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FSpring_framework&amp;id=3242375" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-es"><a href="https://es.wikibooks.org/wiki/Spring_Framework" title="Spring Framework – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikibooks.org/wiki/Spring_Framework" title="Spring Framework – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q720314#sitelinks-wikibooks" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FSpring+framework">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FSpring+framework&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Spring_framework&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-wikipedia"><a href="https://en.wikipedia.org/wiki/Spring_Framework" hreflang="en">Wikipedia</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 6 July 2017, at 21:18.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Spring_framework&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.048","walltime":"0.726","ppvisitednodes":{"value":183,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":557,"limit":2097152},"templateargumentsize":{"value":48,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":1,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%   14.431      1 -total"," 69.62%   10.047      1 Template:BookCat"," 53.79%    7.762      1 Template:BookCat/default"," 37.47%    5.408      1 Template:BOOKCATEGORY"," 29.49%    4.256      1 Template:Reflist"," 27.52%    3.972      1 Template:BOOKCATEGORY/core"," 11.94%    1.723      1 Template:FULLBOOKNAME"]},"cachereport":{"origin":"mw1267","timestamp":"20171007182120","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":86,"wgHostname":"mw1265"});});</script>
+	</body>
+</html>

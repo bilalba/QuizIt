@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Preventing NullPointerException - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Preventing_NullPointerException","wgTitle":"Java Programming/Preventing NullPointerException","wgCurRevisionId":3295239,"wgRevisionId":3295239,"wgArticleId":53415,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Preventing_NullPointerException","wgRelevantArticleId":53415,"wgRequestId":"We6IswpAME8AAD6bOScAAAAQ","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3295239,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Preventing_NullPointerException.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Preventing_NullPointerException rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Preventing NullPointerException</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span><div id="mw-fr-revisiontag" class="flaggedrevs_basic flaggedrevs_draft_notsynced plainlinks noprint nomobile"><img class="flaggedrevs-icon" src="/w/extensions/FlaggedRevs/frontend/modules/img/1.png" alt="Unreviewed changes are displayed on this page" title="Unreviewed changes are displayed on this page">The <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;stable=1">latest reviewed version</a> was <a class="external text" href="//en.wikibooks.org/w/index.php?title=Special:Log&amp;type=review&amp;page=Java_Programming/Preventing_NullPointerException">checked</a> on <i>17 September 2017</i>. There are <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;oldid=3295239&amp;diff=cur&amp;diffonly=0">template/file changes</a> awaiting review.</div>
+</div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Unchecked_Exceptions.html" title="Unchecked Exceptions"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Unchecked_Exceptions.html" title="Java Programming/Unchecked Exceptions">Unchecked Exceptions</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Preventing NullPointerException</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Stack_trace.html" title="Java Programming/Stack trace">Stack trace</a> <a href="Stack_trace.html" title="Stack trace"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="Exceptions.html" title="Java Programming/Exceptions">Exceptions</a></b> topic:<span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/ExceptionsTopic" class="mw-redirect" title="Template:Java Programming/ExceptionsTopic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/ExceptionsTopic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/ExceptionsTopic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/ExceptionsTopic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of 8 Aug, 2013"><img alt="75% developed&#160; as of 8 Aug, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Throwing_and_Catching_Exceptions.html" title="Java Programming/Throwing and Catching Exceptions">Throwing and catching exceptions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of 8 Aug, 2013"><img alt="75% developed&#160; as of 8 Aug, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Checked_Exceptions.html" title="Java Programming/Checked Exceptions">Checked exceptions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of 8 Aug, 2013"><img alt="75% developed&#160; as of 8 Aug, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Unchecked_Exceptions.html" title="Java Programming/Unchecked Exceptions">Unchecked exceptions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of 8 Aug, 2013"><img alt="75% developed&#160; as of 8 Aug, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">Preventing <code>NullPointerException</code></a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of 8 Aug, 2013"><img alt="75% developed&#160; as of 8 Aug, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Stack_trace.html" title="Java Programming/Stack trace">Stack trace</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of 8 Aug, 2013"><img alt="75% developed&#160; as of 8 Aug, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Nesting_Exceptions.html" title="Java Programming/Nesting Exceptions">Nesting exceptions (chained exceptions)</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p><br>
+<code>NullPointerException</code> is a <code>RuntimeException</code>. In Java, a special <code><a href="Literals\null.html" class="mw-redirect" title="Java Programming/Literals/null"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">null</font></a></code> value can be assigned to an object reference. <code>NullPointerException</code> is thrown when an application attempts to use an object reference that has the <code><a href="Literals\null.html" class="mw-redirect" title="Java Programming/Literals/null"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">null</font></a></code> value. These include:</p>
+<ul>
+<li>Calling an instance method on the object referred by a null reference.</li>
+<li>Accessing or modifying an instance field of the object referred by a null reference.</li>
+<li>If the reference type is an array type, taking the length of a null reference.</li>
+<li>If the reference type is an array type, accessing or modifying the slots of a null reference.</li>
+<li>If the reference type is a subtype of <code>Throwable</code>, throwing a null reference.</li>
+</ul>
+<p>Applications should throw instances of this class to indicate other illegal uses of the null object.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-13"><b>Code section 6.13: Null pointer.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">Object</span> <span class="n">obj</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="hll"><span class="n">obj</span><span class="o">.</span><span class="na">toString</span><span class="o">();</span>  <span class="c1">// This statement will throw a NullPointerException</span>
+</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The above code shows one of the pitfalls of Java and the most common source of bugs. No object is created and the compiler does not detect it. <code>NullPointerException</code> is one of the most common exceptions thrown in Java.</p>
+<h2><span id="Why_do_we_need_null?"></span><span class="mw-headline" id="Why_do_we_need_null.3F">Why do we need <code>null</code>?</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;action=edit&amp;section=1" title="Edit section: Why do we need null?">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The reason we need it is because many times we need to create an object reference before the object itself is created. Object references cannot exist without a value, so we assign the <a href="Literals.html#null" title="Java Programming/Literals"><code>null</code></a> value to it.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-14"><b>Code section 6.14: Non-instantiated declared object.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="n">Person</span> <span class="nf">getPerson</span><span class="o">(</span><span class="kt">boolean</span> <span class="n">isWoman</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span><span class="hll">  <span class="n">Person</span> <span class="n">person</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span><span class="lineno">3 </span>  <span class="k">if</span> <span class="o">(</span><span class="n">isWoman</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">4 </span>    <span class="n">person</span> <span class="o">=</span> <span class="n">createWoman</span><span class="o">();</span>
+<span class="lineno">5 </span>  <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+<span class="lineno">6 </span>    <span class="n">person</span> <span class="o">=</span> <span class="n">createMan</span><span class="o">();</span>
+<span class="lineno">7 </span>  <span class="o">}</span>
+<span class="lineno">8 </span>  <span class="k">return</span> <span class="n">person</span><span class="o">;</span>
+<span class="lineno">9 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>In <a href="#code-section-14">code section 6.14</a> we want to create the <code>Person</code> inside the if-else, but we also want to return the object reference to the caller, so we need to create the object reference outside of the if-else, because of the <a href="Scope.html" title="Java Programming/Scope">scoping rule</a> in Java. Incorrect error-handling and poor contract design can be a pitfall with any programming language. This is also true for Java.</p>
+<p>Now we will describe how to prevent <code>NullPointerException</code>. We do not describe general techniques for how you should program Java, we just hope to make you more aware of null values, and to be more careful about generating them yourself.</p>
+<p>This list is not complete — there are no rules for preventing <code>NullPointerException</code> entirely in Java, because the standard libraries have to be used, and they can cause <code>NullPointerException</code>s. Also, it is possible to observe an uninitialized final field in Java, so you can't even treat a final field as being completely trusted during the object's creation.</p>
+<p>A good approach is to learn how to deal with <code>NullPointerException</code>s first, and become competent with that. These suggestions will help you to cause less <code>NullPointerException</code>s, but they don't replace the need to know about <code>NullPointerException</code>s.</p>
+<h2><span class="mw-headline" id="Comparing_string_variable_with_a_string_literal">Comparing string variable with a string literal</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;action=edit&amp;section=2" title="Edit section: Comparing string variable with a string literal">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>When you compare a variable with a string literal, most of people would do that this way:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-15"><b>Code section 6.15: Bad comparison.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="hll"><span class="k">if</span> <span class="o">(</span><span class="n">state</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="s">"OK"</span><span class="o">))</span> <span class="o">{</span>
+</span><span class="lineno">2 </span>  <span class="o">...</span>
+<span class="lineno">3 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Always put the string literal first:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-16"><b>Code section 6.16: Better comparison.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="hll"><span class="k">if</span> <span class="o">(</span><span class="s">"OK"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">state</span><span class="o">))</span> <span class="o">{</span>
+</span><span class="lineno">2 </span>  <span class="o">...</span>
+<span class="lineno">3 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>If the <code>state</code> variable is null, you get a <code>NullPointerException</code> in the first example, but not in the second one.</p>
+<h2><span id="Minimize_the_use_of_the_keyword_'null'_in_assignment_statements"></span><span class="mw-headline" id="Minimize_the_use_of_the_keyword_.27null.27_in_assignment_statements">Minimize the use of the keyword 'null' in assignment statements</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;action=edit&amp;section=3" title="Edit section: Minimize the use of the keyword 'null' in assignment statements">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>This means not doing things like:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-17"><b>Code section 6.17: Declaring an exception.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="hll"><span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span><span class="lineno"> 2 </span><span class="k">while</span> <span class="o">(</span><span class="n">something</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 3 </span>    <span class="k">if</span> <span class="o">(</span><span class="n">something2</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 4 </span>        <span class="n">s</span> <span class="o">=</span> <span class="s">"yep"</span><span class="o">;</span>
+<span class="lineno"> 5 </span>    <span class="o">}</span>
+<span class="lineno"> 6 </span><span class="o">}</span>
+<span class="lineno"> 7 </span>
+<span class="lineno"> 8 </span><span class="k">if</span> <span class="o">(</span><span class="n">s</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 9 </span>    <span class="n">something3</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+<span class="lineno">10 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>You can replace this with:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-18"><b>Code section 6.18: Declaring an exception.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="hll"><span class="kt">boolean</span> <span class="n">done</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+</span><span class="lineno">2 </span>
+<span class="lineno">3 </span><span class="k">while</span> <span class="o">(!</span><span class="n">done</span> <span class="o">&amp;&amp;</span> <span class="n">something</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">4 </span>    <span class="k">if</span> <span class="o">(</span><span class="n">something2</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">5 </span>       <span class="n">done</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+<span class="lineno">6 </span>       <span class="n">something3</span><span class="o">(</span><span class="s">"yep"</span><span class="o">);</span>
+<span class="lineno">7 </span>    <span class="o">}</span>
+<span class="lineno">8 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>You might also consider replacing null with "" in the first example, but default values bring about bugs caused by default values being left in place. A <code>NullPointerException</code> is actually better, as it allows the runtime to tell you about the bug, rather than just continue with a default value.</p>
+<h2><span id="Minimize_the_use_of_the_new_Type[int]_syntax_for_creating_arrays_of_objects"></span><span class="mw-headline" id="Minimize_the_use_of_the_new_Type.5Bint.5D_syntax_for_creating_arrays_of_objects">Minimize the use of the new Type[int] syntax for creating arrays of objects</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;action=edit&amp;section=4" title="Edit section: Minimize the use of the new Type[int] syntax for creating arrays of objects">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>An array created using <code>new Object[10]</code> has 10 null pointers. That's 10 more than we want, so use collections instead, or explicitly fill the array at initialization with:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-19"><b>Code section 6.19: Declaring an exception.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="hll"><span class="n">Object</span><span class="o">[]</span> <span class="n">objects</span> <span class="o">=</span> <span class="o">{</span><span class="s">"blah"</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="s">"/usr/bin"</span><span class="o">)};</span>
+</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>or:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-20"><b>Code section 6.20: Declaring an exception.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="hll"><span class="n">Object</span><span class="o">[]</span> <span class="n">objects</span><span class="o">;</span>
+</span><span class="lineno">2 </span><span class="n">objects</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Object</span><span class="o">[]{</span><span class="s">"blah"</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="s">"/usr/bin"</span><span class="o">)};</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<h2><span id="Check_all_references_obtained_from_'untrusted'_methods"></span><span class="mw-headline" id="Check_all_references_obtained_from_.27untrusted.27_methods">Check all references obtained from 'untrusted' methods</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;action=edit&amp;section=5" title="Edit section: Check all references obtained from 'untrusted' methods">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Many methods that can return a reference can return a null reference. Make sure you check these. For example:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-21"><b>Code section 6.21: Declaring an exception.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="hll"><span class="n">File</span> <span class="n">file</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="s">"/etc"</span><span class="o">);</span>
+</span><span class="lineno">2 </span><span class="n">File</span><span class="o">[]</span> <span class="n">files</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="na">listFiles</span><span class="o">();</span>
+<span class="lineno">3 </span><span class="k">if</span> <span class="o">(</span><span class="n">files</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">4 </span>    <span class="n">stuff</span>
+<span class="lineno">5 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p><code>File.listFiles()</code> can return null if <code>/etc</code> is not a directory.</p>
+<p>You can decide to trust some methods not to return null, if you like, but that's an assumption you're making. Some methods that don't specify that they might return null, actually do, instead of throwing an exception.</p>
+<h2><span class="mw-headline" id="For_each_loop_trap">For each loop trap</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;action=edit&amp;section=6" title="Edit section: For each loop trap">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Beware if you loop on an array or a collection in a for each loop.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-22"><b>Code section 6.22: Visit a collection.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">Collection</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">myNumbers</span> <span class="o">=</span> <span class="n">buildNumbers</span><span class="o">();</span>
+<span class="lineno">2 </span><span class="hll"><span class="k">for</span> <span class="o">(</span><span class="n">Integer</span> <span class="n">myNumber</span> <span class="o">:</span> <span class="n">myNumbers</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">3 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">myNumber</span><span class="o">);</span>
+<span class="lineno">4 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>If the object is null, it does not just do zero loops, it throws a null pointer exception. So don't forget this case. Add an <code>if</code> statement or return empty collections:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-23"><b>Code section 6.23: Visit a collection safety.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">Collection</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">myNumbers</span> <span class="o">=</span> <span class="n">buildNumbers</span><span class="o">();</span>
+<span class="lineno">2 </span><span class="hll"><span class="k">if</span> <span class="o">(</span><span class="n">myNumbers</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="lineno">3 </span>  <span class="k">for</span> <span class="o">(</span><span class="n">Integer</span> <span class="n">myNumber</span> <span class="o">:</span> <span class="n">myNumbers</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">4 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">myNumber</span><span class="o">);</span>
+<span class="lineno">5 </span>  <span class="o">}</span>
+<span class="lineno">6 </span><span class="hll"><span class="o">}</span>
+</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="External_tools">External tools</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;action=edit&amp;section=7" title="Edit section: External tools">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There are tools like FindBugs that parse your code and warn you about potential bugs. Most of the time, these tools detect possible null pointers.</p>
+<p><br></p>
+<div style="clear: both"></div>
+<table style="background: #ffd; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 60%; margin: auto;" class="notice noprint notice-todo">
+<tr>
+<td style="width: 58px;">
+<div class="floatleft"><img alt="Clipboard" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/45px-Clipboard.svg.png" width="45" height="45" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/68px-Clipboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/90px-Clipboard.svg.png" data-file-width="48" data-file-height="48"></div>
+</td>
+<td>
+<p><b>To do:</b><br>
+Add some exercises like the ones in <a href="Variables.html#Kinds_of_variables" title="Java Programming/Variables">Variables</a></p>
+</td>
+</tr>
+</table>
+<div style="clear: both"></div>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Unchecked_Exceptions.html" title="Unchecked Exceptions"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Unchecked_Exceptions.html" title="Java Programming/Unchecked Exceptions">Unchecked Exceptions</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Preventing NullPointerException</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Stack_trace.html" title="Java Programming/Stack trace">Stack trace</a> <a href="Stack_trace.html" title="Stack trace"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="75% developed"><img alt="75% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/24px-75_percent.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/36px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/48px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1252
+Cached time: 20171010001941
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.136 seconds
+Real time usage: 0.187 seconds
+Preprocessor visited node count: 734/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 14551/2097152 bytes
+Template argument size: 2305/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 54/500
+Lua time usage: 0.082/10.000 seconds
+Lua memory usage: 778 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  150.921      1 -total
+ 82.61%  124.681      2 Template:Programming/Navigation
+  7.34%   11.073      1 Template:Java_Programming/ExceptionsTopic/Nav
+  6.39%    9.645      3 Template:BookCat
+  5.16%    7.792      3 Template:BookCat/default
+  3.98%    6.014     11 Template:XExample
+  3.53%    5.324      1 Template:Java_Programming/Exceptions/Topic
+  3.12%    4.707      3 Template:BOOKCATEGORY
+  2.71%    4.096      1 Template:Navbar
+  2.40%    3.615      1 Template:Status
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:53415-0!canonical and timestamp 20171010001941 and revision id 3295239
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;oldid=3295239">https://en.wikibooks.org/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;oldid=3295239</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FPreventing+NullPointerException" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FPreventing+NullPointerException" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Preventing_NullPointerException.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk"><span><a href="/wiki/Talk:Java_Programming/Preventing_NullPointerException" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;stable=1">Read</a></span></li>
+							<li id="ca-current" class="collapsible selected"><span><a href="/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;stable=0&amp;redirect=no" title="View this page with the pending changes [v]" accesskey="v">Latest draft</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Preventing_NullPointerException" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Preventing_NullPointerException" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;oldid=3295239" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FPreventing_NullPointerException&amp;id=3295239" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:NewItem?site=enwikibooks&amp;page=Java+Programming%2FPreventing+NullPointerException" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FPreventing+NullPointerException">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FPreventing+NullPointerException&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 14:42.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Preventing_NullPointerException&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.136","walltime":"0.187","ppvisitednodes":{"value":734,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":14551,"limit":2097152},"templateargumentsize":{"value":2305,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":54,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  150.921      1 -total"," 82.61%  124.681      2 Template:Programming/Navigation","  7.34%   11.073      1 Template:Java_Programming/ExceptionsTopic/Nav","  6.39%    9.645      3 Template:BookCat","  5.16%    7.792      3 Template:BookCat/default","  3.98%    6.014     11 Template:XExample","  3.53%    5.324      1 Template:Java_Programming/Exceptions/Topic","  3.12%    4.707      3 Template:BOOKCATEGORY","  2.71%    4.096      1 Template:Navbar","  2.40%    3.615      1 Template:Status"]},"scribunto":{"limitreport-timeusage":{"value":"0.082","limit":"10.000"},"limitreport-memusage":{"value":796211,"limit":52428800}},"cachereport":{"origin":"mw1252","timestamp":"20171010001941","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":76,"wgHostname":"mw1244"});});</script>
+	</body>
+</html>

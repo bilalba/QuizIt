@@ -1,0 +1,487 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Basic Synchronization - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Basic_Synchronization","wgTitle":"Java Programming/Basic Synchronization","wgCurRevisionId":3295179,"wgRevisionId":3295179,"wgArticleId":94990,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Basic_Synchronization","wgRelevantArticleId":94990,"wgRequestId":"We-LEApAIDEAAF6MnAAAAABH","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3295179,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Basic_Synchronization&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Basic_Synchronization&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Basic_Synchronization.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Basic_Synchronization rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Basic Synchronization</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span><div id="mw-fr-revisiontag" class="flaggedrevs_basic flaggedrevs_draft_notsynced plainlinks noprint nomobile"><img class="flaggedrevs-icon" src="/w/extensions/FlaggedRevs/frontend/modules/img/1.png" alt="Unreviewed changes are displayed on this page" title="Unreviewed changes are displayed on this page">The <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Basic_Synchronization&amp;stable=1">latest reviewed version</a> was <a class="external text" href="//en.wikibooks.org/w/index.php?title=Special:Log&amp;type=review&amp;page=Java_Programming/Basic_Synchronization">checked</a> on <i>17 September 2017</i>. There are <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Basic_Synchronization&amp;oldid=3295179&amp;diff=cur&amp;diffonly=0">template/file changes</a> awaiting review.</div>
+</div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Threads_and_Runnables.html" title="Threads and Runnables"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Threads_and_Runnables.html" title="Java Programming/Threads and Runnables">Threads and Runnables</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Basic Synchronization</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Client_Server.html" title="Java Programming/Client Server">Client Server</a> <a href="Client_Server.html" title="Client Server"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="Concurrent_Programming.html" title="Java Programming/Concurrent Programming">Concurrent Programming</a></b> topic: <span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/Concurrent_Programming/Topic" title="Template:Java Programming/Concurrent Programming/Topic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/Concurrent_Programming/Topic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/Concurrent Programming/Topic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/Concurrent_Programming/Topic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of May 2, 2014"><img alt="75% developed&#160; as of May 2, 2014" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Threads_and_Runnables.html" title="Java Programming/Threads and Runnables">Threads and Runnables</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of May 2, 2014"><img alt="75% developed&#160; as of May 2, 2014" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">Basic Synchronization</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of May 2, 2014"><img alt="75% developed&#160; as of May 2, 2014" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Client_Server.html" title="Java Programming/Client Server">Client Server Programming</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="25% developed&#160; as of May 2, 2014"><img alt="25% developed&#160; as of May 2, 2014" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/9px-25_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/14px-25_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/18px-25_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Remote_Method_Invocation.html" title="Java Programming/Remote Method Invocation">Remote Method Invocation (RMI)</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="0% developed&#160; as of May 2, 2014"><img alt="0% developed&#160; as of May 2, 2014" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/9px-00%25.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/14px-00%25.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/18px-00%25.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="EJB.html" title="Java Programming/EJB">Enterprise JavaBean Programming (EJB)</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="0% developed&#160; as of May 2, 2014"><img alt="0% developed&#160; as of May 2, 2014" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/9px-00%25.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/14px-00%25.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/18px-00%25.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="JavaSpaces.html" title="Java Programming/JavaSpaces">Java Spaces Programming (Jini)</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p><br>
+In a multi-threaded environment, when more than one thread can access and modify a resource, the outcome could be unpredictable. For example, let's have a counter variable that is incremented by more than one thread.</p>
+<p>Beware! <i>Synchronization</i> is an ambiguous term. It doesn't consist of making all threads executing the same code section at the same time. It is the opposite. It prevents any two threads from executing the same code section at the same time. It synchronizes the end of one processing with the beginning of a second processing.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 1.1: Counter implementation</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="kt">int</span> <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+<span class="o">...</span>
+<span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The above code is built up by the following sub-operations:</p>
+<ul>
+<li><b>Read</b>&#160;; read variable <code>counter</code></li>
+<li><b>Add</b>&#160;; add 1 to the value</li>
+<li><b>Save</b>&#160;; save the new value to variable <code>counter</code></li>
+</ul>
+<p>Let's say that two threads need to execute that code, and if the initial value of the <code>counter</code> variable is zero, we expect after the operations the value to be 2.</p>
+<table style="margin: auto; padding-top:0px; padding-bottom:0px; padding-left:2px; padding-right:2px; spacing-top:0px; spacing-bottom:0px; spacing-left:2px; spacing-right:2px;">
+<tr>
+<td style="border: solid 1px grey" colspan="2">Thread 1</td>
+<td>&#160;</td>
+<td style="border: solid 1px grey" colspan="2">Thread 2</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+</tr>
+<tr>
+<td style="border: solid 1px grey" colspan="2"><b>Read</b> 0</td>
+<td>&#160;</td>
+<td style="border: solid 1px grey" colspan="2"><b>Read</b> 0</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+</tr>
+<tr>
+<td style="border: solid 1px grey" colspan="2"><b>Add</b> 1</td>
+<td>&#160;</td>
+<td style="border: solid 1px grey" colspan="2"><b>Add</b> 1</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+</tr>
+<tr>
+<td style="border: solid 1px grey" colspan="2"><b>Save</b> 1</td>
+<td>&#160;</td>
+<td style="border: solid 1px grey" colspan="2"><b>Save</b> 1</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+</tr>
+</table>
+<p>In the above case Thread 1 operation is lost, because Thread 2 overwrites its value. We'd like Thread 2 to wait until Thread 1 finishes the operation. See below:</p>
+<table style="margin: auto; padding-top:0px; padding-bottom:0px; padding-left:2px; padding-right:2px; spacing-top:0px; spacing-bottom:0px; spacing-left:2px; spacing-right:2px;">
+<tr>
+<td style="border: solid 1px grey" colspan="2">Thread 1</td>
+<td>&#160;</td>
+<td style="border: solid 1px grey" colspan="2">Thread 2</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+</tr>
+<tr>
+<td style="border: solid 1px grey" colspan="2"><b>Read</b> 0</td>
+<td>&#160;</td>
+<td style="text-align: center" colspan="2">blocked</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+</tr>
+<tr>
+<td style="border: solid 1px grey" colspan="2"><b>Add</b> 1</td>
+<td>&#160;</td>
+<td style="text-align: center" colspan="2">blocked</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+<td>&#160;</td>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+</tr>
+<tr>
+<td style="border: solid 1px grey" colspan="2"><b>Save</b> 1</td>
+<td>&#160;</td>
+<td style="text-align: center" colspan="2">unblocked</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey" rowspan="7">&#160;</td>
+<td rowspan="7">&#160;</td>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td style="border: solid 1px grey" colspan="2"><b>Read</b> 1</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td style="border: solid 1px grey" colspan="2"><b>Add</b> 1</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td style="border: solid 1px grey" colspan="2"><b>Save</b> 2</td>
+</tr>
+<tr>
+<td>&#160;</td>
+<td>&#160;</td>
+<td style="border-left: solid 1px grey">&#160;</td>
+</tr>
+</table>
+<dl>
+<dt>Critical Section&#160;</dt>
+<dd>In the above example the code <code>counter+=1</code> must be executed by one and only one thread at any given time. That is called <b>critical section</b>. During programming, in a multi-threading environment we have to identify all those pieces of code that belongs to a critical section, and make sure that only one thread can execute those codes at any given time. That is called synchronization.</dd>
+</dl>
+<dl>
+<dt>Synchronizing threads&#160;</dt>
+<dd>The thread access to a critical section code must be <b>synchronized</b> among the threads, that is to make sure that only one thread can execute it at any given time.</dd>
+</dl>
+<dl>
+<dt>Object monitor&#160;</dt>
+<dd>Each object has an <i>Object monitor</i>. Basically it is a <i>semaphore</i>, indicating if a critical section code is being executed by a thread or not. Before a critical section can be executed, the thread must obtain an <i>Object monitor</i>. Only one thread at a time can own <b>that</b> object's monitor.</dd>
+</dl>
+<dl>
+<dt>A thread becomes the owner of the object's monitor in one of three ways&#160;</dt>
+<dd>
+<ul>
+<li>By executing a synchronized instance method of that object. See <code><a href="Keywords\synchronized.html" title="Java Programming/Keywords/synchronized"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">synchronized</font></a></code> keyword.</li>
+<li>By executing the body of a synchronized statement that synchronizes on the object. See <code><a href="Keywords\synchronized.html" title="Java Programming/Keywords/synchronized"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">synchronized</font></a></code> keyword.</li>
+<li>For objects of type Class, by executing a synchronized static method of that class.</li>
+</ul>
+</dd>
+</dl>
+<dl>
+<dt>The Object Monitor takes care of the synchronization, so why do we need the "wait() and notify() methods"?&#160;</dt>
+<dd>For synchronization we don't really need them, however for certain situations it is nice to use them. A nice and considerate thread will use them. It can happen that during executing a critical section, the thread is stuck, cannot continue. It can be because it's waiting for an IO and other resources. In any case, the thread may need to wait a relatively long time. It would be selfish for the thread to hold on to the object monitor and blocking other threads to do their work. So the thread goes to a 'wait' state, by calling the <code>wait()</code> method on the object. It has to be the same object the thread obtained its object monitor from.</dd>
+<dd>On the other hand though, a thread should call the <code>wait()</code> method only if there is at least one other thread out there who will call the <code>notify()</code> method when the resource is available, otherwise the thread will wait for ever, unless a time interval is specified as parameter.</dd>
+</dl>
+<dl>
+<dd>Let's have an analogy. You go in a shop to buy some items. You line up at the counter, you obtain the attention of the sales-clerk - you get her "object-monitor". You ask for the item you want. One item needs to be brought in from a warehouse. It'll take more than five minutes, so you release the sales-clerk (give her back her "object-monitor") so she can serve other customers. You go into a <b>wait</b> state. Let's say there are five other customers already waiting. There is another sales-clerk, who brings in the items from the warehouse. As she does that, she gets the attention of the first sales-clerk, getting her object-monitor and <b>notifies</b> one or all waiting customer(s), so the waited customer(s) <b>wake</b> up and line up again to get the attention of the first sales-clerk.</dd>
+</dl>
+<dl>
+<dd>Note the synchronization between the waiting customer and the sales-clerk who brings in the items. This is kind of producer-consumer synchronization.</dd>
+<dd>Also note that there is only one object-monitor, belonging to the first sales-clerk. That object-monitor/the attention of clerk needs to be obtained first before a <b>wait</b> and a <b>notify</b> can happen.</dd>
+</dl>
+<p><br></p>
+<dl>
+<dt><code><code><a href="Keywords\final.html" title="Java Programming/Keywords/final"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">final</font></a></code> void wait()</code> method&#160;</dt>
+<dd>The current thread must own this object's monitor. The thread releases ownership of this monitor and waits until another thread notifies the threads waiting on this object's monitor to wake up either through a call to the notify method or to the <code>notifyAll</code> method. The thread then waits until it can re-obtain ownership of the monitor and resume execution.</dd>
+</dl>
+<dl>
+<dt><code><code><a href="Keywords\final.html" title="Java Programming/Keywords/final"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">final</font></a></code> void wait(long time)</code>&#160;</dt>
+<dd>The same as wait, but the thread wakes after the specified duration of time passes, regardless of whether there was a notification or not.</dd>
+</dl>
+<dl>
+<dt><code><code><a href="Keywords\final.html" title="Java Programming/Keywords/final"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">final</font></a></code> void notify()</code>&#160;</dt>
+<dd>This method should only be called by a thread that is the owner of this object's monitor. Wakes up a single thread that is waiting on this object's monitor. If many threads are waiting on this object's monitor, one of them is chosen to be awakened. The choice is arbitrary and occurs at the discretion of the implementation. A thread waits on an object's monitor by calling one of the wait methods.</dd>
+<dd>The awakened thread will not be able to proceed until the current thread relinquishes the lock on this object. The awakened thread will compete in the usual manner with any other threads that might be actively competing to synchronize on this object; for example, the awakened thread enjoys no reliable privilege or disadvantage in being the next thread to lock this object.</dd>
+</dl>
+<dl>
+<dt><code><code><a href="Keywords\final.html" title="Java Programming/Keywords/final"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">final</font></a></code> void notifyAll()</code>&#160;</dt>
+<dd>Same as <code>notify()</code>, but it wakes up all threads that are waiting on this object's monitor.</dd>
+</dl>
+<p><br></p>
+<dl>
+<dt>What are the differences between the sleep() and wait() methods?&#160;</dt>
+</dl>
+<dl>
+<dd>
+<dl>
+<dt><code>Thread.sleep(millis)</code> &#160;</dt>
+<dd>This is a static method of the Thread class. Causes the currently executing thread to sleep (temporarily cease execution) for the specified number of milliseconds. The thread does not lose ownership of any monitors. It means that if the thread has an object-monitor, all other threads that need that monitor are blocked. This method can be called regardless whether the thread has any monitor or not.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dt><code>wait()</code> &#160;</dt>
+<dd>This method is inherited from the <code><a href="API\java.lang-1.html" title="Java Programming/API/java.lang.Object">Object</a></code> class. The thread must have obtained the object-monitor of that object first before calling the wait() method. The object monitor is released by the wait() method, so it does not block other waiting threads wanting this object-monitor.</dd>
+</dl>
+</dd>
+</dl>
+<p><br></p>
+<div style="clear: both"></div>
+<table style="background: #ffd; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 60%; margin: auto;" class="notice noprint notice-todo">
+<tr>
+<td style="width: 58px;">
+<div class="floatleft"><img alt="Clipboard" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/45px-Clipboard.svg.png" width="45" height="45" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/68px-Clipboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/90px-Clipboard.svg.png" data-file-width="48" data-file-height="48"></div>
+</td>
+<td>
+<p><b>To do:</b><br>
+Add some exercises like the ones in <a href="Variables.html#What_are_variables.3F" title="Java Programming/Variables">Variables</a></p>
+</td>
+</tr>
+</table>
+<div style="clear: both"></div>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Threads_and_Runnables.html" title="Threads and Runnables"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Threads_and_Runnables.html" title="Java Programming/Threads and Runnables">Threads and Runnables</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Basic Synchronization</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Client_Server.html" title="Java Programming/Client Server">Client Server</a> <a href="Client_Server.html" title="Client Server"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="75% developed"><img alt="75% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/24px-75_percent.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/36px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/48px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1253
+Cached time: 20171009220933
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.136 seconds
+Real time usage: 0.192 seconds
+Preprocessor visited node count: 582/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 11724/2097152 bytes
+Template argument size: 1255/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 59/500
+Lua time usage: 0.088/10.000 seconds
+Lua memory usage: 777 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  157.525      1 -total
+ 82.73%  130.315      2 Template:Programming/Navigation
+  7.06%   11.121      1 Template:Java_Programming/ConcurrentTopic/Nav
+  5.50%    8.656      3 Template:BookCat
+  4.16%    6.548      3 Template:BookCat/default
+  3.03%    4.779      1 Template:Java_Programming/Concurrent_Programming/Topic
+  3.02%    4.756      1 Template:Navbar
+  2.90%    4.563      3 Template:BOOKCATEGORY
+  2.83%    4.455      1 Template:Status
+  2.16%    3.407      3 Template:BOOKCATEGORY/core
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:94990-0!canonical and timestamp 20171009220933 and revision id 3295179
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Basic_Synchronization&amp;oldid=3295179">https://en.wikibooks.org/w/index.php?title=Java_Programming/Basic_Synchronization&amp;oldid=3295179</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FBasic+Synchronization" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FBasic+Synchronization" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Basic_Synchronization.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="/w/index.php?title=Talk:Java_Programming/Basic_Synchronization&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Basic_Synchronization&amp;stable=1">Read</a></span></li>
+							<li id="ca-current" class="collapsible selected"><span><a href="/w/index.php?title=Java_Programming/Basic_Synchronization&amp;stable=0&amp;redirect=no" title="View this page with the pending changes [v]" accesskey="v">Latest draft</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Basic_Synchronization&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Basic_Synchronization&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Basic_Synchronization" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Basic_Synchronization" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Basic_Synchronization&amp;oldid=3295179" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Basic_Synchronization&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FBasic_Synchronization&amp;id=3295179" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:NewItem?site=enwikibooks&amp;page=Java+Programming%2FBasic+Synchronization" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FBasic+Synchronization">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FBasic+Synchronization&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Basic_Synchronization&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 14:40.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Basic_Synchronization&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.136","walltime":"0.192","ppvisitednodes":{"value":582,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":11724,"limit":2097152},"templateargumentsize":{"value":1255,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":59,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  157.525      1 -total"," 82.73%  130.315      2 Template:Programming/Navigation","  7.06%   11.121      1 Template:Java_Programming/ConcurrentTopic/Nav","  5.50%    8.656      3 Template:BookCat","  4.16%    6.548      3 Template:BookCat/default","  3.03%    4.779      1 Template:Java_Programming/Concurrent_Programming/Topic","  3.02%    4.756      1 Template:Navbar","  2.90%    4.563      3 Template:BOOKCATEGORY","  2.83%    4.455      1 Template:Status","  2.16%    3.407      3 Template:BOOKCATEGORY/core"]},"scribunto":{"limitreport-timeusage":{"value":"0.088","limit":"10.000"},"limitreport-memusage":{"value":796151,"limit":52428800}},"cachereport":{"origin":"mw1253","timestamp":"20171009220933","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":78,"wgHostname":"mw1328"});});</script>
+	</body>
+</html>

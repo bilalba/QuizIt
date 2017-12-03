@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Networking - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Networking","wgTitle":"Java Programming/Networking","wgCurRevisionId":3295235,"wgRevisionId":3295235,"wgArticleId":134521,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Networking","wgRelevantArticleId":134521,"wgRequestId":"We9@GgpAADwAACcCwGwAAADT","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3295235,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Networking&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Networking&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Networking.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Networking rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Networking</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span><div id="mw-fr-revisiontag" class="flaggedrevs_basic flaggedrevs_draft_notsynced plainlinks noprint nomobile"><img class="flaggedrevs-icon" src="/w/extensions/FlaggedRevs/frontend/modules/img/1.png" alt="Unreviewed changes are displayed on this page" title="Unreviewed changes are displayed on this page">The <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Networking&amp;stable=1">latest reviewed version</a> was <a class="external text" href="//en.wikibooks.org/w/index.php?title=Special:Log&amp;type=review&amp;page=Java_Programming/Networking">checked</a> on <i>17 September 2017</i>. There are <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Networking&amp;oldid=3295235&amp;diff=cur&amp;diffonly=0">template/file changes</a> awaiting review.</div>
+</div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Reflection\Accessing_Private_Features_with_Reflection.html" title="Reflection/Accessing Private Features with Reflection"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Reflection\Accessing_Private_Features_with_Reflection.html" title="Java Programming/Reflection/Accessing Private Features with Reflection">Reflection/Accessing Private Features with Reflection</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Networking</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Database_Programming.html" title="Java Programming/Database Programming">Database Programming</a> <a href="Database_Programming.html" title="Database Programming"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="Advanced.html" class="mw-redirect" title="Java Programming/Advanced">Advanced</a></b> topic: <span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/Advanced/Topic" title="Template:Java Programming/Advanced/Topic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/Advanced/Topic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/Advanced/Topic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/Advanced/Topic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="25% developed&#160; as of Dec 19, 2012"><img alt="25% developed&#160; as of Dec 19, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/9px-25_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/14px-25_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/18px-25_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">Networking</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="25% developed&#160; as of Dec 19, 2012"><img alt="25% developed&#160; as of Dec 19, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/9px-25_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/14px-25_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/18px-25_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Database_Programming.html" title="Java Programming/Database Programming">Database programming</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="25% developed&#160; as of Jan 30, 2016"><img alt="25% developed&#160; as of Jan 30, 2016" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/9px-25_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/14px-25_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/18px-25_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Regular_Expressions.html" title="Java Programming/Regular Expressions">Regular Expressions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="25% developed&#160; as of Dec 19, 2012"><img alt="25% developed&#160; as of Dec 19, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/9px-25_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/14px-25_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/18px-25_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Libraries,_extensions_and_frameworks.html" title="Java Programming/Libraries, extensions and frameworks">Libraries, extensions and frameworks</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="25% developed&#160; as of Dec 19, 2012"><img alt="25% developed&#160; as of Dec 19, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/9px-25_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/14px-25_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/c/ce/25_percent.svg/18px-25_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="3D_Programming.html" title="Java Programming/3D Programming">3D programming</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Fev 27, 2013"><img alt="75% developed&#160; as of Fev 27, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Java_Native_Interface.html" title="Java Programming/Java Native Interface">Java Native Interface</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Nov 20, 2013"><img alt="75% developed&#160; as of Nov 20, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Invoking_C.html" title="Java Programming/Invoking C">Invoking C</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="50% developed&#160; as of Nov 20, 2013"><img alt="50% developed&#160; as of Nov 20, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/9px-50_percents.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/14px-50_percents.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/18px-50_percents.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Byte_Code.html" title="Java Programming/Byte Code">Byte Code</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p>Prior to modern networking solutions there existed workstations that were connected to a massive Mainframe computer that was solely responsible for memory management, processes and almost everything. The workstations would just render the information sent in from the Mainframe console.</p>
+<p>But in the mid 90's, with the prices of Unix servers dropping, the trend was moving away from <a href="https://en.wikipedia.org/wiki/Mainframe_computer" class="extiw" title="w:Mainframe computer">Mainframe computing</a> toward Client-Server computing. This would enable <a href="https://en.wikipedia.org/wiki/Rich_client" class="extiw" title="w:Rich client">rich clients</a> to be developed on workstations while they would communicate with a centralized <b>server</b>, serving computers connected to it, to either communicate with other workstations also connected to it or it would request for database access or business logic stored on the server itself. The workstations were called <b>clients</b>.</p>
+<p>This form of computing gave rise to the notion of the <a href="https://en.wikipedia.org/wiki/Front-end_and_back-end" class="extiw" title="w:Front-end and back-end">Front-end and Back-end</a> programming. In it's hey-day, Java came up with different ways of making networking between computers possible. In this chapter, we would be looking at some of these ways. Listed below are two of the frameworks that Java uses to enable network programming. We would be exploring both of these in this chapter.</p>
+<table width="100%" cellpadding="8" cellspacing="0">
+<tr>
+<td>
+<h3><span class="mw-headline" id="Client-Server_programming">Client-Server programming</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Networking&amp;action=edit&amp;section=1" title="Edit section: Client-Server programming">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ol>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="0% developed&#160; as of Sep 22, 2007"><img alt="0% developed&#160; as of Sep 22, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/9px-00%25.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/14px-00%25.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/18px-00%25.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Networking\Basics.html" title="Java Programming/Networking/Basics">Networking basics</a><br></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="0% developed&#160; as of Sep 22, 2007"><img alt="0% developed&#160; as of Sep 22, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/9px-00%25.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/14px-00%25.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/18px-00%25.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="/w/index.php?title=Java_Programming/Networking/Server_basics&amp;action=edit&amp;redlink=1" class="new" title="Java Programming/Networking/Server basics (does not exist)">Creating a simple server</a><br></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="0% developed&#160; as of Sep 22, 2007"><img alt="0% developed&#160; as of Sep 22, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/9px-00%25.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/14px-00%25.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/18px-00%25.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="/w/index.php?title=Java_Programming/Networking/Server_dynamics&amp;action=edit&amp;redlink=1" class="new" title="Java Programming/Networking/Server dynamics (does not exist)">Listening for clients</a><br></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="0% developed&#160; as of Sep 22, 2007"><img alt="0% developed&#160; as of Sep 22, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/9px-00%25.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/14px-00%25.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/18px-00%25.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="/w/index.php?title=Java_Programming/Networking/Client_basics&amp;action=edit&amp;redlink=1" class="new" title="Java Programming/Networking/Client basics (does not exist)">Creating a client to interact with the server</a><br></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="0% developed&#160; as of Sep 22, 2007"><img alt="0% developed&#160; as of Sep 22, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/9px-00%25.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/14px-00%25.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/18px-00%25.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="/w/index.php?title=Java_Programming/Networking/Byte_carriage&amp;action=edit&amp;redlink=1" class="new" title="Java Programming/Networking/Byte carriage (does not exist)">Sending information over a network</a><br></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="0% developed&#160; as of Sep 22, 2007"><img alt="0% developed&#160; as of Sep 22, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/9px-00%25.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/14px-00%25.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/18px-00%25.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="/w/index.php?title=Java_Programming/Networking/Building_complex_carriage_routines&amp;action=edit&amp;redlink=1" class="new" title="Java Programming/Networking/Building complex carriage routines (does not exist)">Building complex carriage routines</a><br></li>
+</ol>
+</td>
+<td valign="top">
+<h3><span id="Remote_Method_Invocation_(RMI)"></span><span class="mw-headline" id="Remote_Method_Invocation_.28RMI.29">Remote Method Invocation (RMI)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Networking&amp;action=edit&amp;section=2" title="Edit section: Remote Method Invocation (RMI)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ol>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="0% developed&#160; as of Sep 22, 2007"><img alt="0% developed&#160; as of Sep 22, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/9px-00%25.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/14px-00%25.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/18px-00%25.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="/w/index.php?title=Java_Programming/Networking/RMI_Basics&amp;action=edit&amp;redlink=1" class="new" title="Java Programming/Networking/RMI Basics (does not exist)">Basics of Remote Method Invocation</a><br></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="0% developed&#160; as of Sep 22, 2007"><img alt="0% developed&#160; as of Sep 22, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/9px-00%25.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/14px-00%25.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/00%25.svg/18px-00%25.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="/w/index.php?title=Java_Programming/Networking/RMI_Stubs&amp;action=edit&amp;redlink=1" class="new" title="Java Programming/Networking/RMI Stubs (does not exist)">Of stubs and proxies</a><br></li>
+</ol>
+</td>
+</tr>
+</table>
+<p><br></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Reflection\Accessing_Private_Features_with_Reflection.html" title="Reflection/Accessing Private Features with Reflection"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Reflection\Accessing_Private_Features_with_Reflection.html" title="Java Programming/Reflection/Accessing Private Features with Reflection">Reflection/Accessing Private Features with Reflection</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Networking</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Database_Programming.html" title="Java Programming/Database Programming">Database Programming</a> <a href="Database_Programming.html" title="Database Programming"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1273
+Cached time: 20171010101538
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.168 seconds
+Real time usage: 0.231 seconds
+Preprocessor visited node count: 741/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 11332/2097152 bytes
+Template argument size: 1105/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 86/500
+Lua time usage: 0.123/10.000 seconds
+Lua memory usage: 1,002 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  203.017      1 -total
+ 93.04%  188.887      2 Template:Programming/Navigation
+  5.33%   10.822      1 Template:Java_Programming/AdvancedTopics/Nav
+  3.88%    7.883      3 Template:BookCat
+  2.97%    6.022      3 Template:BookCat/default
+  2.28%    4.632      1 Template:Java_Programming/Advanced/Topic
+  2.23%    4.528      1 Template:Navbar
+  2.03%    4.128      3 Template:BOOKCATEGORY
+  1.86%    3.781     16 Template:Stage_short
+  1.47%    2.993      3 Template:BOOKCATEGORY/core
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:134521-0!canonical and timestamp 20171010101538 and revision id 3295235
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Networking&amp;oldid=3295235">https://en.wikibooks.org/w/index.php?title=Java_Programming/Networking&amp;oldid=3295235</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FNetworking" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FNetworking" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Networking.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="/w/index.php?title=Talk:Java_Programming/Networking&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Networking&amp;stable=1">Read</a></span></li>
+							<li id="ca-current" class="collapsible selected"><span><a href="/w/index.php?title=Java_Programming/Networking&amp;stable=0&amp;redirect=no" title="View this page with the pending changes [v]" accesskey="v">Latest draft</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Networking&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Networking&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Networking" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Networking" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Networking&amp;oldid=3295235" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Networking&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FNetworking&amp;id=3295235" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:NewItem?site=enwikibooks&amp;page=Java+Programming%2FNetworking" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FNetworking">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FNetworking&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Networking&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 14:42.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Networking&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.168","walltime":"0.231","ppvisitednodes":{"value":741,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":11332,"limit":2097152},"templateargumentsize":{"value":1105,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":86,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  203.017      1 -total"," 93.04%  188.887      2 Template:Programming/Navigation","  5.33%   10.822      1 Template:Java_Programming/AdvancedTopics/Nav","  3.88%    7.883      3 Template:BookCat","  2.97%    6.022      3 Template:BookCat/default","  2.28%    4.632      1 Template:Java_Programming/Advanced/Topic","  2.23%    4.528      1 Template:Navbar","  2.03%    4.128      3 Template:BOOKCATEGORY","  1.86%    3.781     16 Template:Stage_short","  1.47%    2.993      3 Template:BOOKCATEGORY/core"]},"scribunto":{"limitreport-timeusage":{"value":"0.123","limit":"10.000"},"limitreport-memusage":{"value":1025662,"limit":52428800}},"cachereport":{"origin":"mw1273","timestamp":"20171010101538","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":81,"wgHostname":"mw1265"});});</script>
+	</body>
+</html>

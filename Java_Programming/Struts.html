@@ -1,0 +1,410 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Java Programming/Struts - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Struts","wgTitle":"Java Programming/Struts","wgCurRevisionId":3242373,"wgRevisionId":3242373,"wgArticleId":19713,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Struts","wgRelevantArticleId":19713,"wgRequestId":"We87VApAIC0AAJC3VeQAAAAJ","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3242373,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Struts&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Struts&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Struts.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Struts rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Java Programming/Struts</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><small><b>This reference is under development. All Struts developers are requested to contribute and help in expanding this reference</b></small></p>
+<hr>
+<p><a rel="nofollow" class="external text" href="http://struts.apache.org/">Struts</a> is the most popular framework for developing Java based web applications. Struts is being developed as an open source project started by <a rel="nofollow" class="external text" href="http://www.apache.org/">Apache Software Foundation</a> . Struts framework is based on <a rel="nofollow" class="external text" href="http://java.sun.com/blueprints/guidelines/designing_enterprise_applications_2e/web-tier/web-tier5.html">Model View Controller</a> (MVC) architecture.</p>
+<p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Preface"><span class="tocnumber">1</span> <span class="toctext">Preface</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Action_Framework_in_a_Nutshell"><span class="tocnumber">2</span> <span class="toctext">Action Framework in a Nutshell</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Struts_Config_in_a_Nutshell"><span class="tocnumber">3</span> <span class="toctext">Struts Config in a Nutshell</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Features"><span class="tocnumber">4</span> <span class="toctext">Features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Screen_definitions"><span class="tocnumber">4.1</span> <span class="toctext">Screen definitions</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="#Layouts"><span class="tocnumber">4.1.1</span> <span class="toctext">Layouts</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="#Dynamic_page_building"><span class="tocnumber">4.1.2</span> <span class="toctext">Dynamic page building</span></a>
+<ul>
+<li class="toclevel-4 tocsection-8"><a href="#Reuse_of_Tiles_.2F_Components"><span class="tocnumber">4.1.2.1</span> <span class="toctext">Reuse of Tiles / Components</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3 tocsection-9"><a href="#Internationalization_.28i18n.29"><span class="tocnumber">4.1.3</span> <span class="toctext">Internationalization (i18n)</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="#Multi-channels"><span class="tocnumber">4.1.4</span> <span class="toctext">Multi-channels</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Prerequisites"><span class="tocnumber">5</span> <span class="toctext">Prerequisites</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Getting_Started"><span class="tocnumber">6</span> <span class="toctext">Getting Started</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Struts_XML_Tags_and_Attributes_Reference"><span class="tocnumber">7</span> <span class="toctext">Struts XML Tags and Attributes Reference</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Further_Reading"><span class="tocnumber">8</span> <span class="toctext">Further Reading</span></a></li>
+</ul>
+</div>
+<p>
+<h2><span class="mw-headline" id="Preface">Preface</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Struts&amp;action=edit&amp;section=1" title="Edit section: Preface">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h2><span class="mw-headline" id="Action_Framework_in_a_Nutshell">Action Framework in a Nutshell</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Struts&amp;action=edit&amp;section=2" title="Edit section: Action Framework in a Nutshell">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Within the MVC context the struts framework provides its own web Controller component and integrates with other technologies to provide the Model and the View. For the Model, the framework can interact with standard data access technologies, like JDBC and EJB , as well as most any third-party packages, like Hibernate , iBATIS , or Object Relational Bridge . For the View , the framework works well with JavaServer Pages , including JSTL and JSF , as well as Velocity Templates , XSLT , and other presentation systems.</p>
+<p>The framework's Controller acts as a bridge between the application's Model and the web View. When a request is received, the Controller invokes an Action class. The Action class consults with the Model (or, preferably, a Facade representing your Model) to examine or update the application's state. The framework provides an ActionForm class to help transfer data between Model and View.</p>
+<p>Most often, the Model is represented as a set of JavaBeans . Typically, developers will use the Commons BeanUtils to transfer data between ActionForms and the Model objects (or a Facade). Preferably, the Model will do the "heavy lifting", and the Action will act as a "traffic cop" or adapter.</p>
+<h2><span class="mw-headline" id="Struts_Config_in_a_Nutshell">Struts Config in a Nutshell</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Struts&amp;action=edit&amp;section=3" title="Edit section: Struts Config in a Nutshell">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A web application uses a deployment descriptor to initialize resources like servlets and taglibs . The deployment descriptor is formatted as a XML document and named "web.xml". Likewise, the framework uses a configuration file to initialize its own resources. These resources include ActionForms to collect input from users, ActionMappings to direct input to server-side Actions , and ActionForwards to select output pages.</p>
+<p>The initialisation of struts is acheived through the inclusion of the following in the web.xml file</p>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="nt">&lt;servlet&gt;</span>
+     <span class="nt">&lt;servlet-name&gt;</span>action<span class="nt">&lt;/servlet-name&gt;</span>
+      <span class="nt">&lt;servlet-class&gt;</span>org.apache.struts.action.ActionServlet<span class="nt">&lt;/servlet-class&gt;</span>
+      <span class="nt">&lt;init-param&gt;</span>
+        <span class="nt">&lt;param-name&gt;</span>config<span class="nt">&lt;/param-name&gt;</span>
+        <span class="nt">&lt;param-value&gt;</span>/WEB-INF/struts-config.xml<span class="nt">&lt;/param-value&gt;</span>
+      <span class="nt">&lt;/init-param&gt;</span>
+     <span class="nt">&lt;init-param&gt;</span>
+        <span class="nt">&lt;param-name&gt;</span>debug<span class="nt">&lt;/param-name&gt;</span>
+        <span class="nt">&lt;param-value&gt;</span>0<span class="nt">&lt;/param-value&gt;</span>
+     <span class="nt">&lt;/init-param&gt;</span>
+     <span class="nt">&lt;init-param&gt;</span>
+        <span class="nt">&lt;param-name&gt;</span>detail<span class="nt">&lt;/param-name&gt;</span>
+        <span class="nt">&lt;param-value&gt;</span>2<span class="nt">&lt;/param-value&gt;</span>
+     <span class="nt">&lt;/init-param&gt;</span>
+    <span class="nt">&lt;load-on-startup&gt;</span>2<span class="nt">&lt;/load-on-startup&gt;</span>
+<span class="nt">&lt;/servlet&gt;</span>
+
+<span class="nt">&lt;servlet-mapping&gt;</span>
+	<span class="nt">&lt;servlet-name&gt;</span>action<span class="nt">&lt;/servlet-name&gt;</span>
+	<span class="nt">&lt;url-pattern&gt;</span>*.do<span class="nt">&lt;/url-pattern&gt;</span>
+<span class="nt">&lt;/servlet-mapping&gt;</span>
+</pre></div>
+<p>Here's a simple configuration (struts-config.xml) for a login workflow:</p>
+<pre>
+   &lt;?xml version="1.0" encoding="ISO-8859-1" ?&gt;
+   &lt;!DOCTYPE struts-config PUBLIC
+         "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+         "<a rel="nofollow" class="external free" href="http://struts.apache.org/dtds/struts-config_1_3.dtd">http://struts.apache.org/dtds/struts-config_1_3.dtd</a>"&gt;
+   &lt;struts-config&gt;
+       &lt;form-beans&gt;
+           &lt;form-bean
+               name="logonForm"
+               type="app.LogonForm"/&gt;
+       &lt;/form-beans&gt;
+       &lt;action-mappings&gt;
+           &lt;action
+               path="/Welcome"
+               forward="/pages/Welcome.jsp"/&gt;
+           &lt;action
+               path="/Logon"
+               forward="/pages/Logon.jsp"/&gt;
+           &lt;action
+               path="/LogonSubmit"
+               type="app.LogonAction"
+               name="logonForm"
+               scope="request"
+               validate="true"
+               input="/pages/Logon.jsp"&gt;
+               &lt;forward
+                   name="success"
+                   path="/pages/Welcome.jsp"/&gt;
+               &lt;forward
+                   name="failure"
+                   path="/pages/Logon.jsp"/&gt;
+           &lt;/action&gt;
+           &lt;action
+               path="/Logoff"
+               type="app.LogoffAction"&gt;
+               &lt;forward
+                   name="success"
+                   path="/pages/Logoff.jsp"/&gt;
+           &lt;/action&gt;
+       &lt;/action-mappings&gt;
+       &lt;message-resources parameter="resources.application"/&gt;
+   &lt;/struts-config&gt;
+</pre>
+<p>There are several other resources you can specify in the framework's configuration file. You can specify validations for the ActionForms in an XML descriptor, using the Struts Validator. A standard extension, Tiles , helps you build pages from smaller fragments.</p>
+<p>Struts Action Framework is extensible. Every class deployed by the framework can be replaced by your own default class. The properties of your default class can be set using the Digester's set-property feature. This is one reason why there are so many contributor extensions.</p>
+<p>Tiles is a contributor extension.</p>
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Struts&amp;action=edit&amp;section=4" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Screen_definitions">Screen definitions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Struts&amp;action=edit&amp;section=5" title="Edit section: Screen definitions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Create a screen by assembling Tiles&#160;: header, footer, menu, body, etc. Definitions can take place:</p>
+<ul>
+<li>in a centralized xml file</li>
+<li>directly in jsp pages</li>
+<li>programatically in struts actions</li>
+</ul>
+<p>Definitions provide an inheritance mechanism&#160;: a definition can extend another one, and override parameters.</p>
+<h4><span class="mw-headline" id="Layouts">Layouts</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Struts&amp;action=edit&amp;section=6" title="Edit section: Layouts">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Define common page layouts and reuse them across your web site. Define menu layouts, and use them by passing lists of items and links. Define a portal layout, use it by passing a list of Tiles (pages) to show. Reuse existing layouts, or define your own.</p>
+<h4><span class="mw-headline" id="Dynamic_page_building">Dynamic page building</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Struts&amp;action=edit&amp;section=7" title="Edit section: Dynamic page building">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Tiles can be gathered dynamically during page reload. It is possible to change any attribute: layout, list of Tiles in portal, list of menu items, etc.</p>
+<h5><span id="Reuse_of_Tiles_/_Components"></span><span class="mw-headline" id="Reuse_of_Tiles_.2F_Components">Reuse of Tiles / Components</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Struts&amp;action=edit&amp;section=8" title="Edit section: Reuse of Tiles / Components">edit</a><span class="mw-editsection-bracket">]</span></span></h5>
+<p>If well defined, a Tile can be reused across multiple applications. Dynamic attributes are used to parameterize Tiles. It is possible to define a library of reusable Tiles. Build a page by assembling predefined components, giving them appropriate parameters.</p>
+<h4><span id="Internationalization_(i18n)"></span><span class="mw-headline" id="Internationalization_.28i18n.29">Internationalization (i18n)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Struts&amp;action=edit&amp;section=9" title="Edit section: Internationalization (i18n)">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>It is possible to load different tiles according to Locale. A mechanism similar to Java properties files is used for definitions files: you can have one definition file per Locale. The appropriate definition is loaded according to the current Locale.</p>
+<h4><span class="mw-headline" id="Multi-channels">Multi-channels</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Struts&amp;action=edit&amp;section=10" title="Edit section: Multi-channels">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>It is possible to load different Tiles according to a key. For example, the key could be user privilege, browser type, arbitrary name stored in session, etc. A mechanism similar to Java properties files is used for definitions files: you can have one definition file per key. The appropriate definition is loaded according to the key.</p>
+<h2><span class="mw-headline" id="Prerequisites">Prerequisites</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Struts&amp;action=edit&amp;section=11" title="Edit section: Prerequisites">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Apart from basic understanding of building a web application. The reader is required to have some sort of working knowledge in the following technologies.</p>
+<ul>
+<li><a href="/wiki/HTML_Programming" class="mw-redirect" title="HTML Programming">HTML</a></li>
+<li><a href="/w/index.php?title=HyperText_Transfer_Protocol&amp;action=edit&amp;redlink=1" class="new" title="HyperText Transfer Protocol (does not exist)">HTTP</a></li>
+<li><a href="/w/index.php?title=Programming:Object-Oriented_Programming_(OOP)&amp;action=edit&amp;redlink=1" class="new" title="Programming:Object-Oriented Programming (OOP) (does not exist)">Object-Oriented Programming (OOP)</a></li>
+<li><a href="JSP.html" class="mw-redirect" title="Java Programming/JSP">JSP and Java Servlets</a></li>
+<li><a href="Java_Beans.html" class="mw-redirect" title="Java Programming/Java Beans">Java Beans</a></li>
+<li><a href="/wiki/XML_-_Managing_Data_Exchange" title="XML - Managing Data Exchange">XML</a> (Extensible MarkUp Language)</li>
+</ul>
+<h2><span class="mw-headline" id="Getting_Started">Getting Started</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Struts&amp;action=edit&amp;section=12" title="Edit section: Getting Started">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Struts framework provides the following benefits over conventional methods of Web Application Development.</p>
+<ul>
+<li>Decoupling of business logic and presentation logic</li>
+<li>Reusablity</li>
+<li>Maintainability</li>
+</ul>
+<p>These benefits are gained because Struts provides a system based on the "Model 2" paradigm of Java web application design, while also providing a framework for the application that is cleaner than a series of J2EE servlets.</p>
+<h2><span class="mw-headline" id="Struts_XML_Tags_and_Attributes_Reference">Struts XML Tags and Attributes Reference</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Struts&amp;action=edit&amp;section=13" title="Edit section: Struts XML Tags and Attributes Reference">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>(The following list is in the same order as the <a href="#Struts_Config_in_a_Nutshell">example above (of a simple configuration)</a> and the <a href="#Further_Reading">example in link below of Struts tutorial on JBoss</a>.)</p>
+<ul>
+<li>&lt;struts-config - outer tag that encompasses the other tags.</li>
+<li>&lt;data-sources -</li>
+<li>&lt;form-beans - defines a section of forms that encompasses one or more &lt;form-bean tags.</li>
+<li>&lt;form-bean - defines a form&#160;:
+<ul>
+<li>name=</li>
+<li>type=</li>
+</ul>
+</li>
+<li>&lt;global-exceptions -</li>
+<li>&lt;global-forwards - defines a section of forward routes that are used, by default, in &lt;action tags. It encompasses one or more &lt;forward tags.</li>
+<li>&lt;action-mappings - defines a section of actions that encompasses one or more &lt;action tags.</li>
+<li>&lt;action - defines an action, which can have one or more forward routes (with one forward attribute, or one or more &lt;forward sub-tags)&#160;:
+<ul>
+<li>path=</li>
+<li>forward=</li>
+<li>type=</li>
+<li>name=</li>
+<li>scope=</li>
+<li>validate=</li>
+<li>input=</li>
+<li>parameter= can be read from @struts.Action@ class by @mappings.getParameter()@</li>
+</ul>
+</li>
+<li>&lt;forward - defines a forward route within an &lt;action tag&#160;:
+<ul>
+<li>name=</li>
+<li>path=</li>
+</ul>
+</li>
+<li>&lt;controller -</li>
+<li>&lt;message-resources -
+<ul>
+<li>parameter=</li>
+</ul>
+</li>
+</ul>
+<h2><span class="mw-headline" id="Further_Reading">Further Reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Struts&amp;action=edit&amp;section=14" title="Edit section: Further Reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li>Best practices&#160;: <a rel="nofollow" class="external free" href="http://www.javaworld.com/javaworld/jw-09-2004/jw-0913-struts.html">http://www.javaworld.com/javaworld/jw-09-2004/jw-0913-struts.html</a></li>
+<li>Understanding Struts Controller&#160;: <a rel="nofollow" class="external free" href="http://www.roseindia.net/struts/understanding_struts_controller.shtml">http://www.roseindia.net/struts/understanding_struts_controller.shtml</a></li>
+</ul>
+<ul>
+<li>Struts tutorial on JBoss&#160;: <a rel="nofollow" class="external free" href="http://www.mastertheboss.com/web-interfaces/190-jboss-struts-tutorial.html">http://www.mastertheboss.com/web-interfaces/190-jboss-struts-tutorial.html</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1183
+Cached time: 20171007023922
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.032 seconds
+Real time usage: 0.191 seconds
+Preprocessor visited node count: 104/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 352/2097152 bytes
+Template argument size: 48/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 1/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   15.594      1 Template:BookCat
+100.00%   15.594      1 -total
+ 68.27%   10.646      1 Template:BookCat/default
+ 47.86%    7.464      1 Template:BOOKCATEGORY
+ 36.06%    5.624      1 Template:BOOKCATEGORY/core
+ 14.58%    2.273      1 Template:FULLBOOKNAME
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:19713-0!canonical and timestamp 20171007023922 and revision id 3242373
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Struts&amp;oldid=3242373">https://en.wikibooks.org/w/index.php?title=Java_Programming/Struts&amp;oldid=3242373</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FStruts" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FStruts" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Struts.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk"><span><a href="/wiki/Talk:Java_Programming/Struts" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible selected"><span><a href="Struts.html">Read</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Struts&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Struts&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Struts" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Struts" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Struts&amp;oldid=3242373" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Struts&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FStruts&amp;id=3242373" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:NewItem?site=enwikibooks&amp;page=Java+Programming%2FStruts" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FStruts">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FStruts&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Struts&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 6 July 2017, at 21:17.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Struts&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.032","walltime":"0.191","ppvisitednodes":{"value":104,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":352,"limit":2097152},"templateargumentsize":{"value":48,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":1,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%   15.594      1 Template:BookCat","100.00%   15.594      1 -total"," 68.27%   10.646      1 Template:BookCat/default"," 47.86%    7.464      1 Template:BOOKCATEGORY"," 36.06%    5.624      1 Template:BOOKCATEGORY/core"," 14.58%    2.273      1 Template:FULLBOOKNAME"]},"cachereport":{"origin":"mw1183","timestamp":"20171007023922","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":73,"wgHostname":"mw1324"});});</script>
+	</body>
+</html>

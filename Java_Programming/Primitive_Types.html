@@ -1,0 +1,1028 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Primitive Types - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Primitive_Types","wgTitle":"Java Programming/Primitive Types","wgCurRevisionId":3295240,"wgRevisionId":3295240,"wgArticleId":58021,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Primitive_Types","wgRelevantArticleId":58021,"wgRequestId":"We12KwpAAEUAAGmeABMAAABL","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3295240,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q19366911","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["ext.cite.a11y","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","jquery.tablesorter","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Primitive_Types&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Primitive_Types&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Primitive_Types.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Primitive_Types rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Primitive Types</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span><div id="mw-fr-revisiontag" class="flaggedrevs_basic flaggedrevs_draft_notsynced plainlinks noprint nomobile"><img class="flaggedrevs-icon" src="/w/extensions/FlaggedRevs/frontend/modules/img/1.png" alt="Unreviewed changes are displayed on this page" title="Unreviewed changes are displayed on this page">The <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Primitive_Types&amp;stable=1">latest reviewed version</a> was <a class="external text" href="//en.wikibooks.org/w/index.php?title=Special:Log&amp;type=review&amp;page=Java_Programming/Primitive_Types">checked</a> on <i>17 September 2017</i>. There are <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Primitive_Types&amp;oldid=3295240&amp;diff=cur&amp;diffonly=0">template/file changes</a> awaiting review.</div>
+</div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Variables.html" title="Variables"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Variables.html" title="Java Programming/Variables">Variables</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Primitive Types</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Arithmetic_expressions.html" title="Java Programming/Arithmetic expressions">Arithmetic expressions</a> <a href="Arithmetic_expressions.html" title="Arithmetic expressions"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="Language_Fundamentals.html" title="Java Programming/Language Fundamentals">Language Fundamentals</a></b> topic: <span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/LanguageFundamentalsTopic" class="mw-redirect" title="Template:Java Programming/LanguageFundamentalsTopic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/LanguageFundamentalsTopic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/LanguageFundamentalsTopic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/LanguageFundamentalsTopic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Dec 31, 2012"><img alt="100% developed&#160; as of Dec 31, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Statements.html" title="Java Programming/Statements">Statements</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Conditional_blocks.html" title="Java Programming/Conditional blocks">Conditional blocks</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Loop_blocks.html" title="Java Programming/Loop blocks">Loop blocks</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Boolean_expressions.html" title="Java Programming/Boolean expressions">Boolean expressions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Feb 16, 2010"><img alt="100% developed&#160; as of Feb 16, 2010" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Variables.html" title="Java Programming/Variables">Variables</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">Primitive Types</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Arithmetic_expressions.html" title="Java Programming/Arithmetic expressions">Arithmetic expressions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Literals.html" title="Java Programming/Literals">Literals</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Methods.html" title="Java Programming/Methods">Methods</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of May 24, 2013"><img alt="100% developed&#160; as of May 24, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="API\java.lang.html" title="Java Programming/API/java.lang.String">String</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Classes,_Objects_and_Types.html" title="Java Programming/Classes, Objects and Types">Objects</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Jul 5, 2012"><img alt="100% developed&#160; as of Jul 5, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Packages.html" title="Java Programming/Packages">Packages</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Mar 10, 2013"><img alt="100% developed&#160; as of Mar 10, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Arrays.html" title="Java Programming/Arrays">Arrays</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Mathematical_functions.html" title="Java Programming/Mathematical functions">Mathematical functions</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Large_numbers.html" title="Java Programming/Large numbers">Large numbers</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jan 11, 2013"><img alt="75% developed&#160; as of Jan 11, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Random_numbers.html" title="Java Programming/Random numbers">Random numbers</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Apr 8, 2013"><img alt="100% developed&#160; as of Apr 8, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Unicode.html" title="Java Programming/Unicode">Unicode</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Apr 8, 2013"><img alt="100% developed&#160; as of Apr 8, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Comments.html" title="Java Programming/Comments">Comments</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Sep 27, 2007"><img alt="100% developed&#160; as of Sep 27, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Keywords.html" title="Java Programming/Keywords">Keywords</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Aug 6, 2013"><img alt="100% developed&#160; as of Aug 6, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Coding_conventions.html" title="Java Programming/Coding conventions">Coding conventions</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p><br>
+Primitive types are the most basic data types available within the Java language. There are 8: <code><a href="Keywords\boolean.html" title="Java Programming/Keywords/boolean"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">boolean</font></a></code>, <code><a href="Keywords\byte.html" title="Java Programming/Keywords/byte"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">byte</font></a></code>, <code><a href="Keywords\char.html" title="Java Programming/Keywords/char"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">char</font></a></code>, <code><a href="Keywords\short.html" title="Java Programming/Keywords/short"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">short</font></a></code>, <code><a href="Keywords\int.html" title="Java Programming/Keywords/int"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">int</font></a></code>, <code><a href="Keywords\long.html" title="Java Programming/Keywords/long"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">long</font></a></code>, <code><a href="Keywords\float.html" title="Java Programming/Keywords/float"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">float</font></a></code> and <code><a href="Keywords\double.html" title="Java Programming/Keywords/double"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">double</font></a></code>. These types serve as the building blocks of data manipulation in Java. Such types serve only one purpose — containing pure, simple values of a kind. Because these data types are defined into the Java type system by default, they come with a number of operations predefined. You can not define a new operation for such primitive types. In the Java type system, there are three further categories of primitives:</p>
+<ul>
+<li>Numeric primitives: <code><a href="Keywords\short.html" title="Java Programming/Keywords/short"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">short</font></a></code>, <code><a href="Keywords\int.html" title="Java Programming/Keywords/int"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">int</font></a></code>, <code><a href="Keywords\long.html" title="Java Programming/Keywords/long"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">long</font></a></code>, <code><a href="Keywords\float.html" title="Java Programming/Keywords/float"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">float</font></a></code> and <code><a href="Keywords\double.html" title="Java Programming/Keywords/double"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">double</font></a></code>. These primitive data types hold only numeric data. Operations associated with such data types are those of <a href="Basic_arithmetic.html" class="mw-redirect" title="Java Programming/Basic arithmetic">simple arithmetic</a> (addition, subtraction, etc.) or of <a href="Boolean_expressions.html" title="Java Programming/Boolean expressions">comparisons</a> (is greater than, is equal to, etc.)</li>
+<li>Textual primitives: <code><a href="Keywords\byte.html" title="Java Programming/Keywords/byte"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">byte</font></a></code> and <code><a href="Keywords\char.html" title="Java Programming/Keywords/char"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">char</font></a></code>. These primitive data types hold characters (that can be <a href="/wiki/Unicode" title="Unicode">Unicode</a> alphabets or even numbers). Operations associated with such types are those of textual manipulation (comparing two words, joining characters to make words, etc.). However, <code><a href="Keywords\byte.html" title="Java Programming/Keywords/byte"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">byte</font></a></code> and <code><a href="Keywords\char.html" title="Java Programming/Keywords/char"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">char</font></a></code> can also support arithmetic operations.</li>
+<li>Boolean and null primitives: <code><a href="Keywords\boolean.html" title="Java Programming/Keywords/boolean"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">boolean</font></a></code> and <code><a href="Literals\null.html" class="mw-redirect" title="Java Programming/Literals/null"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">null</font></a></code>.</li>
+</ul>
+<p>All the primitive types have a fixed size. Thus, the primitive types are limited to a range of values. A smaller primitive type (<code><a href="Keywords\byte.html" title="Java Programming/Keywords/byte"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">byte</font></a></code>) can contain less values than a bigger one (<code><a href="Keywords\long.html" title="Java Programming/Keywords/long"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">long</font></a></code>).</p>
+<table class="wikitable" style="margin: auto;">
+<tr>
+<th>Category</th>
+<th>Types</th>
+<th>Size (bits)</th>
+<th>Minimum Value</th>
+<th>Maximum Value</th>
+<th>Precision</th>
+<th>Example</th>
+</tr>
+<tr>
+<th rowspan="5">Integer</th>
+<td><code><a href="Keywords\byte.html" title="Java Programming/Keywords/byte"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">byte</font></a></code></td>
+<td>8</td>
+<td>-128</td>
+<td>127</td>
+<td>From +127 to -128</td>
+<td><code>byte b = 65;</code></td>
+</tr>
+<tr>
+<td><code><a href="Keywords\char.html" title="Java Programming/Keywords/char"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">char</font></a></code></td>
+<td>16</td>
+<td>0</td>
+<td>2<sup>16</sup>-1</td>
+<td>All Unicode characters</td>
+<td><code>char c = 'A';<br>
+char c = 65;</code></td>
+</tr>
+<tr>
+<td><code><a href="Keywords\short.html" title="Java Programming/Keywords/short"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">short</font></a></code></td>
+<td>16</td>
+<td>-2<sup>15</sup></td>
+<td>2<sup>15</sup>-1</td>
+<td>From +32,767 to -32,768</td>
+<td><code>short s = 65;</code></td>
+</tr>
+<tr>
+<td><code><a href="Keywords\int.html" title="Java Programming/Keywords/int"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">int</font></a></code></td>
+<td>32</td>
+<td>-2<sup>31</sup></td>
+<td>2<sup>31</sup>-1</td>
+<td>From +2,147,483,647 to -2,147,483,648</td>
+<td><code>int i = 65;</code></td>
+</tr>
+<tr>
+<td><code><a href="Keywords\long.html" title="Java Programming/Keywords/long"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">long</font></a></code></td>
+<td>64</td>
+<td>-2<sup>63</sup></td>
+<td>2<sup>63</sup>-1</td>
+<td>From +9,223,372,036,854,775,807 to -9,223,372,036,854,775,808</td>
+<td><code>long l = 65L;</code></td>
+</tr>
+<tr>
+<th rowspan="2">Floating-point</th>
+<td><code><a href="Keywords\float.html" title="Java Programming/Keywords/float"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">float</font></a></code></td>
+<td>32</td>
+<td>2<sup>-149</sup></td>
+<td>(2-2<sup>-23</sup>)·2<sup>127</sup></td>
+<td>From 3.402,823,5&#160;E+38 to 1.4&#160;E-45</td>
+<td><code>float f = 65f;</code></td>
+</tr>
+<tr>
+<td><code><a href="Keywords\double.html" title="Java Programming/Keywords/double"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">double</font></a></code></td>
+<td>64</td>
+<td>2<sup>-1074</sup></td>
+<td>(2-2<sup>-52</sup>)·2<sup>1023</sup></td>
+<td>From 1.797,693,134,862,315,7&#160;E+308 to 4.9&#160;E-324</td>
+<td><code>double d = 65.55;</code></td>
+</tr>
+<tr>
+<th rowspan="2">Other</th>
+<td><code><a href="Keywords\boolean.html" title="Java Programming/Keywords/boolean"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">boolean</font></a></code></td>
+<td>1</td>
+<td>--</td>
+<td>--</td>
+<td>false, true</td>
+<td><code>boolean b = true;</code></td>
+</tr>
+<tr>
+<td><code><a href="Keywords\void.html" title="Java Programming/Keywords/void"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">void</font></a></code></td>
+<td>--</td>
+<td>--</td>
+<td>--</td>
+<td>--</td>
+<td>--</td>
+</tr>
+</table>
+<p>Integer primitive types silently overflow:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-52"><b>Code section 3.52: Several operators.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+<span class="lineno">3 </span><span class="hll"><span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+</span><span class="lineno">4 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+<span class="lineno">5 </span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">Integer</span><span class="o">.</span><span class="na">MIN_VALUE</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Console for Code section 3.52</b>
+<pre style="background-color:#000; color:#fff;">
+2147483647
+-2147483648
+-2147483648
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>As Java is strongly typed, you can't assign a floating point number (a number with a decimal point) to an integer variable:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Nuvola_apps_important.svg" class="image" title="Warning"><img alt="Warning" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/32px-Nuvola_apps_important.svg.png" width="32" height="27" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/48px-Nuvola_apps_important.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/64px-Nuvola_apps_important.svg.png" data-file-width="600" data-file-height="500"></a></td>
+<td style="background-color:#fff0f0; border-left: 4px solid red; padding-left: 6px;"><span id="code-section-53" style="color: red;"><b>Code section 3.53: Setting a floating point number as a value to an <code>int</code> (integer) type.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="n">age</span> <span class="o">=</span> <span class="mf">10.5</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>A primitive type should be set by an appropriate value. The primitive types can be initialized with a literal. Most of the literals are primitive type values, except <a href="Literals\String_Literals.html" class="mw-redirect" title="Java Programming/Literals/String Literals">String Literals</a>, which are instance of the <code><a href="API\java.lang.html" title="Java Programming/API/java.lang.String">String</a></code> class.</p>
+<h2><span class="mw-headline" id="Numbers_in_computer_science">Numbers in computer science</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Primitive_Types&amp;action=edit&amp;section=1" title="Edit section: Numbers in computer science">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Programming may not be as trivial or boring as just crunching huge numbers any more. However, huge chunks of code written in any programming language today, let alone Java, obsessively deal with numbers, be it churning out huge prime numbers,<sup id="cite_ref-note-1_1-0" class="reference"><a href="#cite_note-note-1-1">[1]</a></sup> or just calculating a cost of emission from your scooter. In 1965, <a href="https://en.wikipedia.org/wiki/Gemini_5" class="extiw" title="w:Gemini 5">Gemini V</a> space mission escaped a near-fatal accident because of a programming error.<sup id="cite_ref-note-2_2-0" class="reference"><a href="#cite_note-note-2-2">[2]</a></sup> Again in 1979, a computer program overestimated the ability of five nuclear reactors to withstand earthquakes; the plants shut down temporarily.<sup id="cite_ref-note-3_3-0" class="reference"><a href="#cite_note-note-3-3">[3]</a></sup> There is one thing common to both these programming errors: the subject data, being computed at the time the errors occurred, was numeric. Out of past experience, Java came bundled with revised type checking for numeric data and put significant emphasis on correctly identifying different types of it. You must recognise the importance of numeric data when it comes to programming.</p>
+<p>Numbers are stored in memory using a binary system. The memory is like a grid of cells:</p>
+<table class="wikitable" style="margin: auto;">
+<tr>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+</tr>
+</table>
+<p>Each cell can contain a <i>binary digit</i> (shortened to <i>bit</i>), that is to say, zero or one:</p>
+<table class="wikitable" style="margin: auto;">
+<tr>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+</tr>
+</table>
+<p>Actually, each cell <b>does</b> contain a binary digit, as one bit is roughly equivalent to <code>1</code> and an empty cell in the memory signifies <code>0</code>. A single binary digit can only hold two possible values: a zero or a one.</p>
+<table class="wikitable" style="margin: auto; border: 0px;">
+<tr>
+<td colspan="8" style="border: 0px; background-color: white; text-align: center;"><i>Memory state</i></td>
+<td style="border: 0px; background-color: white;"></td>
+<td style="border: 0px; background-color: white; text-align: center;"><i>Gives</i></td>
+</tr>
+<tr>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">0</td>
+</tr>
+<tr>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;&#160;&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">1</td>
+</tr>
+</table>
+<p>Multiple bits held together can hold multiple permutations — 2 bits can hold 4 possible values, 3 can hold 8, and so on. For instance, the maximum number 8 bits can hold (<code>11111111</code> in binary) is <code>255</code> in the decimal system. So, the numbers from 0 to 255 can fit within 8 bits.</p>
+<table class="wikitable" style="margin: auto; border: 0px;">
+<tr>
+<td colspan="8" style="border: 0px; background-color: white; text-align: center;"><i>Memory state</i></td>
+<td style="border: 0px; background-color: white;"></td>
+<td style="border: 0px; background-color: white; text-align: center;"><i>Gives</i></td>
+</tr>
+<tr>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">0</td>
+</tr>
+<tr>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">1</td>
+</tr>
+<tr>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">2</td>
+</tr>
+<tr>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">3</td>
+</tr>
+<tr>
+<td colspan="8" style="text-align: center;"><br>
+...<br></td>
+<td style="border: 0px; background-color: white; text-align: center;">...</td>
+</tr>
+<tr>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">255</td>
+</tr>
+</table>
+<p>It is all good, but this way, we can only host positive numbers (or unsigned integers). They are called <i>unsigned integers</i>. Unsigned integers are whole number values that are all positive and do not attribute to negative values. For this very reason, we would ask one of the 8 bits to hold information about the sign of the number (positive or negative). This leaves us with just 7 bits to actually count out a number. The maximum number that these 7 bits can hold (<code>1111111</code>) is <code>127</code> in the decimal system.</p>
+<table style="width: 100%;">
+<tr>
+<td style="border: 0px; background-color: white; text-align: center; font-size:200%;"><i>Positive numbers</i></td>
+<td style="border: 0px; background-color: white; text-align: center; font-size:200%;"><i>Negative numbers</i></td>
+</tr>
+<tr>
+<td>
+<table class="wikitable" style="margin: auto; border: 0px;">
+<tr>
+<td colspan="9" style="border: 0px; background-color: white; text-align: center;"><i>Memory state</i></td>
+<td style="border: 0px; background-color: white;"></td>
+<td style="border: 0px; background-color: white; text-align: center;"><i>Gives</i></td>
+</tr>
+<tr>
+<td>&#160;<code>0</code>&#160;</td>
+<td style="border: 0px; background-color: white;"></td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">0</td>
+</tr>
+<tr>
+<td>&#160;<code>0</code>&#160;</td>
+<td style="border: 0px; background-color: white;"></td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">1</td>
+</tr>
+<tr>
+<td>&#160;<code>0</code>&#160;</td>
+<td style="border: 0px; background-color: white;"></td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">2</td>
+</tr>
+<tr>
+<td>&#160;<code>0</code>&#160;</td>
+<td style="border: 0px; background-color: white;"></td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><br>
+...<br></td>
+<td style="border: 0px; background-color: white;"></td>
+<td colspan="7" style="text-align: center;"><br>
+...<br></td>
+<td style="border: 0px; background-color: white; text-align: center;">...</td>
+</tr>
+<tr>
+<td>&#160;<code>0</code>&#160;</td>
+<td style="border: 0px; background-color: white;"></td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">127</td>
+</tr>
+</table>
+</td>
+<td>
+<table class="wikitable" style="margin: auto; border: 0px;">
+<tr>
+<td colspan="9" style="border: 0px; background-color: white; text-align: center;"><i>Memory state</i></td>
+<td style="border: 0px; background-color: white;"></td>
+<td style="border: 0px; background-color: white; text-align: center;"><i>Gives</i></td>
+</tr>
+<tr>
+<td>&#160;<code>1</code>&#160;</td>
+<td style="border: 0px; background-color: white;"></td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">-128</td>
+</tr>
+<tr>
+<td>&#160;<code>1</code>&#160;</td>
+<td style="border: 0px; background-color: white;"></td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">-127</td>
+</tr>
+<tr>
+<td>&#160;<code>1</code>&#160;</td>
+<td style="border: 0px; background-color: white;"></td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">-126</td>
+</tr>
+<tr>
+<td>&#160;<code>1</code>&#160;</td>
+<td style="border: 0px; background-color: white;"></td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>0</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">-125</td>
+</tr>
+<tr>
+<td style="text-align: center;"><br>
+...<br></td>
+<td style="border: 0px; background-color: white;"></td>
+<td colspan="7" style="text-align: center;"><br>
+...<br></td>
+<td style="border: 0px; background-color: white; text-align: center;">...</td>
+</tr>
+<tr>
+<td>&#160;<code>1</code>&#160;</td>
+<td style="border: 0px; background-color: white;"></td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td>&#160;<code>1</code>&#160;</td>
+<td style="border: 0px; background-color: white; text-align: center;">→</td>
+<td style="border: 0px; background-color: white; text-align: center;">-1</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>Altogether, using this method, 8 bits can hold numbers ranging from <code>-128</code> to <code>127</code> (including zero) — a total of 256 numbers. Not a bad pay-off one might presume. The opposite to an unsigned integer is a <i>signed integer</i> that have the capability of holding both positive and negative values.</p>
+<p>But, what about larger numbers. You would need significantly more bits to hold larger numbers. That's where Java's numeric types come into play. Java has multiple numeric types — their size dependent on the number of bits that are at play.</p>
+<p>In Java, numbers are dealt with using data types specially formulated to host numeric data. But before we dive into these types, we must first set some concepts in stone. Just like you did in high school (or even primary school), numbers in Java are placed in clearly distinct groups and systems. As you'd already know by now, number systems includes groups like the <i>integer</i> numbers (0, 1, 2 ... ∞); <i>negative integers</i> (0, -1, -2 ... -∞) or even <i>real</i> and <i>rational</i> numbers (<a href="https://en.wikipedia.org/wiki/Pi" class="extiw" title="w:Pi">value of Pi</a>, ¾, 0.333~, etcetera). Java simply tends to place these numbers in two distinct groups, <b>integers</b> (-∞ ... 0 ... ∞) and <b>floating point</b> numbers (any number with decimal points or fractional representation). For the moment, we would only look into integer values as they are easier to understand and work with.</p>
+<h2><span class="mw-headline" id="Integer_types_in_Java">Integer types in Java</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Primitive_Types&amp;action=edit&amp;section=2" title="Edit section: Integer types in Java">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>With what we have learned so far, we will identify the different types of signed integer values that can be created and manipulated in Java. Following is a table of the most basic numeric types: integers. As we have discussed earlier, the data types in Java for integers caters to both positive and negative values and hence are <b>signed numeric types</b>. The size in bits for a numeric type determines what its minimum and maximum value would be. If in doubt, one can always calculate these values.</p>
+<p>Lets see how this new found knowledge of the basic integer types in Java fits into the picture. Say, you want to numerically manipulate the days in a year — all 365 days. What type would you use? Since the data type <code>byte</code> only goes up to 127, would you risk giving it a value greater than its allowed maximum. Such decisions might save you from dreaded errors that might occur out of the programmed code. A much more sensible choice for such a numeric operation might be a <code>short</code>. Oh, why couldn't they make just one data type to hold all kinds of numbers? Wouldn't you ask that question? Well, let's explore why.</p>
+<p>When you tell a program you need to use an integer, say even a <code>byte</code>, the Java program allocates a space in the memory. It allocates whole 8 bits of memory. Where it wouldn't seem to matter for today's memory modules that have place for almost a dozen trillion such bits, it matters in other cases. Once allocated that part of the memory gets used and can only be claimed back after the operation is finished. Consider a complicated Java program where the only data type you'd be using would be <code>long</code> integers. What happens when there's no space for more memory allocation jobs? Ever heard of the <a href="https://en.wikipedia.org/wiki/Stack_overflow" class="extiw" title="w:Stack overflow">Stack Overflow errors</a>. That's exactly what happens — your memory gets completely used up and fast. So, choose your data types with extreme caution.</p>
+<p>Enough talk, let's see how you can create a numeric type. A numeric type begins with the type's name (<code>short</code>, <code>int</code>, etc.) and then provides with a name for the allocated space in the memory. Following is how it's done. Say, we need to create a variable to hold the number of days in a year.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-54"><b>Code section 3.54: Days in a year.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">short</span> <span class="n">daysInYear</span> <span class="o">=</span> <span class="mi">365</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Here, <code>daysInYear</code> is the name of the variable that holds <code>365</code> as it's value, while <code>short</code> is the data type for that particular value. Other uses of integer data types in Java might see you write code such as this given below:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-55"><b>Code section 3.55: Integer data types in Java.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">byte</span> <span class="n">maxByte</span> <span class="o">=</span> <span class="mi">127</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="kt">short</span> <span class="n">maxShort</span> <span class="o">=</span> <span class="mi">32767</span><span class="o">;</span>
+<span class="lineno">3 </span><span class="kt">int</span> <span class="n">maxInt</span> <span class="o">=</span> <span class="mi">2147483647</span><span class="o">;</span>
+<span class="lineno">4 </span><span class="kt">long</span> <span class="n">maxLong</span> <span class="o">=</span> <span class="mi">9223372036854775807L</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Integer_numbers_and_floating_point_numbers">Integer numbers and floating point numbers</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Primitive_Types&amp;action=edit&amp;section=3" title="Edit section: Integer numbers and floating point numbers">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The data types that one can use for integer numbers are <code>byte</code>, <code>short</code>, <code>int</code> and <code>long</code> but when it comes to floating point numbers, we use <code>float</code> or <code>double</code>. Now that we know that, we can modify the code in the <a href="#code-section-53">code section 3.53</a> as:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-56"><b>Code section 3.56: Correct floating point declaration and assignment.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">double</span> <span class="n">age</span> <span class="o">=</span> <span class="mf">10.5</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Why not <code>float</code>, you say? If we'd used a <code>float</code>, we would have to append the number with a <code>f</code> as a suffix, so <code>10.5</code> should be <code>10.5f</code> as in:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-57"><b>Code section 3.57: The correct way to define floating point numbers of type <code>float</code>.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">float</span> <span class="n">age</span> <span class="o">=</span> <span class="mf">10.5f</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Floating-point math never throws exceptions. Dividing a non-zero value by <code>0</code> equals <code>infinity</code>. Dividing a non-infinite value by <code>infinity</code> equals <code>0</code>.</p>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Test your knowledge</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<p><b>Question 3.7</b>: Consider the following code:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="question-7"><b>Question 3.7: Primitive type assignments.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 5 </span><span class="o">...</span>
+<span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span><span class="n">a</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+<span class="lineno"> 8 </span><span class="n">b</span> <span class="o">=</span> <span class="mf">3.2</span><span class="o">;</span>
+<span class="lineno"> 9 </span><span class="n">c</span> <span class="o">=</span> <span class="mi">35</span><span class="o">;</span>
+<span class="lineno">10 </span><span class="n">d</span> <span class="o">=</span> <span class="o">-</span><span class="mi">93485L</span><span class="o">;</span>
+<span class="lineno">11 </span><span class="n">e</span> <span class="o">=</span> <span class="sc">'q'</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>These are five variables. There are a <code>long</code>, a <code>byte</code>, a <code>char</code>, a <code>double</code> and a <code>boolean</code>. Retrieve the type of each one.</p>
+<div class="collapsible" style="width:100%; clear:both; border:none;">
+<div class="title" style="background:transparent; text-align:left; background:#cedff2;border:1px solid lightgrey;">Answer</div>
+<div class="body" style="background:transparent; text-align:left; background:#e7eff9;border:solid 1px lightgrey;padding:8px;">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="answer-7"><b>Answer 3.7: Primitive type assignments and declarations.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="hll"><span class="kt">boolean</span> <span class="n">a</span><span class="o">;</span>
+</span><span class="lineno"> 2 </span><span class="hll"><span class="kt">double</span> <span class="n">b</span><span class="o">;</span>
+</span><span class="lineno"> 3 </span><span class="hll"><span class="kt">byte</span> <span class="n">c</span><span class="o">;</span>
+</span><span class="lineno"> 4 </span><span class="hll"><span class="kt">long</span> <span class="n">d</span><span class="o">;</span>
+</span><span class="lineno"> 5 </span><span class="hll"><span class="kt">char</span> <span class="n">e</span><span class="o">;</span>
+</span><span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span><span class="n">a</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+<span class="lineno"> 8 </span><span class="n">b</span> <span class="o">=</span> <span class="mf">3.2</span><span class="o">;</span>
+<span class="lineno"> 9 </span><span class="n">c</span> <span class="o">=</span> <span class="mi">35</span><span class="o">;</span>
+<span class="lineno">10 </span><span class="n">d</span> <span class="o">=</span> <span class="o">-</span><span class="mi">93485L</span><span class="o">;</span>
+<span class="lineno">11 </span><span class="n">e</span> <span class="o">=</span> <span class="sc">'q'</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<ul>
+<li><code>a</code> can only be the <code>boolean</code> because only a boolean can handle boolean values.</li>
+<li><code>e</code> can only be the <code>char</code> because only a char can contain a character.</li>
+<li><code>b</code> can only be the <code>double</code> because only a double can contain a decimal number here.</li>
+<li><code>d</code> is the <code>long</code> because a <code>byte</code> can not contain such a low value.</li>
+<li><code>c</code> is the remaining one so it is the <code>byte</code>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<h2><span id="Data_conversion_(casting)"></span><span class="mw-headline" id="Data_conversion_.28casting.29">Data conversion (casting)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Primitive_Types&amp;action=edit&amp;section=4" title="Edit section: Data conversion (casting)">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Data conversion (casting) can happen between two primitive types. There are two kinds of casting:</p>
+<ul>
+<li>Implicit: casting operation is not required; the magnitude of the numeric value is always preserved. However, <i>precision</i> may be lost when converting from integer to floating point types</li>
+<li>Explicit: casting operation required; the magnitude of the numeric value may not be preserved</li>
+</ul>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-58"><b>Code section 3.58: Implicit casting (int is converted to long,</b> casting <b>is not needed).</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">int</span>  <span class="n">i</span> <span class="o">=</span> <span class="mi">65</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="hll"><span class="kt">long</span> <span class="n">l</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span>
+</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-59"><b>Code section 3.59: Explicit casting (long is converted to int,</b> casting <b>is needed).</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kt">long</span> <span class="n">l</span> <span class="o">=</span> <span class="mi">656666L</span><span class="o">;</span>
+<span class="lineno">2 </span><span class="hll"><span class="kt">int</span>  <span class="n">i</span> <span class="o">=</span> <span class="o">(</span><span class="kt">int</span><span class="o">)</span> <span class="n">l</span><span class="o">;</span>
+</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The following table shows the conversions between primitive types, it shows the casting operation for explicit conversions:</p>
+<table class="wikitable" style="margin: auto;">
+<tr>
+<th></th>
+<th>from <code><a href="Keywords\byte.html" title="Java Programming/Keywords/byte"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">byte</font></a></code></th>
+<th>from <code><a href="Keywords\char.html" title="Java Programming/Keywords/char"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">char</font></a></code></th>
+<th>from <code><a href="Keywords\short.html" title="Java Programming/Keywords/short"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">short</font></a></code></th>
+<th>from <code><a href="Keywords\int.html" title="Java Programming/Keywords/int"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">int</font></a></code></th>
+<th>from <code><a href="Keywords\long.html" title="Java Programming/Keywords/long"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">long</font></a></code></th>
+<th>from <code><a href="Keywords\float.html" title="Java Programming/Keywords/float"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">float</font></a></code></th>
+<th>from <code><a href="Keywords\double.html" title="Java Programming/Keywords/double"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">double</font></a></code></th>
+<th>from <code><a href="Keywords\boolean.html" title="Java Programming/Keywords/boolean"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">boolean</font></a></code></th>
+</tr>
+<tr>
+<th>to <code><a href="Keywords\byte.html" title="Java Programming/Keywords/byte"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">byte</font></a></code></th>
+<td>-</td>
+<td>(byte)</td>
+<td>(byte)</td>
+<td>(byte)</td>
+<td>(byte)</td>
+<td>(byte)</td>
+<td>(byte)</td>
+<td style="background-color: #aaa;">N/A</td>
+</tr>
+<tr>
+<th>to <code><a href="Keywords\char.html" title="Java Programming/Keywords/char"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">char</font></a></code></th>
+<td></td>
+<td>-</td>
+<td>(char)</td>
+<td>(char)</td>
+<td>(char)</td>
+<td>(char)</td>
+<td>(char)</td>
+<td style="background-color: #aaa;">N/A</td>
+</tr>
+<tr>
+<th>to <code><a href="Keywords\short.html" title="Java Programming/Keywords/short"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">short</font></a></code></th>
+<td></td>
+<td>(short)</td>
+<td>-</td>
+<td>(short)</td>
+<td>(short)</td>
+<td>(short)</td>
+<td>(short)</td>
+<td style="background-color: #aaa;">N/A</td>
+</tr>
+<tr>
+<th>to <code><a href="Keywords\int.html" title="Java Programming/Keywords/int"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">int</font></a></code></th>
+<td></td>
+<td></td>
+<td></td>
+<td>-</td>
+<td>(int)</td>
+<td>(int)</td>
+<td>(int)</td>
+<td style="background-color: #aaa;">N/A</td>
+</tr>
+<tr>
+<th>to <code><a href="Keywords\long.html" title="Java Programming/Keywords/long"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">long</font></a></code></th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>-</td>
+<td>(long)</td>
+<td>(long)</td>
+<td style="background-color: #aaa;">N/A</td>
+</tr>
+<tr>
+<th>to <code><a href="Keywords\float.html" title="Java Programming/Keywords/float"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">float</font></a></code></th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>-</td>
+<td>(float)</td>
+<td style="background-color: #aaa;">N/A</td>
+</tr>
+<tr>
+<th>to <code><a href="Keywords\double.html" title="Java Programming/Keywords/double"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">double</font></a></code></th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>-</td>
+<td style="background-color: #aaa;">N/A</td>
+</tr>
+<tr>
+<th>to <code><a href="Keywords\boolean.html" title="Java Programming/Keywords/boolean"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">boolean</font></a></code></th>
+<td style="background-color: #aaa;">N/A</td>
+<td style="background-color: #aaa;">N/A</td>
+<td style="background-color: #aaa;">N/A</td>
+<td style="background-color: #aaa;">N/A</td>
+<td style="background-color: #aaa;">N/A</td>
+<td style="background-color: #aaa;">N/A</td>
+<td style="background-color: #aaa;">N/A</td>
+<td>-</td>
+</tr>
+</table>
+<p>Unlike C, C++ and similar languages, Java can't represent <code>false</code> as <code>0</code> or <code>null</code> and can't represent <code>true</code> as non-zero. Java can't cast from boolean to a non-boolean primitive data type, or vice versa.</p>
+<p><br>
+For non primitive types:</p>
+<table class="wikitable sortable">
+<tr>
+<th></th>
+<th>to Integer</th>
+<th>to Float</th>
+<th>to Double</th>
+<th>to String</th>
+<th>to Array</th>
+</tr>
+<tr>
+<th>Integer</th>
+<th>-</th>
+<td>(float)x</td>
+<td>(double)x<br>
+x.doubleValue()</td>
+<td>x.toString()<br>
+Float.toString(x)</td>
+<td>new int[] {x}</td>
+</tr>
+<tr>
+<th>Float</th>
+<td><small>java.text.DecimalFormat("#").format(x)</small></td>
+<th>-</th>
+<td>(double)x</td>
+<td>x.toString()</td>
+<td>new float[] {x}</td>
+</tr>
+<tr>
+<th>Double</th>
+<td><small>java.text.DecimalFormat("#").format(x)</small></td>
+<td><small>java.text.DecimalFormat("#").format(x)</small></td>
+<th>-</th>
+<td>x.toString()</td>
+<td>new double[] {x}</td>
+</tr>
+<tr>
+<th>String</th>
+<td>Integer.parseInt(x)</td>
+<td>Float.parseFloat(x)</td>
+<td>Double.parseDouble(x)</td>
+<th>-</th>
+<td>new String[] {x}</td>
+</tr>
+<tr>
+<th>Array</th>
+<td>x[0]</td>
+<td>x[0]</td>
+<td>x[0]</td>
+<td>Arrays.toString(x)</td>
+<th>-</th>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Primitive_Types&amp;action=edit&amp;section=5" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist references references-column-count references-column-count-3" style="column-count: 3; -moz-column-count: 3; -webkit-column-count: 3;">
+<ol class="references">
+<li id="cite_note-note-1-1"><small><span class="mw-cite-backlink"><a href="#cite_ref-note-1_1-0">↑</a></span> <span class="reference-text">As of edit (11 December 2013), the <a href="https://en.wikipedia.org/wiki/Great_Internet_Mersenne_Prime_Search" class="extiw" title="w:Great Internet Mersenne Prime Search">Great Internet Mersenne Prime Search</a> project has so far identified the largest prime number as being 17,425,170 digits long. Prime numbers are valuable to cryptologists as the bigger the number, the securer they can make their data encryption logic using that particular number.</span></small></li>
+<li id="cite_note-note-2-2"><small><span class="mw-cite-backlink"><a href="#cite_ref-note-2_2-0">↑</a></span> <span class="reference-text">Gemini 5 landed 130 kilometers short of its planned Pacific Ocean landing point due to a software error. The Earth's rotation rate had been programmed as one revolution per <a href="https://en.wikipedia.org/wiki/solar_time" class="extiw" title="w:solar time">solar day</a> instead of the correct value, one revolution per <a href="https://en.wikipedia.org/wiki/sidereal_time" class="extiw" title="w:sidereal time">sidereal day</a>.</span></small></li>
+<li id="cite_note-note-3-3"><small><span class="mw-cite-backlink"><a href="#cite_ref-note-3_3-0">↑</a></span> <span class="reference-text">A program used in their design used an arithmetic sum of variables when it should have used the sum of their absolute values. (Evars Witt, "<i>The Little Computer and the Big Problem</i>", AP Newswire, 16 March 1979. See also Peter Neumann, "<i>An Editorial on Software Correctness and the Social Process</i>" Software Engineering Notes, Volume 4(2), April 1979, page 3)</span></small></li>
+</ol>
+</div>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="100% developed"><img alt="100% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/24px-100_percent.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/36px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/48px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></div>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Variables.html" title="Variables"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Variables.html" title="Java Programming/Variables">Variables</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Primitive Types</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Arithmetic_expressions.html" title="Java Programming/Arithmetic expressions">Arithmetic expressions</a> <a href="Arithmetic_expressions.html" title="Arithmetic expressions"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1220
+Cached time: 20171009144901
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.252 seconds
+Real time usage: 1.270 seconds
+Preprocessor visited node count: 1649/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 30328/2097152 bytes
+Template argument size: 3378/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 21/500
+Lua time usage: 0.066/10.000 seconds
+Lua memory usage: 718 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1169.662      1 -total
+ 81.52%  953.488      9 Template:XExample
+  8.22%   96.141      2 Template:Programming/Navigation
+  2.67%   31.201      1 Template:Java_Programming/LanguageFundamentalsTopic/Nav
+  1.81%   21.218      1 Template:Java_Programming/LanguageFundamentals/Topic
+  1.13%   13.184     20 Template:Stage_short
+  0.87%   10.230      3 Template:BookCat
+  0.80%    9.349      6 Template:Java:char
+  0.77%    8.996      1 Template:Reflist
+  0.66%    7.714      3 Template:BookCat/default
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:58021-0!canonical and timestamp 20171009144900 and revision id 3295240
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Primitive_Types&amp;oldid=3295240">https://en.wikibooks.org/w/index.php?title=Java_Programming/Primitive_Types&amp;oldid=3295240</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FPrimitive+Types" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FPrimitive+Types" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Primitive_Types.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk" class="new"><span><a href="/w/index.php?title=Talk:Java_Programming/Primitive_Types&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Primitive_Types&amp;stable=1">Read</a></span></li>
+							<li id="ca-current" class="collapsible selected"><span><a href="/w/index.php?title=Java_Programming/Primitive_Types&amp;stable=0&amp;redirect=no" title="View this page with the pending changes [v]" accesskey="v">Latest draft</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Primitive_Types&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Primitive_Types&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Primitive_Types" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Primitive_Types" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Primitive_Types&amp;oldid=3295240" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Primitive_Types&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q19366911" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FPrimitive_Types&amp;id=3295240" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikibooks.org/wiki/Java_Standard:_Primitive_Datentypen" title="Java Standard: Primitive Datentypen – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikibooks.org/wiki/Programmation_Java/Types_de_base" title="Programmation Java/Types de base – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikibooks.org/wiki/Java/Tipi_di_dato" title="Java/Tipi di dato – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikibooks.org/wiki/Java/Tipos_de_dados_prim%C3%A1rios" title="Java/Tipos de dados primários – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikibooks.org/wiki/Java/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B" title="Java/数据类型 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q19366911#sitelinks-wikibooks" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FPrimitive+Types">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FPrimitive+Types&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Primitive_Types&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 14:42.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Primitive_Types&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.252","walltime":"1.270","ppvisitednodes":{"value":1649,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":30328,"limit":2097152},"templateargumentsize":{"value":3378,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":21,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00% 1169.662      1 -total"," 81.52%  953.488      9 Template:XExample","  8.22%   96.141      2 Template:Programming/Navigation","  2.67%   31.201      1 Template:Java_Programming/LanguageFundamentalsTopic/Nav","  1.81%   21.218      1 Template:Java_Programming/LanguageFundamentals/Topic","  1.13%   13.184     20 Template:Stage_short","  0.87%   10.230      3 Template:BookCat","  0.80%    9.349      6 Template:Java:char","  0.77%    8.996      1 Template:Reflist","  0.66%    7.714      3 Template:BookCat/default"]},"scribunto":{"limitreport-timeusage":{"value":"0.066","limit":"10.000"},"limitreport-memusage":{"value":735622,"limit":52428800}},"cachereport":{"origin":"mw1220","timestamp":"20171009144901","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":61,"wgHostname":"mw1274"});});</script>
+	</body>
+</html>

@@ -1,0 +1,811 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Understanding a Java Program - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Understanding_a_Java_Program","wgTitle":"Java Programming/Understanding a Java Program","wgCurRevisionId":3295260,"wgRevisionId":3295260,"wgArticleId":57162,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Understanding_a_Java_Program","wgRelevantArticleId":57162,"wgRequestId":"We6uQgpAAEAAAI-oiLUAAABU","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3295260,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","ext.math.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["ext.math.scripts","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.math.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Understanding_a_Java_Program.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Understanding_a_Java_Program rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Understanding a Java Program</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span><div id="mw-fr-revisiontag" class="flaggedrevs_basic flaggedrevs_draft_notsynced plainlinks noprint nomobile"><img class="flaggedrevs-icon" src="/w/extensions/FlaggedRevs/frontend/modules/img/1.png" alt="Unreviewed changes are displayed on this page" title="Unreviewed changes are displayed on this page">The <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;stable=1">latest reviewed version</a> was <a class="external text" href="//en.wikibooks.org/w/index.php?title=Special:Log&amp;type=review&amp;page=Java_Programming/Understanding_a_Java_Program">checked</a> on <i>17 September 2017</i>. There are <a class="external text" href="//en.wikibooks.org/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;oldid=3295260&amp;diff=cur&amp;diffonly=0">template/file changes</a> awaiting review.</div>
+</div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Execution.html" title="Execution"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Execution.html" title="Java Programming/Execution">Execution</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Understanding a Java Program</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Java_IDEs.html" title="Java Programming/Java IDEs">Java IDEs</a> <a href="Java_IDEs.html" title="Java IDEs"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="Getting_started.html" title="Java Programming/Getting started">Getting Started</a></b> topic: <span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/GettingStartedTopic" class="mw-redirect" title="Template:Java Programming/GettingStartedTopic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/GettingStartedTopic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/GettingStartedTopic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/GettingStartedTopic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="50% developed&#160; as of Aug 22, 2012"><img alt="50% developed&#160; as of Aug 22, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/9px-50_percents.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/14px-50_percents.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/18px-50_percents.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Installation.html" title="Java Programming/Installation">Installing Java on Your Computer</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Dec 12, 2012"><img alt="75% developed&#160; as of Dec 12, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Compilation.html" title="Java Programming/Compilation">Compiling programs</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Aug 22, 2012"><img alt="75% developed&#160; as of Aug 22, 2012" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Execution.html" title="Java Programming/Execution">Running Java programs</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Nov 20, 2013"><img alt="100% developed&#160; as of Nov 20, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">Understanding a Java program</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="100% developed&#160; as of Nov 20, 2013"><img alt="100% developed&#160; as of Nov 20, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/9px-100_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/14px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/18px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Java_IDEs.html" title="Java Programming/Java IDEs">Java IDEs</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p><br>
+This article presents a small Java program which can be run from the console. It computes the distance between two points on a plane. You do not need to understand the structure and meaning of the program just yet; we will get to that soon. Also, because the program is intended as a simple introduction, it has some room for improvement, and later in the module we will show some of these improvements. But let's not get too far ahead of ourselves!</p>
+<h2><span id="The_Distance_Class:_Intent,_Source,_and_Use"></span><span class="mw-headline" id="The_Distance_Class:_Intent.2C_Source.2C_and_Use">The Distance Class: Intent, Source, and Use</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=1" title="Edit section: The Distance Class: Intent, Source, and Use">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>This class is named <i>Distance</i>, so using your favorite editor or <a href="Java_IDEs.html" title="Java Programming/Java IDEs">Java IDE</a>, first create a file named <code>Distance.java</code>, then copy the source below, paste it into the file and save the file.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-1"><b>Code listing 2.1: Distance.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span> <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Distance</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>   <span class="kd">private</span> <span class="n">java</span><span class="o">.</span><span class="na">awt</span><span class="o">.</span><span class="na">Point</span> <span class="n">point0</span><span class="o">,</span> <span class="n">point1</span><span class="o">;</span>
+<span class="lineno"> 3 </span> 
+<span class="lineno"> 4 </span>   <span class="kd">public</span> <span class="nf">Distance</span><span class="o">(</span><span class="kt">int</span> <span class="n">x0</span><span class="o">,</span> <span class="kt">int</span> <span class="n">y0</span><span class="o">,</span> <span class="kt">int</span> <span class="n">x1</span><span class="o">,</span> <span class="kt">int</span> <span class="n">y1</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 5 </span>     <span class="n">point0</span> <span class="o">=</span> <span class="k">new</span> <span class="n">java</span><span class="o">.</span><span class="na">awt</span><span class="o">.</span><span class="na">Point</span><span class="o">(</span><span class="n">x0</span><span class="o">,</span> <span class="n">y0</span><span class="o">);</span>
+<span class="lineno"> 6 </span>     <span class="n">point1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">java</span><span class="o">.</span><span class="na">awt</span><span class="o">.</span><span class="na">Point</span><span class="o">(</span><span class="n">x1</span><span class="o">,</span> <span class="n">y1</span><span class="o">);</span>
+<span class="lineno"> 7 </span>   <span class="o">}</span>
+<span class="lineno"> 8 </span> 
+<span class="lineno"> 9 </span>   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">printDistance</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">10 </span>     <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Distance between "</span> <span class="o">+</span> <span class="n">point0</span> <span class="o">+</span> <span class="s">" and "</span> <span class="o">+</span> <span class="n">point1</span>
+<span class="lineno">11 </span>                     <span class="o">+</span> <span class="s">" is "</span> <span class="o">+</span> <span class="n">point0</span><span class="o">.</span><span class="na">distance</span><span class="o">(</span><span class="n">point1</span><span class="o">));</span>
+<span class="lineno">12 </span>   <span class="o">}</span>
+<span class="lineno">13 </span> 
+<span class="lineno">14 </span>   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">15 </span>     <span class="n">Distance</span> <span class="n">dist</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Distance</span><span class="o">(</span>
+<span class="lineno">16 </span>              <span class="n">intValue</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">0</span><span class="o">]),</span> <span class="n">intValue</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">1</span><span class="o">]),</span>
+<span class="lineno">17 </span>              <span class="n">intValue</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">2</span><span class="o">]),</span> <span class="n">intValue</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">3</span><span class="o">]));</span>
+<span class="lineno">18 </span>     <span class="n">dist</span><span class="o">.</span><span class="na">printDistance</span><span class="o">();</span>
+<span class="lineno">19 </span>   <span class="o">}</span>
+<span class="lineno">20 </span> 
+<span class="lineno">21 </span>   <span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">intValue</span><span class="o">(</span><span class="n">String</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">22 </span>     <span class="k">return</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">data</span><span class="o">);</span>
+<span class="lineno">23 </span>   <span class="o">}</span>
+<span class="lineno">24 </span> <span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>At this point, you may wish to review the source to see how much you might be able to understand. While perhaps not being the most literate of programming languages, someone with understanding of other procedural languages such as C, or other object oriented languages such as C++ or C#, will be able to understand most if not all of the sample program.</p>
+<p>Once you save the file, <a href="Compilation.html" title="Java Programming/Compilation">compile</a> the program:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Compilation command</b>
+<pre style="background-color:#000; color:#fff;">
+$ javac Distance.java
+</pre></td>
+</tr>
+</table>
+<p>(If the <code>javac</code> command fails, review the <a href="Installation.html" title="Java Programming/Installation">installation instructions</a>.)</p>
+<p>To run the program, you supply it with the <i>x</i> and <i>y</i> coordinates of two points on a plane separated by a space. For this version of Distance, only integer points are supported. The command sequence is <i><code>java Distance &lt;x<sub>0</sub>&gt; &lt;y<sub>0</sub>&gt; &lt;x<sub>1</sub>&gt; &lt;y<sub>1</sub>&gt;</code></i> to compute the distance between the points (<i>x<sub>0</sub>, y<sub>0</sub></i>) and (<i>x<sub>1</sub>, y<sub>1</sub></i>).</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Nuvola_apps_important.svg" class="image" title="Warning"><img alt="Warning" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/32px-Nuvola_apps_important.svg.png" width="32" height="27" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/48px-Nuvola_apps_important.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/64px-Nuvola_apps_important.svg.png" data-file-width="600" data-file-height="500"></a></td>
+<td style="background-color:#fff0f0; border-left: 4px solid red; padding-left: 6px;">If you get a <code>java.lang.NumberFormatException</code> exception, some arguments are not a number. If you get a <code>java.lang.ArrayIndexOutOfBoundsException</code> exception, you did not provide enough numbers.</td>
+</tr>
+</table>
+<p>Here are two examples:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for the distance between the points (0, 3) and (4, 0)</b>
+<pre style="background-color:#000; color:#fff;">
+$ java Distance 0 3 4 0
+Distance between java.awt.Point[x=0,y=3] and java.awt.Point[x=4,y=0] is 5.0
+</pre></td>
+</tr>
+</table>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output for the distance between the points (-4, 5) and (11, 19)</b>
+<pre style="background-color:#000; color:#fff;">
+$ java Distance -4 5 11 19
+Distance between java.awt.Point[x=-4,y=5] and java.awt.Point[x=11,y=19] is 20.518284528683193
+</pre></td>
+</tr>
+</table>
+<p>We'll explain this strange looking output, and also show how to improve it, later.</p>
+<h2><span class="mw-headline" id="Detailed_Program_Structure_and_Overview">Detailed Program Structure and Overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=2" title="Edit section: Detailed Program Structure and Overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>As promised, we will now provide a detailed description of this Java program. We will discuss the syntax and structure of the program and the meaning of that structure.</p>
+<h3><span class="mw-headline" id="Introduction_to_Java_Syntax">Introduction to Java Syntax</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=3" title="Edit section: Introduction to Java Syntax">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table>
+<tr>
+<td>
+<pre>
+<span style="color: purple"><b>public</b></span> <span style="color: purple"><b>class</b></span> <span style="color: grey">Distance</span> {
+   <span style="color: purple"><b>private</b></span> java.awt.<span style="color: grey">Point</span> <span style="color: grey">point0</span>, <span style="color: grey">point1</span>;
+
+   <span style="color: purple"><b>public</b></span> <span style="color: grey">Distance</span>(<span style="color: purple"><b>int</b></span> <span style="color: grey">x0</span>, <span style="color: purple"><b>int</b></span> <span style="color: grey">y0</span>, <span style="color: purple"><b>int</b></span> <span style="color: grey">x1</span>, <span style="color: purple"><b>int</b></span> <span style="color: grey">y1</span>) {
+     <span style="color: grey">point0</span> = <span style="color: purple"><b>new</b></span> java.awt.<span style="color: grey">Point</span>(<span style="color: grey">x0</span>, <span style="color: grey">y0</span>);
+     <span style="color: grey">point1</span> = <span style="color: purple"><b>new</b></span> java.awt.<span style="color: grey">Point</span>(<span style="color: grey">x1</span>, <span style="color: grey">y1</span>);
+   }
+
+   <span style="color: purple"><b>public</b></span> <span style="color: purple"><b>void</b></span> <span style="color: grey">printDistance</span>() {
+     <span style="color: grey">System</span>.<span style="color: grey">out</span>.<span style="color: grey">println</span>(<span style="color: blue">"Distance between "</span> <span style="color: red">+</span> <span style="color: grey">point0</span> <span style="color: red">+</span> <span style="color: blue">" and "</span> <span style="color: red">+</span> <span style="color: grey">point1</span>
+                     <span style="color: red">+</span> <span style="color: blue">" is "</span> <span style="color: red">+</span> <span style="color: grey">point0</span>.<span style="color: grey">distance</span>(<span style="color: grey">point1</span>));
+   }
+
+   <span style="color: purple"><b>public</b></span> <span style="color: purple"><b>static</b></span> <span style="color: purple"><b>void</b></span> <span style="color: grey">main</span>(<span style="color: grey">String</span>[] <span style="color: grey">args</span>) {
+     <span style="color: grey">Distance</span> <span style="color: grey">dist</span> = <span style="color: purple"><b>new</b></span> <span style="color: grey">Distance</span>(
+              <span style="color: grey">intValue</span>(<span style="color: grey">args</span>[<span style="color: orange">0</span>]), <span style="color: grey">intValue</span>(<span style="color: grey">args</span>[<span style="color: orange">1</span>]),
+              <span style="color: grey">intValue</span>(<span style="color: grey">args</span>[<span style="color: orange">2</span>]), <span style="color: grey">intValue</span>(<span style="color: grey">args</span>[<span style="color: orange">3</span>]));
+     <span style="color: grey">dist.<span style="color: grey">printDistance();
+   }
+
+   <span style="color: purple"><b>private</b></span> <span style="color: purple"><b>static</b></span> <span style="color: purple"><b>int</b></span> <span style="color: grey">intValue</span>(<span style="color: grey">String</span> <span style="color: grey">data</span>) {
+     <span style="color: purple"><b>return</b></span> <span style="color: grey">Integer</span>.<span style="color: grey">parseInt</span>(<span style="color: grey">data</span>);
+   }
+}
+</span></span>
+</pre></td>
+</tr>
+</table>
+<dl>
+<dd><span id="figure-1">Figure 2.1</span>: Basic Java syntax.
+<dl>
+<dd><i>For a further treatment of the syntax elements of Java, see also <a href="Syntax.html" class="mw-redirect" title="Java Programming/Syntax">Syntax</a>.</i></dd>
+</dl>
+</dd>
+</dl>
+<p>The <i>syntax</i> of a Java class is the characters, symbols and their structure used to code the class. Java programs consist of a sequence of tokens. There are different kinds of tokens. For example, there are word tokens such as <code><a href="Keywords\class.html" title="Java Programming/Keywords/class"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">class</font></a></code> and <code><a href="Keywords\public.html" title="Java Programming/Keywords/public"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">public</font></a></code> which represent <i><a href="Keywords.html" title="Java Programming/Keywords"><span style="color: purple"><b>keywords</b></span></a></i> <span style="color: purple"><b>(in purple</b></span> <a href="#figure-1"><span style="color: purple"><b>above</b></span></a><span style="color: purple"><b>)</b></span> — special words with reserved meaning in Java. Other words such as <code>Distance</code>, <code>point0</code>, <code>x1</code>, and <code>printDistance</code> are not keywords but <span style="color: grey"><i>identifiers</i> (in grey)</span>. Identifiers have many different uses in Java but primarily they are used as names. Java also has tokens to represent numbers, such as <code>1</code> and <code>3</code>; these are known as <i><a href="Literals.html" title="Java Programming/Literals"><span style="color: orange">literals</span></a></i> <span style="color: orange">(in orange)</span>. <i><a href="Literals\String_Literals.html" class="mw-redirect" title="Java Programming/Literals/String Literals"><span style="color: blue">String literals</span></a></i> <span style="color: blue">(in blue)</span>, such as <code>"Distance between "</code>, consist of zero or more characters embedded in double quotes, and <i><a href="Operators.html" class="mw-redirect" title="Java Programming/Operators"><span style="color: red">operators</span></a></i> <span style="color: red">(in red)</span> such as <code>+</code> and <code>=</code> are used to express basic computation such as addition or String concatenation or assignment. There are also left and right braces (<code>{</code> and <code>}</code>) which enclose <i>blocks</i>. The body of a class is one such block. Some tokens are punctuation, such as periods <code>.</code> and commas <code>,</code> and semicolons <code>;</code>. You use <i>whitespace</i> such as spaces, tabs, and newlines, to separate tokens. For example, whitespace is required between keywords and identifiers: <code>publicstatic</code> is a single identifier with twelve characters, not two Java keywords.</p>
+<h3><span class="mw-headline" id="Declarations_and_Definitions">Declarations and Definitions</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=4" title="Edit section: Declarations and Definitions">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div style="border: blue solid 3px; background-color: #ccf">
+<p><code>public class Distance {</code></p>
+<div style="border: green solid 3px; background-color: #cfc">
+<p><code>&#160;&#160;private java.awt.Point point0, point1;</code></p>
+</div>
+<p><br></p>
+<div style="border: orange solid 3px; background-color: #fdc">
+<p><code>&#160;&#160;public Distance(int x0, int y0, int x1, int y1) {</code><br>
+<code>&#160;&#160;&#160;&#160;point0 = new java.awt.Point(x0, y0);</code><br>
+<code>&#160;&#160;&#160;&#160;point1 = new java.awt.Point(x1, y1);</code><br>
+<code>&#160;&#160;}</code></p>
+</div>
+<p><br></p>
+<div style="border: red solid 3px; background-color: #fcc">
+<p><code>&#160;&#160;public void printDistance() {</code><br>
+<code>&#160;&#160;&#160;&#160;System.out.println("Distance between " + point0 + " and " + point1</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;+ " is " + point0.distance(point1));</code><br>
+<code>&#160;&#160;}</code></p>
+</div>
+<p><br></p>
+<div style="border: red solid 3px; background-color: #fcc">
+<p><code>&#160;&#160;public static void main(String[] args) {</code><br>
+<code>&#160;&#160;&#160;&#160;Distance dist = new Distance(</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;intValue(args[0]), intValue(args[1]),</code><br>
+<code>&#160;&#160;&#160;&#160;&#160;&#160;intValue(args[2]), intValue(args[3]));</code><br>
+<code>&#160;&#160;&#160;&#160;dist.printDistance();</code><br>
+<code>&#160;&#160;}</code></p>
+</div>
+<p><br></p>
+<div style="border: red solid 3px; background-color: #fcc">
+<p><code>&#160;&#160;private static int intValue(String data) {</code><br>
+<code>&#160;&#160;&#160;&#160;return Integer.parseInt(data);</code><br>
+<code>&#160;&#160;}</code></p>
+</div>
+<p><br>
+<code>}</code></p>
+</div>
+<dl>
+<dd><span id="figure-2">Figure 2.2</span>: Declarations and Definitions.</dd>
+</dl>
+<p>Sequences of tokens are used to construct the next building blocks of Java classes as shown <a href="#figure-2">above</a>: declarations and definitions. A class declaration provides the name and visibility of a class. In our example, <code>public class Distance</code> is the class declaration. It consists (in this case) of two keywords, <code><a href="Keywords\public.html" title="Java Programming/Keywords/public"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">public</font></a></code> and <code><a href="Keywords\class.html" title="Java Programming/Keywords/class"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">class</font></a></code> followed by the identifier <code>Distance</code>.</p>
+<p>This means that we are defining a class named <code>Distance</code>. Other classes, or in our case, the command line, can refer to the class by this name. The <code>public</code> keyword is an <a href="Scope.html" title="Java Programming/Scope">access modifier</a> which declares that this class and its members may be accessed from other classes. The <code>class</code> keyword, obviously, identifies this declaration as a class. Java also allows declarations of <i><a href="Interfaces.html" title="Java Programming/Interfaces">interfaces</a></i> and <i><a href="Annotations.html" title="Java Programming/Annotations">annotations</a></i>.</p>
+<p>The class declaration is then followed by a block (surrounded by curly braces) which provides the class's definition <span style="color: blue">(in blue in <a href="#figure-2">figure 2.2</a>)</span>. The definition is the implementation of the class – the declaration and definitions of the class's members. This class contains exactly six members, which we will explain in turn.</p>
+<ol>
+<li>Two field declarations, named <code>point0</code> and <code>point1</code> <span style="color: green">(in green)</span></li>
+<li>A constructor declaration <span style="color: orange">(in orange)</span></li>
+<li>Three method declarations <span style="color: red">(in red)</span></li>
+</ol>
+<h4><span class="mw-headline" id="Example:_Instance_Fields">Example: Instance Fields</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=5" title="Edit section: Example: Instance Fields">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The declaration</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.1: Declaration.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">private</span> <span class="n">java</span><span class="o">.</span><span class="na">awt</span><span class="o">.</span><span class="na">Point</span> <span class="n">point0</span><span class="o">,</span> <span class="n">point1</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>...declares two <i>instance fields</i>. Instance fields represent named values that are allocated whenever an instance of the class is constructed. When a Java program creates a <code>Distance</code> instance, that instance will contain space for <code>point0</code> and <code>point1</code>. When another <code>Distance</code> object is created, it will contain space for its <i>own</i> <code>point0</code> and <code>point1</code> values. The value of <code>point0</code> in the first <code>Distance</code> object can vary independently of the value of <code>point0</code> in the second <code>Distance</code> object.</p>
+<p>This declaration consists of:</p>
+<ol>
+<li>The <code><a href="Keywords\private.html" title="Java Programming/Keywords/private">private</a></code> access modifier,<br>
+which means these instance fields are not visible to other classes.</li>
+<li>The type of the instance fields. In this case, the type is <code>java.awt.Point</code>.<br>
+This is the class <code>Point</code> in the <code>java.awt</code> package.</li>
+<li>The names of the instance fields in a comma separated list.</li>
+</ol>
+<p><br>
+These two fields could also have been declared with two separate but more verbose declarations,</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.2: Verbose declarations.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span> <span class="kd">private</span> <span class="n">java</span><span class="o">.</span><span class="na">awt</span><span class="o">.</span><span class="na">Point</span> <span class="n">point0</span><span class="o">;</span>
+<span class="lineno">2 </span> <span class="kd">private</span> <span class="n">java</span><span class="o">.</span><span class="na">awt</span><span class="o">.</span><span class="na">Point</span> <span class="n">point1</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Since the type of these fields is a reference type (i.e. a field that <i>refers to</i> or can hold a <i>reference to</i> an object value), Java will implicitly initialize the values of <code>point0</code> and <code>point1</code> to null when a <code>Distance</code> instance is created. The null value means that a reference value does not refer to an object. The special Java literal <code><a href="Literals\null.html" class="mw-redirect" title="Java Programming/Literals/null"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">null</font></a></code> is used to represent the null value in a program. While you can explicitly assign null values in a declaration, as in</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.3: Declarations and assignments.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span> <span class="kd">private</span> <span class="n">java</span><span class="o">.</span><span class="na">awt</span><span class="o">.</span><span class="na">Point</span> <span class="n">point0</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+<span class="lineno">2 </span> <span class="kd">private</span> <span class="n">java</span><span class="o">.</span><span class="na">awt</span><span class="o">.</span><span class="na">Point</span> <span class="n">point1</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>It is not necessary and most programmers omit such default assignments.</p>
+<h4><span class="mw-headline" id="Example:_Constructor">Example: Constructor</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=6" title="Edit section: Example: Constructor">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>A <i><a href="Methods.html#Special_method.2C_the_constructor" title="Java Programming/Methods">constructor</a></i> is a special method in a class which is used to construct an instance of the class. The constructor can perform initialization for the object, beyond that which the Java VM does automatically. For example, Java will automatically initialize the fields <code>point0</code> and <code>point1</code> to null.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.4: The constructor for the class</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="nf">Distance</span><span class="o">(</span><span class="kt">int</span> <span class="n">x0</span><span class="o">,</span> <span class="kt">int</span> <span class="n">y0</span><span class="o">,</span> <span class="kt">int</span> <span class="n">x1</span><span class="o">,</span> <span class="kt">int</span> <span class="n">y1</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>   <span class="n">point0</span> <span class="o">=</span> <span class="k">new</span> <span class="n">java</span><span class="o">.</span><span class="na">awt</span><span class="o">.</span><span class="na">Point</span><span class="o">(</span><span class="n">x0</span><span class="o">,</span> <span class="n">y0</span><span class="o">);</span>
+<span class="lineno">3 </span>   <span class="n">point1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">java</span><span class="o">.</span><span class="na">awt</span><span class="o">.</span><span class="na">Point</span><span class="o">(</span><span class="n">x1</span><span class="o">,</span> <span class="n">y1</span><span class="o">);</span>
+<span class="lineno">4 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The constructor above consists of five parts:</p>
+<ol>
+<li>The optional <a href="Scope.html" title="Java Programming/Scope">access modifier(s)</a>.<br>
+In this case, the constructor is declared <code>public</code></li>
+<li>The constructor name, which must match the class name exactly: <code>Distance</code> in this case.</li>
+<li>The constructor parameters.<br>
+The parameter list is required. Even if a constructor does not have any parameters, you must specify the empty list <code>()</code>. The parameter list declares the type and name of each of the method's parameters.</li>
+<li>An optional <code><a href="Keywords\throws.html" title="Java Programming/Keywords/throws"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">throws</font></a></code> clause which declares the <a href="Exceptions.html" title="Java Programming/Exceptions">exceptions</a> that the constructor may throw. This constructor does not declare any exceptions.</li>
+<li>The constructor body, which is a Java block (enclosed in <code>{}</code>). This constructor's body contains two statements.</li>
+</ol>
+<p>This constructor accepts four parameters, named <code>x0, y0, x1</code> and <code>y1</code>. Each parameter requires a parameter type declaration, which in this example is <code><code><a href="Keywords\int.html" title="Java Programming/Keywords/int"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">int</font></a></code></code> for all four parameters. The parameters in the parameter list are separated by commas.</p>
+<p>The two assignments in this constructor use Java's <i><code><a href="Keywords\new.html" title="Java Programming/Keywords/new"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">new</font></a></code> operator</i> to allocate two <code>java.awt.Point</code> objects. The first allocates an object representing the first point, <code>(x0, y0)</code>, and assigns it to the <code>point0</code> instance variable (replacing the null value that the instance variable was initialized to). The second statement allocates a second <code>java.awt.Point</code> instance with <code>(x1, y1)</code> and assigns it to the <code>point1</code> instance variable.</p>
+<p>This is the constructor for the Distance class. Distance implicitly extends from <code>java.lang.Object</code>. Java inserts a call to the super constructor as the first executable statement of the constructor if there is not one explicitly coded. The above constructor body is equivalent to the following body with the explicit super constructor call:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.5: Super constructor.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="o">{</span>
+<span class="lineno">2 </span>   <span class="kd">super</span><span class="o">();</span>
+<span class="lineno">3 </span>   <span class="n">point0</span> <span class="o">=</span> <span class="k">new</span> <span class="n">java</span><span class="o">.</span><span class="na">awt</span><span class="o">.</span><span class="na">Point</span><span class="o">(</span><span class="n">x0</span><span class="o">,</span> <span class="n">y0</span><span class="o">);</span>
+<span class="lineno">4 </span>   <span class="n">point1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">java</span><span class="o">.</span><span class="na">awt</span><span class="o">.</span><span class="na">Point</span><span class="o">(</span><span class="n">x1</span><span class="o">,</span> <span class="n">y1</span><span class="o">);</span>
+<span class="lineno">5 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>While it is true that this class could be implemented in other ways, such as simply storing the coordinates of the two points and computing the distance as <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mo stretchy="false">(</mo>
+            <msub>
+              <mi>x</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mo>&#x2212;<!-- − --></mo>
+            <msub>
+              <mi>x</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+            <msup>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mo>+</mo>
+            <mo stretchy="false">(</mo>
+            <msub>
+              <mi>y</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mo>&#x2212;<!-- − --></mo>
+            <msub>
+              <mi>y</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+            <msup>
+              <mo stretchy="false">)</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\sqrt {(x_{1}-x_{0})^{2}+(y_{1}-y_{0})^{2}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c9f444d0ba1305414b35123df9f0529466f5ab63" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.671ex; width:25.897ex; height:4.843ex;" alt="{\sqrt  {(x_{1}-x_{0})^{2}+(y_{1}-y_{0})^{2}}}"></span>, this class instead uses the existing <code>java.awt.Point</code> class. This choice matches the abstract definition of this class: to print the distance between two points on the plane. We take advantage of existing behavior already implemented in the Java platform rather than implementing it again. We will see later how to make the program more flexible without adding much complexity, because we choose to use object abstractions here. However, the key point is that this class uses information hiding. That is, <i>how</i> the class stores its state or how it computes the distance is hidden. We can change this implementation without altering how clients use and invoke the class.</p>
+<h4><span class="mw-headline" id="Example:_Methods">Example: Methods</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=7" title="Edit section: Example: Methods">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p><a href="Methods.html" title="Java Programming/Methods">Methods</a> are the third and most important type of class member. This class contains three <i>methods</i> in which the behavior of the <code>Distance</code> class is defined: <code>printDistance()</code>, <code>main()</code>, and <code>intValue()</code></p>
+<h4><span id="The_printDistance()_method"></span><span class="mw-headline" id="The_printDistance.28.29_method">The printDistance() method</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=8" title="Edit section: The printDistance() method">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The <code>printDistance()</code> method prints the distance between the two points to the standard output (normally the console).</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.6: <code>printDistance()</code> method.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">printDistance</span><span class="o">()</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Distance between "</span> <span class="o">+</span> <span class="n">point0</span>
+<span class="lineno">3 </span>    <span class="o">+</span> <span class="s">" and "</span> <span class="o">+</span> <span class="n">point1</span>
+<span class="lineno">4 </span>    <span class="o">+</span> <span class="s">" is "</span> <span class="o">+</span> <span class="n">point0</span><span class="o">.</span><span class="na">distance</span><span class="o">(</span><span class="n">point1</span><span class="o">));</span>
+<span class="lineno">5 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>This <i>instance method</i> executes within the context of an implicit <code>Distance</code> object. The instance field references, <code>point0</code> and <code>point1</code>, refer to instance fields of that implicit object. You can also use the special variable <code>this</code> to explicitly reference the current object. Within an instance method, Java binds the name <code>this</code> to the object on which the method is executing, and the type of <code>this</code> is that of the current class. The body of the <code>printDistance</code> method could also be coded as</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.7: Explicit instance of the current class.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span>  <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Distance between "</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">point0</span>
+<span class="lineno">2 </span>    <span class="o">+</span> <span class="s">" and "</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">point1</span>
+<span class="lineno">3 </span>    <span class="o">+</span> <span class="s">" is "</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">point0</span><span class="o">.</span><span class="na">distance</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">point1</span><span class="o">));</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>to make the instance field references more explicit.</p>
+<p>This method both computes the distance and prints it in one statement. The distance is computed with <code>point0.distance(point1)</code>; <code>distance()</code> is an instance method of the <code>java.awt.Point</code> class (of which <code>point0</code> and <code>point1</code> are instances). The method operates on <code>point0</code> (binding <code>this</code> to the object that <code>point0</code> refers to during the execution of the method) and accepting another Point as a parameter. Actually, it is slightly more complicated than that, but we'll explain later. The result of the <code>distance()</code> method is a double precision floating point number.</p>
+<p>This method uses the syntax</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.8: String concatenation.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span> <span class="s">"Distance between "</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">point0</span>
+<span class="lineno">2 </span> <span class="o">+</span> <span class="s">" and "</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">point1</span>
+<span class="lineno">3 </span> <span class="o">+</span> <span class="s">" is "</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">point0</span><span class="o">.</span><span class="na">distance</span><span class="o">(</span><span class="k">this</span><span class="o">.</span><span class="na">point1</span><span class="o">)</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>to construct a String to pass to the <code>System.out.println()</code>. This expression is a series of <i>String concatenation</i> methods which concatenates Strings or the String representation of primitive types (such as doubles) or objects, and returns a long string. For example, the result of this expression for the points (0,3) and (4,0) is the String</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output</b>
+<pre style="background-color:#000; color:#fff;">
+"Distance between java.awt.Point[x=0,y=3] and java.awt.Point[x=4,y=0] is 5.0"
+</pre></td>
+</tr>
+</table>
+<p>which the method then prints to <code>System.out</code>.</p>
+<p>In order to print, we invoke the <code>println()</code>. This is an instance method from <code>java.io.PrintStream</code>, which is the type of the static field <code>out</code> in the class <code>java.lang.System</code>. The Java VM binds <code>System.out</code> to the standard output stream when it starts a program.</p>
+<h4><span id="The_main()_method"></span><span class="mw-headline" id="The_main.28.29_method">The main() method</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=9" title="Edit section: The main() method">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The <code>main()</code> method is the main entry point which Java invokes when you start a Java program from the command line. The command</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Output</b>
+<pre style="background-color:#000; color:#fff;">
+java Distance 0 3 4 0
+</pre></td>
+</tr>
+</table>
+<p>instructs Java to locate the Distance class, put the four command line arguments into an array of String values, then pass those arguments to the <code>public static main(String[])</code> method of the class. We will introduce arrays shortly. Any Java class that you want to invoke from the command line or desktop shortcut must have a main method with this signature or the following signature: <code>public static main(String...)</code>.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.9: <code>main()</code> method.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>   <span class="n">Distance</span> <span class="n">dist</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Distance</span><span class="o">(</span>
+<span class="lineno">3 </span>         <span class="n">intValue</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">0</span><span class="o">]),</span> <span class="n">intValue</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">1</span><span class="o">]),</span>
+<span class="lineno">4 </span>         <span class="n">intValue</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">2</span><span class="o">]),</span> <span class="n">intValue</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">3</span><span class="o">]));</span>
+<span class="lineno">5 </span>   <span class="n">dist</span><span class="o">.</span><span class="na">printDistance</span><span class="o">();</span>
+<span class="lineno">6 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The <code>main()</code> method invokes the final method, <code>intValue()</code>, four times. The <code>intValue()</code> takes a single string parameter and returns the integer value represented in the string. For example, <code>intValue("3")</code> will return the integer 3.</p>
+<p>People who do test-first programming or perform regression testing write a main() method in every Java class, and a <a href="/wiki/Python_Programming/Modules_and_how_to_use_them" class="mw-redirect" title="Python Programming/Modules and how to use them">main() function in every Python module</a>, to run automated tests. When a person executes the file directly, the main() method executes and runs the automated tests for that file. When a person executes some other Java file that in turn imports many other Java classes, only one main() method is executed -- the main() method of the directly-executed file.</p>
+<h4><span id="The_intValue()_method"></span><span class="mw-headline" id="The_intValue.28.29_method">The <code>intValue()</code> method</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=10" title="Edit section: The intValue() method">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The <code>intValue()</code> method delegates its job to the <code>Integer.parseInt()</code> method. The main method could have called <code>Integer.parseInt()</code> directly; the <code>intValue()</code> method simply makes the <code>main()</code> method slightly more readable.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.10: <code>intValue()</code> method.</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">intValue</span><span class="o">(</span><span class="n">String</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>   <span class="k">return</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">data</span><span class="o">);</span>
+<span class="lineno">3 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>This method is <code><a href="Keywords\private.html" title="Java Programming/Keywords/private"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">private</font></a></code> since, like the fields <code>point0</code> and <code>point1</code>, it is part of the internal implementation of the class and is not part of the external programming interface of the <code>Distance</code> class.</p>
+<h4><span class="mw-headline" id="Static_vs._Instance_Methods">Static vs. Instance Methods</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=11" title="Edit section: Static vs. Instance Methods">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Both the <code>main()</code> and <code>intValue()</code> methods are <i>static methods</i>. The <code><a href="Keywords\static.html" title="Java Programming/Keywords/static"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">static</font></a></code> keyword tells the compiler to create a single memory space associated with the class. Each individual object instantiated has its own private state variables and methods but use the same <b>static</b> methods and members common to the single class object created by the compiler when the first class object is instantiated or created. This means that the method executes in a static or non-object context — there is no implicit separate instance available when the static methods run from various objects, and the special variable <code>this</code> is not available. As such, static methods cannot access instance methods or instance fields (such as <code>printDistance()</code>) or <code>point0</code>) directly. The <code>main()</code> method can only invoke the instance method <code>printDistance()</code> method via an instance reference such as <code>dist</code>.</p>
+<h3><span class="mw-headline" id="Data_Types">Data Types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=12" title="Edit section: Data Types">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Most declarations have a data type. Java has several categories of data types: reference types, primitive types, array types, and a special type, void.</p>
+<h4><span class="mw-headline" id="Primitive_Types">Primitive Types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=13" title="Edit section: Primitive Types">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The <i><a href="Primitive_Types.html" title="Java Programming/Primitive Types">primitive types</a></i> are used to represent boolean, character, and numeric values. This program uses only one primitive type explicitly, <code><i><code><a href="Keywords\int.html" title="Java Programming/Keywords/int"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">int</font></a></code></i></code>, which represents 32 bit signed integer values. The program also implicitly uses <code><i><code><a href="Keywords\double.html" title="Java Programming/Keywords/double"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">double</font></a></code></i></code>, which is the return type of the <code>distance()</code> method of <code>java.awt.Point</code>. <code>double</code> values are 64 bit IEEE floating point values. The <code>main()</code> method uses integer values 0, 1, 2, and 3 to access elements of the command line arguments. The <code>Distance()</code> constructor's four parameters also have the type <code>int</code>. Also, the <code>intValue()</code> method has a return type of <code>int</code>. This means a call to that method, such as <code>intValue(args[0])</code>, is an expression of type <code>int</code>. This helps explain why the main method cannot call:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td><a href="/wiki/File:Nuvola_apps_important.svg" class="image" title="Warning"><img alt="Warning" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/32px-Nuvola_apps_important.svg.png" width="32" height="27" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/48px-Nuvola_apps_important.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Nuvola_apps_important.svg/64px-Nuvola_apps_important.svg.png" data-file-width="600" data-file-height="500"></a></td>
+<td style="background-color:#fff0f0; border-left: 4px solid red; padding-left: 6px;"><span style="color: red;"><b>Code section 2.11: Wrong type.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="k">new</span> <span class="n">Distance</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">0</span><span class="o">],</span> <span class="n">args</span><span class="o">[</span><span class="mi">1</span><span class="o">],</span> <span class="n">args</span><span class="o">[</span><span class="mi">2</span><span class="o">],</span> <span class="n">args</span><span class="o">[</span><span class="mi">3</span><span class="o">])</span> <span class="c1">// This is an error</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Since the type of the <code>args</code> array element is String, and our constructor's parameters must be <code>int</code>, such a call would result in an error because Java will not automatically convert values of type String into <code>int</code> values.</p>
+<p>Java's primitive types are <code><i><code><a href="Keywords\boolean.html" title="Java Programming/Keywords/boolean"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">boolean</font></a></code></i></code>, <code><i><code><a href="Keywords\byte.html" title="Java Programming/Keywords/byte"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">byte</font></a></code></i></code>, <code><i><code><a href="Keywords\char.html" title="Java Programming/Keywords/char"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">char</font></a></code></i></code>, <code><i><code><a href="Keywords\short.html" title="Java Programming/Keywords/short"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">short</font></a></code></i></code>, <code><i><code><a href="Keywords\int.html" title="Java Programming/Keywords/int"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">int</font></a></code></i></code>, <code><i><code><a href="Keywords\long.html" title="Java Programming/Keywords/long"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">long</font></a></code></i></code>, <code><i><code><a href="Keywords\float.html" title="Java Programming/Keywords/float"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">float</font></a></code></i></code> and <code><i><code><a href="Keywords\double.html" title="Java Programming/Keywords/double"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">double</font></a></code></i></code>. Each of which are also Java language keywords.</p>
+<h4><span class="mw-headline" id="Reference_Types">Reference Types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=14" title="Edit section: Reference Types">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>In addition to primitive types, Java supports <i>reference type</i>. A reference type is a Java data type which is defined by a Java class or interface. Reference types derive this name because such values <i>refer to</i> an object or contain a <i>reference to</i> an object. The idea is similar to pointers in other languages like C.</p>
+<p>Java represents sequences of character data, or <i><a href="API\java.lang.html" title="Java Programming/API/java.lang.String">String</a></i>, with the reference type <code>java.lang.String</code> which is most commonly referred to as <code>String</code>. <i>String literals</i>, such as <code>"Distance between "</code> are constants whose type is String.</p>
+<p>This program uses three separate reference types:</p>
+<ol>
+<li>java.lang.String (or simply String)</li>
+<li>Distance</li>
+<li>java.awt.Point</li>
+</ol>
+<dl>
+<dd><i>For more information see chapter: <a href="Classes,_Objects_and_Types.html" title="Java Programming/Classes, Objects and Types">Java Programming/Classes, Objects and Types</a>.</i></dd>
+</dl>
+<h4><span class="mw-headline" id="Array_Types">Array Types</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=15" title="Edit section: Array Types">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>Java supports <i><a href="Arrays.html" title="Java Programming/Arrays">arrays</a></i>, which are aggregate types which have a fixed element type (which can be any Java type) and an integral size. This program uses only one array, <code>String[] args</code>. This indicates that <code>args</code> has an array type and that the element type is <code>String</code>. The Java VM constructs and initializes the array that is passed to the <code>main</code> method. See <i><a href="Arrays.html" title="Java Programming/Arrays">arrays</a></i> for more details on how to create arrays and access their size.</p>
+<p>The elements of arrays are accessed with integer indices. The first element of an array is always element 0. This program accesses the first four elements of the <code>args</code> array explicitly with the indices 0, 1, 2, and 3. This program does <i>not</i> perform any input validation, such as verifying that the user passed at least four arguments to the program. We will fix that later.</p>
+<h4><span class="mw-headline" id="void">void</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=16" title="Edit section: void">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p><code><a href="Keywords\void.html" title="Java Programming/Keywords/void"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">void</font></a></code> is not a type in Java; it represents the absence of a type. Methods which do not return values are declared as <i>void methods</i>.</p>
+<p>This class defines two void methods:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.12: Void methods</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span> <span class="o">...</span> <span class="o">}</span>
+<span class="lineno">2 </span><span class="kd">public</span> <span class="kt">void</span> <span class="nf">printDistance</span><span class="o">()</span>  <span class="o">{</span> <span class="o">...</span> <span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Whitespace">Whitespace</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=17" title="Edit section: Whitespace">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Whitespace in Java is used to separate the tokens in a Java source file. Whitespace is required in some places, such as between <a href="Scope.html" title="Java Programming/Scope">access modifiers</a>, <a href="Primitive_Types.html" title="Java Programming/Primitive Types">type names</a> and Identifiers, and is used to improve readability elsewhere.</p>
+<p>Wherever whitespace is required in Java, one or more whitespace characters may be used. Wherever whitespace is optional in Java, zero or more whitespace characters may be used.</p>
+<p>Java whitespace consists of the</p>
+<ul>
+<li>space character <code><font style="color:DarkBlue; text-decoration: none; font-weight: bold;">' '</font></code> (0x20),</li>
+<li>the tab character (hex 0x09),</li>
+<li>the form feed character (hex 0x0c),</li>
+<li>the line separators characters newline (hex 0x0a) or carriage return (hex 0x0d) characters.</li>
+</ul>
+<p>Line separators are special whitespace characters in that they also terminate line comments, whereas normal whitespace does not.</p>
+<p>Other Unicode space characters, including vertical tab, are not allowed as whitespace in Java.</p>
+<h3><span class="mw-headline" id="Required_Whitespace">Required Whitespace</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=18" title="Edit section: Required Whitespace">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Look at the <code><a href="Keywords\static.html" title="Java Programming/Keywords/static"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">static</font></a></code> method <code>intValue</code>:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.13: Method declaration</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">intValue</span><span class="o">(</span><span class="n">String</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="k">return</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">data</span><span class="o">);</span>
+<span class="lineno">3 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Whitespace is required between <code><a href="Keywords\private.html" title="Java Programming/Keywords/private"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">private</font></a></code> and <code><a href="Keywords\static.html" title="Java Programming/Keywords/static"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">static</font></a></code>, between <code><a href="Keywords\static.html" title="Java Programming/Keywords/static"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">static</font></a></code> and <code><a href="Keywords\int.html" title="Java Programming/Keywords/int"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">int</font></a></code>, between <code><a href="Keywords\int.html" title="Java Programming/Keywords/int"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">int</font></a></code> and <code>intValue</code>, and between <code>String</code> and <code>data</code>.</p>
+<p>If the code is written like this:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.14: Collapsed code</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">privatestaticint</span> <span class="nf">intValue</span><span class="o">(</span><span class="n">String</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">2 </span>  <span class="k">return</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">data</span><span class="o">);</span>
+<span class="lineno">3 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>...it means something completely different: it declares a method which has the return type <code>privatestaticint</code> It is unlikely that this type exists and the method is no longer static, so the above would result in a semantic error.</p>
+<h2><span class="mw-headline" id="Indentation">Indentation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit&amp;section=19" title="Edit section: Indentation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Java ignores all whitespace in front of a statement. As this, these two code snippets are identical for the compiler:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.15: Indented code</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>  <span class="n">Distance</span> <span class="n">dist</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Distance</span><span class="o">(</span>
+<span class="lineno"> 3 </span>           <span class="n">intValue</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">0</span><span class="o">]),</span> <span class="n">intValue</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">1</span><span class="o">]),</span>
+<span class="lineno"> 4 </span>           <span class="n">intValue</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">2</span><span class="o">]),</span> <span class="n">intValue</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">3</span><span class="o">]));</span>
+<span class="lineno"> 5 </span>  <span class="n">dist</span><span class="o">.</span><span class="na">printDistance</span><span class="o">();</span>
+<span class="lineno"> 6 </span><span class="o">}</span>
+<span class="lineno"> 7 </span>
+<span class="lineno"> 8 </span><span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">intValue</span><span class="o">(</span><span class="n">String</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 9 </span>  <span class="k">return</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">data</span><span class="o">);</span>
+<span class="lineno">10 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><b>Code section 2.16: Not indented code</b>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 2 </span><span class="n">Distance</span> <span class="n">dist</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Distance</span><span class="o">(</span>
+<span class="lineno"> 3 </span><span class="n">intValue</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">0</span><span class="o">]),</span> <span class="n">intValue</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">1</span><span class="o">]),</span>
+<span class="lineno"> 4 </span><span class="n">intValue</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">2</span><span class="o">]),</span> <span class="n">intValue</span><span class="o">(</span><span class="n">args</span><span class="o">[</span><span class="mi">3</span><span class="o">]));</span>
+<span class="lineno"> 5 </span><span class="n">dist</span><span class="o">.</span><span class="na">printDistance</span><span class="o">();</span>
+<span class="lineno"> 6 </span><span class="o">}</span>
+<span class="lineno"> 7 </span>
+<span class="lineno"> 8 </span><span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">intValue</span><span class="o">(</span><span class="n">String</span> <span class="n">data</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 9 </span><span class="k">return</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">data</span><span class="o">);</span>
+<span class="lineno">10 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>However, the first one's style (with whitespace) is preferred, as the readability is higher. The method body is easier to distinguish from the head, even at a higher reading speed.</p>
+<p><br></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Execution.html" title="Execution"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Execution.html" title="Java Programming/Execution">Execution</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Understanding a Java Program</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="Java_IDEs.html" title="Java Programming/Java IDEs">Java IDEs</a> <a href="Java_IDEs.html" title="Java IDEs"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="100% developed"><img alt="100% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/24px-100_percent.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/36px-100_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/2/24/100_percent.svg/48px-100_percent.svg.png" data-file-width="9" data-file-height="9"></a></div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1247
+Cached time: 20171009162309
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.200 seconds
+Real time usage: 1.676 seconds
+Preprocessor visited node count: 1163/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 22916/2097152 bytes
+Template argument size: 3184/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 13/500
+Lua time usage: 0.049/10.000 seconds
+Lua memory usage: 649 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1550.736      1 -total
+ 79.50% 1232.893     15 Template:XExample
+  6.12%   94.957      6 Template:XCode
+  5.55%   86.082      2 Template:XWarning
+  4.86%   75.423      2 Template:Programming/Navigation
+  0.77%   11.981      1 Template:Java_Programming/GettingStartedTopic/Nav
+  0.61%    9.507      3 Template:BookCat
+  0.48%    7.407      3 Template:BookCat/default
+  0.35%    5.502      2 Template:Java:public
+  0.35%    5.458      1 Template:Java:throws
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:57162-0!canonical!math=5 and timestamp 20171009162307 and revision id 3295260
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;oldid=3295260">https://en.wikibooks.org/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;oldid=3295260</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FUnderstanding+a+Java+Program" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FUnderstanding+a+Java+Program" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Understanding_a_Java_Program.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk"><span><a href="/wiki/Talk:Java_Programming/Understanding_a_Java_Program" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;stable=1">Read</a></span></li>
+							<li id="ca-current" class="collapsible selected"><span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;stable=0&amp;redirect=no" title="View this page with the pending changes [v]" accesskey="v">Latest draft</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Understanding_a_Java_Program" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Understanding_a_Java_Program" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;oldid=3295260" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;action=info" title="More information about this page">Page information</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FUnderstanding_a_Java_Program&amp;id=3295260" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+											</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:NewItem?site=enwikibooks&amp;page=Java+Programming%2FUnderstanding+a+Java+Program" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FUnderstanding+a+Java+Program">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FUnderstanding+a+Java+Program&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 14:43.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Understanding_a_Java_Program&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.200","walltime":"1.676","ppvisitednodes":{"value":1163,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":22916,"limit":2097152},"templateargumentsize":{"value":3184,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":13,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00% 1550.736      1 -total"," 79.50% 1232.893     15 Template:XExample","  6.12%   94.957      6 Template:XCode","  5.55%   86.082      2 Template:XWarning","  4.86%   75.423      2 Template:Programming/Navigation","  0.77%   11.981      1 Template:Java_Programming/GettingStartedTopic/Nav","  0.61%    9.507      3 Template:BookCat","  0.48%    7.407      3 Template:BookCat/default","  0.35%    5.502      2 Template:Java:public","  0.35%    5.458      1 Template:Java:throws"]},"scribunto":{"limitreport-timeusage":{"value":"0.049","limit":"10.000"},"limitreport-memusage":{"value":664295,"limit":52428800}},"cachereport":{"origin":"mw1247","timestamp":"20171009162309","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":84,"wgHostname":"mw1269"});});</script>
+	</body>
+</html>

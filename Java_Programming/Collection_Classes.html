@@ -1,0 +1,922 @@
+﻿<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Collection - Wikibooks, open books for an open world</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Java_Programming/Collection","wgTitle":"Java Programming/Collection","wgCurRevisionId":3295188,"wgRevisionId":3295188,"wgArticleId":70955,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Book:Java Programming"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Java_Programming/Collection","wgRelevantArticleId":70955,"wgRequestId":"WfA6FApAIDIAAEXy1WAAAABL","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Java_Programming/Collection_Classes","wgFlaggedRevsParams":{"tags":{"value":{"levels":3,"quality":2,"pristine":3}}},"wgStableRevisionId":3295188,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":false,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgULSCurrentAutonym":"English","wgNoticeProject":"wikibooks","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgInternalRedirectTargetUrl":"/wiki/Java_Programming/Collection","wgWikibaseItemId":"Q4041802","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":true});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.pygments":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","ext.flaggedRevs.basic":"ready","skins.vector.styles.experimental.print":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["mediawiki.action.view.redirect","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.wikidialog","ext.gadget.commons-file","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.compactlinks","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.flaggedRevs.advanced","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.flaggedRevs.basic%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cskins.vector.styles.experimental.print%7Cwikibase.client.init&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.31.0-wmf.4">
+<meta name="referrer" content="origin-when-cross-origin">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Java_Programming/Collection&amp;action=edit">
+<link rel="edit" title="Edit" href="/w/index.php?title=Java_Programming/Collection&amp;action=edit">
+<link rel="shortcut icon" href="/static/favicon/wikibooks.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikibooks (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikibooks.org/w/api.php?action=rsd">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="alternate" type="application/atom+xml" title="Wikibooks Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="canonical" href="Collection.html">
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+<link rel="dns-prefetch" href="//meta.wikimedia.org">
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Java_Programming_Collection rootpage-Java_Programming vector-experimental-print-styles vector-nav-directionality skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+						<div class="mw-indicators mw-body-content">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="en">Collection</h1>
+									<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub" class="noprint">From Wikibooks, open books for an open world</div>
+								<div id="contentSub"><span class="subpages">&lt; <a href="..\Java_Programming.html" title="Java Programming">Java Programming</a></span><span class="mw-redirectedfrom">(Redirected from <a href="/w/index.php?title=Java_Programming/Collection_Classes&amp;redirect=no" class="mw-redirect" title="Java Programming/Collection Classes">Java Programming/Collection Classes</a>)</span></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p><span id="displaytitle" title=""></span></p>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Aggregate.html" title="Aggregate"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Aggregate.html" title="Java Programming/Aggregate">Aggregate</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Collection</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="ArrayList.html" title="Java Programming/ArrayList">ArrayList</a> <a href="ArrayList.html" title="ArrayList"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<table class="wikitable" style="float: right;">
+<tr>
+<td>Navigate <b><a href="Aggregate.html" title="Java Programming/Aggregate">Aggregate</a></b> topic: <span class="noprint">(&#160;<span class="noprint plainlinks navbar" style="background:none; padding:0; font-weight:normal;; font-size:xx-small;"><a href="/wiki/Template:Java_Programming/Aggregate/Topic" title="Template:Java Programming/Aggregate/Topic"><span title="View this template" style="">v</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a href="/w/index.php?title=Template_talk:Java_Programming/Aggregate/Topic&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Java Programming/Aggregate/Topic (does not exist)"><span title="Discuss this template" style="">d</span></a>&#160;<span style="font-size:80%;">•</span>&#160;<a class="external text" href="//en.wikibooks.org/w/index.php?title=Template:Java_Programming/Aggregate/Topic&amp;action=edit"><span title="Edit this template" style=";">e</span></a></span>&#160;)</span>
+<ul>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jul 2, 2013"><img alt="75% developed&#160; as of Jul 2, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a class="mw-selflink selflink">Collection</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="50% developed&#160; as of Mar 18, 2013"><img alt="50% developed&#160; as of Mar 18, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/9px-50_percents.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/14px-50_percents.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/50_percents.svg/18px-50_percents.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="ArrayList.html" title="Java Programming/ArrayList">ArrayList</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jul 2, 2013"><img alt="75% developed&#160; as of Jul 2, 2013" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Map.html" title="Java Programming/Map">Map</a></li>
+<li><span class="noprint"><a href="/wiki/Help:Development_stages" title="75% developed&#160; as of Jul 23, 2007"><img alt="75% developed&#160; as of Jul 23, 2007" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/9px-75_percent.svg.png" width="9" height="9" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/14px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/18px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></span> <a href="Comparing_Objects.html" title="Java Programming/Comparing Objects">Comparing Objects</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p>The most basic collection interface is called <code>Collection</code>. This interface gives the user the generic usage of a collection. All collections need to have the same basic operations. Those are:</p>
+<ul>
+<li>Adding element(s) to the collection</li>
+<li>Removing element(s) from the collection</li>
+<li>Obtaining the number of elements in the collection</li>
+<li>Listing the contents of the collection, (Iterating through the collection)</li>
+</ul>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-1"><b>Code listing 5.1: CollectionProgram.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kn">import</span> <span class="nn">java.util.Collection</span><span class="o">;</span>   <span class="c1">// Interface</span>
+<span class="lineno"> 2 </span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>    <span class="c1">// Implementation</span>
+<span class="lineno"> 3 </span>
+<span class="lineno"> 4 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CollectionProgram</span> <span class="o">{</span>
+<span class="lineno"> 5 </span>
+<span class="lineno"> 6 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 7 </span><span class="hll">    <span class="n">Collection</span> <span class="n">myCollection</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">();</span>
+</span><span class="lineno"> 8 </span><span class="hll">    <span class="n">myCollection</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"1"</span><span class="o">);</span>
+</span><span class="lineno"> 9 </span>    <span class="n">myCollection</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"2"</span><span class="o">);</span>
+<span class="lineno">10 </span>    <span class="n">myCollection</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"3"</span><span class="o">);</span>
+<span class="lineno">11 </span><span class="hll">    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The collection contains "</span> <span class="o">+</span> <span class="n">myCollection</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">+</span> <span class="s">" item(s)."</span><span class="o">);</span>
+</span><span class="lineno">12 </span>
+<span class="lineno">13 </span><span class="hll">    <span class="n">myCollection</span><span class="o">.</span><span class="na">clear</span><span class="o">();</span>
+</span><span class="lineno">14 </span><span class="hll">    <span class="k">if</span> <span class="o">(</span><span class="n">myCollection</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+</span><span class="lineno">15 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The collection is empty."</span><span class="o">);</span>
+<span class="lineno">16 </span>    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+<span class="lineno">17 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The collection is not empty."</span><span class="o">);</span>
+<span class="lineno">18 </span>    <span class="o">}</span>
+<span class="lineno">19 </span>  <span class="o">}</span>
+<span class="lineno">20 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Console for Code listing 5.1</b>
+<pre style="background-color:#000; color:#fff;">
+The collection contains 3 item(s).
+The collection is empty.
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>When you put an object in a collection, this object is not actually <i>in</i> the collection. Only its object reference is added to the collection. This means that if an object is changed after it was put in an collection, the object in the collection also changes. The <a href="#code-listing-2">code listing 5.2</a> computes the seven next days from tomorrow and stores each date in a list to read it afterwards. See what happens:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-2"><b>Code listing 5.2: SevenNextDays.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="kn">import</span> <span class="nn">java.util.Calendar</span><span class="o">;</span>
+<span class="lineno"> 3 </span><span class="kn">import</span> <span class="nn">java.util.Collection</span><span class="o">;</span>
+<span class="lineno"> 4 </span><span class="kn">import</span> <span class="nn">java.util.Date</span><span class="o">;</span>
+<span class="lineno"> 5 </span><span class="kn">import</span> <span class="nn">java.util.GregorianCalendar</span><span class="o">;</span>
+<span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SevenNextDays</span> <span class="o">{</span>
+<span class="lineno"> 8 </span>
+<span class="lineno"> 9 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">10 </span>   
+<span class="lineno">11 </span>    <span class="c1">// The calendar is set at the current date: today</span>
+<span class="lineno">12 </span>    <span class="n">Calendar</span> <span class="n">calendar</span> <span class="o">=</span> <span class="k">new</span> <span class="n">GregorianCalendar</span><span class="o">();</span>
+<span class="lineno">13 </span>
+<span class="lineno">14 </span>    <span class="n">Collection</span> <span class="n">collectionOfDays</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">();</span>
+<span class="lineno">15 </span><span class="hll">    <span class="n">Date</span> <span class="n">currentDate</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Date</span><span class="o">();</span>
+</span><span class="lineno">16 </span>    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="o">;</span> <span class="o">++</span><span class="n">i</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">17 </span>      <span class="c1">// The calendar is now set to the next day</span>
+<span class="lineno">18 </span>      <span class="n">calendar</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">Calendar</span><span class="o">.</span><span class="na">DATE</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+<span class="lineno">19 </span>      <span class="n">currentDate</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">calendar</span><span class="o">.</span><span class="na">getTimeInMillis</span><span class="o">());</span>
+<span class="lineno">20 </span>
+<span class="lineno">21 </span><span class="hll">      <span class="n">collectionOfDays</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">currentDate</span><span class="o">);</span>
+</span><span class="lineno">22 </span>    <span class="o">}</span>
+<span class="lineno">23 </span>
+<span class="lineno">24 </span>    <span class="k">for</span> <span class="o">(</span><span class="n">Object</span> <span class="n">oneDay</span> <span class="o">:</span> <span class="n">collectionOfDays</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">25 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The next day is: "</span> <span class="o">+</span> <span class="n">oneDay</span><span class="o">);</span>
+<span class="lineno">26 </span>    <span class="o">}</span>
+<span class="lineno">27 </span>  <span class="o">}</span>
+<span class="lineno">28 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Console for Code listing 5.2</b>
+<div style="background-color:#000; color:#fff;">
+<p><code style="background-color:#000; color:#fff;">&#160;The next day is: Tue Oct 17 4:36:59 UTC 2017</code><br>
+<code style="background-color:#000; color:#fff;">&#160;The next day is: Tue Oct 17 4:36:59 UTC 2017</code><br>
+<code style="background-color:#000; color:#fff;">&#160;The next day is: Tue Oct 17 4:36:59 UTC 2017</code><br>
+<code style="background-color:#000; color:#fff;">&#160;The next day is: Tue Oct 17 4:36:59 UTC 2017</code><br>
+<code style="background-color:#000; color:#fff;">&#160;The next day is: Tue Oct 17 4:36:59 UTC 2017</code><br>
+<code style="background-color:#000; color:#fff;">&#160;The next day is: Tue Oct 17 4:36:59 UTC 2017</code><br>
+<code style="background-color:#000; color:#fff;">&#160;The next day is: Tue Oct 17 4:36:59 UTC 2017</code></p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>All collection items were meant to be updated to a different date but they all have been updated to the last one. This means that each update has updated all the collection items. The <code>currentDate</code> has been used to fill all the collection items. The collection didn't keep trace of the added values (one of the seven dates) but the added object references (<code>currentDate</code>). So the collection contains the same object seven times! To avoid this issue, we should have coded it this way:</p>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><span id="code-listing-3"><b>Code listing 5.3: ActualSevenNextDays.java</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+<span class="lineno"> 2 </span><span class="kn">import</span> <span class="nn">java.util.Calendar</span><span class="o">;</span>
+<span class="lineno"> 3 </span><span class="kn">import</span> <span class="nn">java.util.Collection</span><span class="o">;</span>
+<span class="lineno"> 4 </span><span class="kn">import</span> <span class="nn">java.util.Date</span><span class="o">;</span>
+<span class="lineno"> 5 </span><span class="kn">import</span> <span class="nn">java.util.GregorianCalendar</span><span class="o">;</span>
+<span class="lineno"> 6 </span>
+<span class="lineno"> 7 </span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ActualSevenNextDays</span> <span class="o">{</span>
+<span class="lineno"> 8 </span>
+<span class="lineno"> 9 </span>  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">10 </span>   
+<span class="lineno">11 </span>    <span class="c1">// The calendar is set at the current date: today</span>
+<span class="lineno">12 </span>    <span class="n">Calendar</span> <span class="n">calendar</span> <span class="o">=</span> <span class="k">new</span> <span class="n">GregorianCalendar</span><span class="o">();</span>
+<span class="lineno">13 </span>
+<span class="lineno">14 </span>    <span class="n">Collection</span> <span class="n">collectionOfDays</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">();</span>
+<span class="lineno">15 </span>    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="o">;</span> <span class="o">++</span><span class="n">i</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">16 </span><span class="hll">      <span class="n">Date</span> <span class="n">currentDate</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Date</span><span class="o">();</span>
+</span><span class="lineno">17 </span>      <span class="c1">// The calendar is now set to the next day</span>
+<span class="lineno">18 </span>      <span class="n">calendar</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">Calendar</span><span class="o">.</span><span class="na">DATE</span><span class="o">,</span> <span class="mi">1</span><span class="o">);</span>
+<span class="lineno">19 </span>      <span class="n">currentDate</span><span class="o">.</span><span class="na">setTime</span><span class="o">(</span><span class="n">calendar</span><span class="o">.</span><span class="na">getTimeInMillis</span><span class="o">());</span>
+<span class="lineno">20 </span>
+<span class="lineno">21 </span>      <span class="n">collectionOfDays</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">currentDate</span><span class="o">);</span>
+<span class="lineno">22 </span>    <span class="o">}</span>
+<span class="lineno">23 </span>
+<span class="lineno">24 </span>    <span class="k">for</span> <span class="o">(</span><span class="n">Object</span> <span class="n">oneDay</span> <span class="o">:</span> <span class="n">collectionOfDays</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">25 </span>      <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The next day is: "</span> <span class="o">+</span> <span class="n">oneDay</span><span class="o">);</span>
+<span class="lineno">26 </span>    <span class="o">}</span>
+<span class="lineno">27 </span>  <span class="o">}</span>
+<span class="lineno">28 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Console for Code listing 5.3</b>
+<div style="background-color:#000; color:#fff;">
+<p><code style="background-color:#000; color:#fff;">&#160;The next day is: Wed Oct 11 4:36:59 UTC 2017</code><br>
+<code style="background-color:#000; color:#fff;">&#160;The next day is: Thu Oct 12 4:36:59 UTC 2017</code><br>
+<code style="background-color:#000; color:#fff;">&#160;The next day is: Fri Oct 13 4:36:59 UTC 2017</code><br>
+<code style="background-color:#000; color:#fff;">&#160;The next day is: Sat Oct 14 4:36:59 UTC 2017</code><br>
+<code style="background-color:#000; color:#fff;">&#160;The next day is: Sun Oct 15 4:36:59 UTC 2017</code><br>
+<code style="background-color:#000; color:#fff;">&#160;The next day is: Mon Oct 16 4:36:59 UTC 2017</code><br>
+<code style="background-color:#000; color:#fff;">&#160;The next day is: Tue Oct 17 4:36:59 UTC 2017</code></p>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>Now each time we add an item to the collection, it is a different instance. All the items evolve separately. To add an object in a collection and avoid this item being changed each time the source object is changed, you have to copy or clone the object before you add it to the collection.</p>
+<h2><span class="mw-headline" id="Generics">Generics</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Collection&amp;action=edit&amp;section=1" title="Edit section: Generics">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Objects put into a collection are upcasted to the <code><a href="API\java.lang-1.html" title="Java Programming/API/java.lang.Object">Object</a></code> class. This means that you need to cast the object reference back when you get an element out of the collection. It also means that <b>you need to know</b> the type of the object when you take it out. If a collection contains different types of objects, we will have difficulty finding out the type of the objects obtained from a collection at run time. For example. let's use this collection with two objects in it:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-1"><b>Code section 5.1: Collection feeding.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">Collection</span> <span class="n">ageList</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">();</span>
+<span class="lineno">2 </span><span class="hll"><span class="n">ageList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Integer</span><span class="o">(</span><span class="mi">46</span><span class="o">));</span>
+</span><span class="lineno">3 </span><span class="hll"><span class="n">ageList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"50"</span><span class="o">);</span>
+</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<table style="width: 100%;">
+<tr>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-2"><b>Code section 5.2: Collection reading.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">Integer</span> <span class="n">sum</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Integer</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+<span class="lineno">2 </span><span class="k">for</span> <span class="o">(</span><span class="n">Object</span> <span class="n">age</span> <span class="o">:</span> <span class="n">ageList</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno">3 </span><span class="hll">    <span class="n">sum</span> <span class="o">=</span> <span class="n">sum</span><span class="o">.</span><span class="na">add</span><span class="o">((</span><span class="n">Integer</span><span class="o">)</span> <span class="n">age</span><span class="o">);</span>
+</span><span class="lineno">4 </span><span class="o">}</span>
+<span class="lineno">5 </span>
+<span class="lineno">6 </span><span class="k">if</span> <span class="o">(!</span><span class="n">ageList</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+<span class="lineno">7 </span>    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"The average age is "</span> <span class="o">+</span> <span class="n">sum</span> <span class="o">/</span> <span class="n">ageList</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+<span class="lineno">8 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top">
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Computer code" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/32px-Gnome-settings-accessibility-keyboard.svg.png" title="Computer code" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/48px-Gnome-settings-accessibility-keyboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gnome-settings-accessibility-keyboard.svg/64px-Gnome-settings-accessibility-keyboard.svg.png" data-file-width="60" data-file-height="60"></td>
+<td style="background-color:#ffeee0; border-left: 4px solid orange; padding-left: 6px; font-family: Monaco, Consolas, 'Courier New', Courier; font-size:1.0em; line-height:1.5 !important;"><b>Console for Code section 5.2</b>
+<pre style="background-color:#000; color:#fff;">
+ClassCastException.
+</pre></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>This error could have been found earlier, at compile time, by using generic types. The <a href="Generics.html" title="Java Programming/Generics">Generics</a> have been added since JDK version 1.5. It is an enhancement to the type system of the Java language. All collection implementations since 1.5 now have a <i>parameterized type &lt;E&gt;</i>. The <i>E</i> refers to an <i>Element</i> type. When a collection is created, the actual <i>Element type</i> will replace the E. In the collection, the objects are now upcasted to <i>E</i> class.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-3"><b>Code section 5.3: Collection with generics.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">Collection</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">ageList</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;();</span>
+<span class="lineno">2 </span><span class="n">ageList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="n">Integer</span><span class="o">(</span><span class="mi">46</span><span class="o">));</span>     <span class="c1">// Integer can be added</span>
+<span class="lineno">3 </span><span class="hll"><span class="n">ageList</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">"50"</span><span class="o">);</span>                <span class="c1">// Compilation error, ageList can have only Integers inside</span>
+</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p><code>ageList</code> is a collection that can contain only Integer objects as elements. No casting is required when we take out an element.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-4"><b>Code section 5.4: Item reading.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno">1 </span><span class="n">Integer</span> <span class="n">age</span> <span class="o">=</span> <span class="n">ageList</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Generics are not mandatory but are is often used with the collection classes.</p>
+<h2><span class="mw-headline" id="Collection_classes">Collection classes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Collection&amp;action=edit&amp;section=2" title="Edit section: Collection classes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>There is no direct implementation for the <code>java.util.Collection</code> interface. The Collection interface has five sub interfaces.</p>
+<table align="center" style="border:solid 1px lightgray; padding:8px; background: #fdfdfd">
+<tr>
+<td style="text-align:center; padding:2px 8px;">
+<div style="color:#2a7fff; border-bottom:solid 1px #ddd; padding-bottom:4px;"><b>Figure 1:</b> The five sub interfaces of the <code>java.util.Collection</code> interface.</div>
+</td>
+</tr>
+<tr>
+<td style="padding-top:8px;">
+<div class="center">
+<div class="floatnone"><a href="/wiki/File:Java_collection_interfaces.svg" class="image"><img alt="Java collection interfaces.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Java_collection_interfaces.svg/400px-Java_collection_interfaces.svg.png" width="400" height="126" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Java_collection_interfaces.svg/600px-Java_collection_interfaces.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Java_collection_interfaces.svg/800px-Java_collection_interfaces.svg.png" data-file-width="2283" data-file-height="720"></a></div>
+</div>
+</td>
+</tr>
+</table>
+<p><br></p>
+<h3><span class="mw-headline" id="Set">Set</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Collection&amp;action=edit&amp;section=3" title="Edit section: Set">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>A set collection contains unique elements, so duplicates are not allowed. It is similar to a mathematical Set. When adding a new item to a set, the set calls the method <code>int hashCode()</code> of the item and compares its result to the hash code of all the already inserted items. If the hash code is not found, the item is added. If the hash code is found, the set calls the <code>boolean equals(Object obj);</code> method for all the set items with the same hashcode as the new item. If all equal-calls return false, the new item is inserted in the set. If an equal-call returns true, the new item is not inserted in the set.</p>
+<table align="center" style="border:solid 1px lightgray; padding:8px; background: #fdfdfd">
+<tr>
+<td style="text-align:center; padding:2px 8px;">
+<div style="color:#2a7fff; border-bottom:solid 1px #ddd; padding-bottom:4px;"><b>Figure 2:</b> Set class diagram.</div>
+</td>
+</tr>
+<tr>
+<td style="padding-top:8px;">
+<div class="center">
+<div class="floatnone"><a href="/wiki/File:Java_collection_set_implementations.jpg" class="image"><img alt="Java collection set implementations.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Java_collection_set_implementations.jpg/650px-Java_collection_set_implementations.jpg" width="650" height="314" srcset="//upload.wikimedia.org/wikipedia/commons/3/3b/Java_collection_set_implementations.jpg" data-file-width="711" data-file-height="344"></a></div>
+</div>
+</td>
+</tr>
+</table>
+<p><br></p>
+<dl>
+<dt><span style="color: grey;">java.util.</span>HashSet<span style="color: grey;">&lt;E&gt;</span>&#160;</dt>
+<dd>This is the basic implementation of the <code>Set</code> interface. Not synchronized. Allows the <code><a href="Literals\null.html" class="mw-redirect" title="Java Programming/Literals/null"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">null</font></a></code> elements</dd>
+<dt><span style="color: grey;">java.util.</span>TreeSet<span style="color: grey;">&lt;E&gt;</span></dt>
+<dd>Elements are sorted, not synchronized. <code><a href="Literals\null.html" class="mw-redirect" title="Java Programming/Literals/null"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">null</font></a></code> not allowed</dd>
+<dt><span style="color: grey;">java.util.</span>CopyOnWriteArraySet<span style="color: grey;">&lt;E&gt;</span>&#160;</dt>
+<dd>Thread safe, a fresh copy is created during modification operation. Add, update, delete are expensive.</dd>
+<dt><span style="color: grey;">java.util.</span>EnumSet<span style="color: grey;">&lt;E extends Enum&lt;E&gt;&gt;</span>&#160;</dt>
+<dd>All of the elements in an enum set must come from a single enum type that is specified, explicitly or implicitly, when the set is created. Enum sets are represented internally as bit vectors.</dd>
+<dt><span style="color: grey;">java.util.</span>LinkedHashSet<span style="color: grey;">&lt;E&gt;</span>&#160;</dt>
+<dd>Same as HashSet, plus defines the iteration ordering, which is the order in which elements were inserted into the set.</dd>
+</dl>
+<h4><span class="mw-headline" id="Detecting_duplicate_objects_in_Sets">Detecting duplicate objects in Sets</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Collection&amp;action=edit&amp;section=4" title="Edit section: Detecting duplicate objects in Sets">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p><code>Set</code> cannot have duplicates in it. You may wonder how duplicates are detected when we are adding an object to the <code>Set</code>. We have to see if that object exists in the Set or not. It is not enough to check the object references, the objects' values have to be checked as well.</p>
+<p>To do that, fortunately, each java object has the <a href="API\java.lang-1.html#equals.28.29_Method" title="Java Programming/API/java.lang.Object"><code>boolean equals(Object obj)</code></a>, method available inherited from <code><a href="API\java.lang-1.html" title="Java Programming/API/java.lang.Object">Object</a></code>. You need to override it. That method will be called by the Set implementation to compare the two objects to see if they are equal or not.</p>
+<p>There is a problem, though. What if I put two different type of objects to the Set. I put an Apple and an Orange. They can not be compared. Calling the <a href="API\java.lang-1.html#equals.28.29_Method" title="Java Programming/API/java.lang.Object"><code>equals()</code></a> method would cause a <code>ClassCastException</code>. There are two solutions to this:</p>
+<ul>
+<li><b>Solution one</b>&#160;: Override the <a href="API\java.lang-1.html#hashCode.28.29_Method" title="Java Programming/API/java.lang.Object"><code>int hashCode()</code></a> method and return the same values for the same type of objects and return different values for different type of objects. The <a href="API\java.lang-1.html#equals.28.29_Method" title="Java Programming/API/java.lang.Object"><code>equals()</code></a> method is used to compare objects only with the same value of hashCode. So before an object is added, the Set implementation needs to:
+<ul>
+<li>find all the objects in the Set that have the same hashCode as the candidate object hashCode</li>
+<li>and for those, call the <a href="API\java.lang-1.html#equals.28.29_Method" title="Java Programming/API/java.lang.Object"><code>equals()</code></a> methods passing in the candidate object</li>
+<li>if any of them returns true, the object is not added to the Set.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><b>Solution two</b>&#160;: Create a super class for the Apple and Orange, let's call it Fruit class. Put Fruits in the Set. You need to do the following:
+<ul>
+<li>Do not override the <code>equals()</code> and <code>hashCode()</code> methods in the Apple and Orange classes</li>
+<li>Create <code>appleEquals()</code> method in the Apple class, and create <code>orangeEquals()</code> method in the Orange class</li>
+<li>Override the <code>hashCode()</code> method in the Fruit class and return the same value, so the <code>equals()</code> is called by the Set implementation</li>
+<li>Override the <code>equals()</code> method in the Fruit class for something like this.</li>
+</ul>
+</li>
+</ul>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-5"><b>Code section 5.5: <code>equals</code> method implementation.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">equals</span><span class="o">(</span><span class="n">Object</span> <span class="n">obj</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 2 </span>    <span class="kt">boolean</span> <span class="n">ret</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+<span class="lineno"> 3 </span>    <span class="k">if</span> <span class="o">(</span><span class="k">this</span> <span class="k">instanceof</span> <span class="n">Apple</span> <span class="o">&amp;&amp;</span>
+<span class="lineno"> 4 </span>          <span class="n">obj</span> <span class="k">instanceof</span> <span class="n">Apple</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 5 </span>        <span class="n">ret</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">appleEquals</span><span class="o">(</span><span class="n">obj</span><span class="o">);</span>
+<span class="lineno"> 6 </span>    <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="k">this</span> <span class="k">instanceof</span> <span class="n">Orange</span> <span class="o">&amp;&amp;</span>
+<span class="lineno"> 7 </span>              <span class="n">obj</span>  <span class="k">instanceof</span> <span class="n">Orange</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 8 </span>        <span class="n">ret</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">orangeEquals</span><span class="o">(</span><span class="n">obj</span><span class="o">);</span>  
+<span class="lineno"> 9 </span>    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+<span class="lineno">10 </span>        <span class="c1">// Can not compare Orange to Apple</span>
+<span class="lineno">11 </span>       <span class="n">ret</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+<span class="lineno">12 </span>    <span class="o">}</span>
+<span class="lineno">13 </span>    <span class="k">return</span> <span class="n">ret</span><span class="o">;</span>
+<span class="lineno">14 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p><b>Note:</b></p>
+<ul>
+<li>Only the objects that have the same hashCode will be compared.</li>
+<li>You are responsible to override the <code>equals()</code> and <code>hashCode()</code> methods. The default implementations in Object won't work.</li>
+<li>Only override the <a href="API\java.lang-1.html#hashCode.28.29_Method" title="Java Programming/API/java.lang.Object"><code>hashCode()</code></a> method if you want to eliminate value duplicates.</li>
+<li>Do not override the <a href="API\java.lang-1.html#hashCode.28.29_Method" title="Java Programming/API/java.lang.Object"><code>hashCode()</code></a> method if you know that the values of your objects are different, or if you only want to prevent adding the exactly same object.</li>
+<li>Beware that the <a href="API\java.lang-1.html#hashCode.28.29_Method" title="Java Programming/API/java.lang.Object"><code>hashCode()</code></a> may be used in other collection implementations, like in a Hashtable to find an object fast. Overriding the default <code>hashCode()</code> method may affect performance there.</li>
+<li>The default hashCodes are unique for each object created, so if you decide not to override the <code>hashCode()</code> method, there is no point overriding the <code>equals()</code> method, as it won't be called.</li>
+</ul>
+<h4><span class="mw-headline" id="SortedSet">SortedSet</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Collection&amp;action=edit&amp;section=5" title="Edit section: SortedSet">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The <code>SortedSet</code> interface is the same as the Set interface plus the elements in the SortedSet are sorted. It extends the Set Interface. All elements in the SortedSet must implement the Comparable Interface, furthermore all elements must be mutually comparable.</p>
+<p>Note that the ordering maintained by a sorted set must be consistent with equals if the sorted set is to correctly implement the Set interface. This is so because the Set interface is defined in terms of the equals operation, but a sorted set performs all element comparisons using its compare method, so two elements that are deemed equal by this method are, from the standpoint of the sorted set, equal.</p>
+<p>The SortedSet interface has additional methods due to the sorted nature of the 'Set'. Those are:</p>
+<table class="wikitable">
+<tr>
+<td><code>E first();</code></td>
+<td>returns the first element</td>
+</tr>
+<tr>
+<td><code>E last();</code></td>
+<td>returns the last element</td>
+</tr>
+<tr>
+<td><code>SortedSet headSet(E toElement);</code></td>
+<td>returns from the first, to the exclusive toElement</td>
+</tr>
+<tr>
+<td><code>SortedSet tailSet(E fromElement);</code></td>
+<td>returns from the inclusive fromElement to the end</td>
+</tr>
+<tr>
+<td><code>SortedSet subSet(E fromElement, E toElement);</code></td>
+<td>returns elements range from fromElement, inclusive, to toElement, exclusive. (If fromElement and toElement are equal, the returned sorted set is empty.)</td>
+</tr>
+</table>
+<h3><span class="mw-headline" id="List">List</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Collection&amp;action=edit&amp;section=6" title="Edit section: List">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In a list collection, the elements are put in a certain order, and can be accessed by an index. Duplicates are allowed, the same element can be added twice to a list. It has the following implementations:</p>
+<table align="center" style="border:solid 1px lightgray; padding:8px; background: #fdfdfd">
+<tr>
+<td style="text-align:center; padding:2px 8px;">
+<div style="color:#2a7fff; border-bottom:solid 1px #ddd; padding-bottom:4px;"><b>Figure 3:</b> List class diagram.</div>
+</td>
+</tr>
+<tr>
+<td style="padding-top:8px;">
+<div class="center">
+<div class="floatnone"><a href="/wiki/File:Java_collection_list_implementations.jpg" class="image"><img alt="Java collection list implementations.jpg" src="//upload.wikimedia.org/wikipedia/commons/2/26/Java_collection_list_implementations.jpg" width="650" height="475" data-file-width="553" data-file-height="404"></a></div>
+</div>
+</td>
+</tr>
+</table>
+<p><br></p>
+<dl>
+<dt><span style="color: grey;">java.util.</span>Vector<span style="color: grey;">&lt;E&gt;</span>&#160;</dt>
+<dd>Synchronized, use in multiple thread access, otherwise use <a href="ArrayList.html" title="Java Programming/ArrayList">ArrayList</a>.</dd>
+<dt><span style="color: grey;">java.util.</span>Stack<span style="color: grey;">&lt;E&gt;</span>&#160;</dt>
+<dd>It extends class Vector with five operations that allow a vector to be treated as a stack. It represents a last-in-first-out (LIFO) stack of objects.</dd>
+<dt><span style="color: grey;">java.util.</span>ArrayList<span style="color: grey;">&lt;E&gt;</span>&#160;</dt>
+<dd>The basic implementation of the <code>List</code> interface is the <code>ArrayList</code>. The ArrayList is not synchronized, not thread safe. <code>Vector</code> is synchronized, and thread safe. <code>Vector</code> is slower, because of the extra overhead to make it thread safe. When only one thread is accessing the list, use the ArrayList. Whenever you insert or remove an element from the list, there are extra overhead to reindex the list. When you have a large list, and you have lots of insert and remove, consider using the <code>LinkedList</code>.</dd>
+<dt><span style="color: grey;">java.util.</span>LinkedList<span style="color: grey;">&lt;E&gt;</span>&#160;</dt>
+<dd>Non-synchronized, update operation is faster than other lists, easy to use for stacks, queues, double-ended queues. The name <code>LinkedList</code> implies a special data structure where the elements/nodes are connected by pointers.</dd>
+</dl>
+<pre>
+ Head               Node 1                   Node 2                     Node n
+  ______
+ | Size |          _________________        _______________            _____________
+ |______|         |      | point   |       |      | point  |          |      |      |  
+ | First|--------&gt;| Data | to next |------&gt;| Data | to next|-- ... --&gt;| Data | null |
+ | elem |         |______|_________|       |______|________|          |______|______|
+ |______|                                                                 ^
+ | Last |                                                                 |
+ | elem |-----------------------------------------------------------------
+ |______|
+</pre>
+<p>Each node is related to an item of the linked list. To remove an element from the linked list the pointers need to be rearranged. After removing Node 2:</p>
+<pre>
+ Head               Node 1                   Node 2                     Node n
+  ______                                 _____________________
+ | Size |          _________________    |   _______________   |       ______________
+ |_- 1__|         |      | point   |    |  |      | point  |  |       |      |      |  
+ | First|--------&gt;| Data | to next |----   | Data | to next|   -...--&gt;| Data | null |
+ | elem |         |______|_________|       |______|________|          |______|______|
+ |______|                                                                 ^
+ | Last |                                                                 |
+ | elem |-----------------------------------------------------------------
+ |______|
+</pre>
+<dl>
+<dt><span style="color: grey;">javax.management.</span>AtributeList<span style="color: grey;">&lt;E&gt;</span>&#160;</dt>
+<dd>Represents a list of values for attributes of an MBean. The methods used for the insertion of Attribute objects in the AttributeList overrides the corresponding methods in the superclass ArrayList. This is needed in order to insure that the objects contained in the AttributeList are only Attribute objects.</dd>
+<dt><span style="color: grey;">javax.management.relation.</span>RoleList<span style="color: grey;">&lt;E&gt;</span>&#160;</dt>
+<dd>A RoleList represents a list of roles (Role objects). It is used as parameter when creating a relation, and when trying to set several roles in a relation (via 'setRoles()' method). It is returned as part of a RoleResult, to provide roles successfully retrieved.</dd>
+<dt><span style="color: grey;">javax.management.relation.</span>RoleUnresolvedList<span style="color: grey;">&lt;E&gt;</span>&#160;</dt>
+<dd>A RoleUnresolvedList represents a list of RoleUnresolved objects, representing roles not retrieved from a relation due to a problem encountered when trying to access (read or write to roles).</dd>
+</dl>
+<h2><span class="mw-headline" id="Queue">Queue</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Collection&amp;action=edit&amp;section=7" title="Edit section: Queue">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Queue interface provides additional insertion, extraction, and inspection operations. There are FIFO (first in, first out) and LIFO (last in, first out) queues. This interface adds the following operations to the Collection interface:</p>
+<table class="wikitable">
+<tr>
+<td><code>E element()</code></td>
+<td>Retrieves, but does not remove, the head of this queue. This method differs from the peek method only in that it throws an exception if this queue is empty</td>
+</tr>
+<tr>
+<td><code>boolean offer(E o)</code></td>
+<td>Inserts the specified element into this queue, if possible.</td>
+</tr>
+<tr>
+<td><code>E peek()</code></td>
+<td>Retrieves, but does not remove, the head of this queue, returning null if this queue is empty</td>
+</tr>
+<tr>
+<td><code>E poll()</code></td>
+<td>Retrieves and removes the head of this queue, or null if this queue is empty</td>
+</tr>
+<tr>
+<td><code>E remove()</code></td>
+<td>Retrieves and removes the head of this queue. This method differs from the poll method in that it throws an exception if this queue is empty.</td>
+</tr>
+</table>
+<table align="center" style="border:solid 1px lightgray; padding:8px; background: #fdfdfd">
+<tr>
+<td style="text-align:center; padding:2px 8px;">
+<div style="color:#2a7fff; border-bottom:solid 1px #ddd; padding-bottom:4px;"><b>Figure 4:</b> Queue class diagram.</div>
+</td>
+</tr>
+<tr>
+<td style="padding-top:8px;">
+<div class="center">
+<div class="floatnone"><a href="/wiki/File:Java_collection_queue_implementations.jpg" class="image"><img alt="Java collection queue implementations.jpg" src="//upload.wikimedia.org/wikipedia/commons/9/90/Java_collection_queue_implementations.jpg" width="650" height="388" data-file-width="556" data-file-height="332"></a></div>
+</div>
+</td>
+</tr>
+</table>
+<p><br></p>
+<dl>
+<dt><span style="color: grey;">java.util.</span>BlockingQueue<span style="color: grey;">&lt;E&gt;</span>&#160;</dt>
+<dd>waits for the queue to become non-empty when retrieving an element, and waits for space to become available in the queue when storing an element. Best used for producer-consumer queues.</dd>
+<dt><span style="color: grey;">java.util.</span>PriorityQueue<span style="color: grey;">&lt;E&gt;</span>&#160;</dt>
+<dd>orders elements according to an order/priority specified at construction time, null element is not allowed.</dd>
+<dt><span style="color: grey;">java.util.concurrent.</span>ArrayBlockingQueue<span style="color: grey;">&lt;E&gt;</span>&#160;</dt>
+<dd>orders elements FIFO; synchronized, thread safe.</dd>
+<dt><span style="color: grey;">java.util.concurrent.</span>SynchronousQueue<span style="color: grey;">&lt;E&gt;</span>&#160;</dt>
+<dd>each put must wait for a take, and vice versa, does not have any internal capacity, not even a capacity of one, an element is only present when you try to take it; you cannot add an element (using any method) unless another thread is trying to remove it.</dd>
+</dl>
+<h2><span class="mw-headline" id="Complete_UML_class_diagram">Complete UML class diagram</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Collection&amp;action=edit&amp;section=8" title="Edit section: Complete UML class diagram">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table align="center" style="border:solid 1px lightgray; padding:8px; background: #fdfdfd">
+<tr>
+<td style="text-align:center; padding:2px 8px;">
+<div style="color:#2a7fff; border-bottom:solid 1px #ddd; padding-bottom:4px;"><b>Figure 5:</b> UML class diagram of the <code>Collection</code> interfaces and their implementations.</div>
+</td>
+</tr>
+<tr>
+<td style="padding-top:8px;">
+<div class="center">
+<div class="floatnone"><a href="/wiki/File:Java_collection_implementation.jpg" class="image"><img alt="Java collection implementation.jpg" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Java_collection_implementation.jpg/700px-Java_collection_implementation.jpg" width="700" height="476" srcset="//upload.wikimedia.org/wikipedia/commons/c/ca/Java_collection_implementation.jpg" data-file-width="849" data-file-height="577"></a></div>
+</div>
+</td>
+</tr>
+</table>
+<p><br></p>
+<h2><span class="mw-headline" id="Synchronization">Synchronization</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Collection&amp;action=edit&amp;section=9" title="Edit section: Synchronization">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Synchronization is important when you are running several threads. Beware, synchronization does not mean that your collection is thread-safe. A thread-safe collection is also called a <i>concurrent collection</i>. Most of the popular collection classes have implementations for both single thread and multiple thread environments. The non-synchronized implementations are always faster. You can use the non-synchronized implementations in multiple thread environments, when you make sure that only one thread updates the collection at any given time.</p>
+<p>A new Java JDK package was introduced at Java 1.5, that is <code>java.util.concurrent</code>. This package supplies a few Collection implementations designed for use in multi-threaded environments.</p>
+<p>The following table lists all the synchronized collection classes:</p>
+<table class="wikitable" style="margin: auto;">
+<tr>
+<td></td>
+<th>synchronized</th>
+<th>non-synchronized</th>
+</tr>
+<tr>
+<td rowspan="4">List</td>
+<td>java.util.Vector</td>
+<td>java.util.ArrayList</td>
+</tr>
+<tr>
+<td>java.util.Stack</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>java.util.LinkedList</td>
+</tr>
+<tr>
+<td>java.util.concurrent.CopyOnWriteArrayList</td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="4">Set</td>
+<td></td>
+<td>java.util.TreeSet</td>
+</tr>
+<tr>
+<td></td>
+<td>java.util.HashSet</td>
+</tr>
+<tr>
+<td></td>
+<td>java.util.LinkHashSet</td>
+</tr>
+<tr>
+<td>java.util.concurrent.CopyOnWriteArraySet</td>
+<td></td>
+</tr>
+</table>
+<h2><span class="mw-headline" id="Custom_collection">Custom collection</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Java_Programming/Collection&amp;action=edit&amp;section=10" title="Edit section: Custom collection">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Java JDK collection implementations are quite powerful and good, so it is unlikely that you will need to write your own. The usage of the different collections are the same but the implementations are different. If the existing collection implementations do not meet your needs, you can write your version of the implementation. Your version of the implementation just needs to implement the same <code>java.util.Collection</code> interface, then you can switch to using your implementation and the code that is using the collection does not need to be changed.</p>
+<p>Use the Collection interface if you need to keep related (usually the same type of) objects together in a collection where you can:</p>
+<ul>
+<li>Search for a particular element</li>
+<li>List the elements</li>
+<li>Maintain and/or change the order of the elements by using the collection basic operations (Add, Remove, Update,..)</li>
+<li>Access the elements by an index number</li>
+</ul>
+<p>The advantages of using the <code>Collection</code> interface are:</p>
+<ul>
+<li>Gives a generic usage, as we talked about above, it is easy to switch implementation</li>
+<li>It makes it easy to convert one type of collection to another.</li>
+</ul>
+<p>The <code>Collection</code> interface defines the following basic operations:</p>
+<table class="wikitable">
+<tr>
+<td><code>boolean add(E o);</code></td>
+<td>Using Element type E</td>
+</tr>
+<tr>
+<td><code>boolean addAll(Collection c);</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>boolean remove(</code><a href="API\java.lang-1.html" title="Java Programming/API/java.lang.Object">Object</a> o);</td>
+<td></td>
+</tr>
+<tr>
+<td><code>boolean removeAll(Collection c);</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>boolean retainAll(Collection c);</code></td>
+<td>Return <code><a href="Literals\Boolean_Literals\true.html" title="Java Programming/Literals/Boolean Literals/true"><font style="color:DodgerBlue4; text-decoration: none; font-weight: bold;">true</font></a></code> if the collection has changed due to the operation.</td>
+</tr>
+</table>
+<p>Note that in <code>addAll()</code> we can add any type of collection. This is the beauty of using the Collection interface. You can have a <code>LinkedList</code> and just call the <code>addAll(list)</code> method, passing in a list. You can pass in a <code>Vector</code>, an <code>ArrayList</code>, a <code>HashSet</code>, a <code>TreeSet</code>, a <code>YourImpOfCollection</code>, ... All those different types of collection will be <b>magically</b> converted to a <code>LinkedList</code>.</p>
+<p>Let's have a closer look at this <i>magic</i>. The conversion is easy because the <code>Collection</code> interface defines a standard way of looping through the elements. The following code is a possible implementation of <code>addAll()</code> method of the <code>LinkedList</code>.</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-6"><b>Code section 5.6: Collection transfer.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kn">import</span> <span class="nn">java.util.Collection</span>
+<span class="lineno"> 2 </span><span class="kn">import</span> <span class="nn">java.util.Iterator</span>
+<span class="lineno"> 3 </span><span class="o">...</span>
+<span class="lineno"> 4 </span><span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">addAll</span><span class="o">(</span><span class="n">Collection</span> <span class="n">coll</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 5 </span>   <span class="kt">int</span> <span class="n">sizeBefore</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">size</span><span class="o">();</span>
+<span class="lineno"> 6 </span>   <span class="n">Iterator</span> <span class="n">iter</span> <span class="o">=</span> <span class="n">coll</span><span class="o">.</span><span class="na">iterator</span><span class="o">();</span>
+<span class="lineno"> 7 </span>   <span class="k">while</span><span class="o">(</span><span class="n">iter</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span> <span class="o">{</span>
+<span class="lineno"> 8 </span>      <span class="k">this</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">iter</span><span class="o">.</span><span class="na">next</span><span class="o">());</span>
+<span class="lineno"> 9 </span>   <span class="o">}</span>
+<span class="lineno">10 </span>   <span class="k">if</span> <span class="o">(</span><span class="n">sizeBefore</span> <span class="o">&gt;</span> <span class="k">this</span><span class="o">.</span><span class="na">size</span><span class="o">())</span> <span class="o">{</span>
+<span class="lineno">11 </span>      <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+<span class="lineno">12 </span>   <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+<span class="lineno">13 </span>      <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+<span class="lineno">14 </span>   <span class="o">}</span>
+<span class="lineno">15 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>The above code just iterates through the passed in collection and adds the elements to the linked list. You do not have to do that, since that is already defined. What you might need to code for is to loop through a <code>Customer</code> collection:</p>
+<table style="padding:2px; margin:2px;">
+<tr valign="top">
+<td style="width:32px;"><img alt="Example" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/32px-Nuvola_apps_edu_miscellaneous.svg.png" title="Example" width="32" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/48px-Nuvola_apps_edu_miscellaneous.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Nuvola_apps_edu_miscellaneous.svg/64px-Nuvola_apps_edu_miscellaneous.svg.png" data-file-width="128" data-file-height="128"></td>
+<td style="background-color:#f0fff0; border-left: 4px solid green; padding-left: 6px;"><span id="code-section-7"><b>Code section 5.7: Iteration on a collection.</b></span>
+<div class="mw-highlight mw-content-ltr" dir="ltr">
+<pre>
+<span class="lineno"> 1 </span><span class="kn">import</span> <span class="nn">java.util.Collection</span>
+<span class="lineno"> 2 </span><span class="kn">import</span> <span class="nn">java.util.Iterator</span>
+<span class="lineno"> 3 </span><span class="kn">import</span> <span class="nn">java.yourcompany.Customer</span>
+<span class="lineno"> 4 </span><span class="o">...</span>
+<span class="lineno"> 5 </span><span class="kd">public</span> <span class="n">String</span> <span class="nf">printCustomerNames</span><span class="o">(</span><span class="n">Collection</span> <span class="n">customerColl</span><span class="o">)</span> <span class="o">{</span>
+<span class="lineno"> 6 </span>   <span class="n">StringBuffer</span> <span class="n">buf</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuffer</span><span class="o">();</span>
+<span class="lineno"> 7 </span>
+<span class="lineno"> 8 </span>   <span class="n">Iterator</span> <span class="n">iter</span> <span class="o">=</span> <span class="n">customerColl</span><span class="o">.</span><span class="na">iterator</span><span class="o">();</span>
+<span class="lineno"> 9 </span>   <span class="k">while</span><span class="o">(</span><span class="n">iter</span><span class="o">.</span><span class="na">hasNext</span><span class="o">())</span> <span class="o">{</span>
+<span class="lineno">10 </span>      <span class="n">Customer</span> <span class="n">cust</span> <span class="o">=</span> <span class="o">(</span><span class="n">Customer</span><span class="o">)</span> <span class="n">iter</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+<span class="lineno">11 </span>      <span class="n">buf</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">cust</span><span class="o">.</span><span class="na">getName</span><span class="o">());</span>
+<span class="lineno">12 </span>      <span class="n">buf</span><span class="o">.</span><span class="na">append</span><span class="o">(</span> <span class="s">"\n"</span> <span class="o">);</span>
+<span class="lineno">13 </span>   <span class="o">}</span>
+<span class="lineno">14 </span>  <span class="k">return</span> <span class="n">buf</span><span class="o">.</span><span class="na">toString</span><span class="o">();</span>
+<span class="lineno">15 </span><span class="o">}</span>
+</pre></div>
+</td>
+</tr>
+</table>
+<p>Notice two things:</p>
+<ul>
+<li>The above code will work for all type of collections.</li>
+<li>We have to know the type of objects inside the collection, because we call a method on it.</li>
+</ul>
+<p><br></p>
+<div style="clear: both"></div>
+<table style="background: #ffd; border: 1px solid #aaaaaa; padding: 6pt; margin: 12pt 8%; width: 60%; margin: auto;" class="notice noprint notice-todo">
+<tr>
+<td style="width: 58px;">
+<div class="floatleft"><img alt="Clipboard" src="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/45px-Clipboard.svg.png" width="45" height="45" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/68px-Clipboard.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Clipboard.svg/90px-Clipboard.svg.png" data-file-width="48" data-file-height="48"></div>
+</td>
+<td>
+<p><b>To do:</b><br>
+Add some exercises like the ones in <a href="Variables.html#Kinds_of_variables" title="Java Programming/Variables">Variables</a></p>
+</td>
+</tr>
+</table>
+<div style="clear: both"></div>
+<table style="width:100%; border:solid 1px #71c837; background:#c6e9af; color:#2d5016;" class="noprint">
+<tr>
+<td style="text-align:left; width:33%; font-size:90%;"><a href="Aggregate.html" title="Aggregate"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/18px-Navigation_Left_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/27px-Navigation_Left_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Navigation_Left_Arrow.svg/36px-Navigation_Left_Arrow.svg.png" data-file-width="165" data-file-height="130"></a> <a href="Aggregate.html" title="Java Programming/Aggregate">Aggregate</a></td>
+<td style="text-align:center; width:34%;"><a href="..\Java_Programming.html" title="Java Programming">Java Programming</a><br>
+<b>Collection</b></td>
+<td style="text-align:right; width:33%; font-size:90%;"><a href="ArrayList.html" title="Java Programming/ArrayList">ArrayList</a> <a href="ArrayList.html" title="ArrayList"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/18px-Navigation_Right_Arrow.svg.png" width="18" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/27px-Navigation_Right_Arrow.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Navigation_Right_Arrow.svg/36px-Navigation_Right_Arrow.svg.png" data-file-width="165" data-file-height="130"></a></td>
+</tr>
+</table>
+<div class="metadata topicon" id="status-icon"><a href="/wiki/Help:Development_stages" title="75% developed"><img alt="75% developed" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/24px-75_percent.svg.png" width="24" height="24" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/36px-75_percent.svg.png,//upload.wikimedia.org/wikipedia/commons/thumb/6/62/75_percent.svg/48px-75_percent.svg.png" data-file-width="9" data-file-height="9"></a></div>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1248
+Cached time: 20171010043700
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.172 seconds
+Real time usage: 0.320 seconds
+Preprocessor visited node count: 860/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 18129/2097152 bytes
+Template argument size: 4506/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 46/500
+Lua time usage: 0.083/10.000 seconds
+Lua memory usage: 777 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  251.561      1 -total
+ 48.76%  122.653      2 Template:Programming/Navigation
+ 36.99%   93.062      7 Template:XExample
+  6.24%   15.702      1 Template:Java_Programming/CollectionsTopic/Nav
+  3.75%    9.437      3 Template:BookCat
+  2.84%    7.151      3 Template:BookCat/default
+  2.44%    6.149      1 Template:Navbar
+  2.32%    5.829      1 Template:Java_Programming/Aggregate/Topic
+  1.99%    5.015      7 Template:XCode
+  1.87%    4.709      3 Template:BOOKCATEGORY
+-->
+</div>
+<!-- Saved in parser cache with key enwikibooks:pcache:idhash:70955-0!canonical and timestamp 20171010043659 and revision id 3295188
+ -->
+<noscript><img src="//en.wikibooks.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;"></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikibooks.org/w/index.php?title=Java_Programming/Collection&amp;oldid=3295188">https://en.wikibooks.org/w/index.php?title=Java_Programming/Collection&amp;oldid=3295188</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/Category:Book:Java_Programming" title="Category:Book:Java Programming">Book:Java Programming</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Discussion for this IP address</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Java+Programming%2FCollection" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Java+Programming%2FCollection" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+														<li id="ca-nstab-main" class="selected"><span><a href="Collection.html" title="View the content page [c]" accesskey="c">Book</a></span></li>
+							<li id="ca-talk"><span><a href="/wiki/Talk:Java_Programming/Collection" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
+						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+														<li id="ca-view" class="collapsible selected"><span><a href="Collection.html">Read</a></span></li>
+							<li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Collection&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+							<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Java_Programming/Collection&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+							<input type="search" name="search" placeholder="Search Wikibooks" title="Search Wikibooks [f]" accesskey="f" id="searchInput"><input type="hidden" value="Special:Search" name="title"><input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton">							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page" title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-Navigation' aria-labelledby='p-Navigation-label'>
+			<h3 id='p-Navigation-label'>Navigation</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-mainpage"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main Page</a></li><li id="n-help"><a href="/wiki/Help:Contents" title="Find help on how to use and edit Wikibooks">Help</a></li><li id="n-Browse"><a href="/wiki/Wikibooks:Card_Catalog_Office" title="Check out what Wikibooks has to offer">Browse</a></li><li id="n-Cookbook"><a href="/wiki/Cookbook:Table_of_Contents" title="Learn recipes from around the world">Cookbook</a></li><li id="n-Wikijunior"><a href="/wiki/Wikijunior" title="Books for children">Wikijunior</a></li><li id="n-Featured-books"><a href="/wiki/Wikibooks:Featured_books" title="The best of Wikibooks">Featured books</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikibooks.org&amp;uselang=en" title="Support Wikibooks">Donations</a></li><li id="n-randomrootpage"><a href="/wiki/Special:RandomRootpage">Random book</a></li><li id="n-Using-Wikibooks"><a href="/wiki/Using_Wikibooks">Using Wikibooks</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Community' aria-labelledby='p-Community-label'>
+			<h3 id='p-Community-label'>Community</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Reading-room"><a href="/wiki/Wikibooks:Reading_room" title="Discuss Wikibooks-related questions and concerns with others">Reading room</a></li><li id="n-portal"><a href="/wiki/Wikibooks:Community_Portal" title="Find your way around the Wikibooks community">Community portal</a></li><li id="n-currentevents"><a href="/wiki/Wikibooks:Reading_room/Bulletin_Board" title="Important community news">Bulletin Board</a></li><li id="n-maintenance"><a href="/wiki/Wikibooks:Maintenance" title="Frequent tasks that you can help with">Help out!</a></li><li id="n-Policies-and-guidelines"><a href="/wiki/Wikibooks:Policies_and_guidelines" title="Pages detailing important rules and procedures">Policies and guidelines</a></li><li id="n-contact"><a href="/wiki/Wikibooks:Contact_us" title="Alternative methods of communication">Contact us</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+
+			<div class="body">
+									<ul>
+						<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Java_Programming/Collection" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Java_Programming/Collection" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=en" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Java_Programming/Collection&amp;oldid=3295188" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Java_Programming/Collection&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q4041802" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Java_Programming%2FCollection&amp;id=3295188" title="Information on how to cite this page">Cite this page</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>In other languages</h3>
+
+			<div class="body">
+									<ul>
+						<li class="interlanguage-link interwiki-de"><a href="https://de.wikibooks.org/wiki/Java_Standard:_Collection_Framework" title="Java Standard: Collection Framework – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikibooks.org/wiki/Programmation_Java/Collections" title="Programmation Java/Collections – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li>					</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q4041802#sitelinks-wikibooks" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Sister_projects' aria-labelledby='p-Sister_projects-label'>
+			<h3 id='p-Sister_projects-label'>Sister projects</h3>
+
+			<div class="body">
+									<ul>
+						<li id="n-Wikipedia"><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li><li id="n-Wikiversity"><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></li><li id="n-Wiktionary"><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></li><li id="n-Wikiquote"><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></li><li id="n-Wikisource"><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></li><li id="n-Wikinews"><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></li><li id="n-Wikivoyage"><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></li><li id="n-Commons"><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></li><li id="n-Wikidata"><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+
+			<div class="body">
+									<ul>
+						<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Java+Programming%2FCollection">Create a collection</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Java+Programming%2FCollection&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Java_Programming/Collection&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>					</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-wikibase-otherprojects' aria-labelledby='p-wikibase-otherprojects-label'>
+			<h3 id='p-wikibase-otherprojects-label'>In other projects</h3>
+
+			<div class="body">
+									<ul>
+						<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Java_Collections_Framework" hreflang="en">Wikimedia Commons</a></li><li class="wb-otherproject-link wb-otherproject-wikipedia"><a href="https://en.wikipedia.org/wiki/Java_collections_framework" hreflang="en">Wikipedia</a></li>					</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last edited on 17 September 2017, at 14:41.</li>
+											<li id="footer-info-copyright">Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike License.</a>; additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy.</a></li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Wikibooks:Welcome" title="Wikibooks:Welcome">About Wikibooks</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Wikibooks:General_disclaimer" title="Wikibooks:General disclaimer">Disclaimers</a></li>
+											<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+											<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+											<li id="footer-places-mobileview"><a href="//en.m.wikibooks.org/w/index.php?title=Java_Programming/Collection&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+							<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png,/static/images/wikimedia-button-2x.png" width="88" height="31" alt="Wikimedia Foundation"></a>						</li>
+											<li id="footer-poweredbyico">
+							<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png,/static/images/poweredby_mediawiki_176x62.png" width="88" height="31"></a>						</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.172","walltime":"0.320","ppvisitednodes":{"value":860,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":18129,"limit":2097152},"templateargumentsize":{"value":4506,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":46,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  251.561      1 -total"," 48.76%  122.653      2 Template:Programming/Navigation"," 36.99%   93.062      7 Template:XExample","  6.24%   15.702      1 Template:Java_Programming/CollectionsTopic/Nav","  3.75%    9.437      3 Template:BookCat","  2.84%    7.151      3 Template:BookCat/default","  2.44%    6.149      1 Template:Navbar","  2.32%    5.829      1 Template:Java_Programming/Aggregate/Topic","  1.99%    5.015      7 Template:XCode","  1.87%    4.709      3 Template:BOOKCATEGORY"]},"scribunto":{"limitreport-timeusage":{"value":"0.083","limit":"10.000"},"limitreport-memusage":{"value":796085,"limit":52428800}},"cachereport":{"origin":"mw1248","timestamp":"20171010043700","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":86,"wgHostname":"mw1180"});});</script>
+	</body>
+</html>
