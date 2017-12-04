@@ -287,7 +287,7 @@ function answerQuestion($userId, $question, $choice, $timeTaken) {
 //overwrites the complete array
 function updateInterests($userId, $interests) { 
    $link = db_connect();
-   $sql= "update user_profile set preferred_categories = '".serialize($interests)."' where Username='".$userId."'";
+   $sql= "update user_profile set preferred_categories = '".serialize($interests)."' where username='".$userId."'";
    if(mysqli_query($link, $sql)){
 
      
@@ -332,7 +332,7 @@ function createUser($userId, $password, $name) {
 	//echo "why";
 	$categories = array_fill(0, 12, false);
 	$completed_q_array = $incompleted_q_array =array();
-    $sql = "insert into user_profile (Name, Username, Password,module_level, completed_q_array, solved_count_array, ts_last_ques, incompleted_q_array, incorrectly_count_array,preferred_categories,score) Values ('".$name."','".$userId."','".$password."','".serialize($module)."','".serialize($completed_q_array)."','".serialize($solved_count_array)."','".serialize($TS_array)."','".serialize($incompleted_q_array)."','".serialize($incorrectly_count_array)."','".serialize($categories)."','".serialize($score)."')";
+    $sql = "insert into user_profile (name, username, password,module_level, completed_q_array, solved_count_array, ts_last_ques, incompleted_q_array, incorrectly_count_array,preferred_categories,score) Values ('".$name."','".$userId."','".$password."','".serialize($module)."','".serialize($completed_q_array)."','".serialize($solved_count_array)."','".serialize($TS_array)."','".serialize($incompleted_q_array)."','".serialize($incorrectly_count_array)."','".serialize($categories)."','".serialize($score)."')";
     //echo "this";
 	if(mysqli_query($link, $sql)){
       //echo "Row inserted.";
