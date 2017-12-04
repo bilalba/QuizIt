@@ -18,15 +18,15 @@ require 'populateuserprofile.php';
 		$link = db_connect();
 		$result = mysqli_query($link,$sql);
 		if (!$result) {
-    die(mysqli_error($link));
-}
+		    die(mysqli_error($link));
+		}
 		while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
     		$totalSum[$row['overall_category']][$row['difficulty']] = $row['count'];
 		}
 		
 
 		$completed_q_array = unserialize($userObject->completed_q_array);
-
+		print_r($userObject);
 		print_r($completed_q_array);
 
 		$module_level = unserialize($userObject->module_level);
