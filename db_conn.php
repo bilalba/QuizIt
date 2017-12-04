@@ -3,6 +3,7 @@
 
 function db_connect() {
 	static $connection;
+	// $envvar = "mysql://ez4gng2zh6lxjqug:djk2h2hs8cddj76r@mgs0iaapcj3p9srz.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mumk70z4lzrp13op";
 	$envvar = getenv("JAWSDB_URL");
 	if (!isset($connection)) {
 		if ($envvar == false) {
@@ -16,7 +17,7 @@ function db_connect() {
 			$username = $url["user"];
 			$password = $url["pass"];
 			$db = substr($url["path"], 1);
-			$conn = new mysqli($server, $username, $password, $db);
+			// $conn = new mysqli($server, $username, $password, $db);
 		}
 		$connection = new mysqli($server, $username, $password, $db);	
 	}
