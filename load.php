@@ -18,7 +18,7 @@ if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 // Attempt create table query execution
-$sql = "CREATE TABLE `questions` ( `id` INT NOT NULL AUTO_INCREMENT , `difficulty` DECIMAL NOT NULL , `question_text` VARCHAR(500) NOT NULL , `num_choices` INT NOT NULL , `option1` VARCHAR(200) NOT NULL , `option2` VARCHAR(200) NOT NULL , `option3` VARCHAR(200) , `option4` VARCHAR(200) , `option5` VARCHAR(200) , `correct_option` INT NOT NULL , `original_category` VARCHAR(20) NOT NULL , `overall_category` INT NOT NULL , `original_difficulty` DECIMAL NOT NULL , `correct_attempts` INT NOT NULL , `incorrect_attempts` INT NOT NULL , `avg_time_correct` DECIMAL NOT NULL , `avg_time_incorrect` DECIMAL NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;";
+sql = "CREATE TABLE `quiz`.`questions` ( `id` INT NOT NULL AUTO_INCREMENT , `difficulty` DECIMAL NOT NULL , `question_text` VARCHAR(500) NOT NULL , `num_choices` INT NOT NULL , `option1` VARCHAR(200) NOT NULL , `option2` VARCHAR(200) NOT NULL , `option3` VARCHAR(200) , `option4` VARCHAR(200) , `option5` VARCHAR(200) , `correct_option` INT NOT NULL , `original_category` VARCHAR(20) NOT NULL , `overall_category` INT NOT NULL , `original_difficulty` DECIMAL NOT NULL , `correct_attempts` INT NOT NULL , `incorrect_attempts` INT NOT NULL , `avg_time_correct` DECIMAL NOT NULL , `avg_time_incorrect` DECIMAL NOT NULL , `helpFile` VARCHAR(200), PRIMARY KEY (`id`)) ENGINE = InnoDB;";
  if(mysqli_query($link, $sql)){
      echo "Table created successfully.";
  } else {
@@ -109,12 +109,13 @@ foreach($csv as $item) {
 	} 
 
 
-	$insert = "INSERT INTO questions (difficulty,question_text,num_choices,option1,option2,option3,option4,option5,correct_option,original_category,overall_category, original_difficulty, correct_attempts, incorrect_attempts, avg_time_correct, avg_time_incorrect) VALUES (". $difficulty .",'". addslashes($item[0]) . "', ". $item[7] . ",". $opt1 ."," . $opt2 .",".$opt3 .",".$opt4 .",".$opt5 .",". $choice .",'" . $item[1] ."',".$overall_category.",".$difficulty . "," . 0 .  "," . 0 . ",". 0.0 ."," . 0.0 .")";
+
+	$insert = "INSERT INTO questions (difficulty,question_text,num_choices,option1,option2,option3,option4,option5,correct_option,original_category,overall_category, original_difficulty, correct_attempts, incorrect_attempts, avg_time_correct, avg_time_incorrect, helpFile) VALUES (". $difficulty .",'". addslashes($item[0]) . "', ". $item[7] . ",". $opt1 ."," . $opt2 .",".$opt3 .",".$opt4 .",".$opt5 .",". $choice .",'" . $item[1] ."',".$overall_category.",".$difficulty . "," . 0 .  "," . 0 . ",". 0.0 ."," . 0.0 .", '". $item[10] ."')";
 	// echo $insert;
 	if(mysqli_query($link, $insert)){
      // echo "Row inserted.";
  } else{
-     echo "ERROR: Could not able to execute $insert. " . mysqli_error($link);
+     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
      // echo $insert;
  }
 
