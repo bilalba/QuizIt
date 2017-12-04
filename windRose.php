@@ -33,7 +33,7 @@ require 'populateuserprofile.php';
 
 			$x = $module_level[$i] + 1;
 			for ($j = $x - 1; $j>0; $j--) $totalPercentage[$i][$j] = 1;
-			if ($x == 4) break;
+			if ($x == 4) continue;
 			$solvedCorrectlyForthisCategory = 0;
 			if (count($completed_q_array) > 0) {
     			$sql = "SELECT COUNT(*) as count from questions WHERE id in (".implode(',',$completed_q_array).") and difficulty =$x and overall_category = $i;";
