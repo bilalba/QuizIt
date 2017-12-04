@@ -89,6 +89,7 @@
       </form>
     </center>
       <div id="exit" class="intro" hidden>
+        <p></p>
         <pre></pre>
         <a href="/" class="btn">Return</a>
       </div>
