@@ -3,7 +3,7 @@
 
 function db_connect() {
 	static $connection;
-	$envvar = getenv("CLEARDB_DATABASE_URL");
+	$envvar = getenv("JAWSDB_URL");
 	if (!isset($connection)) {
 		if ($envvar == false) {
 			$server = "127.0.0.1";
