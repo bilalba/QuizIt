@@ -155,7 +155,7 @@ Highcharts.chart('container', {
     yAxis: {
             gridLineColor: 'transparent',
         min: 0,
-        max:1,
+        max:3.2,
         endOnTick: false,
         showLastLabel: true,
         labels: {
