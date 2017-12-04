@@ -114,7 +114,7 @@ foreach($csv as $item) {
 	if(mysqli_query($link, $insert)){
      // echo "Row inserted.";
  } else{
-     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+     echo "ERROR: Could not able to execute $insert. " . mysqli_error($link);
      // echo $insert;
  }
 
