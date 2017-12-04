@@ -89,9 +89,8 @@
       </form>
     </center>
       <div id="exit" class="intro" hidden>
-        <p>Thank you. Here's a summary of what you have done.</p>
         <pre></pre>
-        <a href="" class="btn">Retake?</a>
+        <a href="/" class="btn">Return</a>
       </div>
     </div>
      </div>
