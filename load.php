@@ -18,7 +18,7 @@ if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 // Attempt create table query execution
-$sql = "CREATE TABLE `quiz`.`questions` ( `id` INT NOT NULL AUTO_INCREMENT , `difficulty` DECIMAL NOT NULL , `question_text` VARCHAR(500) NOT NULL , `num_choices` INT NOT NULL , `option1` VARCHAR(200) NOT NULL , `option2` VARCHAR(200) NOT NULL , `option3` VARCHAR(200) , `option4` VARCHAR(200) , `option5` VARCHAR(200) , `correct_option` INT NOT NULL , `original_category` VARCHAR(20) NOT NULL , `overall_category` INT NOT NULL , `original_difficulty` DECIMAL NOT NULL , `correct_attempts` INT NOT NULL , `incorrect_attempts` INT NOT NULL , `avg_time_correct` DECIMAL NOT NULL , `avg_time_incorrect` DECIMAL NOT NULL , `helpFile` VARCHAR(200), PRIMARY KEY (`id`)) ENGINE = InnoDB;";
+$sql = "CREATE TABLE `questions` ( `id` INT NOT NULL AUTO_INCREMENT , `difficulty` DECIMAL NOT NULL , `question_text` VARCHAR(500) NOT NULL , `num_choices` INT NOT NULL , `option1` VARCHAR(200) NOT NULL , `option2` VARCHAR(200) NOT NULL , `option3` VARCHAR(200) , `option4` VARCHAR(200) , `option5` VARCHAR(200) , `correct_option` INT NOT NULL , `original_category` VARCHAR(20) NOT NULL , `overall_category` INT NOT NULL , `original_difficulty` DECIMAL NOT NULL , `correct_attempts` INT NOT NULL , `incorrect_attempts` INT NOT NULL , `avg_time_correct` DECIMAL NOT NULL , `avg_time_incorrect` DECIMAL NOT NULL , `helpFile` VARCHAR(200), PRIMARY KEY (`id`)) ENGINE = InnoDB;";
  if(mysqli_query($link, $sql)){
      echo "Table created successfully.";
  } else {
