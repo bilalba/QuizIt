@@ -17,6 +17,9 @@ require 'populateuserprofile.php';
 		$sql = "Select count(*) as count ,overall_category, difficulty FROM questions where 1 GROUP BY overall_category, difficulty";
 		$link = db_connect();
 		$result = mysqli_query($link,$sql);
+		if (!$result) {
+    die(mysqli_error($link));
+}
 		while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
     		$totalSum[$row['overall_category']][$row['difficulty']] = $row['count'];
 		}
