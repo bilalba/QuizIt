@@ -20,7 +20,7 @@ require 'populateuserprofile.php';
 		if (!$result) {
     die(mysqli_error($link));
 }
-		while ($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+		while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
     		$totalSum[$row['overall_category']][$row['difficulty']] = $row['count'];
 		}
 		
@@ -38,7 +38,7 @@ require 'populateuserprofile.php';
 			if (count($completed_q_array) > 0) {
     			$sql = "SELECT COUNT(*) as count from questions WHERE id in (".implode(',',$completed_q_array).") and difficulty =$x and overall_category = $i;";
 				$result = mysqli_query($link,$sql);
-				$row = mysqli_fetch_array($result, MYSQL_ASSOC);
+				$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 				$solvedCorrectlyForthisCategory = $row['count'];
 			}
 			$totalPercentage[$i][$x] = $solvedCorrectlyForthisCategory/$totalSum[$i][$x];
