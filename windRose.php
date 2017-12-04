@@ -27,6 +27,8 @@ require 'populateuserprofile.php';
 
 		$completed_q_array = unserialize($userObject->completed_q_array);
 
+		print_r($completed_q_array);
+
 		$module_level = unserialize($userObject->module_level);
 		
 		for($i =0; $i <12; $i++) {
